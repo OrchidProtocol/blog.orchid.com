@@ -1,5 +1,21 @@
 # The Orchid Blog
 
+## API credentials
+
+Create a file in the root directory named `.ghost.json`, this will store the credentials to fetch the sites content. The structure of the file should be as follows.
+```json
+{
+    "development": {
+        "apiUrl": "https://dev.example.orchid.com",
+        "contentApiKey": "abcdefg1234567890"
+    },
+    "production": {
+        "apiUrl": "https://example.orchid.com",
+        "contentApiKey": "abcdefg1234567890"
+    }
+}
+```
+
 ## Development server
 
 Install all of the dependencies using `yarn install`.
