@@ -1,0 +1,73 @@
+{
+  "name": "gatsby-starter-ghost",
+  "description": "A starter template to build lightning fast websites with Ghost and Gatsby",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Ghost Foundation",
+  "homepage": "https://docs.ghost.org/api/gatsby/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tryghost/gatsby-starter-ghost.git"
+  },
+  "engines": {
+    "node": ">= 8.9.0"
+  },
+  "bugs": {
+    "url": "https://github.com/tryghost/gatsby-starter-ghost/issues"
+  },
+  "keywords": [
+    "gatsby",
+    "ghost"
+  ],
+  "main": "n/a",
+  "scripts": {
+    "serve": "gatsby build && NODE_ENV=production gatsby serve",
+    "build": "gatsby build && node downloadImages.js",
+    "start": "npm run dev",
+    "dev": "gatsby develop",
+    "lint": "eslint . --ext .js --cache",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "eslint": "6.2.2",
+    "eslint-plugin-ghost": "0.5.0",
+    "eslint-plugin-react": "7.14.3"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.17",
+    "@emotion/styled": "^10.0.17",
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.5",
+    "@tryghost/helpers": "^1.1.9",
+    "@tryghost/helpers-gatsby": "^1.0.12",
+    "cheerio": "^1.0.0-rc.3",
+    "emotion": "^10.0.17",
+    "emotion-server": "^10.0.17",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "gatsby": "^2.15.9",
+    "gatsby-awesome-pagination": "^0.3.4",
+    "gatsby-image": "^2.2.17",
+    "gatsby-plugin-advanced-sitemap": "^1.4.1",
+    "gatsby-plugin-catch-links": "^2.1.8",
+    "gatsby-plugin-emotion": "^4.1.7",
+    "gatsby-plugin-feed": "^2.3.11",
+    "gatsby-plugin-force-trailing-slashes": "^1.0.4",
+    "gatsby-plugin-google-analytics": "^2.1.16",
+    "gatsby-plugin-manifest": "^2.2.14",
+    "gatsby-plugin-offline": "^3.0.3",
+    "gatsby-plugin-react-helmet": "^3.1.6",
+    "gatsby-plugin-sharp": "^2.2.20",
+    "gatsby-source-filesystem": "^2.1.21",
+    "gatsby-source-ghost": "^3.4.5",
+    "gatsby-transformer-sharp": "^2.2.13",
+    "lodash": "^4.17.15",
+    "net": "^1.0.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "request": "^2.88.0",
+    "tls": "^0.0.1"
+  }
+}
