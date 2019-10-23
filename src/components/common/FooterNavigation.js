@@ -15,7 +15,7 @@ const style = css`
     & > li > a {
         color: var(--link-color);
         position: relative;
-        @media (max-width: 800px) {
+        @media (max-width: 870px) {
             font-size: 14px;
             padding: 10px 0;
         }

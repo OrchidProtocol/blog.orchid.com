@@ -29,18 +29,18 @@ const Navigation = ({ data }) => (
                 margin: 0;
                 text-transform: uppercase;
                 line-height: 1.75;
-                
-                @media (max-width: 800px) {
+
+                @media (max-width: 870px) {
                     display: block;
                 }
-                
+
                 & > a {
                     padding: 0.5rem;
                     color: var(--link-color);
                     font-weight: var(--font-bold);
                     font-size: 16px;
                     position: relative;
-                    @media (max-width: 800px) {
+                    @media (max-width: 870px) {
                         font-size: 14px;
                         padding: 10px 0;
                     }
@@ -48,7 +48,7 @@ const Navigation = ({ data }) => (
                     &:hover {
                         text-decoration: none;
                     }
-                    
+
                     @media (min-width: 799px) {
                         &[href="/"]:after {
                             content: " ";

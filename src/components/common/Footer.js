@@ -14,7 +14,7 @@ const Footer = ({ site }) => {
         padding: 4rem;
         font-size: var(--font-size-small);
 
-        @media (max-width: 800px) {
+        @media (max-width: 870px) {
             flex-direction: column-reverse;
             padding: 1rem;
             & > div {
@@ -26,7 +26,7 @@ const Footer = ({ site }) => {
             <a href="https://www.orchid.com/">
                 <img src={'/images/orchid-logo-world.svg'} alt={site.title} css={css`
                     display: block;
-                    @media (max-width: 800px) {
+                    @media (max-width: 870px) {
                         max-width: 100px;
                     }
                 `} />
