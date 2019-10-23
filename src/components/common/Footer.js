@@ -1,16 +1,9 @@
 import React from 'react'
-import styled from '@emotion/styled'
 import { css } from '@emotion/core'
-import SocialIcons from './SocialIcons.js'
-import Navigation from './Navigation.js'
+import FooterNavigation from './FooterNavigation'
+import FooterSocialIcons from './FooterSocialIcons.js'
 
-const SocialIcon = styled.li`
-    list-style: none;
-    padding: 0;
-    margin: 0;
-`;
-
-const Footer = ({ children, site }) => {
+const Footer = ({ site }) => {
     return (<footer css={css`
         max-width: 63rem;
         box-sizing: border-box;
@@ -57,7 +50,7 @@ const Footer = ({ children, site }) => {
                 text-transform: none;
             }
         `}>
-            <Navigation data={site.navigation} />
+            <FooterNavigation />
         </div>
         <div css={css`
             li {
@@ -68,7 +61,7 @@ const Footer = ({ children, site }) => {
             <b css={css`
                 font-family: var(--font-family-heading);
             `}>Follow Us</b>
-            <SocialIcons />
+            <FooterSocialIcons />
         </div>
     </footer>)
 }

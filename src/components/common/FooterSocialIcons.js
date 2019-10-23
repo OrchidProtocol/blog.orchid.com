@@ -8,7 +8,7 @@ const SocialIcon = styled.li`
     margin: 0;
 `;
 
-const SocialIcons = ({ children }) => {
+const FooterSocialIcons = ({ children }) => {
     return (<ul css={css`
         padding: 0;
         margin: 0;
@@ -34,7 +34,12 @@ const SocialIcons = ({ children }) => {
                 <img width="30" height="30" src='/images/icons/social-github.svg' alt='Github' />
             </a>
         </SocialIcon>
+        <SocialIcon>
+            <a href="https://www.facebook.com/OrchidProtocol" target="_blank">
+                <img width="30" height="30" src='/images/icons/social-facebook.svg' alt='Facebook' />
+            </a>
+        </SocialIcon>
     </ul>)
 }
 
-export default SocialIcons
+export default FooterSocialIcons
