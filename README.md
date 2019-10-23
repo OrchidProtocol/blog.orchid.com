@@ -2,7 +2,8 @@
 
 ## API credentials
 
-Create a file in the root directory named `.ghost.json`, this will store the credentials to fetch the sites content. The structure of the file should be as follows.
+Create a file in the root directory named `.ghost.json`, this will store the credentials to fetch the site's content. The structure of the file should be as follows.
+
 ```json
 {
     "development": {
@@ -24,11 +25,10 @@ Run `npm run start` for a development server. Navigate to
 `http://localhost:8000/`. The app will automatically reload if you
 change any of the source files.
 
-> Watch out! If you run this the contents of the public directory will be overwritten, which are currently used to serve the site!
+> Watch out! If you run this the contents of the public directory will be overwritten, which are currently used to serve the site. Therefore, if you run this, you will need to rebuild the site by running `npm run build`.
 
 ## Build
 
 Run `npm run build` to build the project. The build artifacts will be stored in the `public/` directory. No need to specify a production build.
 
 To test that the build worked correctly, run `node server.js` and navigate to `http://localhost:8001`.
-
