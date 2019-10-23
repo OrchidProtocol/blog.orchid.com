@@ -40,7 +40,6 @@ body {
     --font-serif: "Noto Sans",sans-serif;
     --font-mono: Menlo, Courier, monospace;
     --font-family-heading: Baloo, /*Ubuntu,*/ sans-serif;
-    --font-family-heading: var(--font-serif);
     --font-light: 100;
     --font-normal: 400;
     --font-bold: 700;
