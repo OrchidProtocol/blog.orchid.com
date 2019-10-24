@@ -61,14 +61,16 @@ const style = css`
     }
 
     & > li.active-link > a::after {
-        content: " ";
-        position: absolute;
-        left: 0.5rem;
-        right: 0.5rem;
-        bottom: -3px;
-        height: 4px;
-        background: #5f45ba;
-        border-radius: 100vmax;
+        @media (min-width: 871px) {
+            content: " ";
+            position: absolute;
+            left: 0.5rem;
+            right: 0.5rem;
+            bottom: -3px;
+            height: 4px;
+            background: #5f45ba;
+            border-radius: 100vmax;
+        }
     }
 `;
 
