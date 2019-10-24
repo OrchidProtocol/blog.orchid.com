@@ -15,13 +15,13 @@ const SocialIcons = ({ children }) => {
         list-style: none;
     `}>
         <SocialIcon>
-            <a href="https://twitter.com/OrchidProtocol" target="_blank">
-                <img width="30" height="30" src='/images/icons/social-twitter.svg' alt='Twitter' />
+            <a href="https://medium.com/orchid-labs" target="_blank">
+                <img width="30" height="30" src='/images/icons/social-medium.svg' alt='Medium' />
             </a>
         </SocialIcon>
         <SocialIcon>
-            <a href="https://medium.com/orchid-labs" target="_blank">
-                <img width="30" height="30" src='/images/icons/social-medium.svg' alt='Medium' />
+            <a href="https://twitter.com/OrchidProtocol" target="_blank">
+                <img width="30" height="30" src='/images/icons/social-twitter.svg' alt='Twitter' />
             </a>
         </SocialIcon>
         <SocialIcon>
