@@ -13,6 +13,9 @@ const SocialIcons = ({ children }) => {
         padding: 0;
         margin: 0;
         list-style: none;
+        @media (max-width: 870px) {
+            display: none;
+        }
     `}>
         <SocialIcon>
             <a href="https://medium.com/orchid-labs" target="_blank">
