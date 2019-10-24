@@ -60,6 +60,12 @@ const style = css`
         }
     }
 
+    & > li:first-of-type {
+        @media (min-width: 871px) {
+            display: none;
+        }
+    }
+
     & > li.active-link > a::after {
         @media (min-width: 871px) {
             content: " ";
