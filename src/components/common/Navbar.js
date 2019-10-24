@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
-import styled from '@emotion/styled'
 import { css } from '@emotion/core'
-import { Link, StaticQuery, graphql } from 'gatsby'
 import NavbarNavigation from './NavbarNavigation.js'
 import SocialIcons from './SocialIcons.js';
 
@@ -21,7 +19,7 @@ function Navbar (props) {
             max-width: var(--max-container-width);
             margin: 0 auto;
             --link-color: #53696a;
-            @media (max-width: 800px) {
+            @media (max-width: 870px) {
                 padding: 1rem;
                 body.no-js & {
                     flex-wrap: wrap;
@@ -34,19 +32,19 @@ function Navbar (props) {
                     margin: -1rem;
                     padding: 1rem;
                     box-sizing: content-box;
-                    @media (max-width: 800px) {
+                    @media (max-width: 870px) {
                         width: 35px;
                         height: auto;
                     }
                 `} width="97" height="108" src={site.logo} alt={site.title} />
             </a>
-            
+
             <div css={css`
                 padding: 1rem;
                 margin: -1rem;
                 cursor: pointer;
-                
-                @media (min-width: 799px) {
+
+                @media (min-width: 871px) {
                     display: none;
                 }
                 body.no-js & {
@@ -60,7 +58,7 @@ function Navbar (props) {
 
             <div css={css`
                 text-align: right;
-                @media screen and (max-width: 800px) {
+                @media screen and (max-width: 870px) {
                     position: fixed;
                     body.no-js & {
                         position: static;
@@ -84,10 +82,10 @@ function Navbar (props) {
                         body.no-js & {
                             position: static;
                         }
-                        top 0;
+                        top: 0;
                         right: 0%;
                         ${active ? `transform: translate(0%, 0%);` : `transform: translate(100%, 0%);`}
-                        
+
                         body.no-js & {
                             transform: none;
                         }
@@ -120,7 +118,7 @@ function Navbar (props) {
                         width: 100%;
                         flex-flow: row-reverse nowrap;
 
-                        @media (min-width: 799px) {
+                        @media (min-width: 871px) {
                             display: none;
                         }
                         body.no-js & {
@@ -134,8 +132,8 @@ function Navbar (props) {
                     <NavbarNavigation data={site.navigation} />
                     <div css={css`
                         margin-left: 50px;
-                        
-                        @media (max-width: 800px) {
+
+                        @media (max-width: 870px) {
                             body.no-js & {
                                 width: 100%;
                                 margin: 0;
