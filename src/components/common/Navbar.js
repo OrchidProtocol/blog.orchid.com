@@ -44,7 +44,7 @@ function Navbar (props) {
                 margin: -1rem;
                 cursor: pointer;
 
-                @media (min-width: 799px) {
+                @media (min-width: 871px) {
                     display: none;
                 }
                 body.no-js & {
@@ -118,7 +118,7 @@ function Navbar (props) {
                         width: 100%;
                         flex-flow: row-reverse nowrap;
 
-                        @media (min-width: 799px) {
+                        @media (min-width: 871px) {
                             display: none;
                         }
                         body.no-js & {
