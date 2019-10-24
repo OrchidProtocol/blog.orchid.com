@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
-import styled from '@emotion/styled'
 import { css } from '@emotion/core'
-import { Link, StaticQuery, graphql } from 'gatsby'
 import NavbarNavigation from './NavbarNavigation.js'
 import SocialIcons from './SocialIcons.js';
 
@@ -84,7 +82,7 @@ function Navbar (props) {
                         body.no-js & {
                             position: static;
                         }
-                        top 0;
+                        top: 0;
                         right: 0%;
                         ${active ? `transform: translate(0%, 0%);` : `transform: translate(100%, 0%);`}
 
