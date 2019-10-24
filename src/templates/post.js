@@ -52,6 +52,7 @@ const Post = ({ data, location }) => {
                             `}>{post.title}</h1>
                             <span css={css`
                                 display: block;
+                                font-weight: bold;
                             `}>{getCustomFormatedDate(post.published_at)}</span>
 
                             <br />
@@ -94,7 +95,7 @@ const Post = ({ data, location }) => {
                                             color: var(--color-link);
                                         `} icon={faTwitter} />
                                     </a>
-                                    
+
                                     <a target="_blank"
                                         href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent("https://blog.orchid.com/"+post.slug+"/")} `}>
                                         <FontAwesomeIcon css={css`
@@ -103,7 +104,7 @@ const Post = ({ data, location }) => {
                                             color: var(--color-link);
                                         `} icon={faFacebookSquare} />
                                     </a>
-                                    
+
                                     <a target="_blank"
                                         href={`https://www.linkedin.com/shareArticle?url=${encodeURIComponent("https://blog.orchid.com/"+post.slug+"/")}`}>
                                         <FontAwesomeIcon css={css`
