@@ -36,10 +36,26 @@ const Post = ({ data, location }) => {
             <Layout>
                 <div className="container">
                     <article className="content">
-                        { /*post.feature_image ?
-                            <figure className="post-feature-image">
-                                <img src={ post.feature_image } alt={ post.title } />
-                            </figure> : null */}
+
+                        { (new Date(post.published_at) > new Date("Thu Oct 07 2019 12:22:21 GMT-0600 (Central Standard Time)")) ?
+                            <figure css={css`
+                                margin: 0;
+                                width: 100%;
+                                height: auto;
+                                -o-object-fit: contain;
+                                object-fit: contain;
+                                -o-object-position: center;
+                                object-position: center;
+                            `}>
+                                <img css={css`
+                                    max-width: 720px;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    margin-bottom: 1rem;
+                                    display: block;
+                                `} src={ post.feature_image } alt={ post.title } />
+                            </figure> : null }
+
                         <section css={css`
                             margin-top: 0;
                         `} className="post-full-content">
