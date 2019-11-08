@@ -36,26 +36,10 @@ const Post = ({ data, location }) => {
             <Layout>
                 <div className="container">
                     <article className="content">
-
-                        { (new Date(post.published_at) > new Date("Thu Oct 07 2019 12:22:21 GMT-0600 (Central Standard Time)")) ?
-                            <figure css={css`
-                                margin: 0;
-                                width: 100%;
-                                height: auto;
-                                -o-object-fit: contain;
-                                object-fit: contain;
-                                -o-object-position: center;
-                                object-position: center;
-                            `}>
-                                <img css={css`
-                                    max-width: 720px;
-                                    margin-left: auto;
-                                    margin-right: auto;
-                                    margin-bottom: 1rem;
-                                    display: block;
-                                `} src={ post.feature_image } alt={ post.title } />
-                            </figure> : null }
-
+                        { /*post.feature_image ?
+                            <figure className="post-feature-image">
+                                <img src={ post.feature_image } alt={ post.title } />
+                            </figure> : null */}
                         <section css={css`
                             margin-top: 0;
                         `} className="post-full-content">
@@ -68,6 +52,7 @@ const Post = ({ data, location }) => {
                             `}>{post.title}</h1>
                             <span css={css`
                                 display: block;
+                                font-weight: bold;
                             `}>{getCustomFormatedDate(post.published_at)}</span>
 
                             <br />
@@ -110,7 +95,7 @@ const Post = ({ data, location }) => {
                                             color: var(--color-link);
                                         `} icon={faTwitter} />
                                     </a>
-                                    
+
                                     <a target="_blank"
                                         href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent("https://blog.orchid.com/"+post.slug+"/")} `}>
                                         <FontAwesomeIcon css={css`
@@ -119,7 +104,7 @@ const Post = ({ data, location }) => {
                                             color: var(--color-link);
                                         `} icon={faFacebookSquare} />
                                     </a>
-                                    
+
                                     <a target="_blank"
                                         href={`https://www.linkedin.com/shareArticle?url=${encodeURIComponent("https://blog.orchid.com/"+post.slug+"/")}`}>
                                         <FontAwesomeIcon css={css`

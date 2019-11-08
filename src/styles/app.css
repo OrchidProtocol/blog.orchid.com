@@ -40,7 +40,6 @@ body {
     --font-serif: "Noto Sans",sans-serif;
     --font-mono: Menlo, Courier, monospace;
     --font-family-heading: Baloo, /*Ubuntu,*/ sans-serif;
-    --font-family-heading: var(--font-serif);
     --font-light: 100;
     --font-normal: 400;
     --font-bold: 700;
@@ -56,7 +55,7 @@ body {
     --margin-2: calc(var(--margin) * 2);
     --radius: 0.6rem;
     --max-container-width: 1440px;
-    --mobile-breakpoint: 800px;
+    --mobile-breakpoint: 870px;
     --social-icon-size: 1.25rem;
 
     font-size: 18px;
@@ -862,7 +861,7 @@ h6 {
 .post-avatar {
     width: 62px;
     border-radius: 100%;
-    margin-right: 0.5em;
+    margin-right: 1em;
 }
 .post-written-by {
     width: 100%;
@@ -879,13 +878,14 @@ h6 {
     margin: 1em 0 0 0;
     padding-top: 1em;
     color: var(--color-secondary);
+    line-height: 1.3em;
 }
 
 .post-footer-left {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     flex-wrap: wrap;
 }
 
