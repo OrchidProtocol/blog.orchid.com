@@ -49,6 +49,8 @@ const Post = ({ data, location }) => {
                             `}>
                                 <img css={css`
                                     max-width: 720px;
+                                    width: 100%;
+                                    height: auto;
                                     margin-left: auto;
                                     margin-right: auto;
                                     margin-bottom: 1rem;
