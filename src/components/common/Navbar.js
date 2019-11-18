@@ -1,42 +1,63 @@
 import React, { useState } from 'react'
 import { css } from '@emotion/core'
+import styled from '@emotion/styled'
 import NavbarNavigation from './NavbarNavigation.js'
 import SocialIcons from './SocialIcons.js';
 
-function Navbar (props) {
+const Container = styled.div`
+    background-color: var(--color-bg);
+`;
+
+const Header = styled.header`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: var(--max-container-width);
+    margin: 0 auto;
+    --link-color: #53696a;
+    @media (max-width: 870px) {
+        padding: 1rem;
+        body.no-js & {
+            flex-wrap: wrap;
+        }
+    }
+`;
+
+function Navbar(props) {
     const site = props.site;
 
     const [active, setActive] = useState(false);
 
-    return <div css={css`
-        background-color: var(--color-bg);
-    `} data-active={active}>
+    return <Container data-active={active}>
         {/* The main header section on top of the screen */}
-        <header css={css`
-            display: flex;
-            justify-content: space-between;
-            padding: 1rem 2rem;
-            max-width: var(--max-container-width);
-            margin: 0 auto;
-            --link-color: #53696a;
-            @media (max-width: 870px) {
-                padding: 1rem;
-                body.no-js & {
-                    flex-wrap: wrap;
+        <Header>
+            <a href="https://www.orchid.com/" css={css`
+                @media (max-width: 870px) {
+                    display: none;
                 }
-            }
-        `}>
-            <a href="https://www.orchid.com/">
+            `}>
                 <img css={css`
                     max-width: 100%;
                     margin: -1rem;
                     padding: 1rem;
                     box-sizing: content-box;
-                    @media (max-width: 870px) {
+                `} width="93" height="24" src="/images/orchid-logo-text.svg" alt={site.title} />
+            </a>
+
+            <a href="https://www.orchid.com/" css={css`
+                @media (min-width: 870px) {
+                    display: none;
+                }
+            `}>
+                <img css={css`
+                        max-width: 100%;
+                        margin: -1rem;
+                        padding: 1rem;
+                        box-sizing: content-box;
                         width: 35px;
                         height: auto;
-                    }
-                `} width="97" height="108" src={site.logo} alt={site.title} />
+                    `} width="35" height="30" src="/images/orchid-logo-small.svg" alt={site.title} />
             </a>
 
             <div css={css`
@@ -50,9 +71,9 @@ function Navbar (props) {
                 body.no-js & {
                     display: none;
                 }
-            `} onClick={()=>{
-                setActive(!active);
-            }}>
+            `} onClick={() => {
+                    setActive(!active);
+                }}>
                 <img src={'/images/icons/hamburger.svg'} alt='Open Menu' />
             </div>
 
@@ -124,12 +145,33 @@ function Navbar (props) {
                         body.no-js & {
                             display: none;
                         }
-                    `} onClick={()=>{
-                        setActive(!active);
-                    }}>
+                    `} onClick={() => {
+                            setActive(!active);
+                        }}>
                         <img src={'/images/icons/close.svg'} alt='Close Menu' />
                     </div>
-                    <NavbarNavigation data={site.navigation} />
+                    <NavbarNavigation data={[
+                        {
+                            url: 'https://www.orchid.com/',
+                            label: 'Home'
+                        },
+                        {
+                            url: 'https://www.orchid.com/how-it-works',
+                            label: 'How It Works'
+                        },
+                        {
+                            url: 'https://www.orchid.com/about-us',
+                            label: 'About'
+                        },
+                        {
+                            url: '/',
+                            label: 'Blog'
+                        },
+                        {
+                            url: 'https://www.orchid.com/contact',
+                            label: 'Contact'
+                        }
+                    ]} />
                     <div css={css`
                         margin-left: 50px;
 
@@ -150,8 +192,8 @@ function Navbar (props) {
                     </div>
                 </div>
             </div>
-        </header>
-    </div>
+        </Header>
+    </Container>
 }
 
 export default Navbar;
