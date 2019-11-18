@@ -33,7 +33,7 @@ function Navbar(props) {
         {/* The main header section on top of the screen */}
         <Header>
             <a href="https://www.orchid.com/" css={css`
-                @media (max-width: 870px) {
+                @media (max-width: 871px) {
                     display: none;
                 }
             `}>
