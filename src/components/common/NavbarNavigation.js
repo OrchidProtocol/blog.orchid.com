@@ -80,25 +80,32 @@ const style = css`
     }
 `;
 
-const Navigation = ({ data }) => (
-    <ul css={style}>
-        {data.map((navItem, i) => {
-            const className =
-                navItem.url === "https://blog.orchid.com/" ? "active-link" : "";
-            return (
-                <li key={i} className={className}>
-                    {navItem.url.match(/^\s?http(s?)/gi) ? (
-                        <a href={navItem.url} rel="noopener noreferrer">
-                            {navItem.label}
-                        </a>
-                    ) : (
+const Navigation = ({ data }) => {
+    let i = 0;
+    const items = [];
+
+    for (let i = 0; i < data.length; i++) {
+        const navItem = data[i];
+
+        const className =
+            navItem.url === "https://blog.orchid.com/" ? "active-link" : "";
+        items.push(
+            <li key={i} className={className}>
+                {navItem.url.match(/^\s?http(s?)/gi) ? (
+                    <a href={navItem.url} rel="noopener noreferrer">
+                        {navItem.label}
+                    </a>
+                ) : (
                         <Link to={navItem.url}>{navItem.label}</Link>
                     )}
-                </li>
-            );
-        })}
+            </li>
+        );
+    }
+
+    return <ul css={style}>
+        {items}
     </ul>
-);
+};
 
 Navigation.defaultProps = {
     data: []
