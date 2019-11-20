@@ -6,14 +6,7 @@ import styled from '@emotion/styled'
 import { css } from '@emotion/core'
 
 const Tag = styled.span`
-    display: inline-block;
-    background-color: var(--color-bg);
-    font-size: var(--font-size-small);
-    padding: 5px 10px;
-    margin: 5px 8px 5px 0;
-    border-radius: 2px;
-    text-decoration: none;
-    &:hover {text-decoration: none;}
+    
 `;
 
 /**
@@ -32,19 +25,53 @@ const Navigation = ({ post, linkTags }) => {
         for(let i = 0; i < Math.min(3, post.tags.length); i++) {
             if (post.tags[i].slug !== 'homepage') {
                 if(linkTags)
-                    items.push(<Link key={i} to={`/tag/${post.tags[i].slug}`} css={css`
-                            &:hover {
-                                text-decoration: none;
-                            }
-                        `}>
-                        <Tag>{post.tags[i].name}</Tag>
-                    </Link >)
+                    items.push(
+                        <li key={i}>
+                            <Link to={`/tag/${post.tags[i].slug}`} css={css`
+                                    &:hover {
+                                        text-decoration: none;
+                                    }
+                                `}>
+                                <Tag>{post.tags[i].name}</Tag>
+                            </Link>
+                        </li>
+                    )
                 else 
                     items.push(<Tag key={i}>{/*(i !== 0) ? ', ' : ''*/}{post.tags[i].name}</Tag>)
             }
         }
     }
-    return (<span className="tags-container">{items}</span>);
+    return (<ul css={css`
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-weight: var(--font-bold);
+        color: var(--color-primary);
+
+        font-style: italic;
+
+        a {
+            color: var(--color-primary);
+        }
+
+        & > li {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+
+            &:before {
+                display: inline-block;
+                content: '/';
+                margin: 0 5px;
+            }
+
+            &:nth-child(1):before {
+                display: none;
+            }
+        }
+    `}>
+        {items}
+    </ul>);
 }
 
 Navigation.defaultProps = {

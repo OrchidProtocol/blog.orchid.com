@@ -800,14 +800,6 @@ h6 {
     text-decoration: none;
 }
 
-.post-card-tags, .tags-container {
-    margin: 0 0 5px 0;
-    font-size: 16px;
-    line-height: 1.15em;
-    color: var(--color-secondary);
-}
-
-
 .post-card-title {
     margin: 0 0 10px 0;
     padding: 0;
