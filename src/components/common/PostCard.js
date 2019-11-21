@@ -21,19 +21,14 @@ const FeaturedIndicator = <div css={css`
     Featured
 </div>
 
-
+//<Link to={url}>
 
 const PostCard = ({ post, number }) => {
     const url = `/${post.slug}/`
     const readingTime = readingTimeHelper(post)
 
     return (
-        <Link to={url} css={css`
-            color: var(--color-link);
-            &:hover {
-                color: var(--color-link-hover);
-                text-decoration: none;
-            }
+        <div to={url} css={css`
             padding-bottom: var(--margin);
             margin-bottom: var(--margin);
             display: block;
@@ -42,40 +37,50 @@ const PostCard = ({ post, number }) => {
                 display: block;
             `}>
                 {post.feature_image &&
-                    <div css={css`
+                    <Link to={url}><div css={css`
                         padding: 30% 50%;
                         background: var(--color-secondary) no-repeat center center;
                         box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
                         border-radius: 20px;
                         background-image: url(${post.feature_image});
                         background-size: cover;
-                    `}></div>}
+                    `}></div></Link>}
             </header>
             <div className="everything-but-image">
                 <div css={css`
                     font-weight: var(--font-bold);
                     margin: var(--margin-half) 0;
                 `}>
-                    {post.featured && FeaturedIndicator}
                     {getCustomFormatedDate(post.published_at)}
                 </div>
 
                 <Tags post={post} linkTags={true}/>
 
-                <h2 css={css`
-                    margin: var(--margin-half) 0;
-                `}>{post.title}</h2>
-                <section className="post-card-excerpt">{post.excerpt}</section>
+                <div css={css`
+                        margin: var(--margin-half) 0;
+                        display: flex;
+                        align-items: center;
+                    `}>
+                        <Link to={url}>
+                            {post.featured && FeaturedIndicator}
+                            <h2 css={css`
+                                display: inline-block;
+                                vertical-align: middle;
+                            `}>{post.title}</h2>
+                        </Link>
+                </div>
+
+                <section className="post-card-excerpt"><Link to={url} css={css`&:hover{text-decoration:none;}`}>{post.excerpt}</Link></section>
                 
                 <div css={css`
                     text-align: right;
                     color: var(--color-primary);
                     font-weight: var(--font-bold);
                 `}>
-                    Read More
+                   <Link to={url}>Read More</Link>
                 </div>
             </div>
-        </Link>
+        </div>
     )
 }
 
