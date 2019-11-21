@@ -40,7 +40,6 @@ const SidebarCardSeperator = styled.div`
 `;
 
 const Index = ({ data, location, pageContext }) => {
-    console.log(data);
     const posts = data.allGhostPost.edges
     const featured = data.featuredPosts.edges
     const tags = data.allGhostTag.edges
@@ -54,7 +53,6 @@ const Index = ({ data, location, pageContext }) => {
 
     const featuredElements = [];
     for (let index = 0; index < featured.length; index++) {
-        console.log(featured[index].node);
         featuredElements.push(<Link css={css`
             display: block;
             margin-top: 2rem;
