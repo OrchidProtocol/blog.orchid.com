@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import { css } from '@emotion/core'
 
 import { Layout, PostCard, Pagination } from '../components/common'
+import Splash from '../components/common/Splash'
 import { MetaData } from '../components/common/meta'
 
 /**
@@ -23,7 +24,11 @@ const Index = ({ data, location, pageContext }) => {
         <>
             <MetaData location={location} />
             <Layout isHome={true}>
-                <div className="container">
+                <Splash />
+                <div className="container" css={css`
+                    position: relative;
+                    z-index: 2;
+                `}>
                     <section css={css`
                         max-width: 600px;
                         margin-left: auto;

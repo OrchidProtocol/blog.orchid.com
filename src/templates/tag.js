@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import { css } from '@emotion/core'
 
 import { Layout, PostCard, Pagination } from '../components/common'
+import Splash from '../components/common/Splash'
 import { MetaData } from '../components/common/meta'
 
 /**
@@ -23,10 +25,14 @@ const Tag = ({ data, location, pageContext }) => {
                 type="series"
             />
             <Layout>
-                <div className="container">
+                <Splash />
+                <div className="container" css={css`
+                    position: relative;
+                    z-index: 2;
+                `}>
                     <header className="tag-header">
                         <h1>{tag.name}</h1>
-                        {tag.description ? <p>{tag.description}</p> : null }
+                        {tag.description ? <p>{tag.description}</p> : null}
                     </header>
                     <section className="post-feed">
                         {posts.map(({ node }) => (

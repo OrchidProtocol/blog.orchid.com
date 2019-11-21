@@ -8,6 +8,7 @@ import Tags from '../components/common/Tags'
 
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
+import Splash from '../components/common/Splash'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin, faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
@@ -34,7 +35,11 @@ const Post = ({ data, location }) => {
                 <style type="text/css">{`${post.codeinjection_styles}`}</style>
             </Helmet>
             <Layout>
-                <div className="container">
+                <Splash />
+                <div className="container" css={css`
+                    position: relative;
+                    z-index: 2;
+                `}>
                     <article className="content">
 
                         { (new Date(post.published_at) > new Date("Thu Oct 07 2019 12:22:21 GMT-0600 (Central Standard Time)")) ?
@@ -55,6 +60,9 @@ const Post = ({ data, location }) => {
                                     margin-right: auto;
                                     margin-bottom: 1rem;
                                     display: block;
+
+                                    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
+                                    border-radius: 20px;
                                 `} src={ post.feature_image } alt={ post.title } />
                             </figure> : null }
 
@@ -133,18 +141,6 @@ const Post = ({ data, location }) => {
                                 </div>
                             </div>
                         </section>
-
-                        <footer className="post-footer">
-                            <div className="post-footer-left">
-                                <div className="post-avatar">
-                                    {post.primary_author.profile_image ?
-                                        <img className="author-profile-image" src={post.primary_author.profile_image} alt={post.primary_author.name}/> :
-                                        <img className="default-avatar" src="/images/icons/avatar.svg" alt={post.primary_author.name}/>
-                                    }
-                                </div>
-                                <span><small>Written by</small> <br/>{ post.primary_author.name }</span>
-                            </div>
-                        </footer>
 
                     </article>
                 </div>

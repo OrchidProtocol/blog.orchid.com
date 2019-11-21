@@ -49,7 +49,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 
             <main css={css`
                 font-size: 16px;
-                padding: 4rem;
+                padding: 0 4rem 4rem 4rem;
                 @media (max-width: 870px) {
                     padding: 1rem;
                 }
