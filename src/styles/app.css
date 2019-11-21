@@ -420,8 +420,23 @@ dd {
 
 blockquote {
     margin: 0.3em 0 1.8em;
-    padding: 0 1.6em 0 1.6em;
-    border-left: #cbeafb 0.5em solid;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px 1px;
+    border-radius: 8px;
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    position: relative;
+}
+blockquote:after {
+    position: absolute;
+    content: ' ';
+    display: block;
+    top: 10px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    background-image: url(/images/quote.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 blockquote p {
@@ -799,14 +814,6 @@ h6 {
 .post-card:hover {
     text-decoration: none;
 }
-
-.post-card-tags, .tags-container {
-    margin: 0 0 5px 0;
-    font-size: 16px;
-    line-height: 1.15em;
-    color: var(--color-secondary);
-}
-
 
 .post-card-title {
     margin: 0 0 10px 0;

@@ -6,18 +6,17 @@ const SocialIcon = styled.li`
     list-style: none;
     padding: 0;
     margin: 0;
+    a {
+        display: block;
+    }
+    @media (min-width: 871px) {
+        min-height: 57px;
+    }
 `;
 
 const SocialIcons = ({ children }) => {
-    return (<ul css={css`
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        @media (max-width: 870px) {
-            display: none;
-        }
-    `}>
-        <SocialIcon>
+    return (<>
+        <SocialIcon className="social-button first">
             <a href="https://medium.com/orchid-labs" target="_blank">
                 <img width="30" height="30" src='/images/icons/social-medium.svg' alt='Medium' />
             </a>
@@ -29,7 +28,7 @@ const SocialIcons = ({ children }) => {
         </SocialIcon>
         <SocialIcon>
             <a href="https://www.t.me/OrchidOfficial" target="_blank">
-                <img width="30" height="30" src='/images/icons/social-telegram.svg' alt='Telegram' />
+                <img width="32" height="32" src='/images/icons/social-telegram.svg' alt='Telegram' />
             </a>
         </SocialIcon>
         <SocialIcon>
@@ -37,7 +36,7 @@ const SocialIcons = ({ children }) => {
                 <img width="30" height="30" src='/images/icons/social-github.svg' alt='Github' />
             </a>
         </SocialIcon>
-    </ul>)
+    </>)
 }
 
 export default SocialIcons
