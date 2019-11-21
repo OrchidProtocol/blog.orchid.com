@@ -36,7 +36,7 @@ const Post = ({ data, location }) => {
             <Layout>
                 <div className="container" css={css`
                     position: relative;
-                    z-index: 2;
+                    z-index: 1;
                 `}>
                     <article className="content">
 
