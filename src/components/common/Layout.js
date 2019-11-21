@@ -7,6 +7,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import config from '../../utils/siteConfig'
 import Navbar from './Navbar.js'
 import Footer from './Footer.js'
+import Splash from './Splash.js'
 
 
 // Styles
@@ -46,6 +47,8 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             }}></script>
 
             <Navbar site={site} />
+
+            <Splash />
 
             <main css={css`
                 font-size: 16px;

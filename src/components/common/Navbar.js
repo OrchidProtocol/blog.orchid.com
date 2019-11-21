@@ -22,6 +22,9 @@ const Header = styled.header`
             flex-wrap: wrap;
         }
     }
+    @media (min-width: 871px) {
+        min-height: 100px;
+    }
 `;
 
 function Navbar(props) {
@@ -42,6 +45,7 @@ function Navbar(props) {
                     margin: -1rem;
                     padding: 1rem;
                     box-sizing: content-box;
+                    display: block;
                 `} width="93" height="24" src="/images/orchid-logo-text.svg" alt={site.title} />
             </a>
 
@@ -171,25 +175,9 @@ function Navbar(props) {
                             url: 'https://www.orchid.com/contact',
                             label: 'Contact'
                         }
-                    ]} />
-                    <div css={css`
-                        margin-left: 50px;
-
-                        @media (max-width: 870px) {
-                            body.no-js & {
-                                width: 100%;
-                                margin: 0;
-                                display: none;
-                            }
-                        }
-                        li {
-                            display: inline-block;
-                            padding: .5rem;
-                            filter: saturate(0);
-                        }
-                    `}>
+                    ]}>
                         <SocialIcons />
-                    </div>
+                    </NavbarNavigation>
                 </div>
             </div>
         </Header>

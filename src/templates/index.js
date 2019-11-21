@@ -5,7 +5,6 @@ import { css } from '@emotion/core'
 import styled from '@emotion/styled'
 
 import { Layout, PostCard, Pagination } from '../components/common'
-import Splash from '../components/common/Splash'
 import { MetaData } from '../components/common/meta'
 import getCustomFormatedDate from '../utils/date';
 
@@ -88,7 +87,6 @@ const Index = ({ data, location, pageContext }) => {
         <>
             <MetaData location={location} />
             <Layout isHome={true}>
-                <Splash />
                 <div className="container" css={css`
                     position: relative;
                     z-index: 2;

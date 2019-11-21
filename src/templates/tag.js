@@ -4,7 +4,6 @@ import { graphql } from 'gatsby'
 import { css } from '@emotion/core'
 
 import { Layout, PostCard, Pagination } from '../components/common'
-import Splash from '../components/common/Splash'
 import { MetaData } from '../components/common/meta'
 
 /**
@@ -25,7 +24,6 @@ const Tag = ({ data, location, pageContext }) => {
                 type="series"
             />
             <Layout>
-                <Splash />
                 <div className="container" css={css`
                     position: relative;
                     z-index: 2;

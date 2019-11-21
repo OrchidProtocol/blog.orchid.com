@@ -8,7 +8,6 @@ import Tags from '../components/common/Tags'
 
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
-import Splash from '../components/common/Splash'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin, faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
@@ -35,7 +34,6 @@ const Post = ({ data, location }) => {
                 <style type="text/css">{`${post.codeinjection_styles}`}</style>
             </Helmet>
             <Layout>
-                <Splash />
                 <div className="container" css={css`
                     position: relative;
                     z-index: 2;

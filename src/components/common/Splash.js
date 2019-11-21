@@ -6,19 +6,20 @@ import { css } from '@emotion/core'
 const Splash = (props) => {
 
     return (<div className="splash-circuit" css={css`
-    padding-top: 2rem;
-    display: flex;
-    @media (min-width: 871px) {
-        flex-direction: column;
-    }
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column-reverse;
+        @media (min-width: 871px) {
+            flex-direction: column;
+        }
     `}>
         <div className="splash-circuit-image" css={css`
             max-width: 63rem;
-            margin: auto;
             box-sizing: border-box;
             
             width: 100%;
             position: relative;
+            margin: auto;
 
             &:before {
                 pointer-events: none;
@@ -69,6 +70,8 @@ const Splash = (props) => {
                 }
             `}>
                 <h1 css={css`
+                    color: var(--color-primary);
+                    font-size: 32px;
                     @media (min-width: 871px) {
                         font-size: 60px;
                     }
