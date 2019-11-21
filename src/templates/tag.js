@@ -26,7 +26,7 @@ const Tag = ({ data, location, pageContext }) => {
             <Layout>
                 <div className="container" css={css`
                     position: relative;
-                    z-index: 2;
+                    z-index: 1;
                 `}>
                     <header className="tag-header">
                         <h1>{tag.name}</h1>

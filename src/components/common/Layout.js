@@ -56,6 +56,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 @media (max-width: 870px) {
                     padding: 1rem;
                 }
+                overflow-x: hidden;
             `}>
                 {/* All the main content gets inserted here, index.js, post.js */}
                 {children}

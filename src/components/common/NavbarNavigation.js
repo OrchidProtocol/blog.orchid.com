@@ -20,8 +20,13 @@ const style = css`
     padding: 0;
     
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media (min-width: 871px) {
+        flex-direction: row;
+        align-items: center;
+    }
 
     img {
         display: inline;
@@ -36,6 +41,7 @@ const style = css`
         line-height: 1.75;
 
         @media (max-width: 870px) {
+            padding-top: 10px;
             display: block;
         }
 

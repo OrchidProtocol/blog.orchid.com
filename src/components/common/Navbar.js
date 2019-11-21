@@ -6,8 +6,6 @@ import SocialIcons from './SocialIcons.js';
 
 const Container = styled.div`
     background-color: var(--color-bg);
-    position: relative;
-    z-index: 2;
 `;
 
 const Header = styled.header`
@@ -106,21 +104,21 @@ function Navbar(props) {
                         display: flex;
                         flex-direction: column;
                         position: fixed;
-                        body.no-js & {
-                            position: static;
-                        }
-                        top: 0;
-                        right: 0%;
-                        ${active ? `transform: translate(0%, 0%);` : `transform: translate(100%, 0%);`}
+                        ${active ? `transform: translateX(0%);` : `transform: translateX(100%);`}
 
                         body.no-js & {
+                            position: static;
                             transform: none;
                         }
-                        transition-duration: .4s;
-                        transition-timing-function: cubic-bezier(.25,.5,.5,1);
-                        bottom: 0;
+
                         background-color: var(--color-bg);
                         box-shadow: -4px 0 8px rgba(0,0,0,.1), 0 0 4px rgba(0,0,0,.05);
+
+                        transition-duration: .4s;
+                        transition-timing-function: cubic-bezier(.25,.5,.5,1);
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
                         padding: 1rem;
                         width: 10rem;
                         box-sizing: content-box;
@@ -138,6 +136,15 @@ function Navbar(props) {
                     display: flex;
                     li a {
                         font-size: var(--font-size-small);
+                    }
+                    @media (max-width: 870px) {
+                        li {
+                            padding-top: 10px;
+                            line-height: 1.75;
+                        }
+                        .social-button {
+                            display: none;
+                        }
                     }
                 `}>
                     <div css={css`

@@ -87,7 +87,7 @@ const Index = ({ data, location, pageContext }) => {
             <Layout isHome={true}>
                 <div className="container" css={css`
                     position: relative;
-                    z-index: 2;
+                    z-index: 1;
                 `}>
                     <div css={css`
                         display: grid;
