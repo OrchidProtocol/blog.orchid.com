@@ -64,7 +64,7 @@ const PostCard = ({ post, number }) => {
                         <Link to={url}>
                             {post.featured && FeaturedIndicator}
                             <h2 css={css`
-                                display: inline-block;
+                                display: inline;
                                 vertical-align: middle;
                             `}>{post.title}</h2>
                         </Link>
