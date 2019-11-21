@@ -6,6 +6,8 @@ import SocialIcons from './SocialIcons.js';
 
 const Container = styled.div`
     background-color: var(--color-bg);
+    position: relative;
+    z-index: 2;
 `;
 
 const Header = styled.header`
