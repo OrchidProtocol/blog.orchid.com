@@ -62,7 +62,9 @@ const Splash = (props) => {
             <div className="splash-circuit-grid-item" css={css`
                 padding-left: 2rem;
                 padding-right: 2rem;
-
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+                
                 @media (min-width: 871px) {
                     padding-top: 4rem;
                     width: 60%;
@@ -75,6 +77,7 @@ const Splash = (props) => {
                     @media (min-width: 871px) {
                         font-size: 60px;
                     }
+
                 `}>Blog</h1>
                 { (props.subtitle || props.description) && <div className="splash-circuit-grid-text" css={css`
                     @media (min-width: 871px) {
