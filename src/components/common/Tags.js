@@ -65,7 +65,7 @@ const Navigation = ({ post, linkTags }) => {
                 margin: 0 5px;
             }
 
-            &:nth-child(1):before {
+            &:nth-of-type(1):before {
                 display: none;
             }
         }
