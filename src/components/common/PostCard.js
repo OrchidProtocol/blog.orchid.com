@@ -26,7 +26,6 @@ const FeaturedIndicator = <div css={css`
 const PostCard = ({ post, number }) => {
     const url = `/${post.slug}/`
     const readingTime = readingTimeHelper(post)
-    console.log(post.featured);
 
     return (
         <Link to={url} css={css`
