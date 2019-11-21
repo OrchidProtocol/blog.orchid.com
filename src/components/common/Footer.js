@@ -16,6 +16,9 @@ const Footer = ({ site }) => {
         -webkit-box-pack: center;
         justify-content: center;
 
+        position: relative;
+        z-index: 2;
+
         @media (max-width: 870px) {
             flex-direction: column-reverse;
             padding: 1rem;

@@ -61,10 +61,57 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             <div css={css`
                 background-color: var(--color-bg);
                 width: 100%;
+                position: relative;
+                overflow: hidden;
             `}>
+                <div css={css`
+                    max-width: 63rem;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    margin: auto;
+                    overflow: visible;
+                    @media (min-width: 871px) {
+                        left: calc(50% - 31.5rem);
+                    }
+                `}>
+                    <img css={css`
+                        bottom: 0;
+                        left: -4rem;
+                        height: 14.25rem;
+                        width: auto;
+                        position: absolute;
+                        @media (max-width: 870px) {
+                            display: none;
+                        }
+                    `} src="/images/coral-electric.svg" />
+                    <img css={css`
+                        bottom: 0;
+                        left: 2rem;
+                        position: absolute;
+                        @media (max-width: 870px) {
+                            display: none;
+                        }
+                    `} src="/images/coral-real.svg" />
+                    <img css={css`
+                        right: 5rem;
+                        bottom: 0;
+                        max-width: 4rem;
+                        position: absolute;
+                        @media (min-width: 871px) {
+                            display: none;
+                        }
+                    `} src="/images/coral-real-mobile.svg" />
+                    <img css={css`
+                        position: absolute;
+                        right: 0;
+                        top: 3rem;
+                    `} src="/images/footer-fish.svg" />
+                </div>
                 {/* The footer at the very bottom of the screen */}
                 <Footer site={site} />
-
             </div>
         </div>
 
