@@ -110,6 +110,12 @@ const Index = ({ data, location, pageContext }) => {
                         </section>
                         <Sidebar>
                             <SidebarCard>
+                                <SidebarCardHeader>Featured Posts</SidebarCardHeader>
+                                <SidebarCardSeperator />
+                                {featuredElements}
+                            </SidebarCard>
+
+                            <SidebarCard>
                                 <SidebarCardHeader>Categories</SidebarCardHeader>
                                 <SidebarCardSeperator />
                                 <div css={css`
@@ -121,12 +127,6 @@ const Index = ({ data, location, pageContext }) => {
                                 `}>
                                     {tagElements}
                                 </div>
-                            </SidebarCard>
-                            
-                            <SidebarCard>
-                                <SidebarCardHeader>Featured Posts</SidebarCardHeader>
-                                <SidebarCardSeperator />
-                                {featuredElements}
                             </SidebarCard>
                         </Sidebar>
 
