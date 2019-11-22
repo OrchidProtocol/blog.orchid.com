@@ -9,7 +9,9 @@ const Splash = (props) => {
         padding-top: 2rem;
         display: flex;
         flex-direction: column-reverse;
-        overflow: hidden;
+        @media (max-width: 870px) {
+            overflow: hidden;
+        }
         @media (min-width: 871px) {
             flex-direction: column;
         }
