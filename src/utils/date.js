@@ -7,7 +7,7 @@ function currentYear () {
 function getCustomFormatedDate (timestamp) {
     const date = new Date(timestamp);
     const month = months[date.getMonth()],
-        day = date.getDate()+1,
+        day = date.getDate(),
         year = date.getFullYear();
 
         return `${month} ${day}, ${year}`;
