@@ -29,7 +29,7 @@ const Splash = (props) => {
                 content: "";
                 display: block;
                 position: absolute;
-                bottom: 50px;
+                bottom: 0;
                 left: 0;
                 max-width: 100%;
                 width: 100%;
@@ -65,11 +65,12 @@ const Splash = (props) => {
             <div className="splash-circuit-grid-item" css={css`
                 padding-left: 2rem;
                 padding-right: 2rem;
-                padding-top: 3rem;
-                padding-bottom: 3rem;
+                padding-top: 1rem;
+                padding-bottom: 0rem;
                 
                 @media (min-width: 871px) {
                     padding-top: 4rem;
+                    padding-bottom: 3rem;
                     width: 60%;
                     max-width: 600px;
                 }
