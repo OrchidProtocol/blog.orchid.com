@@ -8,11 +8,16 @@ const Footer = ({ site }) => {
         max-width: 63rem;
         box-sizing: border-box;
         margin: auto;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
         padding: 4rem;
         font-size: var(--font-size-small);
+
+        display: flex;
+        flex-flow: row nowrap;
+        -webkit-box-pack: center;
+        justify-content: center;
+
+        position: relative;
+        z-index: 2;
 
         @media (max-width: 870px) {
             flex-direction: column-reverse;
@@ -22,7 +27,9 @@ const Footer = ({ site }) => {
             }
         }
     `}>
-        <div>
+        <div css={css`
+            flex: 0 0 auto;
+        `}>
             <a href="https://www.orchid.com/">
                 <img src={'/images/orchid-logo-world.svg'} alt={site.title} css={css`
                     display: block;
@@ -42,7 +49,18 @@ const Footer = ({ site }) => {
                 <a href="https://www.orchid.com/privacy-policy">Privacy Policy</a> | <a href="https://www.orchid.com/service-terms">Terms of Service</a>
             </p>
         </div>
+
         <div css={css`
+            flex: 1 15rem;
+            @media (max-width: 870px) {
+                display: none;
+            }
+        `}></div>
+
+        <div css={css`
+            flex: 0 0 auto;
+            display: flex;
+            flex-wrap: wrap;
             li a {
                 font-family: var(--font-sans-serif);
                 font-size: var(--font-size-small);
@@ -52,7 +70,16 @@ const Footer = ({ site }) => {
         `}>
             <FooterNavigation />
         </div>
+        
         <div css={css`
+            flex: 1 25rem;
+            @media (max-width: 870px) {
+                display: none;
+            }
+        `}></div>
+
+        <div css={css`
+            flex: 0 0 auto;
             li {
                 display: inline-block;
                 margin: .25rem;
@@ -63,6 +90,13 @@ const Footer = ({ site }) => {
             `}>Follow Us</b>
             <FooterSocialIcons />
         </div>
+        
+        <div css={css`
+            flex: 1 12rem;
+            @media (max-width: 870px) {
+                display: none;
+            }
+        `}></div>
     </footer>)
 }
 

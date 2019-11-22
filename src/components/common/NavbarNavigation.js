@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import { css } from "@emotion/core";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
@@ -18,15 +18,30 @@ const style = css`
     list-style: none;
     margin: 0;
     padding: 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media (min-width: 871px) {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    img {
+        display: inline;
+        line-height: 24.5px
+    }
 
     & > li {
         display: inline-block;
-        padding: 10px 0 0 0;
+        padding: 0;
         margin: 0;
         text-transform: uppercase;
         line-height: 1.75;
 
         @media (max-width: 870px) {
+            padding-top: 10px;
             display: block;
         }
 
@@ -60,6 +75,10 @@ const style = css`
         }
     }
 
+    .social-button.first {
+        padding-left: 50px;
+    }
+
     & > li:first-of-type {
         @media (min-width: 871px) {
             display: none;
@@ -80,7 +99,7 @@ const style = css`
     }
 `;
 
-const Navigation = ({ data }) => {
+const Navigation = ({ data, children }) => {
     let i = 0;
     const items = [];
 
@@ -104,6 +123,7 @@ const Navigation = ({ data }) => {
 
     return <ul css={style}>
         {items}
+        {children}
     </ul>
 };
 

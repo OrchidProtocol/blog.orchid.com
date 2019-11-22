@@ -22,6 +22,9 @@ const Header = styled.header`
             flex-wrap: wrap;
         }
     }
+    @media (min-width: 871px) {
+        min-height: 100px;
+    }
 `;
 
 function Navbar(props) {
@@ -42,6 +45,7 @@ function Navbar(props) {
                     margin: -1rem;
                     padding: 1rem;
                     box-sizing: content-box;
+                    display: block;
                 `} width="93" height="24" src="/images/orchid-logo-text.svg" alt={site.title} />
             </a>
 
@@ -100,21 +104,21 @@ function Navbar(props) {
                         display: flex;
                         flex-direction: column;
                         position: fixed;
-                        body.no-js & {
-                            position: static;
-                        }
-                        top: 0;
-                        right: 0%;
-                        ${active ? `transform: translate(0%, 0%);` : `transform: translate(100%, 0%);`}
+                        ${active ? `transform: translateX(0%);` : `transform: translateX(100%);`}
 
                         body.no-js & {
+                            position: static;
                             transform: none;
                         }
-                        transition-duration: .4s;
-                        transition-timing-function: cubic-bezier(.25,.5,.5,1);
-                        bottom: 0;
+
                         background-color: var(--color-bg);
                         box-shadow: -4px 0 8px rgba(0,0,0,.1), 0 0 4px rgba(0,0,0,.05);
+
+                        transition-duration: .4s;
+                        transition-timing-function: cubic-bezier(.25,.5,.5,1);
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
                         padding: 1rem;
                         width: 10rem;
                         box-sizing: content-box;
@@ -132,6 +136,15 @@ function Navbar(props) {
                     display: flex;
                     li a {
                         font-size: var(--font-size-small);
+                    }
+                    @media (max-width: 870px) {
+                        li {
+                            padding-top: 10px;
+                            line-height: 1.75;
+                        }
+                        .social-button {
+                            display: none;
+                        }
                     }
                 `}>
                     <div css={css`
@@ -171,25 +184,9 @@ function Navbar(props) {
                             url: 'https://www.orchid.com/contact',
                             label: 'Contact'
                         }
-                    ]} />
-                    <div css={css`
-                        margin-left: 50px;
-
-                        @media (max-width: 870px) {
-                            body.no-js & {
-                                width: 100%;
-                                margin: 0;
-                                display: none;
-                            }
-                        }
-                        li {
-                            display: inline-block;
-                            padding: .5rem;
-                            filter: saturate(0);
-                        }
-                    `}>
+                    ]}>
                         <SocialIcons />
-                    </div>
+                    </NavbarNavigation>
                 </div>
             </div>
         </Header>
