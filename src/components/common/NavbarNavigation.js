@@ -111,11 +111,11 @@ const Navigation = ({ data, children }) => {
         items.push(
             <li key={i} className={className}>
                 {navItem.url.match(/^\s?http(s?)/gi) ? (
-                    <a href={navItem.url} rel="noopener noreferrer">
+                    <a css={css`display:block;`} href={navItem.url} rel="noopener noreferrer">
                         {navItem.label}
                     </a>
                 ) : (
-                        <Link to={navItem.url}>{navItem.label}</Link>
+                        <Link css={css`display:block;`} to={navItem.url}>{navItem.label}</Link>
                     )}
             </li>
         );

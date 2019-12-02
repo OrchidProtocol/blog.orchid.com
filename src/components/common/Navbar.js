@@ -23,7 +23,7 @@ const Header = styled.header`
         }
     }
     @media (min-width: 871px) {
-        min-height: 100px;
+        min-height: 99px;
     }
 `;
 
