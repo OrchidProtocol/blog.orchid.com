@@ -25,6 +25,9 @@ const SidebarCard = styled.div`
     padding: 1rem;
     margin: 1rem;
     font-size: .82rem;
+    &:nth-of-type(1) {
+        margin-top: 0;
+    }
 `;
 const SidebarCardHeader = styled.div`
     font-size: 1rem;
@@ -107,6 +110,12 @@ const Index = ({ data, location, pageContext }) => {
                         </section>
                         <Sidebar>
                             <SidebarCard>
+                                <SidebarCardHeader>Featured Posts</SidebarCardHeader>
+                                <SidebarCardSeperator />
+                                {featuredElements}
+                            </SidebarCard>
+
+                            <SidebarCard>
                                 <SidebarCardHeader>Categories</SidebarCardHeader>
                                 <SidebarCardSeperator />
                                 <div css={css`
@@ -118,12 +127,6 @@ const Index = ({ data, location, pageContext }) => {
                                 `}>
                                     {tagElements}
                                 </div>
-                            </SidebarCard>
-                            
-                            <SidebarCard>
-                                <SidebarCardHeader>Featured Posts</SidebarCardHeader>
-                                <SidebarCardSeperator />
-                                {featuredElements}
                             </SidebarCard>
                         </Sidebar>
 
