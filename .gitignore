@@ -70,7 +70,7 @@ typings/
 
 # Docs Custom
 .cache/
-#public/
+public/
 yarn-error.log
 .ghost.json
 .netlify/
