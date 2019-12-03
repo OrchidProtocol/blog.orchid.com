@@ -22,6 +22,9 @@ const Header = styled.header`
             flex-wrap: wrap;
         }
     }
+    @media (min-width: 871px) {
+        min-height: 99px;
+    }
 `;
 
 function Navbar(props) {

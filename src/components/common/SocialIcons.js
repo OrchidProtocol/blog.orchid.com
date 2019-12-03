@@ -28,7 +28,7 @@ const SocialIcons = ({ children }) => {
         </SocialIcon>
         <SocialIcon className="social-button">
             <a href="https://www.t.me/OrchidOfficial" target="_blank">
-                <img width="32" height="32" src='/images/icons/social-telegram.svg' alt='Telegram' />
+                <img css={css`@media (min-width: 871px) {margin-top:-1px;}`} width="32" height="32" src='/images/icons/social-telegram.svg' alt='Telegram' />
             </a>
         </SocialIcon>
         <SocialIcon className="social-button">
