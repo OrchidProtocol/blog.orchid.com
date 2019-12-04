@@ -47,7 +47,8 @@ async function downloadAndReplaceFiles (string) {
 
     for (let index = 0; index < matches.length; index++) {
         const url = matches[index];
-        const result = await parseFile(url);
+        let result = await parseFile(url);
+        if (result.substr(0,1) === "/") result = `https://blog.orchid.com${result}`;
         output = output.replace(new RegExp(url, 'g'), result);
     }
     return output;
