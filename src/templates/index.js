@@ -49,7 +49,7 @@ const Index = ({ data, location, pageContext }) => {
 
     const tagElements = [];
     for (let index = 0; index < tags.length; index++) {
-        tagElements.push(<Link key={index} to={'/tag/'+tags[index].node.slug}>
+        tagElements.push(<Link key={index} to={`/tag/${tags[index].node.slug}/`}>
             {tags[index].node.name}
         </Link>);
     }
@@ -67,7 +67,7 @@ const Index = ({ data, location, pageContext }) => {
                 text-decoration: none;
             }
         `} 
-        key={index} to={'/'+featured[index].node.slug}>
+        key={index} to={`/${featured[index].node.slug}/`}>
             <div css={css`
                 border-radius: 12px;
                 background-image: url(${featured[index].node.feature_image});
