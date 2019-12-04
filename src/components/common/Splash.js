@@ -34,7 +34,7 @@ const Splash = (props) => {
                 max-width: 100%;
                 width: 100%;
                 height: 222px;
-                background-image: url(/images/circuit.svg);
+                background-image: url(/img/circuit.svg);
                 background-repeat: no-repeat;
                 background-position: top left;
                 background-size: auto 100%;

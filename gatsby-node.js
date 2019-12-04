@@ -18,19 +18,12 @@ exports.createPages = async ({ graphql, actions }) => {
 				edges {
 					node {
 						id
-						fields {
-							slug
-						}
-						frontmatter {
-							tags
-							templateKey
-							public
-						}
 					}
 				}
 			}
 		}
-    `)
+	`)
+	console.log(result.data)
 
 	// Check for any errors
 	if (result.errors) {

@@ -90,7 +90,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                         @media (max-width: 870px) {
                             display: none;
                         }
-                    `} src="/images/coral-electric.svg" />
+                    `} src="/img/coral-electric.svg" />
                     <img css={css`
                         bottom: 0;
                         left: 2rem;
@@ -98,7 +98,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                         @media (max-width: 870px) {
                             display: none;
                         }
-                    `} src="/images/coral-real.svg" />
+                    `} src="/img/coral-real.svg" />
                     <img css={css`
                         right: 5rem;
                         bottom: 0;
@@ -107,12 +107,12 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                         @media (min-width: 871px) {
                             display: none;
                         }
-                    `} src="/images/coral-real-mobile.svg" />
+                    `} src="/img/coral-real-mobile.svg" />
                     <img css={css`
                         position: absolute;
                         right: 0;
                         top: 3rem;
-                    `} src="/images/footer-fish.svg" />
+                    `} src="/img/footer-fish.svg" />
                 </div>
                 {/* The footer at the very bottom of the screen */}
                 <Footer site={site} />

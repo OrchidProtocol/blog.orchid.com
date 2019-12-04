@@ -31,7 +31,7 @@ const Footer = ({ site }) => {
             flex: 0 0 auto;
         `}>
             <a href="https://www.orchid.com/">
-                <img src={'/images/orchid-logo-world.svg'} alt={site.title} css={css`
+                <img src={'/img/orchid-logo-world.svg'} alt={site.title} css={css`
                     display: block;
                     @media (max-width: 870px) {
                         max-width: 100px;

@@ -16,27 +16,27 @@ const FooterSocialIcons = ({ children }) => {
     `}>
         <SocialIcon>
             <a href="https://twitter.com/OrchidProtocol" target="_blank">
-                <img width="30" height="30" src='/images/icons/social-twitter.svg' alt='Twitter' />
+                <img width="30" height="30" src='/img/icons/social-twitter.svg' alt='Twitter' />
             </a>
         </SocialIcon>
         <SocialIcon>
             <a href="https://medium.com/orchid-labs" target="_blank">
-                <img width="30" height="30" src='/images/icons/social-medium.svg' alt='Medium' />
+                <img width="30" height="30" src='/img/icons/social-medium.svg' alt='Medium' />
             </a>
         </SocialIcon>
         <SocialIcon>
             <a href="https://www.t.me/OrchidOfficial" target="_blank">
-                <img width="30" height="30" src='/images/icons/social-telegram.svg' alt='Telegram' />
+                <img width="30" height="30" src='/img/icons/social-telegram.svg' alt='Telegram' />
             </a>
         </SocialIcon>
         <SocialIcon>
             <a href="https://github.com/OrchidProtocol" target="_blank">
-                <img width="30" height="30" src='/images/icons/social-github.svg' alt='Github' />
+                <img width="30" height="30" src='/img/icons/social-github.svg' alt='Github' />
             </a>
         </SocialIcon>
         <SocialIcon>
             <a href="https://www.facebook.com/OrchidProtocol" target="_blank">
-                <img width="30" height="30" src='/images/icons/social-facebook.svg' alt='Facebook' />
+                <img width="30" height="30" src='/img/icons/social-facebook.svg' alt='Facebook' />
             </a>
         </SocialIcon>
     </ul>)
