@@ -30,7 +30,6 @@ const Header = styled.header`
 `;
 
 function Navbar(props) {
-  const site = props.site;
 
   const [active, setActive] = useState(false);
 
