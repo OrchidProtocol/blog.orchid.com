@@ -48,7 +48,7 @@ function Navbar(props) {
                   padding: 1rem;
                   box-sizing: content-box;
                   display: block;
-              `} width="93" height="24" src="/images/orchid-logo-text.svg" alt={site.title} />
+              `} width="93" height="24" src="/images/orchid-logo-text.svg" alt={"Orchid"} />
       </a>
 
       <a href="https://www.orchid.com/" css={css`
@@ -63,7 +63,7 @@ function Navbar(props) {
                       box-sizing: content-box;
                       width: 35px;
                       height: auto;
-                  `} width="35" height="30" src="/images/orchid-logo-small.svg" alt={site.title} />
+                  `} width="35" height="30" src="/images/orchid-logo-small.svg" alt={"Orchid"} />
       </a>
 
       <div css={css`
