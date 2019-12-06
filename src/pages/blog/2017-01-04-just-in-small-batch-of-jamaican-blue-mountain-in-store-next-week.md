@@ -1,6 +1,7 @@
 ---
 templateKey: 'blog-post'
 title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
+url: test-2-url-slug
 date: 2017-01-04T15:04:10.000Z
 featuredpost: true
 description: >-
