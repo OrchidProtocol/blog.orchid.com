@@ -17,22 +17,22 @@ const SocialIcon = styled.li`
 const SocialIcons = ({ children }) => {
     return (<>
         <SocialIcon className="social-button first">
-            <a href="https://medium.com/orchid-labs" target="_blank" rel="noopener noreferrer">
+            <a href="https://medium.com/orchid-labs" target="_blank">
                 <img width="30" height="30" src='/img/icons/social-medium.svg' alt='Medium' />
             </a>
         </SocialIcon>
         <SocialIcon className="social-button">
-            <a href="https://twitter.com/OrchidProtocol" target="_blank" rel="noopener noreferrer">
+            <a href="https://twitter.com/OrchidProtocol" target="_blank">
                 <img width="30" height="30" src='/img/icons/social-twitter.svg' alt='Twitter' />
             </a>
         </SocialIcon>
         <SocialIcon className="social-button">
-            <a href="https://www.t.me/OrchidOfficial" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.t.me/OrchidOfficial" target="_blank">
                 <img css={css`@media (min-width: 871px) {margin-top:-1px;}`} width="32" height="32" src='/img/icons/social-telegram.svg' alt='Telegram' />
             </a>
         </SocialIcon>
         <SocialIcon className="social-button">
-            <a href="https://github.com/OrchidProtocol" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/OrchidProtocol" target="_blank">
                 <img width="30" height="30" src='/img/icons/social-github.svg' alt='Github' />
             </a>
         </SocialIcon>

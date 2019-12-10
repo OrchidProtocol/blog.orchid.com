@@ -3,7 +3,7 @@ import { css } from '@emotion/core'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
+import Layout from '../components/common/Layout'
 import { HTMLContent } from '../components/Content'
 import Tags from '../components/Tags'
 

@@ -47,7 +47,7 @@ function Navbar(props) {
                   padding: 1rem;
                   box-sizing: content-box;
                   display: block;
-              `} width="93" height="24" src="/images/orchid-logo-text.svg" alt={"Orchid"} />
+              `} width="93" height="24" src="/img/orchid-logo-text.svg" alt={"Orchid"} />
       </a>
 
       <a href="https://www.orchid.com/" css={css`
@@ -62,7 +62,7 @@ function Navbar(props) {
                       box-sizing: content-box;
                       width: 35px;
                       height: auto;
-                  `} width="35" height="30" src="/images/orchid-logo-small.svg" alt={"Orchid"} />
+                  `} width="35" height="30" src="/img/orchid-logo-small.svg" alt={"Orchid"} />
       </a>
 
       <div css={css`
@@ -79,7 +79,7 @@ function Navbar(props) {
           `} onClick={() => {
           setActive(!active);
         }}>
-        <img src={'/images/icons/hamburger.svg'} alt='Open Menu' />
+        <img src={'/img/icons/hamburger.svg'} alt='Open Menu' />
       </div>
 
       <div css={css`
@@ -162,7 +162,7 @@ function Navbar(props) {
                   `} onClick={() => {
               setActive(!active);
             }}>
-            <img src={'/images/icons/close.svg'} alt='Close Menu' />
+            <img src={'/img/icons/close.svg'} alt='Close Menu' />
           </div>
           <NavbarNavigation data={[
             {

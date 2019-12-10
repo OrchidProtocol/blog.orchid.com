@@ -433,7 +433,7 @@ blockquote:after {
     left: -15px;
     width: 30px;
     height: 30px;
-    background-image: url(/images/quote.svg);
+    background-image: url(/img/quote.svg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
