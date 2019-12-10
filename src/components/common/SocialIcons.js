@@ -32,7 +32,7 @@ const SocialIcons = ({ children }) => {
             </a>
         </SocialIcon>
         <SocialIcon className="social-button">
-            <a href="https://github.com/OrchidProtocol" target="_blank">
+            <a href="https://github.com/OrchidTechnologies" target="_blank">
                 <img width="30" height="30" src='/images/icons/social-github.svg' alt='Github' />
             </a>
         </SocialIcon>
