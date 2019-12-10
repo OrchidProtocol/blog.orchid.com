@@ -41,18 +41,21 @@ export const BlogPostTemplate = ({
 					-o-object-position: center;
 					object-position: center;
 				`}>
-					<img css={css`
-						max-width: 720px;
-						width: 100%;
-						height: auto;
-						margin-left: auto;
-						margin-right: auto;
-						margin-bottom: 1rem;
-						display: block;
+					{featuredimage ?
+						<img css={css`
+							max-width: 720px;
+							width: 100%;
+							height: auto;
+							margin-left: auto;
+							margin-right: auto;
+							margin-bottom: 1rem;
+							display: block;
 
-						box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
-						border-radius: 20px;
-					`} src={featuredimage} alt={title} />
+							box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
+							border-radius: 20px;
+						`} src={featuredimage.childImageSharp.fluid.src} alt={title} />
+						: <></>}
+
 				</figure> : null}
 
 			<section css={css`
@@ -150,14 +153,16 @@ BlogPostTemplate.propTypes = {
 const BlogPost = ({ data }) => {
 	const { markdownRemark: post } = data
 
+	console.log(post);
+
 	return (
 		<Layout>
 			<BlogPostTemplate
 				content={post.html}
 				date={post.date}
 				slug={post.url}
-				featuredimage={post.featuredimage}
-				contentComponent={HTMLContent}
+				featuredimage={post.frontmatter.featuredimage}
+				contentComponent={post.html}
 				description={post.frontmatter.description}
 				helmet={
 					<Helmet titleTemplate="%s | Blog">

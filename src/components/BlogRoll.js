@@ -33,7 +33,6 @@ const SidebarCardSeperator = styled.div`
 `;
 
 const BlogRoll = ({ data, location, pageContext }) => {
-    console.log(pageContext);
     const posts = data.allPosts.edges
     const featured = data.featuredPosts.edges
     const tags = []
@@ -58,18 +57,17 @@ const BlogRoll = ({ data, location, pageContext }) => {
                 text-decoration: none;
             }
         `} 
-        key={index} to={`/${featured[index].node.url}/`}>
-            <div css={css`
-                border-radius: 12px;
-                background-image: url(${featured[index].node.featuredimage});
-                background-size: cover;
-                background-position: center;
-                padding: 30% 50%;
-            `}>
-
-            </div>
-            <h3>{featured[index].node.title}</h3>
-            <span>{featured[index].node.date}</span>
+        key={index} to={`/${featured[index].node.frontmatter.url}/`}>
+            {featured[index].node.frontmatter.featuredimage ?
+                <div css={css`
+                    border-radius: 12px;
+                    background-image: url(${featured[index].node.frontmatter.featuredimage.childImageSharp.fluid.src});
+                    background-size: cover;
+                    background-position: center;
+                    padding: 30% 50%;
+                `}></div> : <></>}
+            <h3>{featured[index].node.frontmatter.title}</h3>
+            <span>{featured[index].node.frontmatter.date}</span>
         </Link>);
     }
 
@@ -136,7 +134,7 @@ export default () => (
 		query BlogRollQuery {
 			allPosts: allMarkdownRemark(
 				sort: { order: DESC, fields: [frontmatter___date] }
-					filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+					filter: { frontmatter: { templateKey: { eq: "blog-post" }, public: { eq: true } } }
 				) {
 				edges {
 					node {
@@ -165,7 +163,7 @@ export default () => (
 
 			featuredPosts: allMarkdownRemark(
 				sort: { order: DESC, fields: [frontmatter___date] }
-					filter: { frontmatter: { featuredpost: { eq: true }, templateKey: { eq: "blog-post" } } }
+					filter: { frontmatter: { featuredpost: { eq: true }, templateKey: { eq: "blog-post" }, public: { eq: true } } }
 				) {
 				edges {
 					node {
@@ -175,13 +173,14 @@ export default () => (
 							slug
 						}
 						frontmatter {
+                            url
 							title
 							templateKey
 							date(formatString: "MMMM DD, YYYY")
 							featuredpost
 							featuredimage {
 								childImageSharp {
-									fluid(maxWidth: 720, quality: 90) {
+									fluid(maxWidth: 480, quality: 90) {
 									...GatsbyImageSharpFluid
 									}
 								}
