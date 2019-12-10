@@ -40,7 +40,7 @@ const Post = ({ data, location }) => {
                 `}>
                     <article className="content">
 
-                        { (new Date(post.published_at) > new Date("Thu Oct 07 2019 12:22:21 GMT-0600 (Central Standard Time)")) ?
+                        { (new Date(post.published_at) > new Date("Thu Oct 07 2019 12:22:21 GMT-0600 (Central Standard Time)") && post.feature_image) ?
                             <figure css={css`
                                 margin: 0;
                                 width: 100%;

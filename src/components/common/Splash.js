@@ -2,6 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import { css } from '@emotion/core'
+import { Link } from 'gatsby'
 
 const Splash = (props) => {
 
@@ -75,14 +76,18 @@ const Splash = (props) => {
                     max-width: 600px;
                 }
             `}>
-                <h1 css={css`
+                <Link css={css`
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                `} to="/"><h1 css={css`
                     color: var(--color-primary);
                     font-size: 32px;
                     @media (min-width: 871px) {
                         font-size: 60px;
                     }
-
-                `}>Blog</h1>
+                `}>Blog</h1></Link>
                 { (props.subtitle || props.description) && <div className="splash-circuit-grid-text" css={css`
                     @media (min-width: 871px) {
                         margin-top: 4rem;
