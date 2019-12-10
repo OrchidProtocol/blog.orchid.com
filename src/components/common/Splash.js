@@ -78,10 +78,8 @@ const Splash = (props) => {
             `}>
                 <Link css={css`
                     text-decoration: none;
-                    color: var(--color-primary);
-                    font-size: 32px;
-                    @media (min-width: 871px) {
-                        font-size: 60px;
+                    &:hover {
+                        text-decoration: none;
                     }
                 `} to="/"><h1 css={css`
                     color: var(--color-primary);
