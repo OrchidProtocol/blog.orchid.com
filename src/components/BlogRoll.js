@@ -142,6 +142,7 @@ export default () => (
 						frontmatter {
                             url
                             title
+                            description
 							templateKey
 							date(formatString: "MMMM DD, YYYY")
 							featuredpost

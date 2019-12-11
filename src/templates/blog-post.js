@@ -4,9 +4,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/common/Layout'
-import Tags from '../components/Tags'
-
-import getCustomFormatedDate from '../utils/date';
+import Tags from '../components/common/Tags'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin, faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
@@ -21,7 +19,6 @@ export const BlogPostTemplate = ({
 	slug,
 	featuredimage,
 }) => {
-
 	return (<div className="container" css={css`
 		position: relative;
 		z-index: 1;
@@ -68,7 +65,7 @@ export const BlogPostTemplate = ({
 				`}>{title}</h1>
 				<span css={css`
 					display: block;
-				`}>{getCustomFormatedDate(date)}</span>
+				`}>{date}</span>
 
 				<br />
 
@@ -83,7 +80,8 @@ export const BlogPostTemplate = ({
 								}
 							`}
 					className="content-body load-external-scripts"
-				>{content}</section>
+					dangerouslySetInnerHTML={{ __html: content }}
+				></section>
 				{/* The main post content */}
 
 				<div css={css`
@@ -155,8 +153,8 @@ const BlogPost = ({ data }) => {
 		<Layout>
 			<BlogPostTemplate
 				content={post.html}
-				date={post.date}
-				slug={post.url}
+				date={post.frontmatter.date}
+				slug={post.frontmatter.url}
 				featuredimage={post.frontmatter.featuredimage}
 				contentComponent={post.html}
 				description={post.frontmatter.description}
@@ -190,7 +188,7 @@ export const pageQuery = graphql`
 			id
 			html
 			frontmatter {
-				date
+				date(formatString: "MMMM DD, YYYY")
 				featuredimage {
 					childImageSharp {
 						fluid(maxWidth: 720, quality: 100) {

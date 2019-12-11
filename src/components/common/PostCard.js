@@ -24,6 +24,8 @@ const FeaturedIndicator = <div css={css`
 const PostCard = ({ post, number }) => {
     const url = `/${post.frontmatter.url}/`
 
+    const excerpt = post.frontmatter.description || post.excerpt;
+
     return (
         <div to={url} css={css`
             padding-bottom: var(--margin);
@@ -67,7 +69,7 @@ const PostCard = ({ post, number }) => {
                     </Link>
                 </div>
 
-                <section className="post-card-excerpt"><Link to={url} css={css`&:hover{text-decoration:none;}`}>{post.excerpt}</Link></section>
+                <section className="post-card-excerpt"><Link to={url} css={css`&:hover{text-decoration:none;}`}>{excerpt}</Link></section>
 
                 <div css={css`
                     text-align: right;
