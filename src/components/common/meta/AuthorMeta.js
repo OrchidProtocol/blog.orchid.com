@@ -76,10 +76,4 @@ AuthorMeta.propTypes = {
     canonical: PropTypes.string.isRequired,
 }
 
-const AuthorMetaQuery = props => (
-    <StaticQuery
-        render={data => <AuthorMeta settings={data} {...props} />}
-    />
-)
-
-export default AuthorMetaQuery
+export default AuthorMeta

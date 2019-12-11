@@ -114,11 +114,4 @@ const ArticleMetaGhost = ({ data, settings, canonical }) => {
     )
 }
 
-
-const ArticleMetaQuery = props => (
-    <StaticQuery
-        render={data => <ArticleMetaGhost settings={data} {...props} />}
-    />
-)
-
-export default ArticleMetaQuery
+export default ArticleMetaGhost

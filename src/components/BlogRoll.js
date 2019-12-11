@@ -2,7 +2,6 @@ import React from 'react'
 import { css } from '@emotion/core'
 import styled from '@emotion/styled'
 import { Link, graphql, StaticQuery } from 'gatsby'
-import MetaData from '../components/common/meta/MetaData';
 
 import {Layout, PostCard} from './common';
 
@@ -75,7 +74,6 @@ const BlogRoll = ({ data, location }) => {
 
     return (
         <>
-            <MetaData location={location} />
             <Layout isHome={true}>
                 <div className="container" css={css`
                     position: relative;

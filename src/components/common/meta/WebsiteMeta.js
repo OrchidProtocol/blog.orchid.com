@@ -65,21 +65,4 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
     )
 }
 
-const WebsiteMetaQuery = props => (
-    <StaticQuery
-        /*query={graphql`
-            query GhostSettingsWebsiteMeta {
-                allGhostSettings {
-                    edges {
-                        node {
-                            ...GhostSettingsFields
-                        }
-                    }
-                }
-            }
-        `}*/
-        render={data => <WebsiteMeta settings={data} {...props} />}
-    />
-)
-
-export default WebsiteMetaQuery
+export default WebsiteMeta

@@ -64,14 +64,4 @@ const MetaData = ({
     }
 }
 
-MetaData.defaultProps = {
-    data: {},
-}
-
-const MetaDataQuery = props => (
-    <StaticQuery
-        render={data => <MetaData settings={data} {...props} />}
-    />
-)
-
-export default MetaDataQuery
+export default MetaData
