@@ -3,12 +3,12 @@ import { css } from '@emotion/core'
 import styled from '@emotion/styled'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import MetaData from '../components/common/meta/MetaData';
-import PreviewCompatibleImage from './PreviewCompatibleImage'
 
-import {Layout, PostCard, Pagination} from './common';
+import {Layout, PostCard} from './common';
 
 const Sidebar = styled.div`
 `;
+
 const SidebarCard = styled.div`
     background: #fff;
     border: 1px solid #d5d7e2;
@@ -32,7 +32,7 @@ const SidebarCardSeperator = styled.div`
     width: 100%;
 `;
 
-const BlogRoll = ({ data, location, pageContext }) => {
+const BlogRoll = ({ data, location }) => {
     const posts = data.allPosts.edges
     const featured = data.featuredPosts.edges
     const tags = []
@@ -126,8 +126,6 @@ const BlogRoll = ({ data, location, pageContext }) => {
     )
 }
 
-
-
 export default () => (
 	<StaticQuery
 		query={graphql`
@@ -173,7 +171,7 @@ export default () => (
 							slug
 						}
 						frontmatter {
-                            url
+							url
 							title
 							templateKey
 							date(formatString: "MMMM DD, YYYY")

@@ -1,11 +1,8 @@
 import React from 'react'
+import { graphql, StaticQuery } from 'gatsby';
 
 import BlogRoll from '../components/BlogRoll'
 
-export default class BlogIndexPage extends React.Component {
-  render() {
-    return (
-      <BlogRoll />
-    )
-  }
-}
+export default () => (
+	<BlogRoll />
+)

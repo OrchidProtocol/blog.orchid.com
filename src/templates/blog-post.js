@@ -187,24 +187,24 @@ BlogPost.propTypes = {
 export default BlogPost
 
 export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      frontmatter {
-        date
-		featuredimage {
-		  childImageSharp {
-			fluid(maxWidth: 720, quality: 100) {
-			  ...GatsbyImageSharpFluid
+	query BlogPostByID($id: String!) {
+		markdownRemark(id: { eq: $id }) {
+			id
+			html
+			frontmatter {
+				date
+				featuredimage {
+					childImageSharp {
+						fluid(maxWidth: 720, quality: 100) {
+							...GatsbyImageSharpFluid
+						}
+					}
+				}
+				title
+				description
+				url
+				tags
 			}
-		  }
 		}
-        title
-        description
-        url
-        tags
-      }
-    }
-  }
+	}
 `
