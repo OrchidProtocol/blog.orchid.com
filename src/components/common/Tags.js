@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import _ from 'lodash'
+
 import styled from '@emotion/styled'
 import { css } from '@emotion/core'
 
@@ -18,25 +20,25 @@ const Tag = styled.span`
 * to a `site-nav-item` class.
 *
 */
-const Navigation = ({ post, linkTags }) => {
+const Navigation = ({ tags, linkTags }) => {
     const items = [];
-    if (post && post.tags) {
-        for(let i = 0; i < Math.min(3, post.tags.length); i++) {
-            if (post.tags[i].slug !== 'homepage') {
-                if(linkTags)
+    if (tags) {
+        for(let i = 0; i < Math.min(3, tags.length); i++) {
+            if (tags[i] !== 'homepage') {
+                if (linkTags)
                     items.push(
                         <li key={i}>
-                            <Link to={`/tag/${post.tags[i].slug}`} css={css`
+                            <Link to={`/tag/${_.kebabCase(tags[i])}`} css={css`
                                     &:hover {
                                         text-decoration: none;
                                     }
                                 `}>
-                                <Tag>{post.tags[i].name}</Tag>
+                                <Tag>{tags[i]}</Tag>
                             </Link>
                         </li>
                     )
                 else 
-                    items.push(<Tag key={i}>{/*(i !== 0) ? ', ' : ''*/}{post.tags[i].name}</Tag>)
+                    items.push(<Tag key={i}>{/*(i !== 0) ? ', ' : ''*/}{tags[i]}</Tag>)
             }
         }
     }

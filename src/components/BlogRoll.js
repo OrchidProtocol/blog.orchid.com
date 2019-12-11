@@ -3,7 +3,8 @@ import { css } from '@emotion/core'
 import styled from '@emotion/styled'
 import { Link, graphql, StaticQuery } from 'gatsby'
 
-import {Layout, PostCard} from './common';
+import _ from 'lodash';
+import { Layout, PostCard } from './common';
 
 const Sidebar = styled.div`
 `;
@@ -34,14 +35,24 @@ const SidebarCardSeperator = styled.div`
 const BlogRoll = ({ data, location }) => {
     const posts = data.allPosts.edges
     const featured = data.featuredPosts.edges
-    const tags = []
 
+    // Tag pages:
+    let tags = []
+    // Iterate through each post, putting all found tags into `tags`
+    posts.forEach(edge => {
+        if (_.get(edge, `node.frontmatter.tags`)) {
+            tags = tags.concat(edge.node.frontmatter.tags)
+        }
+    })
+    // Eliminate duplicate tags
+    tags = _.uniq(tags)
+    
     const tagElements = [];
-    for (let index = 0; index < tags.length; index++) {
-        tagElements.push(<Link key={index} to={`/tag/${tags[index].node.slug}/`}>
-            {tags[index].node.name}
+    tags.forEach(tag => {
+        tagElements.push(<Link key={_.kebabCase(tag)} to={`/tag/${_.kebabCase(tag)}/`}>
+            {tag}
         </Link>);
-    }
+    })
 
     const featuredElements = [];
     for (let index = 0; index < featured.length; index++) {
@@ -55,12 +66,12 @@ const BlogRoll = ({ data, location }) => {
             &:hover {
                 text-decoration: none;
             }
-        `} 
-        key={index} to={`/${featured[index].node.frontmatter.url}/`}>
+        `}
+            key={index} to={`/${featured[index].node.frontmatter.url}/`}>
             {featured[index].node.frontmatter.featuredimage ?
                 <div css={css`
                     border-radius: 12px;
-                    background-image: url(${featured[index].node.frontmatter.featuredimage.childImageSharp.fluid.src});
+                    background-image: url(${(featured[index].node.frontmatter.featuredimage.childImageSharp) ? featured[index].node.frontmatter.featuredimage.childImageSharp.fluid.src : featured[index].node.frontmatter.featuredimage.publicURL});
                     background-size: cover;
                     background-position: center;
                     padding: 30% 50%;
@@ -125,8 +136,8 @@ const BlogRoll = ({ data, location }) => {
 }
 
 export default () => (
-	<StaticQuery
-		query={graphql`
+    <StaticQuery
+        query={graphql`
 		query BlogRollQuery {
 			allPosts: allMarkdownRemark(
 				sort: { order: DESC, fields: [frontmatter___date] }
@@ -143,6 +154,7 @@ export default () => (
                             url
                             title
                             description
+                            tags
 							templateKey
 							date(formatString: "MMMM DD, YYYY")
 							featuredpost
@@ -150,8 +162,9 @@ export default () => (
 								childImageSharp {
 									fluid(maxWidth: 720, quality: 90) {
 									...GatsbyImageSharpFluid
-									}
+                                    }
 								}
+                                publicURL
 							}
 						}
 					}
@@ -180,7 +193,8 @@ export default () => (
 									fluid(maxWidth: 480, quality: 90) {
 									...GatsbyImageSharpFluid
 									}
-								}
+                                }
+                                publicURL
 							}
 						}
 					}
@@ -188,6 +202,6 @@ export default () => (
 			}
 		}
     `}
-		render={(data, count) => <BlogRoll data={data} count={count} />}
-	/>
+        render={(data, count) => <BlogRoll data={data} count={count} />}
+    />
 )

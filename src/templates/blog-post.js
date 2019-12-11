@@ -19,6 +19,7 @@ export const BlogPostTemplate = ({
 	slug,
 	featuredimage,
 }) => {
+	console.log(featuredimage);
 	return (<div className="container" css={css`
 		position: relative;
 		z-index: 1;
@@ -48,7 +49,7 @@ export const BlogPostTemplate = ({
 
 							box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
 							border-radius: 20px;
-						`} src={featuredimage.childImageSharp.fluid.src} alt={title} />
+						`} src={(featuredimage.childImageSharp) ? featuredimage.childImageSharp.fixed.src : featuredimage.publicURL} alt={title} />
 						: <></>}
 
 				</figure> : null}
@@ -91,7 +92,7 @@ export const BlogPostTemplate = ({
 							justify-content: space-between;
 						}
 					`}>
-					<Tags post={tags} linkTags={true} />
+					<Tags tags={tags} linkTags={true} />
 
 					<div css={css`
 							margin-top: var(--margin-quarter);
@@ -191,10 +192,11 @@ export const pageQuery = graphql`
 				date(formatString: "MMMM DD, YYYY")
 				featuredimage {
 					childImageSharp {
-						fluid(maxWidth: 720, quality: 100) {
-							...GatsbyImageSharpFluid
+						fixed(width: 720, quality: 100) {
+							...GatsbyImageSharpFixed
 						}
 					}
+					publicURL
 				}
 				title
 				description
