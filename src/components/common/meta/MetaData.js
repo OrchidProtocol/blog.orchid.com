@@ -1,6 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery } from 'gatsby'
 import url from 'url'
 
 import config from '../../../utils/config'
@@ -14,34 +13,33 @@ import WebsiteMeta from './WebsiteMeta'
 */
 const MetaData = ({
     data,
-    settings,
     title,
     description,
     image,
     location,
 }) => {
     const canonical = url.resolve(config.siteUrl, location.pathname)
-    const { ghostPost, ghostTag, ghostAuthor, ghostPage } = data
+    const { post, tag, page } = data
 
-    if (ghostPost) {
+    if (post) {
         return (
             <ArticleMeta
-                data={ghostPost}
+                data={post}
                 canonical={canonical}
             />
         )
-    } else if (ghostTag) {
+    } else if (tag) {
         return (
             <WebsiteMeta
-                data={ghostTag}
+                data={tag}
                 canonical={canonical}
                 type="Series"
             />
         )
-    } else if (ghostPage) {
+    } else if (page) {
         return (
             <WebsiteMeta
-                data={ghostPage}
+                data={page}
                 canonical={canonical}
                 type="WebSite"
             />
@@ -68,21 +66,6 @@ const MetaData = ({
 
 MetaData.defaultProps = {
     data: {},
-}
-
-MetaData.propTypes = {
-    data: PropTypes.shape({
-        ghostPost: PropTypes.object,
-        ghostTag: PropTypes.object,
-        ghostAuthor: PropTypes.object,
-        ghostPage: PropTypes.object,
-    }).isRequired,
-    location: PropTypes.shape({
-        pathname: PropTypes.string.isRequired,
-    }).isRequired,
-    title: PropTypes.string,
-    description: PropTypes.string,
-    image: PropTypes.string,
 }
 
 const MetaDataQuery = props => (

@@ -6,7 +6,7 @@ import FooterSocialIcons from './FooterSocialIcons.js'
 import config from '../../utils/config'
 
 
-const Footer = ({}) => {
+const Footer = (props) => {
     return (<footer css={css`
         max-width: 63rem;
         box-sizing: border-box;

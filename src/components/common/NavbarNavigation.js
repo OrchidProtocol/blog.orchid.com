@@ -1,6 +1,5 @@
-import React, { Children } from "react";
+import React from "react";
 import { css } from "@emotion/core";
-import PropTypes from "prop-types";
 import { Link } from "gatsby";
 
 /**
@@ -100,7 +99,6 @@ const style = css`
 `;
 
 const Navigation = ({ data, children }) => {
-    let i = 0;
     const items = [];
 
     for (let i = 0; i < data.length; i++) {

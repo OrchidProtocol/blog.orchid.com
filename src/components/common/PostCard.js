@@ -1,9 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import Tags from './Tags'
-import { readingTime as readingTimeHelper } from '@tryghost/helpers'
 
 import getCustomFormatedDate from '../../utils/date';
 

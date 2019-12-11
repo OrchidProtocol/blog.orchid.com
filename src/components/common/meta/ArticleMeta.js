@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from "react-helmet"
-import { StaticQuery, graphql } from 'gatsby'
-import PropTypes from 'prop-types'
+import { StaticQuery } from 'gatsby'
 import _ from 'lodash'
 import url from 'url'
 
@@ -115,38 +114,6 @@ const ArticleMetaGhost = ({ data, settings, canonical }) => {
     )
 }
 
-ArticleMetaGhost.propTypes = {
-    data: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        published_at: PropTypes.string.isRequired,
-        updated_at: PropTypes.string.isRequired,
-        meta_title: PropTypes.string,
-        meta_description: PropTypes.string,
-        primary_author: PropTypes.object.isRequired,
-        feature_image: PropTypes.string,
-        tags: PropTypes.arrayOf(
-            PropTypes.shape({
-                name: PropTypes.string,
-                slug: PropTypes.string,
-                visibility: PropTypes.string,
-            })
-        ),
-        primaryTag: PropTypes.shape({
-            name: PropTypes.string,
-        }),
-        og_title: PropTypes.string,
-        og_description: PropTypes.string,
-        twitter_title: PropTypes.string,
-        twitter_description: PropTypes.string,
-        excerpt: PropTypes.string.isRequired,
-    }).isRequired,
-    settings: PropTypes.shape({
-        logo: PropTypes.object,
-        title: PropTypes.string,
-        twitter: PropTypes.string,
-    }).isRequired,
-    canonical: PropTypes.string.isRequired,
-}
 
 const ArticleMetaQuery = props => (
     <StaticQuery

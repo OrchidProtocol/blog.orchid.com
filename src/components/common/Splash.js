@@ -1,6 +1,5 @@
 import React from 'react'
 
-import styled from '@emotion/styled'
 import { css } from '@emotion/core'
 
 const Splash = (props) => {
@@ -107,7 +106,7 @@ const Splash = (props) => {
                         padding-top: 4rem;
                     }
                 `}>
-                    <img className="splash-circuit-feature" src={props.image}/>
+                    <img className="splash-circuit-feature" alt="" src={props.image}/>
                 </div>}
         </div>
     </div>);

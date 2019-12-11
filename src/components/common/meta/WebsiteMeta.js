@@ -1,8 +1,6 @@
 import React from 'react'
 import Helmet from "react-helmet"
-import PropTypes from 'prop-types'
-import _ from 'lodash'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery } from 'gatsby'
 import url from 'url'
 
 import ImageMeta from './ImageMeta'
@@ -65,31 +63,6 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
             <ImageMeta image={shareImage} />
         </>
     )
-}
-
-WebsiteMeta.propTypes = {
-    data: PropTypes.shape({
-        title: PropTypes.string,
-        meta_title: PropTypes.string,
-        meta_description: PropTypes.string,
-        name: PropTypes.string,
-        feature_image: PropTypes.string,
-        description: PropTypes.string,
-        bio: PropTypes.string,
-        profile_image: PropTypes.string,
-    }).isRequired,
-    settings: PropTypes.shape({
-        logo: PropTypes.object,
-        description: PropTypes.string,
-        title: PropTypes.string,
-        twitter: PropTypes.string,
-        allGhostSettings: PropTypes.object.isRequired,
-    }).isRequired,
-    canonical: PropTypes.string.isRequired,
-    title: PropTypes.string,
-    description: PropTypes.string,
-    image: PropTypes.string,
-    type: PropTypes.oneOf([`WebSite`, `Series`]).isRequired,
 }
 
 const WebsiteMetaQuery = props => (

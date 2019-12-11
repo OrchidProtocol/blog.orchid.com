@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/common/Layout'
-import { HTMLContent } from '../components/Content'
 import Tags from '../components/Tags'
 
 import getCustomFormatedDate from '../utils/date';
@@ -14,7 +13,6 @@ import { faTwitter, faLinkedin, faFacebookSquare } from '@fortawesome/free-brand
 
 export const BlogPostTemplate = ({
 	content,
-	contentComponent,
 	description,
 	tags,
 	title,
