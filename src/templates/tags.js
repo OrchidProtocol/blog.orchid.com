@@ -78,6 +78,7 @@ query TagPage($tag: String) {
 				frontmatter {
 					url
 					title
+					tags
 					description
 					templateKey
 					date(formatString: "MMMM DD, YYYY")
