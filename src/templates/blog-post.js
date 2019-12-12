@@ -69,9 +69,6 @@ export const BlogPostTemplate = ({
 
 				<br />
 
-				{title}
-				{description}
-
 				{/* The main post content */}
 				<section
 					css={css`
