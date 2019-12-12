@@ -32,7 +32,7 @@ const SidebarCardSeperator = styled.div`
     width: 100%;
 `;
 
-const BlogRoll = ({ data, location }) => {
+const BlogRoll = ({ data }) => {
     const posts = data.allPosts.edges
     const featured = data.featuredPosts.edges
 
