@@ -53,7 +53,7 @@ const PostCard = ({ post, number }) => {
                     {getCustomFormatedDate(post.frontmatter.date)}
                 </div>
 
-                <Tags post={post} linkTags={true} />
+                <Tags tags={post.frontmatter.tags} linkTags={true} />
 
                 <div css={css`
                         margin: var(--margin-half) 0;
