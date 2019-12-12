@@ -99,6 +99,6 @@ Facebook: https://www.facebook.com/OrchidProtocol/
 
 Medium: https://medium.com/orchid-labs
 
-Github: https://github.com/OrchidProtocol
+Github: https://github.com/OrchidTechnologies
 
 Reddit: https://www.reddit.com/r/orchid

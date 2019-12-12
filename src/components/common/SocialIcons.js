@@ -32,7 +32,7 @@ const SocialIcons = (props) => {
             </a>
         </SocialIcon>
         <SocialIcon className="social-button">
-            <a rel="noopener noreferrer" href="https://github.com/OrchidProtocol" target="_blank">
+            <a rel="noopener noreferrer" href="https://github.com/OrchidTechnologies" target="_blank">
                 <img width="30" height="30" src='/img/icons/social-github.svg' alt='Github' />
             </a>
         </SocialIcon>
