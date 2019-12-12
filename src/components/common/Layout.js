@@ -7,6 +7,8 @@ import Footer from './Footer.js'
 import Splash from './Splash.js'
 import '../all.css'
 
+import config from '../../utils/config';
+
 const TemplateWrapper = ({ children, bodyClass }) => {
 
     return (
@@ -14,6 +16,8 @@ const TemplateWrapper = ({ children, bodyClass }) => {
             <Helmet>
                 <html lang="en" />
                 <body css={bodyClass} />
+                <link rel="icon" type="image/ico" href="/img/favicon.ico" />
+                <link rel="icon" type="image/png" href="/img/favicon.png" />
             </Helmet>
 
             <div className="viewport">
@@ -21,9 +25,9 @@ const TemplateWrapper = ({ children, bodyClass }) => {
                 <script dangerouslySetInnerHTML={{
                     /*Removes the 'no-js' class*/
                     __html: `
-                    document.addEventListener('DOMContentLoaded', (()=>{
+                    document.addEventListener('DOMContentLoaded', ()=>{
                         document.body.classList.remove('no-js');
-                    })
+                    });
                     document.body.classList.remove('no-js');
                     `,
                 }}></script>

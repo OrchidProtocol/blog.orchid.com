@@ -9,6 +9,8 @@ import Tags from '../components/common/Tags'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin, faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
 
+import config from '../utils/config';
+
 export const BlogPostTemplate = ({
 	content,
 	description,
@@ -79,7 +81,6 @@ export const BlogPostTemplate = ({
 					className="content-body load-external-scripts"
 					dangerouslySetInnerHTML={{ __html: content }}
 				></section>
-				{/* The main post content */}
 
 				<div css={css`
 						margin-top: var(--margin);
@@ -158,10 +159,22 @@ const BlogPost = ({ data }) => {
 				helmet={
 					<Helmet titleTemplate="%s | Blog">
 						<title>{`${post.frontmatter.title}`}</title>
+						<meta name="title" content={post.frontmatter.title} />
 						<meta
 							name="description"
 							content={`${post.frontmatter.description}`}
 						/>
+
+						<meta property="og:title" content={post.frontmatter.title} />
+						<meta property="og:description" content={post.frontmatter.description} />
+						<meta property="og:image" content={post.frontmatter.featuredimage} />
+						<meta property="og:type" content="Article" />
+						<meta property="article:published_time" content={post.frontmatter.date} />
+						
+						<meta data-rh="true" name="twitter:creator" content={config.twitter} />
+						<meta name="twitter:title" content={post.frontmatter.title} />
+						<meta name="twitter:image" content={post.frontmatter.featuredimage} />
+						<meta name="twitter:card" content="summary_large_image" />
 					</Helmet>
 				}
 				tags={post.frontmatter.tags}
