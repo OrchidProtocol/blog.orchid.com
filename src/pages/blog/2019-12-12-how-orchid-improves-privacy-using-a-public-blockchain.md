@@ -12,6 +12,7 @@ tags:
     - Blockchain
     - VPN
 ---
+
 *Orchid is an incentivized privacy network, Open Source project and consumer VPN service aimed to deliver new levels of privacy. But what does privacy mean? How private is Orchid, which relies on pseudo-anonymous payments on Ethereum? In this post, we explore the concept of “privacy” and how Orchid leverages multiple innovations to deliver on its goals.*
 
 ## What do we mean when we say privacy?
@@ -41,6 +42,7 @@ In Orchid, users gain privacy by configuring a single- or multi-hop circuit and 
 - Prevents websites from seeing your real IP address and physical location;
 - Prevents your ISP from seeing what websites you are visiting and when;
 - Enables access to the open Internet--once a user can connect to Orchid, they are not restricted by ISP level firewalls and can browse the entire Internet freely.
+
 A potential problem with using only a single VPN provider is that the provider running the single node circuit knows both your IP address and the content you are accessing. One solution is to trust no single provider with enough information to know both who you are and what information you are accessing. To that end, Orchid supports an advanced feature that allows users to configure multi-hop routes by stringing together multiple nodes into a flexible multi-hop circuit. Orchid currently supports several underlying protocols including the native Orchid VPN protocol and OpenVPN, allowing users to mix and match Orchid nodes with traditional VPN nodes.  While the potential is there to protect the user from any one provider knowing enough information to reveal their circuit, this is an advanced feature that is currently “use at your own risk”.
 
 ## Privacy and public payments
@@ -51,6 +53,7 @@ All information gained by a potential network attacker constitutes an advantage.
 - The user’s payment address when service starts is seen by the provider
 - The user’s real IP and destination addresses is seen by the provider
 - When a rare on-chain payment is made, the user’s address and provider’s address are stored on Ethereum with a timestamp available to the public
+
 When considering anonymity, it is important to understand if the user is linked to the OXT used in their circuit. Worst case, if the user purchased OXT on an exchange with their real identity, or the VPN provider used in the circuit maintained logs, then either of those two entities could be compelled to give information that could deanonymize the user. Similarly, a user who paid for a VPN service that maintained logs with a credit card could be deanonymized with that provider being compelled.
 
 A multi-hop circuit affords greater network protections, but to setup a multi-hop Orchid circuit, it would be naive to pay for each hop from the same Ethereum wallet. In that configuration, each provider would be able to see that wallet’s address and potentially use that address to get information about the user. To mitigate that, a better way to setup multi-hop circuits would be to use different wallet addresses for each Orchid hop. If every wallet address is independently dissociated from the user, the full circuit might be quite difficult to link back to the user. Again, multi-hop circuits in Orchid are an advanced feature; use at your own risk.

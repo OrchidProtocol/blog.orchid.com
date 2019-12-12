@@ -32,6 +32,7 @@ By 2017, [research and polling](http://www.telesign.com/wp-content/uploads/2016/
 - 95% of Americans are concerned about how companies use their data
 - 80% are more concerned than they were a year ago
 - 50% are looking for new ways to safeguard their data
+
 The desire for a better internet that allows us to communicate and collaborate without censorship or data exploitation is growing around the world. The pincer movement being deployed by authoritarian and corporate interests has people looking to escape these two failed models of the internet, and global citizens are increasingly turning towards technology that helps them regain control of their digital experiences. For many, the solution is the use of a virtual private network (VPN).
 
 ## The Rise of the VPN

@@ -31,6 +31,7 @@ Orchid’s technology is highly modular. Each component is intended to be somewh
 - Service providers who run the Orchid Server
 - A protocol that intermediates client/server interactions
 - Several smart contracts deployed to the Ethereum blockchain that support the economically sound and technically secure operation of the protocols
+
 In pursuit of security, we have tended to remove features and design elements that we did not think would continue to function basically “as is” for many years.
 
 ![A fun illustration of OXT](/img/a-new-approach-decorative-illustration.png)
@@ -71,6 +72,7 @@ The main participant roles in the Orchid Market are:
 - One or more relay nodes who forward encrypted traffic (optionally)
 - An exit node who provides the final connection to an external destination (e.g., a website)
 - A bandwidth seller who accepts nanopayments for traffic (either a relay or exit)
+
 Bandwidth sellers register their nodes on the Ethereum blockchain and user clients select suitable nodes for routes through calls to Ethereum smart contracts. Orchid’s structure uses stake-weighting: sellers lock up OXT cryptocurrency to form stake deposits associated with their nodes in order to receive traffic in proportion to their relative stake.
 
 ## Conclusion
