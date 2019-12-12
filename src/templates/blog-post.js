@@ -19,7 +19,6 @@ export const BlogPostTemplate = ({
 	slug,
 	featuredimage,
 }) => {
-	console.log(featuredimage);
 	return (<div className="container" css={css`
 		position: relative;
 		z-index: 1;
