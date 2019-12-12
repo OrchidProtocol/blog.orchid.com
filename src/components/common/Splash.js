@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import { css } from '@emotion/core'
 
@@ -74,14 +75,21 @@ const Splash = (props) => {
                     max-width: 600px;
                 }
             `}>
-                <h1 css={css`
-                    color: var(--color-primary);
-                    font-size: 32px;
-                    @media (min-width: 871px) {
-                        font-size: 60px;
-                    }
-
-                `}>Blog</h1>
+                <h1>
+                    <Link css={css`
+                        color: var(--color-primary);
+                        font-size: 32px;
+                        @media (min-width: 871px) {
+                            font-size: 60px;
+                        }
+                        &:hover {
+                            color: var(--color-primary);
+                            text-decoration: none;
+                        }
+                    `}>
+                        Blog
+                    </Link>
+                </h1>
                 { (props.subtitle || props.description) && <div className="splash-circuit-grid-text" css={css`
                     @media (min-width: 871px) {
                         margin-top: 4rem;
