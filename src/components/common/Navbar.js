@@ -162,28 +162,7 @@ function Navbar(props) {
                         }}>
                         <img src={'/img/icons/close.svg'} alt='Close Menu' />
                     </div>
-                    <NavbarNavigation data={[
-                        {
-                            url: 'https://www.orchid.com/',
-                            label: 'Home'
-                        },
-                        {
-                            url: 'https://www.orchid.com/how-it-works',
-                            label: 'How It Works'
-                        },
-                        {
-                            url: 'https://www.orchid.com/about-us',
-                            label: 'About'
-                        },
-                        {
-                            url: '/',
-                            label: 'Blog'
-                        },
-                        {
-                            url: 'https://www.orchid.com/contact',
-                            label: 'Contact'
-                        }
-                    ]}>
+                    <NavbarNavigation data={config.navbar_navigation}>
                         <SocialIcons />
                     </NavbarNavigation>
                 </div>

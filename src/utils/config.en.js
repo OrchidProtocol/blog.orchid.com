@@ -1,6 +1,8 @@
 module.exports = {
     lang: 'en',
     siteUrl: 'https://blog.orchid.com/',
+    main_site: 'https://www.orchid.com/',
+
     description: 'Your VPN should be secure, which is why Orchid is building with open source tools for custom VPN configurations and privacy services.',
     title: 'Orchid',
     twitter: '@OrchidProtocol',
@@ -10,6 +12,64 @@ module.exports = {
     logo: '/img/favicon.png',
     logoWidth: 256,
     logoHeight: 256,
+
+    navbar_navigation: [
+        {
+            url: 'https://www.orchid.com/',
+            label: 'Home'
+        },
+        {
+            url: 'https://www.orchid.com/how-it-works',
+            label: 'How It Works'
+        },
+        {
+            url: 'https://www.orchid.com/about-us',
+            label: 'About'
+        },
+        {
+            url: '/',
+            label: 'Blog'
+        },
+        {
+            url: 'https://www.orchid.com/contact',
+            label: 'Contact'
+        }
+    ],
+
+    footer_navigation: [
+        {
+            url: "https://www.orchid.com",
+            label: "Orchid",
+        },
+        {
+            url: "https://www.orchid.com/how-it-works",
+            label: "How it Works",
+        },
+        {
+            url: "https://www.orchid.com/about-us",
+            label: "About Us",
+        },
+        {
+            url: "https://www.orchid.com/download",
+            label: "Download",
+        },
+        {
+            url: "https://www.orchid.com/events",
+            label: "Events",
+        },
+        {
+            url: "/",
+            label: 'Blog'
+        },
+        {
+            url: "https://www.orchid.com/faq",
+            label: "FAQ",
+        },
+        {
+            url: "https://www.orchid.com/contact",
+            label: "Contact",
+        },
+    ],
     
     /*
     data: PropTypes.shape({

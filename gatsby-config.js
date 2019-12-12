@@ -1,3 +1,8 @@
+
+require("dotenv").config({
+  path: `.env.production`,
+})
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby + Netlify CMS Starter',

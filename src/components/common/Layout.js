@@ -14,7 +14,7 @@ const TemplateWrapper = ({ children, bodyClass }) => {
     return (
         <>
             <Helmet>
-                <html lang="en" />
+                <html lang={process.env.GATSBY_TARGET_LANG} />
                 <body css={bodyClass} />
                 <link rel="icon" type="image/ico" href="/img/favicon.ico" />
                 <link rel="icon" type="image/png" href="/img/favicon.png" />

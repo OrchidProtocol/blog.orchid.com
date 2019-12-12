@@ -33,7 +33,7 @@ const Footer = (props) => {
         <div css={css`
             flex: 0 0 auto;
         `}>
-            <a href="https://www.orchid.com/">
+            <a href={`${config.main_site}/`}>
                 <img src={'/img/orchid-logo-world.svg'} alt={config.title} css={css`
                     display: block;
                     @media (max-width: 870px) {
@@ -49,7 +49,7 @@ const Footer = (props) => {
                     color: var(--link-color);
                 }
             `}>
-                <a href="https://www.orchid.com/privacy-policy">Privacy Policy</a> | <a href="https://www.orchid.com/service-terms">Terms of Service</a>
+                <a href={`${config.main_site}/privacy-policy`}>Privacy Policy</a> | <a href={`${config.main_site}/service-terms`}>Terms of Service</a>
             </p>
         </div>
 
@@ -90,7 +90,24 @@ const Footer = (props) => {
         `}>
             <b css={css`
                 font-family: var(--font-family-heading);
-            `}>Follow Us</b>
+            `}>{
+                (()=>{
+                    switch (process.env.GATSBY_TARGET_LANG) {
+                        default:
+                            return "Follow Us";
+                        break;
+                        case "ja":
+                            return "フォローする";
+                        break;
+                        case "ko":
+                            return "팔로우 하기";
+                        break;
+                        case "zh":
+                            return "关注我们";
+                        break;
+                    }
+                })()
+            }</b>
             <FooterSocialIcons />
         </div>
         

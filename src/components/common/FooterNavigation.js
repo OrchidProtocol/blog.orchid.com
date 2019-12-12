@@ -2,6 +2,8 @@ import React from 'react'
 import { css } from '@emotion/core'
 import { Link } from 'gatsby'
 
+import config from '../../utils/config';
+
 const style = css`
     list-style: none;
     margin: 0;
@@ -27,35 +29,35 @@ const style = css`
     }
 `;
 
+
+const items = [];
+
+for (let i = 0; i < config.footer_navigation.length; i++) {
+    const navItem = config.footer_navigation[i];
+    const internalLink = navItem.url.match(/^\s?http(s?)/gi);
+
+    const className =
+        internalLink ? "active-link" : "";
+    items.push(
+        <li key={i} className={className}>
+            {internalLink ? (
+                <a css={css`display:block;`} href={navItem.url} rel="noopener noreferrer">
+                    {navItem.label}
+                </a>
+            ) : (
+                    <Link css={css`display:block;`} to={navItem.url}>{navItem.label}</Link>
+                )}
+        </li>
+    );
+}
+
 const FooterNavigation = () => (
     <>
         <ul css={style}>
-            <li>
-                <a href="https://www.orchid.com" rel="noopener noreferrer">Orchid</a>
-            </li>
-            <li>
-                <a href="https://www.orchid.com/how-it-works" rel="noopener noreferrer">How it Works</a>
-            </li>
-            <li>
-                <a href="https://www.orchid.com/about-us" rel="noopener noreferrer">About Us</a>
-            </li>
-            <li>
-                <a href="https://www.orchid.com/download" rel="noopener noreferrer">Download</a>
-            </li>
+            {items.splice(0,4)}
         </ul>
         <ul css={style}>
-            <li>
-                <a href="https://www.orchid.com/events" rel="noopener noreferrer">Events</a>
-            </li>
-            <li>
-                <Link to="/">Blog</Link>
-            </li>
-            <li>
-                <a href="https://www.orchid.com/faq" rel="noopener noreferrer">FAQ</a>
-            </li>
-            <li>
-                <a href="https://www.orchid.com/contact" rel="noopener noreferrer">Contact</a>
-            </li>
+            {items.length > 0 ? items : <></>}
         </ul>
     </>
 );

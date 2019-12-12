@@ -103,12 +103,13 @@ const Navigation = ({ data, children }) => {
 
     for (let i = 0; i < data.length; i++) {
         const navItem = data[i];
+        const internalLink = navItem.url.match(/^\s?http(s?)/gi);
 
         const className =
-            navItem.url === "https://blog.orchid.com/" ? "active-link" : "";
+            internalLink ? "active-link" : "";
         items.push(
             <li key={i} className={className}>
-                {navItem.url.match(/^\s?http(s?)/gi) ? (
+                {internalLink ? (
                     <a css={css`display:block;`} href={navItem.url} rel="noopener noreferrer">
                         {navItem.label}
                     </a>
