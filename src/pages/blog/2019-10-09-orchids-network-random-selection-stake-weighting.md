@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: orchids-network-random-selection-stake-weighting
 title: 'Orchid’s Network: Random Selection + Stake Weighting'
-date: 2019-10-9T17:47:36.651Z
+date: 2019-10-9T18:47:36.651Z
 description: 'When you wake up in the morning and flick on a light switch, do you pause to think about how many tiny fractions of a penny that electricity costs? Or do you just flick on the light so you don’t bump your head?'
 featuredpost: true
 featuredimage: /img/random-selection-stake-weighting.png
@@ -42,15 +42,17 @@ Orchid App users interested in filtering service based on certain criteria, such
 
 Examples of Metadata Tags:
 
-- *Geolocation*: Providers are expected to be able to advertise their service in a particular region so that clients can filter based on location (similar to a typical VPN service). The Orchid App will use a public IP database to confirm the location.
-- *Latency*: In some cases users will desire connections with lower latency than randomly chosen nodes. The Orchid App is designed to employ a ‘guess-and-check’ strategy by using the same public IP database to find routes with a shorter distance. Ultimately, the actual latency must be measured once a route is constructed. If the latency is higher than the target threshold, we expect that a new, different route must be sampled. The lightweight nature of Orchid routes and nanopayments is anticipated to allow for fast route setup and parallel route testing.
-- *Price*: Providers are anticipated to set their bandwidth prices and the client can filter on price. The Orchid App intends to use a budgeting algorithm to determine a current spending cap based on the user’s balance and a target timespan representing how long the budget should last.
+- **Geolocation**: Providers are expected to be able to advertise their service in a particular region so that clients can filter based on location (similar to a typical VPN service). The Orchid App will use a public IP database to confirm the location.
+- **Latency**: In some cases users will desire connections with lower latency than randomly chosen nodes. The Orchid App is designed to employ a ‘guess-and-check’ strategy by using the same public IP database to find routes with a shorter distance. Ultimately, the actual latency must be measured once a route is constructed. If the latency is higher than the target threshold, we expect that a new, different route must be sampled. The lightweight nature of Orchid routes and nanopayments is anticipated to allow for fast route setup and parallel route testing.
+- **Price**: Providers are anticipated to set their bandwidth prices and the client can filter on price. The Orchid App intends to use a budgeting algorithm to determine a current spending cap based on the user’s balance and a target timespan representing how long the budget should last.
 
 ## Curated lists
 The Orchid App is designed to also filter based on arbitrary exit or relay node lists, which limits the viable nodes to a custom subset. Initial releases of the official Orchid App is expected to use this feature to prevent certain kinds of attacks from malicious exit nodes (e.g. SSL downgrade attacks) by using a default exit node list consisting of trusted VPN partners. Customized Orchid clients can use their own lists, and eventually we expect well known third parties to emerge as whitelist curators. Curated lists are a simple means for the importation of external reputational trust to supplement the economic, incentive-based trust provided by staking.
 
 ## How to sell bandwidth on Orchid
 The Orchid Market uses a decentralized architecture to connect users to bandwidth providers via tokenized, peer-to-peer commercial nano-transactions.
+
+![Orchid bandwidth process](/img/nanopayment-illustration)
 
 ## Nanopayments
 To sell bandwidth, providers register nodes on the Ethereum blockchain, which clients select through calls to Ethereum smart contracts. The user running the Orchid App then initiates proxy chain connections, which connect through one or more relay nodes before an exit node to their destination. Clients are expected to pay bandwidth providers to forward packets using probabilistic nanopayments. Occasionally the seller is expected to receive a winning nanopayment ticket which they redeem for Orchid Tokens (OXT) through a smart contract function call.
@@ -59,10 +61,10 @@ A requirement for registering a node in the Orchid Network is to stake OXT. The 
 
 We anticipate that there are three steps to earning as a Node operator:
 
-- Acquire OXT: Buy OXT tokens from an exchange or recieve OXT in a wallet through transfer, or earn OXT by registering as a node provider.
-- Stake OXT: Deposit OXT tokens into the node directory contract
-- Provide: Sell services to the Orchid App users
-- Payment: Receive OXT payment for services in a provider controlled wallet
+- **Acquire OXT**: Buy OXT tokens from an exchange or recieve OXT in a wallet through transfer, or earn OXT by registering as a node provider.
+- **Stake OXT**: Deposit OXT tokens into the node directory contract
+- **Provide**: Sell services to the Orchid App users
+- **Payment**: Receive OXT payment for services in a provider controlled wallet
 
 ## User stake deposit
 For Orchid App users to join the network, they must have a valid deposit in the nanopayment smart contract in order to issue tickets to a provider in exchange for bandwidth. A small portion of this deposit is intended to be held in escrow as a user “stake” to align their incentives with that of the network as a whole.
@@ -85,20 +87,22 @@ A sufficiently long withdrawal delay is more likely to create an additional loss
 By adopting a stake-weighting approach to disincentivize attacks and creating an incentivized marketplace backed by the Orchid Token, we’re one step closer to achieving our ultimate goal: making the Internet a more open, inclusive space for users around the world. Whether you want to purchase or sell resources using the Orchid, the Orchid Network is designed to give users private and secure access to the internet, regardless of geographic location. If you would like to stay up to date with the latest Orchid news, sign up for our newsletter and be the first to try the network when it launches later this year.
 
 ## Follow the Orchid journey
-Website: (www.orchid.com)[https://www.orchid.com/]
+If you want to keep current on the latest Orchid news and be among the first to test out the network, [sign up for our newsletter](https://www.orchid.com/#newsletter-signup) to receive launch updates.
 
-Twitter: https://twitter.com/OrchidProtocol
+Website: [www.orchid.com](https://www.orchid.com/)
 
-Linkedin: https://www.linkedin.com/company/orchidprotocol/
+Twitter: [https://twitter.com/OrchidProtocol](https://twitter.com/OrchidProtocol)
 
-Telegram (Announcements): https://t.me/officialorchidlabs
+Linkedin: [https://www.linkedin.com/company/orchidprotocol/](https://www.linkedin.com/company/orchidprotocol/)
 
-Telegram (Community): https://t.me/OrchidOfficial
+Telegram (Announcements): [https://t.me/officialorchidlabs](https://t.me/officialorchidlabs)
 
-Facebook: https://www.facebook.com/OrchidProtocol/
+Telegram (Community): [https://t.me/OrchidOfficial](https://t.me/OrchidOfficial)
 
-Medium: https://medium.com/orchid-labs
+Facebook: [https://www.facebook.com/OrchidProtocol/](https://www.facebook.com/OrchidProtocol/)
 
-Github: https://github.com/OrchidTechnologies
+Medium: [https://medium.com/orchid-labs](https://medium.com/orchid-labs)
 
-Reddit: https://www.reddit.com/r/orchid
+Github: [https://github.com/OrchidTechnologies](https://github.com/OrchidTechnologies)
+
+Reddit: [https://www.reddit.com/r/orchid](https://www.reddit.com/r/orchid)

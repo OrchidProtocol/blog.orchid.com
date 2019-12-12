@@ -17,7 +17,8 @@ Visit Orchid.com/Download to get the apps now.
 
 One of the unique things about Orchid is its integration of cutting edge networking technology with cryptocurrency to create an incentivized network. This pre-release version allows us to test and audit our networking code on both iOS and Android prior to integrating the token and interfacing with the Orchid Network. Once we launch our network, we can update the Orchid App to provide complete VPN service.
 
-## Orchid App Preview
+![Orchid App Preview](/img/orchid-pre-release-app.jpeg)
+
 In its initial form, this app will only be focused on one thing: analyzing and reporting the hosts that the data on your device are connecting to. For now, our app includes the following features:
 
 - Local VPN service providing network flow analysis
@@ -30,4 +31,4 @@ We continue to make progress on the Orchid Network and are finalizing our Ethere
 
 Our mission remains creating a suite of tools that provide privacy and access to return control and agency back into the hands of internet users. As new features become available, we’ll keep you updated.
 
-Download Orchid now and snag a front row seat as we ramp up to our network launch.
+[Download Orchid](https://www.orchid.com/download) now and snag a front row seat as we ramp up to our network launch.
