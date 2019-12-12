@@ -28,7 +28,7 @@ const Navigation = ({ tags, linkTags }) => {
                 if (linkTags)
                     items.push(
                         <li key={i}>
-                            <Link to={`/tag/${_.kebabCase(tags[i])}`} css={css`
+                            <Link to={`/tag/${_.kebabCase(tags[i])}/`} css={css`
                                     &:hover {
                                         text-decoration: none;
                                     }
