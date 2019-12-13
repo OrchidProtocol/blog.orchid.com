@@ -34,13 +34,12 @@ const items = [];
 
 for (let i = 0; i < config.footer_navigation.length; i++) {
     const navItem = config.footer_navigation[i];
-    const internalLink = navItem.url.match(/^\s?http(s?)/gi);
 
-    const className =
-        internalLink ? "active-link" : "";
+    const internalLink = navItem.url.match(/^\s?http(s?)/gi) === null;
+
     items.push(
-        <li key={i} className={className}>
-            {internalLink ? (
+        <li key={i}>
+            {!internalLink ? (
                 <a css={css`display:block;`} href={navItem.url} rel="noopener noreferrer">
                     {navItem.label}
                 </a>

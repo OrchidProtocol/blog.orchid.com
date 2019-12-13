@@ -46,6 +46,7 @@ const style = css`
 
         & > a {
             padding: 0.5rem;
+            margin: -.5rem 0;
             color: var(--link-color);
             font-weight: var(--font-bold);
             font-size: 14px;
@@ -108,7 +109,7 @@ const Navigation = ({ data, children }) => {
         const className =
             internalLink ? "active-link" : "";
         items.push(
-            <li key={i} className={className}>
+            <li key={i}>
                 {internalLink ? (
                     <a css={css`display:block;`} href={navItem.url} rel="noopener noreferrer">
                         {navItem.label}

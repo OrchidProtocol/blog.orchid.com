@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { css } from '@emotion/core'
 import styled from '@emotion/styled'
 import NavbarNavigation from './NavbarNavigation.js'
-import SocialIcons from './SocialIcons.js';
 import config from '../../utils/config'
 
 const Container = styled.div`
@@ -22,9 +21,6 @@ const Header = styled.header`
         body.no-js & {
             flex-wrap: wrap;
         }
-    }
-    @media (min-width: 871px) {
-        min-height: 99px;
     }
 `;
 
@@ -162,9 +158,7 @@ function Navbar(props) {
                         }}>
                         <img src={'/img/icons/close.svg'} alt='Close Menu' />
                     </div>
-                    <NavbarNavigation data={config.navbar_navigation}>
-                        <SocialIcons />
-                    </NavbarNavigation>
+                    <NavbarNavigation data={config.navbar_navigation} />
                 </div>
             </div>
         </Header>
