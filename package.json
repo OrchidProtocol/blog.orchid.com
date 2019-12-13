@@ -48,7 +48,7 @@
   "main": "n/a",
   "scripts": {
     "clean": "rm .env.production && rm .env.development && gatsby clean",
-    "start": "npm run develop",
+    "start": "TARGET_LANG=en node init-env.js && npm run develop",
     "build": "npm run build:static:en",
     "build:static": "npm run build:static:en",
     "build:static:en": "TARGET_LANG=en node init-env.js && gatsby clean && gatsby build",
