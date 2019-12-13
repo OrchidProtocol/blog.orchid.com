@@ -3,6 +3,7 @@ import { css } from '@emotion/core'
 import styled from '@emotion/styled'
 import NavbarNavigation from './NavbarNavigation.js'
 import config from '../../utils/config'
+import { Location } from '@reach/router'
 
 const Container = styled.div`
     background-color: var(--color-bg);
@@ -246,10 +247,17 @@ function Navbar(props) {
                                     }
                                 }
                             `}>
-                                <li id="navbar-language-selector-list-item-first"><a class="phantom-a" href="//www.ko.orchid.com">Korean</a></li>
-                                <li><a class="phantom-a" href="//www.orchid.com">English</a></li>
-                                <li><a class="phantom-a" href="//www.ja.orchid.com">Japanese</a></li>
-                                <li><a class="phantom-a" href="//www.zh.orchid.com">Mandarin</a></li>
+                                
+                                <Location>
+                                {({ location }) => {
+                                    return <>
+                                        <li id="navbar-language-selector-list-item-first"><a class="phantom-a" href={`//www.ko.blog.orchid.com${location.pathname}`}>Korean</a></li>
+                                        <li><a class="phantom-a" href={`//www.blog.orchid.com${location.pathname}`}>English</a></li>
+                                        <li><a class="phantom-a" href={`//www.ja.blog.orchid.com${location.pathname}`}>Japanese</a></li>
+                                        <li><a class="phantom-a" href={`//www.zh.blog.orchid.com${location.pathname}`}>Mandarin</a></li>
+                                    </>
+                                }}
+                                </Location>
                             </ul>
                         </li>
                     </NavbarNavigation>
