@@ -19,8 +19,16 @@ module.exports = {
             label: 'Home'
         },
         {
+            url: 'https://www.orchid.com/join',
+            label: 'Join Now'
+        },
+        {
             url: 'https://www.orchid.com/how-it-works',
             label: 'How It Works'
+        },
+        {
+            url: 'https://www.orchid.com/oxt',
+            label: 'OXT'
         },
         {
             url: 'https://www.orchid.com/about-us',
