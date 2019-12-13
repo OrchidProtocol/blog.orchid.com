@@ -76,6 +76,9 @@ exports.createPages = ({ actions, graphql }) => {
   })
 }
 
+const remark = require('remark')
+const remarkHTML = require('remark-html')
+
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
   fmImagesToRelative(node) // convert image paths for gatsby images
@@ -88,4 +91,61 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value,
     })
   }
+
+  if (node && node.frontmatter) {
+    const body_ja = node.frontmatter.body_ja;
+    if (body_ja) {
+      const value = remark()
+        .use(remarkHTML)
+        .processSync(body_ja)
+        .toString();
+
+      // new node at:
+      // fields {
+      //   body_ja_html
+      // }
+      createNodeField({
+        name: `body_ja_html`,
+        node,
+        value
+      });
+    }
+
+    const body_ko = node.frontmatter.body_ko;
+    if (body_ko) {
+      const value = remark()
+        .use(remarkHTML)
+        .processSync(body_ko)
+        .toString();
+
+      // new node at:
+      // fields {
+      //   body_ko_html
+      // }
+      createNodeField({
+        name: `body_ko_html`,
+        node,
+        value
+      });
+    }
+
+    const body_zh = node.frontmatter.body_zh;
+    if (body_zh) {
+      const value = remark()
+        .use(remarkHTML)
+        .processSync(body_zh)
+        .toString();
+
+      // new node at:
+      // fields {
+      //   body_zh_html
+      // }
+      createNodeField({
+        name: `body_zh_html`,
+        node,
+        value
+      });
+    }
+  }
+
 }

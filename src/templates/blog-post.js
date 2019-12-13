@@ -13,6 +13,9 @@ import config from '../utils/config';
 
 export const BlogPostTemplate = ({
 	content,
+	body_ja,
+	body_ko,
+	body_zh,
 	description,
 	tags,
 	title,
@@ -144,17 +147,25 @@ BlogPostTemplate.propTypes = {
 	helmet: PropTypes.object,
 }
 
-const BlogPost = ({ data }) => {
-	const { markdownRemark: post } = data
+const BlogPost = (props) => {
+	const { markdownRemark: post } = props.data
+
+	console.log(props);
+
+	let content = post.html;
+	if (process.env.GATSBY_TARGET_LANG) {
+		if (post.fields[`body_${process.env.GATSBY_TARGET_LANG}_html`]) {
+			content = post.fields[`body_${process.env.GATSBY_TARGET_LANG}_html`];
+		}
+	}
 
 	return (
 		<Layout>
 			<BlogPostTemplate
-				content={post.html}
+				content={content}
 				date={post.frontmatter.date}
 				slug={post.frontmatter.url}
 				featuredimage={post.frontmatter.featuredimage}
-				contentComponent={post.html}
 				description={post.frontmatter.description}
 				helmet={
 					<Helmet titleTemplate="%s | Blog">
@@ -211,6 +222,11 @@ export const pageQuery = graphql`
 				description
 				url
 				tags
+			}
+			fields {
+				body_ja_html
+				body_ko_html
+				body_zh_html
 			}
 		}
 	}
