@@ -21,13 +21,19 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Public", name: "public", widget: "boolean"}
       - {label: "URL", name: "url", widget: "string"}
-      - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body - Japanese", name: "body_ja", widget: "markdown", required: false}
       - {label: "Body - Korean", name: "body_ko", widget: "markdown", required: false}
       - {label: "Body - Chinese", name: "body_zh", widget: "markdown", required: false}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Description - Japanese", name: "description_ja", widget: "text", required: false}
+      - {label: "Description - Korean", name: "description_ko", widget: "text", required: false}
+      - {label: "Description - Chinese", name: "description_zh", widget: "text", required: false}
+      - {label: "Title - Japanese", name: "title_ja", widget: "string", required: false}
+      - {label: "Title - Korean", name: "title_ko", widget: "string", required: false}
+      - {label: "Title - Chinese", name: "title_zh", widget: "string", required: false}
