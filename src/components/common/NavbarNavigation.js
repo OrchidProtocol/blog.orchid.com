@@ -1,6 +1,5 @@
-import React, { Children } from "react";
+import React from "react";
 import { css } from "@emotion/core";
-import PropTypes from "prop-types";
 import { Link } from "gatsby";
 
 /**
@@ -47,6 +46,7 @@ const style = css`
 
         & > a {
             padding: 0.5rem;
+            margin: -.5rem 0;
             color: var(--link-color);
             font-weight: var(--font-bold);
             font-size: 14px;
@@ -100,17 +100,17 @@ const style = css`
 `;
 
 const Navigation = ({ data, children }) => {
-    let i = 0;
     const items = [];
 
     for (let i = 0; i < data.length; i++) {
         const navItem = data[i];
+        const internalLink = navItem.url.match(/^\s?http(s?)/gi);
 
         const className =
-            navItem.url === "https://blog.orchid.com/" ? "active-link" : "";
+            internalLink ? "active-link" : "";
         items.push(
-            <li key={i} className={className}>
-                {navItem.url.match(/^\s?http(s?)/gi) ? (
+            <li key={i}>
+                {internalLink ? (
                     <a css={css`display:block;`} href={navItem.url} rel="noopener noreferrer">
                         {navItem.label}
                     </a>
@@ -127,17 +127,5 @@ const Navigation = ({ data, children }) => {
     </ul>
 };
 
-Navigation.defaultProps = {
-    data: []
-};
-
-Navigation.propTypes = {
-    data: PropTypes.arrayOf(
-        PropTypes.shape({
-            label: PropTypes.string.isRequired,
-            url: PropTypes.string.isRequired
-        }).isRequired
-    ).isRequired
-};
 
 export default Navigation;

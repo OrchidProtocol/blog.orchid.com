@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { css } from '@emotion/core'
 import styled from '@emotion/styled'
 import NavbarNavigation from './NavbarNavigation.js'
-import SocialIcons from './SocialIcons.js';
+import { Location } from '@reach/router'
 
 const Container = styled.div`
     background-color: var(--color-bg);
@@ -22,14 +22,9 @@ const Header = styled.header`
             flex-wrap: wrap;
         }
     }
-    @media (min-width: 871px) {
-        min-height: 99px;
-    }
 `;
 
 function Navbar(props) {
-    const site = props.site;
-
     const [active, setActive] = useState(false);
 
     return <Container data-active={active}>
@@ -46,7 +41,7 @@ function Navbar(props) {
                     padding: 1rem;
                     box-sizing: content-box;
                     display: block;
-                `} width="93" height="24" src="/images/orchid-logo-text.svg" alt={site.title} />
+                `} width="93" height="24" src="/images/orchid-logo-text.svg" alt="Orchid" />
             </a>
 
             <a href="https://www.orchid.com/" css={css`
@@ -61,7 +56,7 @@ function Navbar(props) {
                         box-sizing: content-box;
                         width: 35px;
                         height: auto;
-                    `} width="35" height="30" src="/images/orchid-logo-small.svg" alt={site.title} />
+                    `} width="35" height="30" src="/images/orchid-logo-small.svg" alt="Orchid" />
             </a>
 
             <div css={css`
@@ -169,8 +164,16 @@ function Navbar(props) {
                             label: 'Home'
                         },
                         {
+                            url: 'https://www.orchid.com/join',
+                            label: 'Join Now'
+                        },
+                        {
                             url: 'https://www.orchid.com/how-it-works',
                             label: 'How It Works'
+                        },
+                        {
+                            url: 'https://www.orchid.com/oxt',
+                            label: 'OXT'
                         },
                         {
                             url: 'https://www.orchid.com/about-us',
@@ -185,7 +188,106 @@ function Navbar(props) {
                             label: 'Contact'
                         }
                     ]}>
-                        <SocialIcons />
+                        <li css={css`
+                            cursor: pointer;
+                            position: relative;
+
+                            color: var(--link-color);
+                            font-weight: var(--font-bold);
+                            font-size: 14px;
+                            
+
+                            @media (min-width: 871px) {
+                                padding-left: 1rem !important;
+                                padding-right: 1rem !important;
+                            }
+                            
+                            li {
+                                position: relative;
+                                display: block;
+                                border-right: 1px var(--orc-gray) solid;
+                                padding-right: 0.25rem;
+
+                                @media (min-width: 871px) {
+                                    padding-right: 0;
+                                    border-right: none;
+                                    text-align: center;
+
+                                    a {
+                                    padding: 7px 0;
+                                    display: inline-block;
+                                    width: 100%;
+                                    }
+                                }
+                            }
+                        `}>
+                            <input type="checkbox" id="navbar-language-selector-checkbox" css={css`
+                                display: none;
+                                
+                                &:checked~.navbar-language-selector-list {
+                                    @media ( min-width:871px ) {
+                                        display: block;
+                                        animation-name: navbar-language-selector-animation;
+                                        animation-timing-function: ease-out;
+                                        animation-duration: 0.3s;
+                                    }
+                                }
+                            `} />
+                            <label for="navbar-language-selector-checkbox" css={css`
+                                position: absolute;
+                                display: block;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                cursor: pointer;
+                            `}></label>
+
+                            <span class="phantom-a">
+                                <img alt="" css={css`
+                                    vertical-align: top;
+                                `} width="20" height="20" src="/images/globe.svg" />
+
+                                <span>English</span>
+                            </span>
+                            <ul className="navbar-language-selector-list" css={css`
+                                padding: 0;
+
+                                @media ( min-width:871px ) {
+                                    display: none;
+                                    position: absolute;
+                                    top: 100%;
+                                    top: calc(100% + 0.5rem);
+                                    left: 0%;
+                                    z-index: 100;
+                                    padding: 0.5rem;
+                                    background: #fff;
+                                }
+
+                                width: auto;
+                                min-width: 100%;
+                                list-style: none;
+                                margin: 0;
+
+                                &>li:nth-child(1)#navbar-language-selector-list-item-first {
+                                    @media ( min-width:871px ) {
+                                        padding-top: 0;
+                                    }
+                                }
+                            `}>
+
+                                <Location>
+                                    {({ location }) => {
+                                        return <>
+                                            <li id="navbar-language-selector-list-item-first"><a class="phantom-a" href={`//www.ko.orchid.com`}>Korean</a></li>
+                                            <li><a class="phantom-a" href={`//www.orchid.com`}>English</a></li>
+                                            <li><a class="phantom-a" href={`//www.ja.orchid.com`}>Japanese</a></li>
+                                            <li><a class="phantom-a" href={`//www.zh.orchid.com`}>Mandarin</a></li>
+                                        </>
+                                    }}
+                                </Location>
+                            </ul>
+                        </li>
                     </NavbarNavigation>
                 </div>
             </div>
