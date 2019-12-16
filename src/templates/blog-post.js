@@ -150,8 +150,6 @@ BlogPostTemplate.propTypes = {
 const BlogPost = (props) => {
 	const { markdownRemark: post } = props.data
 
-	console.log(props);
-
 	let content = post.html;
 	if (process.env.GATSBY_TARGET_LANG) {
 		if (post.fields[`body_${process.env.GATSBY_TARGET_LANG}_html`]) {
