@@ -15,7 +15,7 @@ export function getCustomFormatedDateEN (timestamp) {
 }
 export function getCustomFormatedDateKO (timestamp) {
     const date = new Date(timestamp);
-    const month = months[date.getMonth()],
+    const month = date.getMonth()+1,
         day = date.getDate(),
         year = date.getFullYear();
 
@@ -23,7 +23,7 @@ export function getCustomFormatedDateKO (timestamp) {
 }
 export function getCustomFormatedDateJA (timestamp) {
     const date = new Date(timestamp);
-    const month = months[date.getMonth()],
+    const month = date.getMonth()+1,
         day = date.getDate(),
         year = date.getFullYear();
 
@@ -31,7 +31,7 @@ export function getCustomFormatedDateJA (timestamp) {
 }
 export function getCustomFormatedDateZH (timestamp) {
     const date = new Date(timestamp);
-    const month = months[date.getMonth()],
+    const month = date.getMonth()+1,
         day = date.getDate(),
         year = date.getFullYear();
 
