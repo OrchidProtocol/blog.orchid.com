@@ -5,6 +5,9 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/common/Layout'
 import Tags from '../components/common/Tags'
+import url from 'url'
+
+import ArticleMeta from '../components/common/meta/ArticleMeta';
 
 import getCustomFormatedDate from '../utils/date';
 
@@ -51,7 +54,7 @@ export const BlogPostTemplate = ({
 
 							box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
 							border-radius: 20px;
-						`} src={(featuredimage.childImageSharp) ? featuredimage.childImageSharp.fixed.src : featuredimage.publicURL} alt={title} />
+						`} src={featuredimage} alt={title} />
 						: <></>}
 
 				</figure> : null}
@@ -164,6 +167,15 @@ const BlogPost = (props) => {
 		}
 	}
 
+	post.frontmatter.title = title;
+	post.frontmatter.description = description;
+
+	if (post.frontmatter.featuredimage) 
+		post.frontmatter.featuredimage = (post.frontmatter.featuredimage.childImageSharp) ?
+			post.frontmatter.featuredimage.childImageSharp.fixed.src : 
+			post.frontmatter.featuredimage.publicURL;
+
+
 	return (
 		<Layout>
 			<BlogPostTemplate
@@ -173,7 +185,10 @@ const BlogPost = (props) => {
 				featuredimage={post.frontmatter.featuredimage}
 				description={description}
 				helmet={
-					<Helmet titleTemplate="%s | Blog">
+					<ArticleMeta 
+						data={post.frontmatter}
+						canonical={url.resolve(config.siteUrl, post.frontmatter.url)} />
+					/*<Helmet titleTemplate="%s | Blog">
 						<title>{`${title}`}</title>
 						<meta name="title" content={title} />
 						<meta
@@ -191,7 +206,7 @@ const BlogPost = (props) => {
 						<meta name="twitter:title" content={title} />
 						<meta name="twitter:image" content={post.frontmatter.featuredimage} />
 						<meta name="twitter:card" content="summary_large_image" />
-					</Helmet>
+					</Helmet>*/
 				}
 				tags={post.frontmatter.tags}
 				title={title}

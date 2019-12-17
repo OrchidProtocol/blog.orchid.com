@@ -4,67 +4,54 @@ import { StaticQuery } from 'gatsby'
 import _ from 'lodash'
 import url from 'url'
 
-import getAuthorProperties from './getAuthorProperties'
 import ImageMeta from './ImageMeta'
 import config from '../../../utils/config'
 
 import { tags as tagsHelper } from '@tryghost/helpers'
 
-const ArticleMetaGhost = ({ data, settings, canonical }) => {
+const ArticleMetaGhost = ({ data, canonical }) => {
     const ghostPost = data
 
-    const author = getAuthorProperties(ghostPost.primary_author)
-    const publicTags = _.map(tagsHelper(ghostPost, { visibility: `public`, fn: tag => tag }), `name`)
-    const primaryTag = publicTags[0] || ``
-    const shareImage = ghostPost.feature_image ? ghostPost.feature_image : _.get(settings, `cover_image`, null)
-    const publisherLogo = (config.logo || config.siteIcon) ? url.resolve(config.siteUrl, (config.logo || config.siteIcon)) : null
+    if (!ghostPost.tags) ghostPost.tags = [];
+
+    const primaryTag = ghostPost.tags[0];
+    const publisherLogo = url.resolve(config.siteUrl, config.logo);
 
     return (
         <>
             <Helmet>
-                <title>{ghostPost.meta_title || ghostPost.title}</title>
-                <meta name="description" content={ghostPost.meta_description || ghostPost.excerpt} />
+                <title>{ghostPost.title}</title>
+                <meta name="description" content={ghostPost.description} />
                 <link rel="canonical" href={canonical} />
 
                 <meta property="og:site_name" content={config.title} />
                 <meta property="og:type" content="article" />
                 <meta property="og:title"
                     content={
-                        ghostPost.og_title ||
-                        ghostPost.meta_title ||
                         ghostPost.title
                     }
                 />
                 <meta property="og:description"
                     content={
-                        ghostPost.og_description ||
-                        ghostPost.excerpt ||
-                        ghostPost.meta_description
+                        ghostPost.description
                     }
                 />
                 <meta property="og:url" content={canonical} />
-                <meta property="article:published_time" content={ghostPost.published_at} />
-                <meta property="article:modified_time" content={ghostPost.updated_at} />
-                {publicTags.map((keyword, i) => (<meta property="article:tag" content={keyword} key={i} />))}
-                {author.facebookUrl && <meta property="article:author" content={author.facebookUrl} />}
+                <meta property="article:published_time" content={ghostPost.date} />
+                <meta property="article:modified_time" content={ghostPost.date} />
+                {ghostPost.tags.map((keyword, i) => (<meta property="article:tag" content={keyword} key={i} />))}
 
                 <meta name="twitter:title"
                     content={
-                        ghostPost.twitter_title ||
-                        ghostPost.meta_title ||
                         ghostPost.title
                     }
                 />
                 <meta name="twitter:description"
                     content={
-                        ghostPost.twitter_description ||
-                        ghostPost.excerpt ||
-                        ghostPost.meta_description
+                        ghostPost.description
                     }
                 />
                 <meta name="twitter:url" content={canonical} />
-                <meta name="twitter:label1" content="Written by" />
-                <meta name="twitter:data1" content={author.name} />
                 {primaryTag && <meta name="twitter:label2" content="Filed under" />}
                 {primaryTag && <meta name="twitter:data2" content={primaryTag} />}
 
@@ -75,22 +62,19 @@ const ArticleMetaGhost = ({ data, settings, canonical }) => {
                         "@context": "https://schema.org/",
                         "@type": "Article",
                         "author": {
-                            "@type": "Person",
-                            "name": "${author.name}",
-                            ${author.image ? author.sameAsArray ? `"image": "${author.image}",` : `"image": "${author.image}"` : ``}
-                            ${author.sameAsArray ? `"sameAs": ${author.sameAsArray}` : ``}
+                            "@type": "Organization",
+                            "name": "${config.title}",
+                            "image": "${publisherLogo}"
                         },
-                        ${publicTags.length ? `"keywords": "${_.join(publicTags, `, `)}",` : ``}
-                        "headline": "${ghostPost.meta_title || ghostPost.title}",
+                        ${ghostPost.tags.length ? `"keywords": "${_.join(ghostPost.tags, `, `)}",` : ``}
+                        "headline": "${ghostPost.title}",
                         "url": "${canonical}",
-                        "datePublished": "${ghostPost.published_at}",
-                        "dateModified": "${ghostPost.updated_at}",
-                        ${shareImage ? `"image": {
-                                "@type": "ImageObject",
-                                "url": "${shareImage}",
-                                "width": "${config.shareImageWidth}",
-                                "height": "${config.shareImageHeight}"
-                            },` : ``}
+                        "datePublished": "${ghostPost.date}",
+                        "dateModified": "${ghostPost.date}",
+                        ${ghostPost.featuredimage ? `"image": {
+                            "@type": "ImageObject",
+                            "url": "${url.resolve(config.siteUrl, ghostPost.featuredimage)}"
+                        },` : ``}
                         "publisher": {
                             "@type": "Organization",
                             "name": "${config.title}",
@@ -101,7 +85,7 @@ const ArticleMetaGhost = ({ data, settings, canonical }) => {
                                 "height": 60
                             }
                         },
-                        "description": "${ghostPost.meta_description || ghostPost.excerpt}",
+                        "description": "${ghostPost.description}",
                         "mainEntityOfPage": {
                             "@type": "WebPage",
                             "@id": "${config.siteUrl}"
@@ -109,7 +93,7 @@ const ArticleMetaGhost = ({ data, settings, canonical }) => {
                     }
                 `}</script>
             </Helmet>
-            <ImageMeta image={shareImage} />
+            <ImageMeta image={ghostPost.featuredimage} />
         </>
     )
 }
