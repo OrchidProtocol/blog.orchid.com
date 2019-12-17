@@ -16,7 +16,24 @@ const FeaturedIndicator = <div css={css`
     line-height: 1;
     font-size: 75%;
 `}>
-    Featured
+    {
+        (()=>{
+            switch (process.env.GATSBY_TARGET_LANG) {
+                default:
+                    return "Featured";
+                break;
+                case "ja":
+                    return "おすすめ";
+                break;
+                case "ko":
+                    return "주요 게시물";
+                break;
+                case "zh":
+                    return "精选";
+                break;
+            }
+        })()
+    }
 </div>
 
 //<Link to={url}>
