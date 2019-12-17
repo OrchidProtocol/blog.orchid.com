@@ -23,8 +23,18 @@ const FeaturedIndicator = <div css={css`
 
 const PostCard = ({ post, number }) => {
     const url = `/${post.frontmatter.url}/`
+    
+	let title = post.frontmatter.title,
+        description = post.frontmatter.description;
 
-    const excerpt = post.frontmatter.description || post.excerpt;
+    if (process.env.GATSBY_TARGET_LANG) {
+        if (post.frontmatter[`title_${process.env.GATSBY_TARGET_LANG}`]) {
+            title = post.frontmatter[`title_${process.env.GATSBY_TARGET_LANG}`];
+        }
+        if (post.frontmatter[`description_${process.env.GATSBY_TARGET_LANG}`]) {
+            description = post.frontmatter[`description_${process.env.GATSBY_TARGET_LANG}`];
+        }
+    }
 
     return (
         <div to={url} css={css`
@@ -65,11 +75,11 @@ const PostCard = ({ post, number }) => {
                         <h2 css={css`
                                 display: inline;
                                 vertical-align: middle;
-                            `}>{post.frontmatter.title}</h2>
+                            `}>{title}</h2>
                     </Link>
                 </div>
 
-                <section className="post-card-excerpt"><Link to={url} css={css`&:hover{text-decoration:none;}`}>{excerpt}</Link></section>
+                <section className="post-card-excerpt"><Link to={url} css={css`&:hover{text-decoration:none;}`}>{description}</Link></section>
 
                 <div css={css`
                     text-align: right;

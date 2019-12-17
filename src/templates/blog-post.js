@@ -6,6 +6,8 @@ import { graphql } from 'gatsby'
 import Layout from '../components/common/Layout'
 import Tags from '../components/common/Tags'
 
+import getCustomFormatedDate from '../utils/date';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin, faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
 
@@ -70,7 +72,7 @@ export const BlogPostTemplate = ({
 				`}>{title}</h1>
 				<span css={css`
 					display: block;
-				`}>{date}</span>
+				`}>{getCustomFormatedDate(date)}</span>
 
 				<br />
 
@@ -150,10 +152,19 @@ BlogPostTemplate.propTypes = {
 const BlogPost = (props) => {
 	const { markdownRemark: post } = props.data
 
-	let content = post.html;
+	let content = post.html,
+		title = post.frontmatter.title,
+		description = post.frontmatter.description;
+
 	if (process.env.GATSBY_TARGET_LANG) {
 		if (post.fields[`body_${process.env.GATSBY_TARGET_LANG}_html`]) {
 			content = post.fields[`body_${process.env.GATSBY_TARGET_LANG}_html`];
+		}
+		if (post.frontmatter[`title_${process.env.GATSBY_TARGET_LANG}`]) {
+			title = post.frontmatter[`title_${process.env.GATSBY_TARGET_LANG}`];
+		}
+		if (post.frontmatter[`description_${process.env.GATSBY_TARGET_LANG}`]) {
+			description = post.frontmatter[`description_${process.env.GATSBY_TARGET_LANG}`];
 		}
 	}
 
@@ -164,30 +175,30 @@ const BlogPost = (props) => {
 				date={post.frontmatter.date}
 				slug={post.frontmatter.url}
 				featuredimage={post.frontmatter.featuredimage}
-				description={post.frontmatter.description}
+				description={description}
 				helmet={
 					<Helmet titleTemplate="%s | Blog">
-						<title>{`${post.frontmatter.title}`}</title>
-						<meta name="title" content={post.frontmatter.title} />
+						<title>{`${title}`}</title>
+						<meta name="title" content={title} />
 						<meta
 							name="description"
-							content={`${post.frontmatter.description}`}
+							content={`${description}`}
 						/>
 
-						<meta property="og:title" content={post.frontmatter.title} />
-						<meta property="og:description" content={post.frontmatter.description} />
+						<meta property="og:title" content={title} />
+						<meta property="og:description" content={description} />
 						<meta property="og:image" content={post.frontmatter.featuredimage} />
 						<meta property="og:type" content="Article" />
 						<meta property="article:published_time" content={post.frontmatter.date} />
 						
 						<meta data-rh="true" name="twitter:creator" content={config.twitter} />
-						<meta name="twitter:title" content={post.frontmatter.title} />
+						<meta name="twitter:title" content={title} />
 						<meta name="twitter:image" content={post.frontmatter.featuredimage} />
 						<meta name="twitter:card" content="summary_large_image" />
 					</Helmet>
 				}
 				tags={post.frontmatter.tags}
-				title={post.frontmatter.title}
+				title={title}
 			/>
 		</Layout>
 	)
@@ -207,7 +218,7 @@ export const pageQuery = graphql`
 			id
 			html
 			frontmatter {
-				date(formatString: "MMMM DD, YYYY")
+				date
 				featuredimage {
 					childImageSharp {
 						fixed(width: 720, quality: 100) {
@@ -217,7 +228,13 @@ export const pageQuery = graphql`
 					publicURL
 				}
 				title
+				title_ja
+				title_ko
+				title_zh
 				description
+				description_ja
+				description_ko
+				description_zh
 				url
 				tags
 			}

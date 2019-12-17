@@ -5,6 +5,7 @@ import { Link, graphql, StaticQuery } from 'gatsby'
 
 import _ from 'lodash';
 import { Layout, PostCard } from './common';
+import getCustomFormatedDate from '../utils/date';
 
 const Sidebar = styled.div`
 `;
@@ -77,7 +78,7 @@ const BlogRoll = ({ data }) => {
                     padding: 30% 50%;
                 `}></div> : <></>}
             <h3>{featured[index].node.frontmatter.title}</h3>
-            <span>{featured[index].node.frontmatter.date}</span>
+            <span>{getCustomFormatedDate(featured[index].node.frontmatter.date)}</span>
         </Link>);
     }
 
@@ -153,10 +154,16 @@ export default () => (
 						frontmatter {
                             url
                             title
+                            title_ja
+                            title_ko
+                            title_zh
                             description
+                            description_ja
+                            description_ko
+                            description_zh
                             tags
 							templateKey
-							date(formatString: "MMMM DD, YYYY")
+							date
 							featuredpost
 							featuredimage {
 								childImageSharp {
@@ -184,9 +191,12 @@ export default () => (
 						}
 						frontmatter {
 							url
-							title
+                            title
+                            title_ja
+                            title_ko
+                            title_zh
 							templateKey
-							date(formatString: "MMMM DD, YYYY")
+							date
 							featuredpost
 							featuredimage {
 								childImageSharp {
