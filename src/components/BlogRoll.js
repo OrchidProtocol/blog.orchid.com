@@ -57,6 +57,14 @@ const BlogRoll = ({ data }) => {
 
     const featuredElements = [];
     for (let index = 0; index < featured.length; index++) {
+
+        let title = featured[index].node.frontmatter.title;
+        if (process.env.GATSBY_TARGET_LANG) {
+            if (featured[index].node.frontmatter[`title_${process.env.GATSBY_TARGET_LANG}`]) {
+                title = featured[index].node.frontmatter[`title_${process.env.GATSBY_TARGET_LANG}`];
+            }
+        }
+
         featuredElements.push(<Link css={css`
             display: block;
             margin-top: 2rem;
@@ -77,7 +85,11 @@ const BlogRoll = ({ data }) => {
                     background-position: center;
                     padding: 30% 50%;
                 `}></div> : <></>}
-            <h3>{featured[index].node.frontmatter.title}</h3>
+            <h3 css={css`
+                ${process.env.GATSBY_TARGET_LANG !== 'en' ? `
+                    margin-top: 0.25rem;
+                ` : ''}
+            `}>{title}</h3>
             <span>{getCustomFormatedDate(featured[index].node.frontmatter.date)}</span>
         </Link>);
     }
