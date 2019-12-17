@@ -5,12 +5,12 @@ url: introducing-nanopayments
 title: Introducing Nanopayments
 title_ja: ナノペイメントの紹介
 title_ko: 나노 지불 소개
-title_zh: Introducing Nanopayments
+title_zh: 极微支付简介
 date: 2019-10-9T16:47:36.651Z
 description: 'When you wake up in the morning and flick on a light switch, do you pause to think about how many tiny fractions of a penny that electricity costs? Or do you just flick on the light so you don’t bump your head?'
 description_ja: '朝起きて電灯のスイッチを入れるとき、その電気代が 1 ペニーの何分 の 1 くらいか考えることがありますか?それとも、頭をぶつけないように 電灯をつけるだけですか？'
 description_ko: '아침에 일어나서 전등 스위치를 켤 때 잠시 멈추고 전기 요금이 얼마나 나올지 생각하십니까? 아니면 어딘가 부딪치지 않도록 바로 스위치를 켜십니까?'
-description_zh: 'When you wake up in the morning and flick on a light switch, do you pause to think about how many tiny fractions of a penny that electricity costs? Or do you just flick on the light so you don’t bump your head?'
+description_zh: '当您早上醒来按下电灯开关时，您是会停下来用一丁点时间来思考要花多少电费， 还是直接按开灯，以免撞到头？'
 featuredpost: true
 featuredimage: /img/nanopayments.jpg
 tags:
@@ -66,8 +66,7 @@ body_ja: |-
   私たちは、オーキッド ナノペイメントは既存の支払いチャネル ソリュー ションよりも優れており、ユーザーに継続的なサービスを提供するため に最適化されていると考えています。取引手数料の削減により、イー サリアム自体のアップグレードを必要とせずに、最大数百万人のユー ザーをサポートできます。セットアップ コストは対で発生するのではな く、ユーザーが開始することによってのみ発生します。つまり、プロバイ ダーはセットアップ コストを負担することなしにユーザーへのサービス をすぐに開始でき、ユーザーは気まぐれにプロバイダーを切り替えるこ とができます。私たちはこれが、現代の VPN アプリケーションの設計 要件だと考えています。
 
   ## オーキッドで最新情報を入手
-  常に最新のオーキッド ニュースを入手し、最初にネットワークをテスト してオーキッド トークンを使用するユーザーになるには、 [ニュースレタ
-ーにご登録ください](https://www.orchid.com/#newsletter-signup)。
+  常に最新のオーキッド ニュースを入手し、最初にネットワークをテスト してオーキッド トークンを使用するユーザーになるには、 [ニュースレターにご登録ください](https://www.orchid.com/#newsletter-signup)。
 
   Webサイト: [www.orchid.com](https://www.orchid.com)
 
@@ -87,54 +86,57 @@ body_ja: |-
 
   Reddit: [https://www.reddit.com/r/orchid](https://www.reddit.com/r/orchid)
 body_zh: |-
-  When you wake up in the morning and flick on a light switch, do you pause to think about how many tiny fractions of a penny that electricity costs? Or do you just flick on the light so you don’t bump your head?
+  当您早上醒来按下电灯开关时，您是会停下来用一丁点时间来思考 要花多少电费， 还是直接按开灯，以免撞到头？
 
-  And if you could pay for other kinds of services the same way you pay for electricity — a tiny flow of resources that could be turned on or off at any moment — what possibilities would that open up?
+  如果您可以像用电付费一样（可以随时打开或关闭少量资源）支付 其他类型的服务费用，这会带来怎样的可能性？
 
-  Orchid’s novel layer 2 scaling architecture for Ethereum uses probabilistic nanopayments to allow users to pay for services in just this way. Nanopayments are what they sound like: they are tiny, and you can turn them on or off at will. But unlike a monthly electric bill, nanopayments transmit value as they move. We’re using this core technology to power our bandwidth marketplace, which is intended to offer users of the Orchid App a new way to construct VPN routes and manage them — just like flicking on a light switch.
+  Orchid 针对以太坊推出的新型第 2 层扩展架构使用概率极微支付， 让用户可以像用电付费一样付费购买服务。顾名思义，极微支付就 是 支付额很小，而且可以随意打开或关闭。但是，与每月的电费单 不同，极微支付在转移时会传递价值。我们正使用这项核心技术支 持我们的带宽市场，旨在为 Orchid App 的用户提供一种全新的 VPN 路线建立和管理方法，就像拨按电灯开关一样。
 
-  ## Scaling payments on Ethereum with Orchid
-  The Orchid Network’s bandwidth marketplace is two-sided, comprising buyers (Orchid App users) and sellers (Orchid Server operators). The exchange of bandwidth requires a high transaction throughput to support both basic service and payments. Payments are expected to be made at a per-packet level with high frequency. Ethereum’s layer 1 would be too slow and expensive to settle nano transactions at the level of bandwidth exchange required between buyers and sellers in the ecosystem. To solve this issue, Orchid uses an advanced payments architecture known as probabilistic nanopayments for per-packet network payments.
+  ## 使用 Orchid 扩展以太坊上的付款
+  Orchid 网络的带宽市场是双方市场，包括买方（Orchid App 用户） 和卖方（Orchid Server 运营商）。带宽交换需要很高的交易吞吐 量，才能支持基本的服务和付款。付款会在数据包级别高频率进行。 以太坊的第 1 层太慢且太昂贵，无法在生态系统中的买卖双方之间 所需的带宽交换级别上结算极微交易。为了解决此问题，Orchid 使用一种高级支付架构按数据包完成网络支付，这种架构叫做概率 极微支付。
 
-  ## Existing layer 2 scaling solutions
-  Several layer 2 scaling proposals already exist, including the [Lightning Network](https://lightning.network/) on Bitcoin and the [Raiden Network](https://raiden.network/) on Ethereum. Both of these approaches fall into the category of networked payment channels, which could, in theory, serve as the payments layer for Orchid’s bandwidth marketplace.
 
-  However, networked payment channels have several key disadvantages. They require users to deposit and lockup funds with specific network nodes, creating counterparty risk. The cost of a payment using networked payment channels is essentially O(log N), compared with O(C) for probabilistic payments, making them less scaling efficient. Network channel payments can also fail to route or fail to deliver in a timely manner if a single node in the circuit fails. Finally, they leak payment information to more parties than stochastic payments. For these reasons, network payment channels are less practical than nanopayments for Orchid’s use case.
+  ## 现有的第 2 层扩展解决方案
+  如今已经有多种第 2 层扩展提案，其中包括比特币上的 [闪电网络](https://lightning.network/) 和以太坊上的 [雷电网络](https://raiden.network/)。这两种方法都属于网络支付渠道的范畴，从理论上讲，都可以作为 Orchid 带宽市场的支付层。
 
-  ## Orchid Nanopayments: how they work
-  Instead of sending a transaction worth $1 directly, with probabilistic payments the buyer could send a 1% chance of winning $100. Orchid’s design takes this to an extreme, with nanopayment tickets representing the value of thousandths of a penny, or smaller. The tickets are all sent off-chain; only when a winning ticket is redeemed would its receiver have to make an on-chain transaction to claim the face value amount, which is rare. The receiver has no way to know if a ticket is a winner beforehand, therefore giving all tickets implied value.
+  但是，网络支付渠道有几个重大的劣势。它们要求用户使用特定的网络节点来存放和锁定资金，产生了交易对手风险。与概率支付的成本 O(C) 相比，使用网络支付渠道的支付成本基本为 O(log N)，因而扩展效率较低。如果回路中的单个节点发生故障，则网络渠道付款也可能无法路由或无法及时交付。最后，与随机支付相比，它们将支付信息泄露给更多的相关方。鉴于这些原因，在 Orchid 的用例中，网络支付渠道不如极微支付实用。
 
-  ## The expected flow of nanopayments
-  - Sender opens nanopayment account by depositing OXT into an Ethereum smart contract.
-  - Sender can then issue valid nanopayments, backed by the deposit, to any provider on the network that is accepting payments for service.
-  - Eventually, the user is expected to issue a nanopayment that “wins”, which allows the provider to redeem the ticket as a payment via an on-chain transaction.
-  - The user may or may not need to add more OXT to their nanopayment account, depending on the level of funds in the account.
-  - Over time, the value transmitted on-chain will in expectation match the value represented in the probabilistic nanopayments.
+  ## Orchid 极微支付：运行机制
+  通过概率支付，买方不用直接发送价值 1 美元的交易，而是可发送1％ 的赢得 100 美元的机会。Orchid 的设计将这一点发挥到了极致，极微支付彩币代表的价值为千分之几美分或更低。这些彩币都是在链下发送的；仅当兑换中奖彩币时，接收者才需要进行链上交易以索取票面价值，而这种概率很低。接收者无法事先知道彩币是否能中奖，因此向所有彩币赋予了隐含价值。
+
+  ## 极微支付的预期流量
+  1. 发送方通过将 OXT 存入以太坊智能合约来开设极微支付账户。
+  2. 然后，发送方可以将有效的极微付款（以保证金为保障）发给网络上接受服务付款的任何提供商。
+  3. 最终，该用户将发出“中奖”的极微付款，因而提供商可以通过链上交易将彩币兑换为付款。
+  4. 根据账户中的资金量，用户可能需要或不需要向其极微支付账户中添加更多 OXT。
+  5. 链上传输的价值将逐渐按照预期与概率极微支付中所代表的价值相匹配。
 
   ![Nanopayments](/img/oxt-provider-illustration.png)
 
-  The graphic above demonstrates how the Orchid App users are expected to be able to send nanopayments to multiple providers after incurring a single deposit setup on the Ethereum blockchain, as well as how the general flow of payments is intended to operate.
+  上图显示了 Orchid App 用户在以太坊区块链上引发一次保证金设立后向多个提供商发送极微付款的过程，以及一般支付流程的运作机制。
 
-  We believe the general properties of this system are well suited for a bandwidth marketplace, where the user requires the ability to select different providers at will and for them to very quickly establish a payment-for-services relationship. Users should be able to quickly change VPN providers arbitrarily based on speed, availability, price and/or location. The setup of the nanopayment account on Ethereum is structured to be shouldered by the user, but is compatible with the current VPN market where users sign monthly, annual, or even multi-annual agreements with providers for VPN service. The Orchid user is expected to have the added benefit of being able to take back the deposit from the nanopayment account if they stop using the service.
+  我们认为，该系统的一般属性非常适合带宽市场，该市场的用户需要能够随意选择不同的提供商，并能够非常快速地建立服务付费关系。用户应能够根据速度、可用性、价格和/或位置任意地快速更改 VPN 提供商。以太坊上的极微支付账户由用户负责设立，但与当前的 VPN 市场兼容，该市场的用户每月、每年甚至每半年与提供商签订一次 VPN 服务协议。如果 Orchid 用户停止使用服务，则可以享有额外的好处—从极微支付账户中取回保证金。
 
-  ## Balance Variance
-  Orchid nanopayments do have one notable limitation: variance. Each time the Orchid App issues a nanopayment, there is a small independent probability of a winning ticket, which would decrease the receiver’s account balance. If the client’s balance was only large enough to cover a single winner, this would be a serious limitation. To illustrate this, imagine a client issuing tickets that have a 1-in-a-million chance of $2 at a rate of 1 million per week. While on average there will only be 1 winner per week, there is a reasonable probability that the winning ticket will be issued on the first day or even in the first few hours. On the plus side, there’s also a reasonable chance the winner won’t pop up for a few weeks. Fortunately we believe there’s a fairly simple solution: clients can just deposit a multiple of the face value, thereby smoothing out the variance. If we model this as a binomial distribution and if the client has $20 in their account instead of $2, the chance of their balance being depleted twice as fast as expected is reduced from around 10% to about 2%.
+  ## 余额波动
+  Orchid 极微支付确实有一个显著的局限性：余额波动。每次Orchid App 发出极微付款时，中奖彩币的独立概率很小，因而会减少接收者的账户余额。如果客户端的余额仅够支付一个中奖彩币，那么这个限制会很严重。为了说明这一点，假设有一个客户端以每周 100 万的速度发行有百万分之一机会的 2 美元彩币。虽然平均每周只有 1 位中奖者，但中奖彩币在第一天甚至前几小时内发出处于合理的概率范围内。从好的方面来说，几周内不出现中奖者也在合理的概率范围内。幸运的是，我们认为该问题有一个相当简单的解决方案：客户端只需存入数倍面值的金额即可顺利应对波动。如果我们将此情形建模为二项分布，并且客户端的账户中有 20 美元，而不是 2 美元，那么余额耗尽速度比预期快两倍的概率将从大约10％ 降低到大约 2％。
 
-  ## Payment Anonymity
-  Most nanopayment tickets do not “win,” and therefore would not be posted on-chain. However, rare winning tickets result in a public record on the Ethereum blockchain. Therefore, Orchid nanopayments are only pseudo-anonymous. For multi-hop circuits, it is anticipated that the Orchid client uses a separate account for each hop, which helps prevent anyone tracing the circuit using public payment information. As winning tickets are rare — anticipated to be approximately once per week in common circumstances — the public payment record from a multi-hop circuit is designed to appear essentially indistinguishable from that of a single-hop circuit. We expect that an adversary trying to trace the route will learn some of the payment providers associated with a payer’s public address, but the probability of two or more winning tickets to different nodes in the same circuit at the same time is vanishingly small, which reduces the traceability of transactions.
+  ## 支付匿名
+  大多数极微支付彩币不会“中奖”，因此不会在链上发布。但是，罕见的中奖彩币会在以太坊区块链上产生公开记录。因此，Orchid极微支付只是伪匿名的。对于多跳回路，Orchid 客户端应该每一跳使用一个单独的账户，这有助于防止任何人使用公共支付信息追踪回路。由于中奖彩币很罕见（通常情况下预计约每周一次），所以在设计上来自多跳回路的公共支付记录与单跳回路的记录基本上没有区别。我们料想到，试图追踪路线的攻击者会学习一些与付款人公共地址相关联的付款提供商，但是同一时间在同一回路中的不同节点上出现两个或更多中奖彩币的概率微乎其微，因而降低了交易的可追溯性。
 
-  ## Censorship resistance
-  As on most public blockchain networks, Ethereum transactions cannot be censored unless their validators (miners in the Ethereum network) choose not to include them in their created blocks. As blocks are mined randomly among all miners in proportion to hash power, the vast majority of miners would have to actively censor Orchid payments to significantly disrupt the Orchid Network. For example, if 90% of the hash power chose not to include Orchid-related transactions, the Orchid Network would still function, albeit with transactions taking, on average, ten times longer to confirm.
 
-  A more severe form of censorship would be possible if a large group of miners — say 51% — chose to censor Orchid-related transactions by rejecting blocks that included them. This would be valid according to the rules of the Ethereum protocol, and would effectively create a soft fork. However, organizing large-scale miner collusion to create such a soft fork carries significant risk of financial loss for the colluders; if the soft fork fails to achieve sufficient hashing power, the colluding miners would miss out on their block rewards. Even without the risk of financial loss, we consider this possibility extremely unlikely due to the decentralized nature of Ethereum mining communities and the lack of legal and regulatory limitations on blockchain mining strategies.
+  ## 抗审查
+  在大多数公共区块链网络上，无法审查以太坊交易，除非验证者（以太坊网络中的矿机）选择不将其包括在自己创建的区块中。由于区块是在所有矿机中随机开采出来的，与哈希算力成比例，因此绝大多数矿机不得不主动审查 Orchid 付款，给 Orchid 网络造成显著干扰。例如，如果 90％ 的哈希算力选择不包括 Orchid 相关交易，则 Orchid 网络仍将正常运行，但确认交易的时间平均长十倍。
 
-  ## Conclusion
-  We believe that Orchid nanopayments have advantages over existing payment channel solutions and are optimized to provide a continuous service to users. The reduction in transaction fees makes it possible to support up to millions of users, without requiring any upgrades to Ethereum itself. Setup costs are not pairwise, but are only incurred by the user to start. This means providers are expected to be able to immediately begin servicing users without incurring setup costs and users are expected to have the ability to switch between providers on a whim, which we view as a design requirement for a modern-day VPN application.
+  如果一大批矿机（例如 51％）选择通过拒绝包含 Orchid 相关交易的区块来审查这些交易，那么审查形式可能会更加严格。根据以太坊协议的规则，这种做法是有效的，并且将有效地创建软分叉。但是，组织大规模的矿机共谋以致产生这种软分叉会给共谋者带来巨大的财务损失风险；如果软分叉达不到足够的哈希算力，则共谋的矿机将错过区块奖励。即使没有财务损失的风险，我们也认为这种可能性极小，因为以太坊采矿社区是去中心化的，而且对区块链采矿策略的法律和法规限制不足。
 
-  ## Stay Up to date with Orchid
-  If you want to keep current on the latest Orchid news and be among the first to test out the network, [sign up for our newsletter](https://www.orchid.com/#newsletter-signup) to receive launch updates.
 
-  Website: [www.orchid.com](https://www.orchid.com)
+  ## 结语
+  我们认为，Orchid 极微支付具有现有支付渠道解决方案所不具备的优势，并且经过优化，可为用户提供连续服务。由于降低了交易费用，所以无需对以太坊本身进行任何升级，便能够支持多达数百万的用户。设置成本不是成对产生的，而是仅由发起的用户产生。这意味着，提供商能够立即开始为用户提供服务而不会产生设置成本，并且用户能够随意切换提供商，我们认为这是现代 VPN 应用的设计要求。
+
+  ## 关注 Orchid 最新动态
+  如果您想随时了解最新的 Orchid 新闻，率先测试网络并使用Orchid 代币，请 [注册接收我们的新闻通讯](https://www.orchid.com/#newsletter-signup)，了解最新发布信息。
+
+  网站: [www.orchid.com](https://www.orchid.com)
 
   Twitter: [https://twitter.com/OrchidProtocol](https://twitter.com/OrchidProtocol)
 
