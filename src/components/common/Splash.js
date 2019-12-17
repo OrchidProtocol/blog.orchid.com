@@ -87,7 +87,24 @@ const Splash = (props) => {
                             text-decoration: none;
                         }
                     `}>
-                        Blog
+                        {
+                            (()=>{
+                                switch (process.env.GATSBY_TARGET_LANG) {
+                                    default:
+                                        return "Blog";
+                                    break;
+                                    case "ja":
+                                        return "ブログ";
+                                    break;
+                                    case "ko":
+                                        return "블로그";
+                                    break;
+                                    case "zh":
+                                        return "我们的博客";
+                                    break;
+                                }
+                            })()
+                        }
                     </Link>
                 </h1>
                 { (props.subtitle || props.description) && <div className="splash-circuit-grid-text" css={css`
