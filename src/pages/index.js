@@ -23,7 +23,7 @@ export default () => (<>
 					"url": "${config.siteUrl}",
 					"image": {
 							"@type": "ImageObject",
-							"url": "${config.feature_image}",
+							"url": "${config.siteUrl}${config.feature_image}",
 							"width": "${config.feature_image_width}",
 							"height": "${config.feature_image_height}"
 						},
@@ -32,7 +32,7 @@ export default () => (<>
 						"name": "${config.title}",
 						"logo": {
 							"@type": "ImageObject",
-							"url": "${config.logo}",
+							"url": "${config.siteUrl}${config.logo}",
 							"width": ${config.logoWidth},
 							"height": ${config.logoHeight}
 						}

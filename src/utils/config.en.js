@@ -6,10 +6,10 @@ module.exports = {
     description: 'Your VPN should be secure, which is why Orchid is building with open source tools for custom VPN configurations and privacy services.',
     title: 'Orchid',
     twitter: '@OrchidProtocol',
-    feature_image: '/img/social.png',
+    feature_image: 'img/social.png',
     feature_image_width: 1688,
     feature_image_height: 950,
-    logo: '/img/favicon.png',
+    logo: 'img/favicon.png',
     logoWidth: 256,
     logoHeight: 256,
 
