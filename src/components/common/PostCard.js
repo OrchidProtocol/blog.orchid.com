@@ -103,7 +103,26 @@ const PostCard = ({ post, number }) => {
                     color: var(--color-primary);
                     font-weight: var(--font-bold);
                 `}>
-                    <Link to={url}>Read More</Link>
+                    <Link to={url}>
+                        {
+                            (()=>{
+                                switch (process.env.GATSBY_TARGET_LANG) {
+                                    default:
+                                        return "Read More";
+                                    break;
+                                    case "ja":
+                                        return "続きを読む";
+                                    break;
+                                    case "ko":
+                                        return "자세한 내용 읽기";
+                                    break;
+                                    case "zh":
+                                        return "了解其他文章";
+                                    break;
+                                }
+                            })()
+                        }
+                    </Link>
                 </div>
             </div>
         </div>
