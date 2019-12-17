@@ -19,7 +19,7 @@ export default () => (<>
 				{
 					"@context": "https://schema.org/",
 					"@type": "Blog",
-					"name": "${config.title}"
+					"name": "${config.title}",
 					"url": "${config.siteUrl}",
 					"image": {
 							"@type": "ImageObject",
