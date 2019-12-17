@@ -219,8 +219,26 @@ function Navbar(props) {
                                 <img alt="" css={css`
                                     vertical-align: top;
                                 `} width="20" height="20" src="/img/globe.svg" />
-
-                                <span>English</span>
+                                <span>
+                                    {
+                                        (()=>{
+                                            switch (process.env.GATSBY_TARGET_LANG) {
+                                                default:
+                                                    return "English";
+                                                break;
+                                                case "ja":
+                                                    return "日本語";
+                                                break;
+                                                case "ko":
+                                                    return "한국어";
+                                                break;
+                                                case "zh":
+                                                    return "中文普通话";
+                                                break;
+                                            }
+                                        })()
+                                    }
+                                </span>
                             </span>
                             <ul className="navbar-language-selector-list" css={css`
                                 padding: 0;
