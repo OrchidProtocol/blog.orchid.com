@@ -15,10 +15,6 @@ import config from '../utils/config';
 
 export const BlogPostTemplate = ({
 	content,
-	body_ja,
-	body_ko,
-	body_zh,
-	description,
 	tags,
 	title,
 	helmet,
