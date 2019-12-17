@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { css } from '@emotion/core'
+import { Location } from '@reach/router'
 
 import Navbar from './Navbar.js'
 import Footer from './Footer.js'
@@ -19,6 +20,17 @@ const TemplateWrapper = ({ children, bodyClass }) => {
                 <link rel="icon" type="image/ico" href="/img/favicon.ico" />
                 <link rel="icon" type="image/png" href="/img/favicon.png" />
             </Helmet>
+
+            <Location>
+            {({ location }) => {
+                return <Helmet>
+                    <link rel="alternate" href={`https://www.ko.blog.orchid.com${location.pathname}`} hreflang="ko" />
+                    <link rel="alternate" href={`https://www.blog.orchid.com${location.pathname}`} hreflang="x-default" />
+                    <link rel="alternate" href={`https://www.ja.blog.orchid.com${location.pathname}`} hreflang="ja" />
+                    <link rel="alternate" href={`https://www.zh.blog.orchid.com${location.pathname}`} hreflang="zh" />
+                </Helmet>
+            }}
+            </Location>
 
             <div className="viewport">
 
