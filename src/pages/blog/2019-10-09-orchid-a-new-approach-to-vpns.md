@@ -29,7 +29,7 @@ body_ja: |-
 
   ステーキングは、オペレーターの不正行為に対するインセンティブを調整し、特に線形のステーク加重は、シビル攻撃を中和します。確率的ナノペイメント ソリューションは、取引スループットを拡大し、信頼できる集中型当事者なしに流動性の高い帯域幅市場を実現します。パケット規模のナノペイメントで、取引者間の暗黙的なフロートバランスを極小レベルまで低減することにより、信頼が不要な高頻度のやり取りが可能になります。
 
-  ![Illustration of the lifecycle of OXT](/img/orchid-platform-illustration.png)
+  ![Illustration of the lifecycle of OXT](/img/uploads/orchid-platform-illustration-ja.jpg)
 
   ## コア テクノロジー
   オーキッドの技術は高度にモジュール化されています。各コンポーネントは、ある程度分離可能であり、より大きなエコシステムにおける特定の役割と円滑にやりとりすることを目的としています。抽象的には、システムには以下が含まれます。
@@ -124,7 +124,7 @@ body_ko: |-
 
   스테이킹 방식은 운영자의 실수에 대비하여 인센티브를 조정하고 선형 지분 가중 방식은 특히 시빌 공격을 완화합니다. 확률적 나노 지불 솔루션은 거래 처리량을 확장하여 신뢰할 수 있는 중앙 당사자 없이 유동성이 높은 대역폭 시장을 구현합니다. 패킷 수준의 나노 지불은 거래자 간의 내재적인 유동 균형을 최소 수준으로 줄임으로써 높은 빈도의 무신뢰 상호 작용을 가능하게 합니다.
 
-  ![Illustration of the lifecycle of OXT](/img/orchid-platform-illustration.png)
+  ![Illustration of the lifecycle of OXT](/img/uploads/orchid-platform-illustration-ko.jpg)
 
   ## 핵심 기술
   Orchid 의 기술은 고도로 모듈화된 방식입니다. 각 구성 요소는 일부 분리가 가능하며, 더 광범위한 생태계에서 특정 역할과 원활하게 상호 작용하도록 설계되어 있습니다. 요약하자면, 생태계에는 다음이 포함됩니다.
@@ -215,7 +215,7 @@ body_zh: |-
 
   质押与激励措施结合，可防范运营商的违法行为，尤其是线性权益加权可以压制女巫攻击。随机的极微支付解决方案可扩展交易吞吐量，建立一个没有受信任的中央方的高流动性带宽市场。数据包规模的极微支付支持高频率的去信任互动，将交易方之间的隐性浮动余额降低到极小的水平。
 
-  ![Illustration of the lifecycle of OXT](/img/orchid-platform-illustration.png)
+  ![Illustration of the lifecycle of OXT](/img/uploads/orchid-platform-illustration-zh.jpg)
 
   ## 核心技术
   Orchid 的技术具有高度模块化的特点。每个组件在一定程度上都可以分离，同时又与更大生态系统中的特定角色很好地交互。从抽象层面上，该系统包含：
@@ -307,7 +307,7 @@ Traditional VPNs today are limited; the centralized nature of their offering can
 
 Staking aligns incentives against operator malfeasance, and linear stake weighting in particular neutralizes sybil attacks. A stochastic nanopayment solution scales transaction throughput, enabling a highly liquid bandwidth market without a trusted central party. Nanopayments on the scale of packets allow high frequency, trustless interactions by reducing the implicit floated balances between transactors to miniscule levels.
 
-![Illustration of the lifecycle of OXT](/img/orchid-platform-illustration.png)
+![Illustration of the lifecycle of OXT](/img/uploads/orchid-platform-illustration.png)
 
 ## Core Technology
 Orchid’s technology is highly modular. Each component is intended to be somewhat separable, and to interact well with a particular role in the larger ecosystem. Abstractly, the system involves:

@@ -45,7 +45,7 @@ body_ja: |-
   4. ユーザーは、自身のアカウントの資金レベルに応じて、ナノペイメントアカウントにさらに OXT を追加する必要がある場合と必要がない場合があります。
   5. 時間が経つにつれて、オンチェーンで送信される値が確率的ナノペイメントで表される値と一致することが予想されます。
 
-  ![Nanopayments](/img/oxt-provider-illustration.png)
+  ![Nanopayments](/img/uploads/oxt-provider-illustration-ja.jpg)
 
   上の図は、オーキッドアプリユーザーが、イーサリアムブロックチェーンで単一のデポジット設定を行った後、どのように複数のプロバイダーにナノペイメントを送信できると期待されているかと、支払いの一般的なフローがどのように機能するかを示しています。
 
@@ -111,7 +111,7 @@ body_zh: |-
   4. 根据账户中的资金量，用户可能需要或不需要向其极微支付账户中添加更多 OXT。
   5. 链上传输的价值将逐渐按照预期与概率极微支付中所代表的价值相匹配。
 
-  ![Nanopayments](/img/oxt-provider-illustration.png)
+  ![Nanopayments](/img/uploads/oxt-provider-illustration-zh.jpg)
 
   上图显示了 Orchid App 用户在以太坊区块链上引发一次保证金设立后向多个提供商发送极微付款的过程，以及一般支付流程的运作机制。
 
@@ -179,7 +179,7 @@ body_ko: |-
   4. 사용자는 계좌에 있는 자금 수준에 따라 나노 지불 계좌에 더 많은 OXT 를 추가하거나 추가하지 않아도 될 수 있습니다.
   5. 시간이 지남에 따라, 온체인으로 전송된 가치는 확률적 나노 지불에 표시된 가치와 일치하게 됩니다.
 
-  ![Nanopayments](/img/oxt-provider-illustration.png)
+  ![Nanopayments](/img/uploads/oxt-provider-illustration-ko.jpg)
 
   위의 그래픽은 Orchid 앱 사용자가 이더리움 블록체인에 단일 예치금을 설정한 후 복수의 제공자에 나노 지불을 보낼 수 있을 것으로 예상되는 방법과 일반적인 지불 흐름이 어떻게 작동하는지를 보여줍니다.
 
@@ -247,7 +247,7 @@ Instead of sending a transaction worth $1 directly, with probabilistic payments 
 - The user may or may not need to add more OXT to their nanopayment account, depending on the level of funds in the account.
 - Over time, the value transmitted on-chain will in expectation match the value represented in the probabilistic nanopayments.
 
-![Nanopayments](/img/oxt-provider-illustration.png)
+![Nanopayments](/img/uploads/oxt-provider-illustration.png)
 
 The graphic above demonstrates how the Orchid App users are expected to be able to send nanopayments to multiple providers after incurring a single deposit setup on the Ethereum blockchain, as well as how the general flow of payments is intended to operate.
 

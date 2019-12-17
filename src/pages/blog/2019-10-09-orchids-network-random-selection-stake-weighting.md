@@ -59,7 +59,7 @@ body_ja: |-
   ## オーキッドで帯域幅を販売する方法
   オーキッドマーケットは、分散型アーキテクチャを使用することで、トークン化されたピアツーピアの商用ナノトランザクションを介して、ユーザーを帯域幅プロバイダーにつなげます。
 
-  ![Orchid bandwidth process](/img/nanopayment-illustration)
+  ![Orchid bandwidth process](/img/uploads/nanopayment-illustration-ja.jpg)
 
   プロバイダーは帯域幅を販売するために、イーサリアムブロックチェーンにノードを登録し、クライアントはイーサリアムスマートコントラクトへの呼び出しを通じてノードを選択します。オーキッドアプリを実行しているユーザーは、プロキシチェーン接続を開始し、1 つ以上のリレーノードを経由して、出口ノードから目的地に接続します。クライアントは、確率的ナノペイメントを使用してパケットを転送する手数料を帯域幅プロバイダーに支払うと期待されています。販売者は、スマートコントラクトのファンクションコールを通じて、オーキッドトークン (OXT) と引き換えられるナノペイメントの当選チケットを受け取る場合があります。
 
@@ -156,7 +156,7 @@ body_ko: |-
   ## Orchid 네트워크 상에서 대역폭을 판매하는 방법
   Orchid 시장은 분산 아키텍처를 사용하여 토큰화된 P2P 상용 나노 트랜잭션을 통해 사용자를 대역폭 제공자에게 연결합니다.
 
-  ![Orchid bandwidth process](/img/nanopayment-illustration)
+  ![Orchid bandwidth process](/img/uploads/nanopayment-illustration-ko.jpg)
 
   ## Nanopayments
   대역폭을 판매하기 위해 제공자는 이더리움 블록체인에 노드를 등록하고, 클라이언트는 이더리움 스마트 계약에 대한 호출을 통해 서비스를 선택합니다. 그런 다음 Orchid 앱을 실행하는 사용자가 프록시 체인 연결을 시작합니다. 프록시 체인은 종료 노드 전에 있는 하나 이상의 릴레이 노드를 통해 대상으로 연결됩니다. 클라이언트는 확률적 나노 지불을 사용하여 패킷을 전달하기 위해 대역폭 제공자에게 비용을 지불해야 합니다. 간혹 판매자가 스마트 계약 기능 호출을 통해 Orchid 토큰(OXT)으로 교환할 수 있는 나노 지불 티켓을 받기도 합니다.
@@ -255,7 +255,7 @@ body_zh: |-
   ## 如何在 Orchid 上出售带宽
   Orchid 市场使用去中心化架构，通过令牌化的点对点商业极微交易将用户与带宽提供商联系起来。
 
-  ![Orchid bandwidth process](/img/nanopayment-illustration)
+  ![Orchid bandwidth process](/img/uploads/nanopayment-illustration-zh.jpg)
 
   提供商在以太坊区块链上注册节点来销售带宽，客户端通过调用以太坊智能合约来选择节点。然后，运行 Orchid App 的用户启动代理链连接，后者将通过一个或多个中继节点才连接到目的地的出口节点。客户端将使用概率极微支付向带宽提供商支付转发数据包的费用。有时候，卖方有望获得极微支付中奖彩币，可通过调用智能合约功能兑换为 Orchid 代币 (OXT)。
 
@@ -351,7 +351,7 @@ The Orchid App is designed to also filter based on arbitrary exit or relay node 
 ## How to sell bandwidth on Orchid
 The Orchid Market uses a decentralized architecture to connect users to bandwidth providers via tokenized, peer-to-peer commercial nano-transactions.
 
-![Orchid bandwidth process](/img/nanopayment-illustration)
+![Orchid bandwidth process](/img/uploads/nanopayment-illustration.png)
 
 ## Nanopayments
 To sell bandwidth, providers register nodes on the Ethereum blockchain, which clients select through calls to Ethereum smart contracts. The user running the Orchid App then initiates proxy chain connections, which connect through one or more relay nodes before an exit node to their destination. Clients are expected to pay bandwidth providers to forward packets using probabilistic nanopayments. Occasionally the seller is expected to receive a winning nanopayment ticket which they redeem for Orchid Tokens (OXT) through a smart contract function call.
