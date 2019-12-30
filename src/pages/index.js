@@ -5,6 +5,8 @@ import BlogRoll from '../components/BlogRoll'
 
 import config from '../utils/config';
 
+console.debug('Netlify CMS based!');
+
 export default () => (<>
 		<Helmet>
 			<title>Blog - {config.title}</title>
