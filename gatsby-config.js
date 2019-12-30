@@ -5,9 +5,10 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Blog - Orchid',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'Your VPN should be secure, which is why Orchid is building with open source tools for custom VPN configurations and privacy services.',
+    siteUrl: (process.env.TARGET_LANG === "en") ? 'https://blog.orchid.com/' : `https://blog.${process.env.TARGET_LANG}.orchid.com/`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
