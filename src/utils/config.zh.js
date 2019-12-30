@@ -1,6 +1,6 @@
 module.exports = {
     lang: 'zh',
-    siteUrl: 'https://zh.blog.orchid.com/',
+    siteUrl: 'https://blog.zh.orchid.com/',
     main_site: 'https://www.zh.orchid.com/',
 
     navbar_navigation: [
