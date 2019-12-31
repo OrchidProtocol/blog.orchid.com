@@ -8,7 +8,7 @@ module.exports = {
     title: 'Blog - Orchid',
     description:
       'Your VPN should be secure, which is why Orchid is building with open source tools for custom VPN configurations and privacy services.',
-    siteUrl: (process.env.TARGET_LANG === "en") ? 'https://blog.orchid.com/' : `https://blog.${process.env.TARGET_LANG}.orchid.com/`,
+    siteUrl: (process.env.TARGET_LANG === "en" || !process.env.TARGET_LANG) ? 'https://blog.orchid.com/' : `https://blog.${process.env.TARGET_LANG}.orchid.com/`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
