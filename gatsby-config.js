@@ -94,6 +94,23 @@ module.exports = {
         purgeOnly: ['/all.css'], // applies purging only on the bulma css file
       },
     }, // must be after other CSS plugins*/
+
+    {
+      resolve: `gatsby-plugin-advanced-sitemap`,
+      options: {
+        query: ``,
+        mapping: {
+        },
+        exclude: [
+          `/dev-404-page`,
+          `/404`,
+          `/404.html`,
+          `/offline-plugin-app-shell-fallback`,
+        ],
+        createLinkInHead: true,
+        addUncaughtPages: true,
+      },
+    },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
