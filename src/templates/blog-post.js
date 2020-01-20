@@ -32,7 +32,6 @@ export const BlogPostTemplate = ({
 		<article className="content">
 			{helmet || ''}
 
-			{(new Date(date) > new Date("Thu Oct 07 2019 12:22:21 GMT-0600 (Central Standard Time)")) ?
 				<figure css={css`
 					margin: 0;
 					width: 100%;
@@ -57,7 +56,7 @@ export const BlogPostTemplate = ({
 						`} src={featuredimage} alt={title} />
 						: <></>}
 
-				</figure> : null}
+				</figure>
 
 			<section css={css`
 				margin-top: 0;
