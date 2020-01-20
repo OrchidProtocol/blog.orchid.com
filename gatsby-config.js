@@ -87,13 +87,6 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    /*{
-      resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
-      options: {
-        develop: true, // Activates purging in npm run develop
-        purgeOnly: ['/all.css'], // applies purging only on the bulma css file
-      },
-    }, // must be after other CSS plugins*/
 
     {
       resolve: `gatsby-plugin-advanced-sitemap`,
@@ -111,6 +104,70 @@ module.exports = {
         addUncaughtPages: true,
       },
     },
+    /*{
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.url,
+                  guid: site.siteMetadata.siteUrl + edge.node.frontmatter.url,
+                  //custom_elements: [{ "content:encoded": edge.node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { frontmatter__templateKey: "blog-post", fontmatter__public: true }
+                ) {
+                  edges {
+                    node {
+                      id
+                      fields {
+                        slug
+                      }
+                      frontmatter {
+                        url
+                        templateKey
+                        public
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+            title: "Orchid RSS feed",
+            // optional configuration to insert feed reference in pages:
+            // if `string` is used, it will be used to create RegExp and then test if pathname of
+            // current page satisfied this regular expression;
+            // if not provided or `undefined`, all pages will have feed reference inserted
+            //match: "^/blog/",
+            // optional configuration to specify external rss feed, such as feedburner
+            //link: "https://feeds.feedburner.com/gatsby/blog",
+          },
+        ],
+      },
+    },*/
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
