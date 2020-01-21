@@ -104,7 +104,7 @@ module.exports = {
         addUncaughtPages: true,
       },
     },
-    /*{
+    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
@@ -124,11 +124,12 @@ module.exports = {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map(edge => {
                 return Object.assign({}, edge.node.frontmatter, {
+                  title: edge.node.frontmatter.title,
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.frontmatter.url,
                   guid: site.siteMetadata.siteUrl + edge.node.frontmatter.url,
-                  //custom_elements: [{ "content:encoded": edge.node.html }],
+                  custom_elements: [{ "content:encoded": edge.node.html }],
                 })
               })
             },
@@ -136,15 +137,17 @@ module.exports = {
               {
                 allMarkdownRemark(
                   sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: { frontmatter__templateKey: "blog-post", fontmatter__public: true }
+                  filter: { frontmatter: {templateKey: { eq: "blog-post" }, public: { eq: true }} }
                 ) {
                   edges {
                     node {
                       id
+                      html
                       fields {
                         slug
                       }
                       frontmatter {
+                        title
                         url
                         templateKey
                         public
@@ -167,7 +170,7 @@ module.exports = {
           },
         ],
       },
-    },*/
+    },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
