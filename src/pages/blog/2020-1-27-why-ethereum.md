@@ -8,7 +8,9 @@ description: 'When we started out designing the Orchid privacy network, we faced
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_WhyETH.jpg
 tags:
-  - 
+  - Orchid Protocol
+  - Ethereum
+  - Decentralization
 ---
 ### The 4 key factors in choosing Ethereum as Orchid’s Layer 1
 
