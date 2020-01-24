@@ -18,8 +18,6 @@ tags:
 
 *To mitigate the drawbacks of building on Ethereum, we have built our own innovations where needed. In particular, our own Layer 2 scaling solution, [probabilistic nanopayments](https://medium.com/orchid-labs/probabilistic-nanopayments-4aa423c3f22f), is designed to bolster speed and throughput in our specific context. In order to truly foster the growth of a new decentralized Web 3.0 world, the community must work together to address Ethereum’s limitations. This post explores the key considerations we made in selecting a Layer 1 blockchain platform and explores the key challenges and benefits of building on Ethereum from our perspective. We hope it will be helpful to other entrepreneurs and blockchain projects currently choosing between options for their Layer 1.*
 
-[Graphic -- Orchid + Ethereum logo]
-
 ### 1. Ethereum is the biggest blockchain for dapps
 
 Ethereum is the leading contender to be the base layer for the most decentralized applications going forward. It is already the top choice for new blockchain projects, with over [2,700](https://www.stateofthedapps.com/platforms/ethereum) dapps currently. This represents a majority of the [3,292](https://www.stateofthedapps.com/stats/platform/ethereum#new) total dapps currently active across all protocols. By comparison, EOS [supports](https://www.stateofthedapps.com/rankings/platform/eos) only 320. And Ethereum is [second only](https://coinmarketcap.com/) to Bitcoin in terms of market cap. Size matters: it is both an affirmation of quality from the many teams choosing to base their platforms on this blockchain, and it is a key indicator of future success and adoption. The latter point is important in the context of today’s still-young, fast-evolving blockchain landscape. 
