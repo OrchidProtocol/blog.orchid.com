@@ -18,7 +18,7 @@ Thank you for following [Orchid Labs](https://orchid.com/). If you are a new rea
 ## The Orchid Vision
 Orchid Labs’ mission is to build open source software that keeps the Internet open and accessible — a natural resource for everyone, everywhere.
 
-Our first step to fulfill that mission is to create a protocol that governs a decentralized marketplace with a commodity specification for bandwidth. One key element of the marketplace is a second layer payment solution, “Probabilistic Micropayments”, which adds transaction throughput and privacy to Ethereum. Another is a Medallion system for bandwidth providers that grants the network Sybil resistance and hardens it to other classes of attacks. More detail is laid out in our [whitepaper](https://www.orchid.com/assets/whitepaper/whitepaper.pdf).
+Our first step to fulfill that mission is to create a protocol that governs a decentralized marketplace with a commodity specification for bandwidth. One key element of the marketplace is a second layer payment solution, “Probabilistic Micropayments”, which adds transaction throughput and privacy to Ethereum. Another is a Medallion system for bandwidth providers that grants the network Sybil resistance and hardens it to other classes of attacks. More detail is laid out in our [whitepaper](https://www.orchid.com/whitepaper.pdf).
 
 The first application that buys bandwidth on our marketplace will be the Orchid App (coming soon to iOS and Android!). The Orchid App is an open source VPN client with added security features, such as multi-hop routing. The goal with the software is to provide secure access to the open Internet, right in line with our mission. We also hope to play a part in driving the VPN market towards more transparency, privacy and fairer pricing.
 
@@ -35,7 +35,7 @@ Orchid Labs announced that the company successfully raised $43 million in its la
 
 **Probabilistic Micropayments**
 
-The Orchid team originally laid out how Probabilistic Micropayments could work on Ethereum in 2017, both in our [whitepaper](https://www.orchid.com/assets/whitepaper/whitepaper.pdf) and in a [blog post](https://medium.com/@gustav.simonsson/ethereum-probabilistic-micropayments-ae6e6cd85a06). We are happy to report that we have an Etheruem smart contract implementation of Probabilistic Micropayments and we are currently integrating these into our client and nodes for Beta.
+The Orchid team originally laid out how Probabilistic Micropayments could work on Ethereum in 2017, both in our [whitepaper](https://www.orchid.com/whitepaper.pdf) and in a [blog post](https://medium.com/@gustav.simonsson/ethereum-probabilistic-micropayments-ae6e6cd85a06). We are happy to report that we have an Etheruem smart contract implementation of Probabilistic Micropayments and we are currently integrating these into our client and nodes for Beta.
 
 We are also happy to see that other Ethereum projects are using our ideas as fuel and building their own implementations. Second layer payment solutions for specific marketplaces can help scale the entire ecosystem and create products that bring in more users.
 
