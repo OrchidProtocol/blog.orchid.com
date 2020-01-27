@@ -265,10 +265,10 @@ function Navbar(props) {
                                 <Location>
                                 {({ location }) => {
                                     return <>
-                                        <li id="navbar-language-selector-list-item-first"><a className="phantom-a" href={`//www.blog.ko.orchid.com${location.pathname}`}>Korean</a></li>
-                                        <li><a className="phantom-a" href={`//www.blog.orchid.com${location.pathname}`}>English</a></li>
-                                        <li><a className="phantom-a" href={`//www.blog.ja.orchid.com${location.pathname}`}>Japanese</a></li>
-                                        <li><a className="phantom-a" href={`//www.blog.zh.orchid.com${location.pathname}`}>Mandarin</a></li>
+                                        <li id="navbar-language-selector-list-item-first"><a className="phantom-a" href={`//blog.ko.orchid.com${location.pathname}`}>Korean</a></li>
+                                        <li><a className="phantom-a" href={`//blog.orchid.com${location.pathname}`}>English</a></li>
+                                        <li><a className="phantom-a" href={`//blog.ja.orchid.com${location.pathname}`}>Japanese</a></li>
+                                        <li><a className="phantom-a" href={`//blog.zh.orchid.com${location.pathname}`}>Mandarin</a></li>
                                     </>
                                 }}
                                 </Location>
