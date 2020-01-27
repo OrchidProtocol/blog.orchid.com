@@ -22,10 +22,10 @@ const TemplateWrapper = ({ children, bodyClass }) => {
             <Location>
             {({ location }) => {
                 return <Helmet>
-                    <link rel="alternate" href={`https://www.blog.ko.orchid.com${location.pathname}`} hreflang="ko" />
-                    <link rel="alternate" href={`https://www.blog.orchid.com${location.pathname}`} hreflang="x-default" />
-                    <link rel="alternate" href={`https://www.blog.ja.orchid.com${location.pathname}`} hreflang="ja" />
-                    <link rel="alternate" href={`https://www.blog.zh.orchid.com${location.pathname}`} hreflang="zh" />
+                    <link rel="alternate" href={`https://blog.ko.orchid.com${location.pathname}`} hreflang="ko" />
+                    <link rel="alternate" href={`https://blog.orchid.com${location.pathname}`} hreflang="x-default" />
+                    <link rel="alternate" href={`https://blog.ja.orchid.com${location.pathname}`} hreflang="ja" />
+                    <link rel="alternate" href={`https://blog.zh.orchid.com${location.pathname}`} hreflang="zh" />
                 </Helmet>
             }}
             </Location>
