@@ -31,30 +31,34 @@ const style = css`
 
 
 const items = [];
+const items2 = [];
 
 for (let i = 0; i < config.footer_navigation.length; i++) {
     const navItem = config.footer_navigation[i];
 
     const internalLink = navItem.url.match(/^\s?http(s?)/gi) === null;
 
-    items.push(
-        <li key={i}>
-            {!internalLink ? (
-                <a css={css`display:block;`} href={navItem.url} rel="noopener noreferrer">
-                    {navItem.label}
-                </a>
-            ) : (
-                    <Link css={css`display:block;`} to={navItem.url}>{navItem.label}</Link>
-                )}
-        </li>
-    );
+    const output = <li key={i}>
+        {!internalLink ? (
+            <a css={css`display:block;`} href={navItem.url} rel="noopener noreferrer">
+                {navItem.label}
+            </a>
+        ) : (
+                <Link css={css`display:block;`} to={navItem.url}>{navItem.label}</Link>
+            )}
+    </li>
+
+    if (i < 4) {
+        items.push(output);
+    } else {
+        items2.push(output);
+    }
 }
-const items2 = (items.length > 4 ? items.splice(4) : <></>)
 
 const FooterNavigation = () => (
     <>
         <ul css={style}>
-            {items.splice(0,4)}
+            {items}
         </ul>
         <ul css={style}>
             {items2}
