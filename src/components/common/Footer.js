@@ -33,7 +33,7 @@ const Footer = (props) => {
         <div css={css`
             flex: 0 0 auto;
         `}>
-            <a href={`${config.main_site}/`}>
+            <a href={`${config.main_site}`}>
                 <img src={'/img/orchid-logo-world.svg'} alt={config.title} css={css`
                     display: block;
                     @media (max-width: 870px) {
