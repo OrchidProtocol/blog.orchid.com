@@ -2,7 +2,7 @@
 templateKey: blog-post
 public: true
 url: why-ethereum
-title: 'Why Ethereum'
+title: 'The Top 4 Factors We Considered Before Choosing Ethereum for our Decentralized VPN'
 date: 2020-1-27T16:47:36.651Z
 description: 'When we started out designing the Orchid privacy network, we faced the fundamental decision of which blockchain Layer 1 platform to build on.'
 featuredpost: false
