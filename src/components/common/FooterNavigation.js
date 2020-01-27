@@ -49,6 +49,7 @@ for (let i = 0; i < config.footer_navigation.length; i++) {
         </li>
     );
 }
+const items2 = (items.length > 4 ? items.splice(4) : <></>)
 
 const FooterNavigation = () => (
     <>
@@ -56,7 +57,7 @@ const FooterNavigation = () => (
             {items.splice(0,4)}
         </ul>
         <ul css={style}>
-            {items.length > 0 ? items : <></>}
+            {items2}
         </ul>
     </>
 );
