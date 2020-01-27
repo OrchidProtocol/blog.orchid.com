@@ -18,7 +18,10 @@ const MetaData = ({
     image,
     location,
 }) => {
-    const canonical = url.resolve(config.siteUrl, location.pathname)
+    let canonical = url.resolve(config.siteUrl, location.pathname)
+    if (canonical.substr(canonical.length-1, 1) !== '/') {
+        canonical = canonical+'/';
+    }
     const { post, tag, page } = data
 
     if (post) {

@@ -7,6 +7,9 @@ import ImageMeta from './ImageMeta'
 import config from '../../../utils/config'
 
 const ArticleMetaGhost = ({ data, canonical }) => {
+    if (canonical.substr(canonical.length-1, 1) !== '/') {
+        canonical = canonical+'/';
+    }
     const ghostPost = data
 
     if (!ghostPost.tags) ghostPost.tags = [];

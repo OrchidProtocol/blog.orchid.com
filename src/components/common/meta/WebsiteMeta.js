@@ -7,6 +7,10 @@ import ImageMeta from './ImageMeta'
 import config from '../../../utils/config'
 
 const WebsiteMeta = ({ data, settings, canonical, title, description, image, type }) => {
+    if (canonical.substr(canonical.length-1, 1) !== '/') {
+        canonical = canonical+'/';
+    }
+
     const publisherLogo = url.resolve(config.siteUrl, config.logo)
     let shareImage = image || data.feature_image || config.image;
 

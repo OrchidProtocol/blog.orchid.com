@@ -9,6 +9,9 @@ import getAuthorProperties from './getAuthorProperties'
 import config from '../../../utils/config'
 
 const AuthorMeta = ({ data, settings, canonical }) => {
+    if (canonical.substr(canonical.length-1, 1) !== '/') {
+        canonical = canonical+'/';
+    }
     settings = settings.allGhostSettings.edges[0].node
 
     const author = getAuthorProperties(data)
