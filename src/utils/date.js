@@ -49,6 +49,9 @@ switch (process.env.GATSBY_TARGET_LANG) {
     case 'zh':
         getCustomFormatedDate = getCustomFormatedDateZH;
     break;
+    default: 
+        getCustomFormatedDate = getCustomFormatedDateEN;
+    break;
 }
 
 export default getCustomFormatedDate;

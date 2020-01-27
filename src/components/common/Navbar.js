@@ -205,7 +205,7 @@ function Navbar(props) {
                                     }
                                 }
                             `} />
-                            <label for="navbar-language-selector-checkbox" css={css`
+                            <label htmlFor="navbar-language-selector-checkbox" css={css`
                                 position: absolute;
                                 display: block;
                                 top: 0;
@@ -215,7 +215,7 @@ function Navbar(props) {
                                 cursor: pointer;
                             `}></label>
 
-                            <span class="phantom-a">
+                            <span className="phantom-a">
                                 <img alt="" css={css`
                                     vertical-align: top;
                                 `} width="20" height="20" src="/img/globe.svg" />
@@ -225,16 +225,12 @@ function Navbar(props) {
                                             switch (process.env.GATSBY_TARGET_LANG) {
                                                 default:
                                                     return "English";
-                                                break;
                                                 case "ja":
                                                     return "日本語";
-                                                break;
                                                 case "ko":
                                                     return "한국어";
-                                                break;
                                                 case "zh":
                                                     return "中文普通话";
-                                                break;
                                             }
                                         })()
                                     }
@@ -259,7 +255,7 @@ function Navbar(props) {
                                 list-style: none;
                                 margin: 0;
 
-                                &>li:nth-child(1)#navbar-language-selector-list-item-first {
+                                &>li:nth-of-type(1)#navbar-language-selector-list-item-first {
                                     @media ( min-width:871px ) {
                                         padding-top: 0;
                                     }
@@ -269,10 +265,10 @@ function Navbar(props) {
                                 <Location>
                                 {({ location }) => {
                                     return <>
-                                        <li id="navbar-language-selector-list-item-first"><a class="phantom-a" href={`//www.blog.ko.orchid.com${location.pathname}`}>Korean</a></li>
-                                        <li><a class="phantom-a" href={`//www.blog.orchid.com${location.pathname}`}>English</a></li>
-                                        <li><a class="phantom-a" href={`//www.blog.ja.orchid.com${location.pathname}`}>Japanese</a></li>
-                                        <li><a class="phantom-a" href={`//www.blog.zh.orchid.com${location.pathname}`}>Mandarin</a></li>
+                                        <li id="navbar-language-selector-list-item-first"><a className="phantom-a" href={`//www.blog.ko.orchid.com${location.pathname}`}>Korean</a></li>
+                                        <li><a className="phantom-a" href={`//www.blog.orchid.com${location.pathname}`}>English</a></li>
+                                        <li><a className="phantom-a" href={`//www.blog.ja.orchid.com${location.pathname}`}>Japanese</a></li>
+                                        <li><a className="phantom-a" href={`//www.blog.zh.orchid.com${location.pathname}`}>Mandarin</a></li>
                                     </>
                                 }}
                                 </Location>

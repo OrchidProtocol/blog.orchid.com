@@ -76,7 +76,7 @@ const Splash = (props) => {
                 }
             `}>
                 <h1>
-                    <Link css={css`
+                    <Link to="/" css={css`
                         color: var(--color-primary);
                         font-size: 32px;
                         @media (min-width: 871px) {
@@ -92,16 +92,12 @@ const Splash = (props) => {
                                 switch (process.env.GATSBY_TARGET_LANG) {
                                     default:
                                         return "Blog";
-                                    break;
                                     case "ja":
                                         return "ブログ";
-                                    break;
                                     case "ko":
                                         return "블로그";
-                                    break;
                                     case "zh":
                                         return "我们的博客";
-                                    break;
                                 }
                             })()
                         }

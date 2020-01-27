@@ -8,8 +8,6 @@ import Footer from './Footer.js'
 import Splash from './Splash.js'
 import '../all.css'
 
-import config from '../../utils/config';
-
 const TemplateWrapper = ({ children, bodyClass }) => {
 
     return (

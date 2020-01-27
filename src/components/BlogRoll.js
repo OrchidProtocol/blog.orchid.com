@@ -127,16 +127,12 @@ const BlogRoll = ({ data }) => {
                                             switch (process.env.GATSBY_TARGET_LANG) {
                                                 default:
                                                     return "Featured Posts";
-                                                break;
                                                 case "ja":
                                                     return "おすすめの記事";
-                                                break;
                                                 case "ko":
                                                     return "주요 게시물";
-                                                break;
                                                 case "zh":
                                                     return "精选文章";
-                                                break;
                                             }
                                         })()
                                     }
@@ -152,16 +148,12 @@ const BlogRoll = ({ data }) => {
                                             switch (process.env.GATSBY_TARGET_LANG) {
                                                 default:
                                                     return "Categories";
-                                                break;
                                                 case "ja":
                                                     return "カテゴリー";
-                                                break;
                                                 case "ko":
                                                     return "범주";
-                                                break;
                                                 case "zh":
                                                     return "类别";
-                                                break;
                                             }
                                         })()
                                     }

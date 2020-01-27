@@ -1,11 +1,10 @@
 import React from 'react'
-import Helmet from 'react-helmet'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/common/Layout'
 import PostCard from '../components/common/PostCard'
 import { css } from '@emotion/core'
 
-import config from '../utils/config'
+//import config from '../utils/config'
 
 class TagRoute extends React.Component {
 	render() {
@@ -15,11 +14,11 @@ class TagRoute extends React.Component {
 			<PostCard key={node.slug} post={node} />
 		))
 		const tag = this.props.pageContext.tag
-		const title = config.title
-		const totalCount = this.props.data.allMarkdownRemark.totalCount
-		const tagHeader = `${totalCount} post${
+		//const title = config.title
+		//const totalCount = this.props.data.allMarkdownRemark.totalCount
+		/*const tagHeader = `${totalCount} post${
 			totalCount === 1 ? '' : 's'
-			} tagged with “${tag}”`
+			} tagged with “${tag}”`*/
 
 		return (
 			<Layout>

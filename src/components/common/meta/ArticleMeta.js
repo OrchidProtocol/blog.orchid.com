@@ -1,13 +1,10 @@
 import React from 'react'
 import Helmet from "react-helmet"
-import { StaticQuery } from 'gatsby'
 import _ from 'lodash'
 import url from 'url'
 
 import ImageMeta from './ImageMeta'
 import config from '../../../utils/config'
-
-import { tags as tagsHelper } from '@tryghost/helpers'
 
 const ArticleMetaGhost = ({ data, canonical }) => {
     const ghostPost = data

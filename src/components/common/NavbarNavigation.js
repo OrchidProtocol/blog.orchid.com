@@ -106,8 +106,8 @@ const Navigation = ({ data, children }) => {
         const navItem = data[i];
         const internalLink = navItem.url.match(/^\s?http(s?)/gi);
 
-        const className =
-            internalLink ? "active-link" : "";
+        //const className =
+        //    internalLink ? "active-link" : "";
         items.push(
             <li key={i}>
                 {internalLink ? (

@@ -21,16 +21,12 @@ const FeaturedIndicator = <div css={css`
             switch (process.env.GATSBY_TARGET_LANG) {
                 default:
                     return "Featured";
-                break;
                 case "ja":
                     return "おすすめ";
-                break;
                 case "ko":
                     return "주요 게시물";
-                break;
                 case "zh":
                     return "精选";
-                break;
             }
         })()
     }
@@ -109,16 +105,12 @@ const PostCard = ({ post, number }) => {
                                 switch (process.env.GATSBY_TARGET_LANG) {
                                     default:
                                         return "Read More";
-                                    break;
                                     case "ja":
                                         return "続きを読む";
-                                    break;
                                     case "ko":
                                         return "자세한 내용 읽기";
-                                    break;
                                     case "zh":
                                         return "了解其他文章";
-                                    break;
                                 }
                             })()
                         }
