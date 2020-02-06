@@ -93,29 +93,6 @@ const PostCard = ({ post, number }) => {
                 </div>
 
                 <section className="post-card-excerpt"><Link to={url} css={css`&:hover{text-decoration:none;}`}>{description}</Link></section>
-
-                <div css={css`
-                    text-align: right;
-                    color: var(--color-primary);
-                    font-weight: var(--font-bold);
-                `}>
-                    <Link to={url}>
-                        {
-                            (()=>{
-                                switch (process.env.GATSBY_TARGET_LANG) {
-                                    default:
-                                        return "Read More";
-                                    case "ja":
-                                        return "続きを読む";
-                                    case "ko":
-                                        return "자세한 내용 읽기";
-                                    case "zh":
-                                        return "了解其他文章";
-                                }
-                            })()
-                        }
-                    </Link>
-                </div>
             </div>
         </div>
     )
