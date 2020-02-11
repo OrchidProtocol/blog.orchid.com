@@ -22,4 +22,4 @@ Reuben Yap, Co-Founder of BolehVPN, said: “BolehVPN is committed to providing 
 
 Dr. Steven Waterhouse, Orchid’s Co-Founder and CEO said: “I’ve long admired BolehVPN’s commitment to a free internet, and I look forward to a long collaboration. Together, we are returning privacy to the web.”
 
-Download the Orchid app to control your privacy in a new way [here](https://www.coinbase.com/price/orchid).
+Download the Orchid app to control your privacy in a new way [here](https://www.orchid.com/download).
