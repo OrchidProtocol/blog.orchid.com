@@ -38,14 +38,10 @@ class TagRoute extends React.Component {
 						grid-gap: 30px;
 						grid-template-columns: 1fr 1fr 1fr;
 						@media (max-width: 980px) {
-							.post-feed {
-								grid-template-columns: 1fr 1fr;
-							}
+							grid-template-columns: 1fr 1fr;
 						}
 						@media (max-width: 680px) {
-							.post-feed {
-								grid-template-columns: 1fr;
-							}
+							grid-template-columns: 1fr;
 						}
 					`}>{postLinks}</div>
 				</div>
