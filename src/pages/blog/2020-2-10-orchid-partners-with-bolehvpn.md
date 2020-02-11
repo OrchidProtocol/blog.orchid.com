@@ -6,7 +6,7 @@ title: 'Orchid Partners with BolehVPN: More Private Bandwidth for Orchid Users'
 date: 2020-2-10T16:47:36.651Z
 description: 'It takes many nodes and many service providers to build a truly global secure private network. That’s why Orchid is thrilled to announce its new partnership with BolehVPN, a privacy and anonymity service that has operated since 2007.'
 featuredpost: false
-featuredimage: /img/uploads/ETHDenver_Bunnicorn.png
+featuredimage: false
 tags:
   - Orchid Protocol
   - VPN
