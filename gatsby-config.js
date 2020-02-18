@@ -129,7 +129,15 @@ module.exports = {
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.frontmatter.url,
                   guid: site.siteMetadata.siteUrl + edge.node.frontmatter.url,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
+                  custom_elements: [{
+                    "content:encoded": `
+                    <img style="width:100%; height: auto" src="${edge.node.frontmatter.featuredimage.publicURL}" />
+                    ${edge.node.html
+                      .replace(/(href="\/)/i, 'href="https://blog.orchid.com/')
+                      .replace(/(src="\/)/i, 'src="https://blog.orchid.com/')
+                      .replace(/(href='\/)/i, 'href=\'https://blog.orchid.com/')
+                      .replace(/(src='\/)/i, 'src=\'https://blog.orchid.com/')}`
+                  }],
                 })
               })
             },
@@ -152,6 +160,9 @@ module.exports = {
                         templateKey
                         public
                         date
+                        featuredimage {
+                          publicURL
+                        }
                       }
                     }
                   }
