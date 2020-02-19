@@ -92,19 +92,19 @@ const Splash = (props) => {
                     `}>
                         {
                             (()=>{
+                                let append = "";
                                 if (customText) {
-                                    return customText;
-                                } else {
-                                    switch (process.env.GATSBY_TARGET_LANG) {
-                                        default:
-                                            return "Blog";
-                                        case "ja":
-                                            return "ブログ";
-                                        case "ko":
-                                            return "블로그";
-                                        case "zh":
-                                            return "我们的博客";
-                                    }
+                                    append = ` - ${customText}`;
+                                }
+                                switch (process.env.GATSBY_TARGET_LANG) {
+                                    default:
+                                        return "Blog"+append;
+                                    case "ja":
+                                        return "ブログ"+append;
+                                    case "ko":
+                                        return "블로그"+append;
+                                    case "zh":
+                                        return "我们的博客"+append;
                                 }
                             })()
                         }

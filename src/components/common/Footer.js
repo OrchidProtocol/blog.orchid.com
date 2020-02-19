@@ -95,16 +95,12 @@ const Footer = (props) => {
                     switch (process.env.GATSBY_TARGET_LANG) {
                         default:
                             return "Follow Us";
-                        break;
                         case "ja":
                             return "フォローする";
-                        break;
                         case "ko":
                             return "팔로우 하기";
-                        break;
                         case "zh":
                             return "关注我们";
-                        break;
                     }
                 })()
             }</b>

@@ -29,7 +29,7 @@ export const BlogPostTemplate = ({
 		z-index: 1;
 	`}>
 		<article className="content">
-			{helmet || ''}
+			{helmet || ' '}
 
 			<figure css={css`
 					margin: 0;

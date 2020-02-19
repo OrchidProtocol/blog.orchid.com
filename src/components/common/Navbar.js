@@ -60,7 +60,7 @@ function Navbar({customText}) {
                     `} width="35" height="30" src="/img/orchid-logo-small.svg" alt={config.title} />
             </a>
 
-            <div css={css`
+            <div role="button" css={css`
                 padding: 1rem;
                 margin: -1rem;
                 cursor: pointer;
@@ -143,7 +143,7 @@ function Navbar({customText}) {
                         }
                     }
                 `}>
-                    <div css={css`
+                    <div role="button" css={css`
                         padding: 0 0 1rem 0;
                         width: 100%;
                         flex-flow: row-reverse nowrap;
