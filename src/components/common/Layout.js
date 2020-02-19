@@ -8,7 +8,7 @@ import Footer from './Footer.js'
 import Splash from './Splash.js'
 import '../all.css'
 
-const TemplateWrapper = ({ children, bodyClass }) => {
+const TemplateWrapper = ({ children, bodyClass, customText }) => {
 
     return (
         <>
@@ -44,7 +44,7 @@ const TemplateWrapper = ({ children, bodyClass }) => {
 
                 <Navbar />
 
-                <Splash />
+                <Splash customText={customText} />
 
                 <main css={css`
                 font-size: 16px;

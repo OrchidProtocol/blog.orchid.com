@@ -5,6 +5,8 @@ import { css } from '@emotion/core'
 
 const Splash = (props) => {
 
+    const {customText} = props;
+
     return (<div className="splash-circuit" css={css`
         padding-top: 2rem;
         display: flex;
@@ -22,6 +24,7 @@ const Splash = (props) => {
             
             width: 100%;
             position: relative;
+            z-index: -10;
             margin: auto;
 
             &:before {
@@ -44,7 +47,7 @@ const Splash = (props) => {
                     width: 900px;
                     height: 333px;
                     bottom: unset;
-                    top: -10px;
+                    top: -87px;
                     left: -50px;
                     background-size: contain;
                 }
@@ -89,15 +92,19 @@ const Splash = (props) => {
                     `}>
                         {
                             (()=>{
-                                switch (process.env.GATSBY_TARGET_LANG) {
-                                    default:
-                                        return "Blog";
-                                    case "ja":
-                                        return "ブログ";
-                                    case "ko":
-                                        return "블로그";
-                                    case "zh":
-                                        return "我们的博客";
+                                if (customText) {
+                                    return customText;
+                                } else {
+                                    switch (process.env.GATSBY_TARGET_LANG) {
+                                        default:
+                                            return "Blog";
+                                        case "ja":
+                                            return "ブログ";
+                                        case "ko":
+                                            return "블로그";
+                                        case "zh":
+                                            return "我们的博客";
+                                    }
                                 }
                             })()
                         }

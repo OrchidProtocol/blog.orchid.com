@@ -31,7 +31,7 @@ export const BlogPostTemplate = ({
 		<article className="content">
 			{helmet || ''}
 
-				<figure css={css`
+			<figure css={css`
 					margin: 0;
 					width: 100%;
 					height: auto;
@@ -40,8 +40,8 @@ export const BlogPostTemplate = ({
 					-o-object-position: center;
 					object-position: center;
 				`}>
-					{featuredimage ?
-						<img css={css`
+				{featuredimage ?
+					<img css={css`
 							max-width: 720px;
 							width: 100%;
 							height: auto;
@@ -53,9 +53,9 @@ export const BlogPostTemplate = ({
 							box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
 							border-radius: 20px;
 						`} src={featuredimage} alt={title} />
-						: <></>}
+					: <></>}
 
-				</figure>
+			</figure>
 
 			<section css={css`
 				margin-top: 0;
@@ -68,9 +68,15 @@ export const BlogPostTemplate = ({
 					margin-bottom: 0;
 				`}>{title}</h1>
 				<span css={css`
-					display: block;
+					display: inline-block;
+					background-color: var(--color-primary);
+					border-radius: 2px;
+					padding: 6px 10px;
+					line-height: 1;
+					color: white;
 				`}>{getCustomFormatedDate(date)}</span>
 
+				<br />
 				<br />
 
 				{/* The main post content */}
@@ -168,9 +174,9 @@ const BlogPost = (props) => {
 	post.frontmatter.title = title;
 	post.frontmatter.description = description;
 
-	if (post.frontmatter.featuredimage) 
+	if (post.frontmatter.featuredimage)
 		post.frontmatter.featuredimage = (post.frontmatter.featuredimage.childImageSharp) ?
-			post.frontmatter.featuredimage.childImageSharp.fixed.src : 
+			post.frontmatter.featuredimage.childImageSharp.fixed.src :
 			post.frontmatter.featuredimage.publicURL;
 
 
@@ -183,7 +189,7 @@ const BlogPost = (props) => {
 				featuredimage={post.frontmatter.featuredimage}
 				description={description}
 				helmet={
-					<ArticleMeta 
+					<ArticleMeta
 						data={post.frontmatter}
 						canonical={url.resolve(config.siteUrl, post.frontmatter.url)} />
 					/*<Helmet titleTemplate="%s | Blog">
