@@ -25,12 +25,12 @@ const Header = styled.header`
     }
 `;
 
-function Navbar(props) {
+function Navbar({customText}) {
     const [active, setActive] = useState(false);
 
     return <Container data-active={active}>
         {/* The main header section on top of the screen */}
-        <Header>
+        <Header customText={customText}>
             <a href="https://www.orchid.com/" css={css`
                 @media (max-width: 871px) {
                     display: none;

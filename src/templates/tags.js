@@ -21,17 +21,11 @@ class TagRoute extends React.Component {
 			} tagged with “${tag}”`*/
 
 		return (
-			<Layout>
+			<Layout customText={tag}>
 				<div className="container" css={css`
 					position: relative;
 					z-index: 1;
 				`}>
-					<header css={css`
-						max-width: 690px;
-						margin: 0 0 4vw;
-					`}>
-						<h1>{tag}</h1>
-					</header>
 					<div css={css`
 						display: grid;
 						justify-content: space-between;
