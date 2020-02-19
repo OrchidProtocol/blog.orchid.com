@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/common/Layout'
-import { css } from '@emotion/core'
 
 const NotFoundPage = () => (
   <Layout>
