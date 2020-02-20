@@ -127,8 +127,8 @@ module.exports = {
                   title: edge.node.frontmatter.title,
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.url,
-                  guid: site.siteMetadata.siteUrl + edge.node.frontmatter.url,
+                  url: site.siteMetadata.siteUrl + '/' + edge.node.frontmatter.url + '/',
+                  guid: site.siteMetadata.siteUrl + '/' + edge.node.frontmatter.url + '/',
                   custom_elements: [{
                     "content:encoded": `
                     <img style="width:100%; height: auto" src="${edge.node.frontmatter.featuredimage.publicURL}" />
