@@ -76,10 +76,10 @@ Stay curious out there!
 
 Stay in touch and up to date at orchid.com, or through our social channels:
 
-Twitter: [@orchidprotocol](https://twitter.com/OrchidProtocol)
+GitHub: [OrchidTechnologies](https://github.com/orchidtechnologies)
 
-[Github.com/orchidprotocol](https://github.com/orchidprotocol)
+Facebook: [OrchidProtocol](https://www.facebook.com/OrchidProtocol)
 
-[medium.com/orchid-labs](https://medium.com/orchid-labs)
+Telegram: [OrchidOfficial](https://www.t.me/OrchidOfficial)
 
 Thank you for being part of the Orchid community.
