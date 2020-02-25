@@ -100,6 +100,7 @@ function Navbar({customText}) {
                         display: flex;
                         flex-direction: column;
                         position: fixed;
+                        overflow-y: auto;
                         ${active ? `transform: translateX(0%);` : `transform: translateX(100%);`}
 
                         body.no-js & {
