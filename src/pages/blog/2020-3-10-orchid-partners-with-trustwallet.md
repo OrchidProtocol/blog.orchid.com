@@ -6,7 +6,7 @@ title: 'Orchid Partners with TrustWallet'
 date: 2020-3-10T16:47:36.651Z
 description: 'Today, Orchid announces its new integration with TrustWallet, the official cryptocurrency wallet of Binance.'
 featuredpost: false
-featuredimage: /img/uploads/orchid-logo-text.jpg
+featuredimage: /img/uploads/Orchid_BlogImage_Trust.png
 tags:
   - Orchid Protocol
 ---
