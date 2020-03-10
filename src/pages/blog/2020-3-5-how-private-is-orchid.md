@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-public: true
+public: false
 url: how-orchid-improves-privacy-using-a-public-blockchain
 title: 'How Orchid improves privacy using a public blockchain'
 date: 2020-3-5T16:47:36.651Z
