@@ -6,7 +6,7 @@ title: 'What are Orchid “Hops” and how are they useful?'
 date: 2020-3-10T16:47:36.651Z
 description: 'Routing traffic between multiple different VPN providers can help you explore the Internet freely by mitigating the risk of logging.'
 featuredpost: false
-featuredimage: /img/uploads/orchid-logo-text.jpg
+featuredimage: /img/uploads/WhatAreHops.jpg
 tags:
   - Orchid Protocol
 ---
