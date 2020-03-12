@@ -8,7 +8,6 @@ const Splash = (props) => {
     const {customText} = props;
 
     return (<div className="splash-circuit" css={css`
-        padding-top: 2rem;
         display: flex;
         flex-direction: column-reverse;
         @media (max-width: 870px) {
@@ -32,11 +31,11 @@ const Splash = (props) => {
                 content: "";
                 display: block;
                 position: absolute;
-                bottom: 0;
+                top: -2.7rem;
                 left: 0;
                 max-width: 100%;
                 width: 100%;
-                height: 222px;
+                height: 100px;
                 background-image: url(/img/circuit.svg);
                 background-repeat: no-repeat;
                 background-position: top left;
@@ -46,8 +45,7 @@ const Splash = (props) => {
                 @media (min-width: 871px) {
                     width: 900px;
                     height: 333px;
-                    bottom: unset;
-                    top: -87px;
+                    top: 0;
                     left: -50px;
                     background-size: contain;
                 }
@@ -72,18 +70,23 @@ const Splash = (props) => {
                 padding-bottom: 0rem;
                 
                 @media (min-width: 871px) {
-                    padding-top: 4rem;
-                    padding-bottom: 3rem;
+                    padding-top: 1.5rem;
+                    padding-bottom: 1.5rem;
                     width: 60%;
                     max-width: 600px;
                 }
             `}>
-                <h1>
+                <h1 css={css`
+                    margin-bottom: 0;
+                `}>
                     <Link to="/" css={css`
                         color: var(--color-primary);
+                        &:visited {
+                            color: var(--color-primary);
+                        }
                         font-size: 32px;
                         @media (min-width: 871px) {
-                            font-size: 60px;
+                            font-size: 48px;
                         }
                         &:hover {
                             color: var(--color-primary);
