@@ -6,7 +6,7 @@ title: 'Moving Blockchain Forward: Orchid Joins Chamber of Digital Commerce'
 date: 2020-3-16T16:47:36.651Z
 description: "Today, we're proud to announce that we've joined the Chamber of Digital Commerce, an organization leading the push toward a better public understanding and embrace of blockchain technology."
 featuredpost: false
-featuredimage: /img/uploads/orchid-logo-text.jpg
+featuredimage: /img/uploads/Orchid_BlogImage_Chamber.jpg
 tags:
   - Orchid Protocol
 ---
