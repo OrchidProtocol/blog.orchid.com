@@ -18,4 +18,4 @@ Perianne Boring, Founder and President of the Chamber of Digital Commerce said: 
 
 As a blockchain-powered platform, Orchid has a responsibility to promote the acceptance, growth, and understanding of distributed ledger technology. After much consideration, our team decided that joining the Chamber of Digital Commerce was one of the best ways to achieve this goal.
 
-The Chamber of Digital Commerce is the largest trade association for blockchain, with over 200  partners and members, including many of the world’s largest financial services and blockchain firms. For a full list of the Chamber’s membership and to learn more about its mission and projects, please visit [digitalchamber.org](digitalchamber.org).
+The Chamber of Digital Commerce is the largest trade association for blockchain, with over 200  partners and members, including many of the world’s largest financial services and blockchain firms. For a full list of the Chamber’s membership and to learn more about its mission and projects, please visit [digitalchamber.org](https://digitalchamber.org).
