@@ -18,6 +18,4 @@ Orchid is a unique VPN: it is powered by a digital currency, so paying for bandw
 
 Once the account is created, a QR code appears that contains account credentials that you can share with as many friends, family, or devices as you’d like. Anyone can copy or scan that account into the app for a 1-step setup. 
 
-Orchid also has an open campaign on Coinbase Earn; users can earn OXT to learn more about our privacy network. It will open to New York residents XYZ.
-
 [Buy OXT on Coinbase](https://www.coinbase.com/price/orchid) and download the Orchid app to control your privacy in a new way [here](https://www.orchid.com/download). 
