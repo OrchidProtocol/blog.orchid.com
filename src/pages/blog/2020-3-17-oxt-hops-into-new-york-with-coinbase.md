@@ -6,7 +6,7 @@ title: 'OXT Hops Into New York With Coinbase'
 date: 2020-3-17T16:47:35.651Z
 description: "Just after launching our privacy network in December, the digital currency (OXT) that powers our app was listed on Coinbase, giving millions of privacy-seekers access to it right away."
 featuredpost: false
-featuredimage: /img/uploads/Orchid_BlogImage_Staking.jpg
+featuredimage: /img/uploads/Orchid_BlogImage_CBNY.jpg
 tags:
   - Orchid Protocol
 ---
