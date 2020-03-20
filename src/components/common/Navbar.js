@@ -232,6 +232,10 @@ function Navbar({customText}) {
                                                     return "한국어";
                                                 case "zh":
                                                     return "中文普通话";
+                                                case "ru":
+                                                    return "русский";
+                                                case "id":
+                                                    return "Indonesian";
                                             }
                                         })()
                                     }
@@ -270,6 +274,8 @@ function Navbar({customText}) {
                                         <li><a className="phantom-a" href={`//blog.orchid.com${location.pathname}`}>English</a></li>
                                         <li><a className="phantom-a" href={`//blog.ja.orchid.com${location.pathname}`}>Japanese</a></li>
                                         <li><a className="phantom-a" href={`//blog.zh.orchid.com${location.pathname}`}>Mandarin</a></li>
+                                        <li><a className="phantom-a" href={`//blog.id.orchid.com${location.pathname}`}>Indonesian</a></li>
+                                        <li><a className="phantom-a" href={`//blog.ru.orchid.com${location.pathname}`}>Russian</a></li>
                                     </>
                                 }}
                                 </Location>

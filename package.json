@@ -62,6 +62,8 @@
     "build:static:ja": "TARGET_LANG=ja node init-env.js && gatsby clean && gatsby build && node post-build.js",
     "build:static:ko": "TARGET_LANG=ko node init-env.js && gatsby clean && gatsby build && node post-build.js",
     "build:static:zh": "TARGET_LANG=zh node init-env.js && gatsby clean && gatsby build && node post-build.js",
+    "build:static:id": "TARGET_LANG=id node init-env.js && gatsby clean && gatsby build && node post-build.js",
+    "build:static:ru": "TARGET_LANG=ru node init-env.js && gatsby clean && gatsby build && node post-build.js",
     "develop": "npm run clean && gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
