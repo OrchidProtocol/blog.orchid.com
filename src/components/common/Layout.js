@@ -26,6 +26,8 @@ const TemplateWrapper = ({ children, bodyClass, customText }) => {
                     <link rel="alternate" href={`https://blog.orchid.com${location.pathname}`} hreflang="x-default" />
                     <link rel="alternate" href={`https://blog.ja.orchid.com${location.pathname}`} hreflang="ja" />
                     <link rel="alternate" href={`https://blog.zh.orchid.com${location.pathname}`} hreflang="zh" />
+                    <link rel="alternate" href={`https://blog.id.orchid.com${location.pathname}`} hreflang="id" />
+                    <link rel="alternate" href={`https://blog.ru.orchid.com${location.pathname}`} hreflang="ru" />
                 </Helmet>
             }}
             </Location>

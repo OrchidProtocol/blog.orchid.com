@@ -108,6 +108,8 @@ const Splash = (props) => {
                                         return "블로그"+append;
                                     case "zh":
                                         return "我们的博客"+append;
+                                    case "ru": 
+                                        return "Блог"+append;
                                 }
                             })()
                         }
