@@ -85,6 +85,14 @@ export const BlogPostTemplate = ({
 								a {
 									text-decoration: underline !important;
 								}
+								img[src*="#mobile-screenshot"] {
+									width: 95%;
+									max-width: 275px;
+									height:auto;
+									display: block;
+									margin-left: auto;
+									margin-right: auto;
+								}
 							`}
 					className="content-body load-external-scripts"
 					dangerouslySetInnerHTML={{ __html: content }}
