@@ -8,7 +8,7 @@ description: "Orchid lets users explore the Internet freely. Key to its design i
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_HowOXT.png
 tags:
-  - Orchid Protocol
+  - Company Updates
 ---
 
 Orchid lets users explore the Internet freely. Key to its design is OXT. There are a number of reasons we chose to build OXT as an integral component of Orchid, including market incentives, security, and the efficient operation of the network. OXT facilitates access and sharing on the network, as well as incentivizing activity and an adequate supply of bandwidth. Here, we want to explore how OXT functions to ensure a secure and seamless experience for Orchid’s users.

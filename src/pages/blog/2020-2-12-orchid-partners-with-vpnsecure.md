@@ -8,8 +8,8 @@ description: 'As Orchid continues to build tools for a private and fair internet
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_VPNSec.png
 tags:
-  - Orchid Protocol
-  - VPN
+  - Partnerships
+  - Company Updates
 ---
 
 As Orchid continues to build tools for a private and fair internet, we’ll be collaborating with other leaders in electronic privacy. Today, we’re proud to announce Orchid’s integration with VPNSecure, a premiere digital security firm.

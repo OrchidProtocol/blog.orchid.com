@@ -8,7 +8,7 @@ description: "Today, we’re proud to announce that we’ve joined the Blockchai
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_BlockchainAssociation.jpg
 tags:
-  - Orchid Protocol
+  - Company Updates
 ---
 At Orchid, we know that we’re not alone in our vision of a safe and private Internet. Today, we’re proud to announce that we’ve joined the Blockchain Association, the blockchain industry’s leading institutional alliance.  
 

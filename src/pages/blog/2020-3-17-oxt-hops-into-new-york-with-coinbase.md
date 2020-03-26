@@ -8,7 +8,7 @@ description: "Just after launching our privacy network in December, the digital 
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_CBNY.jpg
 tags:
-  - Orchid Protocol
+  - Company Updates
 ---
 Just after launching our privacy network in December, the digital currency (OXT) that powers our app was listed on Coinbase, giving millions of privacy-seekers access to it right away. Now, Coinbase is offering OXT to its New York users for the first time. 
 

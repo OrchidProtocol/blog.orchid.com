@@ -9,7 +9,7 @@ featuredpost: false
 featuredimage: /img/orchid-text.png
 tags:
   - Blockchain
-  - Orchid Protocol
+  - Company Updates
   - Censorship
 ---
 What makes a better Internet possible? At [Orchid Labs](http://www.orchidprotocol.com/), our goal is to ensure that every person on Earth can have access to an open, decentralized, and uncensored Internet. We believe a better Internet is one that isn’t controlled by the few, but open to all.

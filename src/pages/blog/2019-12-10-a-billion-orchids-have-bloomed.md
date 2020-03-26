@@ -8,7 +8,7 @@ description: 'Orchid is pleased to share that OXT is here! We want to thank all 
 featuredpost: false
 featuredimage: /img/a-billion-orchids.jpeg
 tags: 
-    - Orchid Protocol
+    - Company Updates
     - VPN
 ---
 

@@ -8,7 +8,8 @@ description: 'Today, Orchid announces its new integration with TrustWallet, the 
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_Trust.png
 tags:
-  - Orchid Protocol
+  - Partnerships
+  - Company Updates
 ---
 Today, Orchid announces its new integration with [TrustWallet](https://trustwallet.com/), the official cryptocurrency wallet of Binance.
 

@@ -8,7 +8,7 @@ description: 'Orchid is a privacy network that offers the functionality of a VPN
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_HowOrchid.png
 tags:
-  - Orchid Protocol
+  - Company Updates
   - VPN
 ---
 Orchid is a privacy network that offers the functionality of a VPN, and more. It provides access to a network of VPN providers that you can switch between, allows you to pay only for the bandwidth you use, and lets you share your account with an unlimited number of people and devices. Our goal is for Orchid users to feel confident exploring the Internet freely, without their online activity being tracked, censored or logged. Here we walk you through the steps required to activate your Orchid account and link it to the mobile app.
