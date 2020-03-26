@@ -49,7 +49,7 @@ const Footer = (props) => {
                     color: var(--link-color);
                 }
             `}>
-                <a href={`${config.main_site}/privacy-policy`}>Privacy Policy</a> | <a href={`${config.main_site}/service-terms`}>Terms of Service</a>
+                <a href={`${config.main_site}privacy-policy`}>Privacy Policy</a> | <a href={`${config.main_site}service-terms`}>Terms of Service</a>
             </p>
         </div>
 
