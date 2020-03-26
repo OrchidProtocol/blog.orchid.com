@@ -8,7 +8,7 @@ description: 'When we started out designing the Orchid privacy network, we faced
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_WhyETH.jpg
 tags:
-  - Orchid Protocol
+  - Company Updates
   - Ethereum
   - Decentralization
 ---

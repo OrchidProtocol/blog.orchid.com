@@ -8,7 +8,7 @@ description: 'Routing traffic between multiple different VPN providers can help 
 featuredpost: false
 featuredimage: /img/uploads/WhatAreHops.jpg
 tags:
-  - Orchid Protocol
+  - Company Updates
 ---
 
 If you’ve been following Orchid, you’ve probably encountered lots of references to “hops” and to Orchid’s multi-hop architecture. Hops is how we at Orchid refer to the routing of data -- from its origin, through a node such as a VPN server, and finally “exiting” to its destination webpage. The ‘hop’ camouflages user activity by making it harder for parties at the source and destination of a web journey to gain full information about an Internet user’s activity. Hops on Orchid can be strung together to add additional layers of indirection. In this piece, we look at how hops work and how different solutions can utilize them to offer users better privacy.

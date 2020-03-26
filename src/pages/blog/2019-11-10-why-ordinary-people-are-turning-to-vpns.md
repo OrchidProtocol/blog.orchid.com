@@ -9,6 +9,7 @@ featuredpost: false
 featuredimage: /img/ordinary-people-using-vpns.jpeg
 tags:
   - VPN
+  - Privacy
 ---
 In 1996, a Microsoft software engineer named Gurdeep Singh-Pall developed a peer-to-peer tunneling protocol (PPTP), which is widely considered the basis of what we now call virtual private networks (VPNs).
 

@@ -8,8 +8,8 @@ description: 'It takes many nodes and many service providers to build a truly gl
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_BolehVPN.jpg
 tags:
-  - Orchid Protocol
-  - VPN
+  - Partnerships
+  - Company Updates
 ---
 
 It takes many nodes and many service providers to build a truly global secure private network. That’s why Orchid is thrilled to announce its new partnership with BolehVPN, a privacy and anonymity service that has operated since 2007. The alliance with BolehVPN, one of the most trusted names in trusted browsing, brings the dream of a genuinely secure and private internet closer to fruition.

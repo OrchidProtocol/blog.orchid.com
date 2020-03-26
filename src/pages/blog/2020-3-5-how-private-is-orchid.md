@@ -8,7 +8,7 @@ description: 'Orchid is an incentivized privacy network, Open Source project, an
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogPost_Privacy.png
 tags:
-  - Orchid Protocol
+  - Company Updates
   - VPN
 ---
 **What do we mean when we say privacy?**

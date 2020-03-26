@@ -8,7 +8,7 @@ description: "Orchid takes a unique approach to rewarding OXT stakers"
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_Staking.jpg
 tags:
-  - Orchid Protocol
+  - Company Updates
 ---
 The staking of OXT is an important component of Orchid’s design. Staking is a process whereby an asset is deposited and locked into an illiquid contract or mechanism in exchange for revenue or rewards.  On Orchid, providers stake OXT tokens in an Ethereum smart contract (the directory) to advertise their services to clients. Orchid users then select providers at random. The choice is weighted by proportional stake, so the probability of picking a particular provider is equal to their fraction of the total stake.
 
