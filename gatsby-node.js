@@ -92,60 +92,32 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 
+  const locales = ['zh', 'ja', 'ko', 'ru', 'id'];
+
   if (node && node.frontmatter) {
-    const body_ja = node.frontmatter.body_ja;
-    if (body_ja) {
-      const value = remark()
-        .use(remarkHTML)
-        .processSync(body_ja)
-        .toString();
+    
 
-      // new node at:
-      // fields {
-      //   body_ja_html
-      // }
-      createNodeField({
-        name: `body_ja_html`,
-        node,
-        value
-      });
+    for (let index = 0; index < locales.length; index++) {
+      const locale = locales[index];
+      const body = node.frontmatter[`body_${locale}`];
+      if (body) {
+        const value = remark()
+          .use(remarkHTML)
+          .processSync(body)
+          .toString();
+
+        // new node at:
+        // fields {
+        //   body_${locale}_html
+        // }
+        createNodeField({
+          name: `body_${locale}_html`,
+          node,
+          value
+        });
+      }
     }
 
-    const body_ko = node.frontmatter.body_ko;
-    if (body_ko) {
-      const value = remark()
-        .use(remarkHTML)
-        .processSync(body_ko)
-        .toString();
-
-      // new node at:
-      // fields {
-      //   body_ko_html
-      // }
-      createNodeField({
-        name: `body_ko_html`,
-        node,
-        value
-      });
-    }
-
-    const body_zh = node.frontmatter.body_zh;
-    if (body_zh) {
-      const value = remark()
-        .use(remarkHTML)
-        .processSync(body_zh)
-        .toString();
-
-      // new node at:
-      // fields {
-      //   body_zh_html
-      // }
-      createNodeField({
-        name: `body_zh_html`,
-        node,
-        value
-      });
-    }
   }
 
 }

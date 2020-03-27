@@ -242,10 +242,14 @@ export default () => (
                             title_ja
                             title_ko
                             title_zh
+                            title_id
+                            title_ru
                             description
                             description_ja
                             description_ko
                             description_zh
+                            description_id
+                            description_ru
                             tags
 							templateKey
 							date
@@ -280,6 +284,8 @@ export default () => (
                             title_ja
                             title_ko
                             title_zh
+                            title_id
+                            title_ru
 							templateKey
 							date
 							featuredpost
