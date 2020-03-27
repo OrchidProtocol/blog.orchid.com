@@ -254,10 +254,14 @@ export const pageQuery = graphql`
 				title_ja
 				title_ko
 				title_zh
+				title_id
+				title_ru
 				description
 				description_ja
 				description_ko
 				description_zh
+				description_id
+				description_ru
 				url
 				tags
 			}
@@ -265,6 +269,8 @@ export const pageQuery = graphql`
 				body_ja_html
 				body_ko_html
 				body_zh_html
+				body_id_html
+				body_ru_html
 			}
 		}
 	}
