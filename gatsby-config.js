@@ -26,7 +26,6 @@ module.exports = {
     `gatsby-plugin-catch-links`,
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-force-trailing-slashes`,
-    `gatsby-plugin-offline`,
     'gatsby-plugin-sass',
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
