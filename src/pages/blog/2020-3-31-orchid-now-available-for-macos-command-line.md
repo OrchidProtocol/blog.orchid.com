@@ -9,6 +9,7 @@ featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_CommandLine.png
 tags:
   - Company Updates
+  - VPN
 ---
 As many people around the world adjust to working remotely, Internet privacy tools can be crucial for workers in sensitive industries and/or geographies. As a result of these macro changes, we have made a decision to prioritize Orchid's desktop clients. This is designed to support the increased numbers of people who will be accessing the Internet from their desktops at home.
 
