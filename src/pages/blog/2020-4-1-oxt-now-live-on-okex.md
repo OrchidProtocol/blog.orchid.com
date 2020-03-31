@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: oxt-now-live-on-okex
 title: "OXT Now Live on OKEx, Orchid VPN Available in Mandarin, Indonesian, Russian and More"
-date: 2020-3-31T16:46:36.651Z
+date: 2020-4-1T16:46:36.651Z
 description: "OKEx, one of the world's largest digital asset exchanges, will now allow its millions of customers around the world trade and transact in Orchid's digital currency, OXT."
 featuredpost: false
 featuredimage: /img/uploads/orchid-logo-text.jpg
