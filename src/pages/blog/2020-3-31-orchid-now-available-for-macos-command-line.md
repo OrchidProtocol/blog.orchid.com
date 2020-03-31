@@ -30,7 +30,7 @@ curl ipecho.net/plain ; echo
 
 This will give you your current public IP address. Remember this - it should be different after we start the orchid client.
 
-1.  Install Xcode with the command xcode-select --install
+1.  Install Xcode with the command `xcode-select --install`
 
 2.  Install Homebrew with the command
 
@@ -38,7 +38,7 @@ This will give you your current public IP address. Remember this - it should be 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-1.  Install Orchid through Brew with the command brew install orchidtechnologies/tap/orchid
+1.  Install Orchid through Brew with the command `brew install orchidtechnologies/tap/orchid`
 
 2.  Open your iOS or Android Orchid app and export your configuration by going to hamburger menu->Settings->Manage configuration->Export
 
