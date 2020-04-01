@@ -12,7 +12,7 @@ tags:
   - Company Updates
   - Partnerships
 ---
-OKEx, one of the world's largest digital asset exchanges, will now allow its millions of customers around the world trade and transact in Orchid's digital currency, OXT. With the OKEx listing, OXT is now available to power secure internet browsing and communication in more than a hundred countries around the world. Orchid's latest release adds support for Chinese, Korean, Japanese, Indonesian and Russian-speaking users.
+[OKEx](https://www.okex.com/), one of the world's largest digital asset exchanges, will now allow its millions of customers around the world trade and transact in Orchid's digital currency, OXT. With the OKEx listing, OXT is now available to power secure internet browsing and communication in more than a hundred countries around the world. Orchid's latest release adds support for Mandarin, Korean, Japanese, Indonesian and Russian-speaking users.
 
 Orchid co-founder and CEO Dr. Steven Waterhouse (Seven) said: “Surveillance and censorship are growing internationally — this is a pattern we've seen emerge in the wake of previous crises. OKEx listing Orchid makes it easier for international users to acquire OXT and start using it to access private bandwidth; this is an important day for the growth of internet freedom.”
 
