@@ -53,7 +53,6 @@ class Index extends React.Component {
 					{`
 						if ('serviceWorker' in window.navigator) {
 							window.navigator.serviceWorker.getRegistrations().then((registrations) => {
-								console.log(registrations);
 								for(let registration of registrations) {
 									registration.unregister();
 								}
