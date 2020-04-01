@@ -13,8 +13,6 @@ tags:
 ---
 As dueling interests move to control the future of the internet, users around the globe are increasingly turning to VPNs. But what users don’t know is that many VPNs fail to provide the security and privacy that they advertise. It’s time for a product that we can trust — a truly decentralized solution that will deliver an open, inclusive internet free of censorship and data harvesting.
 
-![Security Camera](green-security-camera.jpg)
-
 In much of the world, we’re now well into our third decade of online connectivity. In Europe and North America, [internet access is now nearly universal](https://supplygem.com/internet-usage-statistics/). In other nations, the possibilities of an online world are just emerging. But as access to the internet continues to expand around the globe, we’re seeing a troubling pattern: an increasing desire on the part of state actors and big corporations to own and control the internet.
 
 It should come as no surprise that authoritarian regimes want to restrict the internet. From their perspective, the availability of information on the internet poses the greatest threat to control since the advent of the free press. As Ray Bradbury wrote in Fahrenheit 451, “If you don’t want a man unhappy politically, don’t give him two sides to a question to worry him; give him one. Better yet, give him none.”
