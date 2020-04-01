@@ -1,9 +1,9 @@
 ---
 templateKey: blog-post
-public: true
+public: false
 url: orchid-integrates-with-imtoken
 title: "Orchid Integrates with imToken"
-date: 2020-4-1T16:45:36.651Z
+date: 2020-4-1T16:47:36.651Z
 description: "Today, Orchid announces its new integration with imToken, one of most popular crypto wallet providers in the world."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_imToken.jpg
