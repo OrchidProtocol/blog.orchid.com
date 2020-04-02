@@ -13,7 +13,7 @@ tags:
   - Network Analysis
 ---
 
-Orchid is uniquely designed to offer online privacy at a competitive cost. Bandwidth on Orchid is therefore priced dynamically to meet the needs of both users and providers. This is done through a unique bandwidth marketplace, where numerous providers can compete to offer their services to users. Users pay for bandwidth using the OXT cryptocurrency, which is available on [Coinbase](https://www.coinbase.com/). Orchid is a pay-as-you-go service that can be customized based on a user's needs, with bandwidth prices varying depending on the requirements of the use case.
+Orchid is uniquely designed to offer online privacy at a competitive cost. Bandwidth on Orchid is therefore priced dynamically to meet the needs of both users and providers. This is done through a unique bandwidth marketplace, where numerous providers can compete to offer their services to users. Users pay for bandwidth using the OXT cryptocurrency, which is available on [Coinbase](https://www.coinbase.com/) and [OKEx](https://www.okex.com/en/spot/trade/oxt_usdt). Orchid is a pay-as-you-go service that can be customized based on a user's needs, with bandwidth prices varying depending on the requirements of the use case.
 
 The price of bandwidth on Orchid is designed to fluctuate with the market, so there is no set "price" of bandwidth on the network. Bandwidth providers are free to set their own rates, and Orchid itself does not mandate pricing. Nonetheless, we expect prices to remain competitive with existing VPNs and privacy solutions.
 
