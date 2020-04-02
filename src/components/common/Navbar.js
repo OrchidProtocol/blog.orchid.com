@@ -224,16 +224,16 @@ function Navbar({customText}) {
                                     {
                                         (()=>{
                                             switch (process.env.GATSBY_TARGET_LANG) {
-                                                default:
-                                                    return "English";
-                                                case "ja":
-                                                    return "日本語";
                                                 case "ko":
                                                     return "한국어";
-                                                case "zh":
-                                                    return "中文普通话";
+                                                default:
+                                                    return "English";
                                                 case "ru":
                                                     return "русский";
+                                                case "ja":
+                                                    return "日本";
+                                                case "zh":
+                                                    return "中文";
                                                 case "id":
                                                     return "Indonesian";
                                             }
