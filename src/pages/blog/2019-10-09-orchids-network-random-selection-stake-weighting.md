@@ -12,7 +12,7 @@ description_ja: 'ビットコイン、イーサリアム、および他のほと
 description_ko: 'Orchid 네트워크는 Orchid 서버 소프트웨어를 실행하는 제공자들로 구성됩니다. Orchid 는 사용자 소프트웨어가 대역폭 제공자를 선택하는 방식을 결정하는 핵심 규칙 세트로 무작위 선정 및 지분 가중을 활용하는 알고리즘을 채택했습니다. Orchid 의 디자인은 작업 증명에서 발전했으며 공격 모델과 사용자 경험을 모두 고려합니다.'
 description_zh: '运行 Orchid Server 软件的提供商网络构成了 Orchid 网络。我们选择了构建一种算法，利用随机选择和权益加权作为确定用户软件如何选择提供商的核心规则集。我们的设计从工作量证明发展而来，同时考虑了攻击模型和用户体验。'
 featuredpost: true
-featuredimage: /img/random-selection-stake-weighting.png
+featuredimage: /img/random-selection-stake-weighting.jpg
 tags:
   - Blockchain
   - Ethereum

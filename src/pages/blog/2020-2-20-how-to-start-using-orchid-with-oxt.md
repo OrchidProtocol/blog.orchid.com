@@ -16,7 +16,7 @@ description_ja: "Orchid は、VPN の機能を提供するプライバシー ネ
 description_ru: "Orchid --- конфиденциальная сеть, предоставляющая функционал VPN и не только. Пользователи получают доступ к сети VPN-провайдеров, между которыми можно переключаться."
 description_id: "Orchid adalah jaringan privasi yang menawarkan fungsionalitas VPN dan lainnya yang menyediakan akses ke beberapa jaringan penyedia VPN yang dapat Anda tukar dan pilih, memungkinkan Anda membayar hanya untuk lebar pita yang digunakan, dan memungkinkan Anda berbagi akun dengan orang dan perangkat tanpa batas."
 featuredpost: false
-featuredimage: /img/uploads/Orchid_BlogImage_HowOrchid.png
+featuredimage: /img/uploads/Orchid_BlogImage_HowOrchid.jpg
 tags:
   - Company Updates
   - VPN
