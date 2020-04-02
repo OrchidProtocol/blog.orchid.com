@@ -270,12 +270,12 @@ function Navbar({customText}) {
                                 <Location>
                                 {({ location }) => {
                                     return <>
-                                        <li id="navbar-language-selector-list-item-first"><a className="phantom-a" href={`//blog.ko.orchid.com${location.pathname}`}>Korean</a></li>
+                                        <li id="navbar-language-selector-list-item-first"><a className="phantom-a" href={`//blog.ko.orchid.com${location.pathname}`}>한국어</a></li>
                                         <li><a className="phantom-a" href={`//blog.orchid.com${location.pathname}`}>English</a></li>
-                                        <li><a className="phantom-a" href={`//blog.ja.orchid.com${location.pathname}`}>Japanese</a></li>
-                                        <li><a className="phantom-a" href={`//blog.zh.orchid.com${location.pathname}`}>Mandarin</a></li>
+                                        <li><a className="phantom-a" href={`//blog.ja.orchid.com${location.pathname}`}>日本</a></li>
+                                        <li><a className="phantom-a" href={`//blog.zh.orchid.com${location.pathname}`}>中文</a></li>
                                         <li><a className="phantom-a" href={`//blog.id.orchid.com${location.pathname}`}>Indonesian</a></li>
-                                        <li><a className="phantom-a" href={`//blog.ru.orchid.com${location.pathname}`}>Russian</a></li>
+                                        <li><a className="phantom-a" href={`//blog.ru.orchid.com${location.pathname}`}>русский</a></li>
                                     </>
                                 }}
                                 </Location>
