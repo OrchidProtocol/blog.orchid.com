@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-public: true
+public: false
 url: how-to-use-orchid-alongside-your-existing-vpn-subscription
 title: "How to use Orchid alongside your existing VPN subscription"
 date: 2020-3-31T16:46:36.651Z
