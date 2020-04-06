@@ -31,9 +31,15 @@ collections:
       - {label: "Body - Japanese", name: "body_ja", widget: "markdown", required: false}
       - {label: "Body - Korean", name: "body_ko", widget: "markdown", required: false}
       - {label: "Body - Chinese", name: "body_zh", widget: "markdown", required: false}
+      - {label: "Body - Indonesian", name: "body_id", widget: "markdown", required: false}
+      - {label: "Body - Russian", name: "body_ru", widget: "markdown", required: false}
       - {label: "Description - Japanese", name: "description_ja", widget: "text", required: false}
       - {label: "Description - Korean", name: "description_ko", widget: "text", required: false}
       - {label: "Description - Chinese", name: "description_zh", widget: "text", required: false}
+      - {label: "Description - Indonesian", name: "description_id", widget: "text", required: false}
+      - {label: "Description - Russian", name: "description_ru", widget: "text", required: false}
       - {label: "Title - Japanese", name: "title_ja", widget: "string", required: false}
       - {label: "Title - Korean", name: "title_ko", widget: "string", required: false}
       - {label: "Title - Chinese", name: "title_zh", widget: "string", required: false}
+      - {label: "Title - Indonesian", name: "title_id", widget: "string", required: false}
+      - {label: "Title - Russian", name: "title_ru", widget: "string", required: false}

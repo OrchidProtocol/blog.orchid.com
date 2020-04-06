@@ -1445,3 +1445,7 @@ h6 {
         margin-top: 0;
     }
 }
+
+iframe {
+    max-width: 100%;
+}

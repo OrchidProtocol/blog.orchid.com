@@ -8,7 +8,8 @@ description: 'Start using the decentralized VPN at Orchid.com'
 featuredpost: false
 featuredimage: /img/orchid-privacy-network-launches.jpeg
 tags:
-  - Orchid Protocol
+  - Company Updates
+  - Privacy
 ---
 Today we are proud to launch Orchid, the first incentivized, peer-to-peer privacy network. We welcome you to get set up at [Orchid.com](http://orchid.com/) and start using it today for trustless digital privacy.
 

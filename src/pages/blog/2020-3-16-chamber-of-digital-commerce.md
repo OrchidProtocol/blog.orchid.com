@@ -8,7 +8,7 @@ description: "Today, we're proud to announce that we've joined the Chamber of Di
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_Chamber.jpg
 tags:
-  - Orchid Protocol
+  - Company Updates
 ---
 Beyond making the internet open and accessible to everyone, at Orchid we’ve always promoted the adoption of blockchain tech for innovation and social good —  that’s why all of our technology is open source. Today, we’re proud to announce that we’ve joined the Chamber of Digital Commerce, an organization leading the push toward a better public understanding and embrace of blockchain technology. 
 

@@ -8,7 +8,7 @@ description: "Today, Orchid announces its new integration with Ledger, the creat
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_Ledger.jpg
 tags:
-  - Orchid Protocol
+  - Company Updates
 ---
 Today, Orchid announces its new integration with [Ledger](https://www.ledger.com/), the creators of the world’s most popular hardware wallet, the [Ledger Nano S](https://shop.ledger.com/products/ledger-nano-s). With this collaboration, we’re thrilled to welcome Ledger’s global community into ours.
 

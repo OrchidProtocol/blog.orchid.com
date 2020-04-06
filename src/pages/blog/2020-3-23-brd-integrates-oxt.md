@@ -8,7 +8,7 @@ description: "When it comes to privacy, Orchid believes in “power in numbers.�
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_BRD.jpg
 tags:
-  - Orchid Protocol
+  - Company Updates
 ---
 
 When it comes to privacy, Orchid believes in “power in numbers.” That’s why we’re proud to share that [BRD Wallet](https://brd.com/) has integrated OXT, Orchid’s digital currency, for its 3 million users in 171 countries. 

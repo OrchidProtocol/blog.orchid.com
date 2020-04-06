@@ -15,7 +15,6 @@ featuredpost: true
 featuredimage: /img/nanopayments.jpg
 tags:
   - VPN
-  - Packet Sniffing
   - Network Analysis
 body_ja: |-
   朝起きて電灯のスイッチを入れるとき、その電気代が 1 ペニーの何分の 1 くらいか考えることがありますか?それとも、頭をぶつけないように電灯をつけるだけですか？

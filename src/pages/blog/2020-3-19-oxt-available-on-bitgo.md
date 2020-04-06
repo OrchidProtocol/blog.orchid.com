@@ -8,7 +8,8 @@ description: "We’re thrilled to announce that Orchid is partnering with BitGo,
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_BitGo.jpg
 tags:
-  - Orchid Protocol
+  - Partnerships
+  - Company Updates
 ---
 We’re thrilled to announce that Orchid is partnering with BitGo, a leading digital asset financial services platform. Our supporters can now store and secure their OXT in BitGo’s security-first, multi-signature wallets through their unified API platform.
 

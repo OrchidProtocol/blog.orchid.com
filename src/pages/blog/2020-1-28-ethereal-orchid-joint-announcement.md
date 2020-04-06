@@ -8,6 +8,8 @@ description: 'As we recognize Data Privacy Day this year, we’re excited to ann
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_Ethereal.jpg
 tags:
+  - Partnerships
+  - Company Updates
   - Privacy
 ---
 As we recognize Data Privacy Day this year, we’re excited to announce that we’ve joined forces with Ethereal as their official privacy partner. This May at the [Ethereal Summit](https://www.etherealsummit.com/) in New York, we’ll be working with the Ethereal team to help attendees gain better digital privacy tools and practices.

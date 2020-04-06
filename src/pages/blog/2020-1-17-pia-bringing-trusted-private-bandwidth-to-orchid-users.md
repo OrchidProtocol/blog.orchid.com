@@ -8,7 +8,8 @@ description: 'In order to build a strong and secure privacy network, it’s impo
 featuredpost: false
 featuredimage: /img/uploads/pia-bringing-trusted-private-bandwidth-to-orchid-users.jpg
 tags:
-  - Privacy
+  - Partnerships
+  - Company Updates
   - VPN
 ---
 In order to build a strong and secure privacy network, it’s important to start with a foundation of high-quality bandwidth providers. That’s why we’re thrilled to welcome [Private Internet Access](https://www.privateinternetaccess.com/) (PIA) as one of our key partners to protect online privacy and freedom on the Internet.

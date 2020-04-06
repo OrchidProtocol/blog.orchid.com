@@ -8,7 +8,7 @@ description: "Orchid is now available for free to all journalists, so they can f
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_Covid.jpg
 tags:
-  - Orchid Protocol
+  - Company Updates
   - Censorship
   - Decentralization
 ---
