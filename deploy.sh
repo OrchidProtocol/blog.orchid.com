@@ -36,7 +36,7 @@ function copy-push () {
 
 yarn
 
-Build the static site...
+# Build the static site...
 if [ "${#2}" == "2" ]; then
     yarn run build:static:${2}
 else
