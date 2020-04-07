@@ -19,6 +19,6 @@ New Orchid users can open an account by creating an Ethereum address using imTok
 
 Orchid CEO Dr. Steven Waterhouse said: "Taking our privacy network global requires the right set of international partners. imToken has done great work in building a secure and user-friendly product --- many more users will now have an easy way to hold their OXT and use it to buy private bandwidth."
 
-Philipp Seifert of imToken said: "The freedom to use an open web is critical to our users. We're thrilled to engage with Orchid's lively global community and make it easier for anyone to access and use OXT."\
+Philipp Seifert of imToken said: "The freedom to use an open web is critical to our users. We're thrilled to engage with Orchid's lively global community and make it easier for anyone to access and use OXT."
 
 Download the Orchid app to control your privacy in a new way [here](https://www.orchid.com/download).
