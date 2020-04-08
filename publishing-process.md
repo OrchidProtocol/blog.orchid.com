@@ -1,0 +1,66 @@
+# Publishing a new blog post
+
+Blog posts are stored in the `src/pages/blog` directory as Markdown (`.md`) files.
+
+&nbsp;
+
+To create a new post, simply drop the template below into a new markdown file in the directory.
+
+Your file can be named anything as long as it's unique, but I like to use the following format: `yyyy-mm-dd-{slug}.md`
+
+```m
+---
+templateKey: blog-post
+public: true
+url: the-post-slug-goes-here
+title: "The post title goes here."
+date: 2020-4-8T16:46:36.651Z
+description: "The post description goes here."
+featuredpost: false
+featuredimage: /img/uploads/orchid-logo-text.jpg
+tags:
+  - Company Updates
+  - VPN
+  - Ethereum
+---
+
+This the post content.
+```
+
+This template will create a post at `https://blog.orchid.com/the-post-slug-goes-here/`, with a published date of `April 4th, 2020`. Make sure you update the `date` field to the desired publishing date.
+
+If the `public` field is set to `false`, the post will not be rendered out.
+
+&nbsp;
+
+### Featured images
+To add a new featured image to use in a post, copy the image file into `/static/img/uploads`. If your file was named `/static/img/uploads/orchid-logo-text.jpg`, then the value you put in the `featuredimage` field should be `/img/uploads/orchid-logo-text.jpg`.
+
+Make sure that the resulting image is under 500KB, I usually aim for 256KB or lower, with a resolution of roughly 1920x1080. Please note that certain types of illustrations can be compressed enough as PNG files without having to convert them to JPG files.
+
+If you don't have access to a featured image for the blog post yet, `/img/uploads/orchid-logo-text.jpg` is a good placeholder.
+
+&nbsp;
+
+### Choosing tags
+As far as `tags` go, use your own discretion to fill out the tags from [the existing selection](https://blog.orchid.com/tags/). If you misspell a tag or use one that doesn't exist yet, a new tag of that name will be created, and once that new tag reaches 0 posts it will be removed from the site.
+
+&nbsp;
+
+### Converting to markdown from a google doc
+In order to speed up the process, I often use a simple [markdown converter](https://euangoddard.github.io/clipboard2markdown/) to convert a google doc into a workable markdown format. However make sure to check for any **bold text** or [links](#) that are not automatically carried over, they can sometimes get lost in translation. Spacing also usually requires some manual effort, remember to use `&nbsp;` in a pinch to add extra spaces between paragraphs.
+
+&nbsp;
+
+### Adding images to the post body
+
+To add an image to your post, just place the compressed image file inside of the `/static/img` directory, and embed the image like a normal markdown image, but leaving `static` out of the path to the image.
+
+`![My cool new images "alt" attribute](/img/my-image.jpg)`
+
+&nbsp;
+
+## Verifying before pushing 
+In order to test that your post has been correctly formatted, make sure to run `npm run build` followed by `npm run serve` and visit `localhost:8000` to make sure everything looks correct.
+
+`npm run build:light` will be much faster after the site has been built once, but you might run into build errors relating to the gatsby/sharp dependency not preparing images correctly in certain circumstances.
