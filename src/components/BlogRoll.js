@@ -66,6 +66,19 @@ const BlogRoll = ({ data }) => {
             }
         }
 
+        let featuredimage = featured[index].node.frontmatter.featuredimage;
+        if (featured[index].node.frontmatter.featuredimage) {
+            let ftImage = featured[index].node.frontmatter.featuredimage;
+            if (process.env.GATSBY_TARGET_LANG) {
+                if (featured[index].node.frontmatter[`featuredimage_${process.env.GATSBY_TARGET_LANG}`]) {
+                    ftImage = featured[index].node.frontmatter[`featuredimage_${process.env.GATSBY_TARGET_LANG}`];
+                }
+            }
+            featuredimage = (ftImage.childImageSharp && ftImage.childImageSharp.fixed) ?
+                ftImage.childImageSharp.fixed.src :
+                ftImage.publicURL;
+        }
+
         featuredElements.push(<Link css={css`
             display: block;
             margin-top: 2rem;
@@ -78,10 +91,10 @@ const BlogRoll = ({ data }) => {
             }
         `}
             key={index} to={`/${featured[index].node.frontmatter.url}/`}>
-            {featured[index].node.frontmatter.featuredimage ?
+            {featuredimage ?
                 <div css={css`
                     border-radius: 12px;
-                    background-image: url(${(featured[index].node.frontmatter.featuredimage.childImageSharp) ? featured[index].node.frontmatter.featuredimage.childImageSharp.fluid.src : featured[index].node.frontmatter.featuredimage.publicURL});
+                    background-image: url(${featuredimage});
                     background-size: cover;
                     background-position: center;
                     padding: 30% 50%;
@@ -255,6 +268,46 @@ export default () => (
 							date
 							featuredpost
 							featuredimage {
+								childImageSharp {
+									fluid(maxWidth: 645, quality: 95) {
+									...GatsbyImageSharpFluid
+                                    }
+								}
+                                publicURL
+							}
+							featuredimage_ja {
+								childImageSharp {
+									fluid(maxWidth: 645, quality: 95) {
+									...GatsbyImageSharpFluid
+                                    }
+								}
+                                publicURL
+							}
+							featuredimage_ko {
+								childImageSharp {
+									fluid(maxWidth: 645, quality: 95) {
+									...GatsbyImageSharpFluid
+                                    }
+								}
+                                publicURL
+							}
+							featuredimage_zh {
+								childImageSharp {
+									fluid(maxWidth: 645, quality: 95) {
+									...GatsbyImageSharpFluid
+                                    }
+								}
+                                publicURL
+							}
+							featuredimage_id {
+								childImageSharp {
+									fluid(maxWidth: 645, quality: 95) {
+									...GatsbyImageSharpFluid
+                                    }
+								}
+                                publicURL
+							}
+							featuredimage_ru {
 								childImageSharp {
 									fluid(maxWidth: 645, quality: 95) {
 									...GatsbyImageSharpFluid

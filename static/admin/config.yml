@@ -26,6 +26,11 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
       - {label: "Featured Image", name: "featuredimage", widget: image}
+      - {label: "Featured Image (Korean)", name: "featuredimage_ko", widget: image}
+      - {label: "Featured Image (Japanese)", name: "featuredimage_ja", widget: image}
+      - {label: "Featured Image (Chinese)", name: "featuredimage_zh", widget: image}
+      - {label: "Featured Image (Indonesian)", name: "featuredimage_id", widget: image}
+      - {label: "Featured Image (Russian)", name: "featuredimage_ru", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body - Japanese", name: "body_ja", widget: "markdown", required: false}

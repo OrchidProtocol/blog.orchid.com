@@ -49,6 +49,13 @@ const PostCard = ({ post, number }) => {
         }
     }
 
+    let featuredimage = post.frontmatter.featuredimage;
+    if (featuredimage) {
+        if (process.env.GATSBY_TARGET_LANG && post.frontmatter[`featuredimage_${process.env.GATSBY_TARGET_LANG}`]) {
+            featuredimage = post.frontmatter[`featuredimage_${process.env.GATSBY_TARGET_LANG}`];
+        }
+    }
+
     return (
         <div to={url} css={css`
             padding-bottom: var(--margin);
@@ -58,13 +65,13 @@ const PostCard = ({ post, number }) => {
             <header css={css`
                 display: block;
             `}>
-                {post.frontmatter.featuredimage &&
+                {featuredimage &&
                     <Link to={url}><div css={css`
                         padding: 30% 50%;
                         background: var(--color-secondary) no-repeat center center;
                         box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
                         border-radius: 20px;
-                        background-image: url(${post.frontmatter.featuredimage.childImageSharp ? post.frontmatter.featuredimage.childImageSharp.fluid.src : post.frontmatter.featuredimage.publicURL});
+                        background-image: url(${featuredimage.childImageSharp ? featuredimage.childImageSharp.fluid.src : featuredimage.publicURL});
                         background-size: cover;
                     `}></div></Link>}
             </header>
