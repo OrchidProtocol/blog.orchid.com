@@ -4,7 +4,7 @@ public: true
 url: orchid-continues-global-expansion-with-gemini-oxt-listing-coming-soon
 title: "Orchid Continues Global Expansion With Gemini OXT Listing Coming Soon"
 date: 2020-4-9T16:46:36.651Z
-description: 'Gemini, the global cryptocurrency exchange and custodian launched by Cameron and Tyler Winklevoss in 2015, will soon allow its users to access Orchid's digital currency, OXT.'
+description: "Gemini, the global cryptocurrency exchange and custodian launched by Cameron and Tyler Winklevoss in 2015, will soon allow its users to access Orchid's digital currency, OXT."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_Gemini.jpg
 tags:
