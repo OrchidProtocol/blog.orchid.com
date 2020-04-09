@@ -3,16 +3,35 @@ templateKey: blog-post
 public: true
 url: oxt-now-live-on-okex
 title: "OXT Now Live on OKEx, Orchid VPN Available in Mandarin, Indonesian, Russian and More"
+title_ko: "OXT, 현재 OKEx에 등록됨. 중국어, 러시아어 등으로 Orchid VPN 이용 가능"
 title_zh: "OXT 币已在 OKEx 上市，Orchid VPN 现可支持中文、俄语以及更多语言"
 date: 2020-4-1T16:46:36.651Z
 description: "OKEx, one of the world's largest digital asset exchanges, will now allow its millions of customers around the world trade and transact in Orchid's digital currency, OXT."
+description_ko: "전 세계 수백만 고객이 이용하는 세계 최대의 디지털 자산 거래소 중 하나인 OKEx에서 현재 Orchid의 디지털 통화 OXT가 거래되고 있습니다."
 description_zh: "OKEx 是全球最大的数字资产交易所之一，其数百万客户遍布全球，现已可使用 Orchid 的数字货币 OXT 进行交易。"
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_OKExEN.png
 featuredimage_zh: /img/uploads/Orchid_BlogImage_OKExMAN.png
+featuredimage_ko: /img/uploads/Orchid_BlogImage_OKExKOR.jpg
 tags:
   - Company Updates
   - Partnerships
+body_ko: |-
+  전 세계 수백만 고객이 이용하는 세계 최대의 디지털 자산 거래소 중 하나인 [OKEx](https://www.okex.com/)에서 현재 Orchid의 디지털 통화 OXT가 거래되고 있습니다. OKEx 등록을 통해 이제 OXT는 전 세계 100여 개국에서 안전한 인터넷 검색 및 커뮤니케이션을 지원할 수 있게 되었습니다. Orchid의 최신 릴리스에서는 중국어, 한국어, 일본어, 인도네시아어, 러시아어 사용자를 위한 지원이 추가되었습니다.
+
+  Orchid 공동 설립자 겸 CEO 박사 Steven Waterhouse(Seven)는 "전 세계적으로 감시와 검열이 증가하고 있다. 이는 전에 발생한 여러 위기 상황에 뒤이어 나타난 추세이다. Orchid가 OKEx에 등록됨에 따라 전 세계의 사용자는 더 쉽게 OXT를 획득하여 이를 사용해 사설 대역폭에 액세스할 수 있게 되었다. 인터넷 자유의 성장을 위한 중요한 날이다"라고 말했습니다.
+
+  OKEx의 CEO Jay Hao는 "Orchid는 토큰 경제 모델과 상업적 애플리케이션이 어떻게 융합될 수 있는지를 보여 주는 완벽한 사례이다. 우리는 OXT가 OKEx 에코시스템의 일원이 된 것에 대해 기쁘게 생각하며, 전문 트레이더 및 개인 트레이더에게 원스톱 트레이딩 서비스를 제공하고 프로젝트 팀과 함께 프로모션을 진행할 것이다"라고 말했습니다. 또한, "우리는 지속적으로 양질의 투자 프로젝트를 찾고 전 세계 사용자를 위해 향상된 트레이딩 경험을 제공할 것이다"라고 덧붙였습니다.
+
+  Orchid는 독특한 VPN입니다. 디지털 통화에 기반하고 있으므로 대역폭을 결제할 때 중앙 관리자가 필요하지 않습니다. 앱에서는 연결된 계정을 통해 OXT로 VPN 서비스를 구입할 수 있고, 사용자는 실제로 사용한 대역폭에 대해서만 비용을 결제하면 됩니다. 신규 Orchid 사용자는 Metamask 또는 기타 이더리움 지갑을 사용해 이더리움 주소를 생성하고, OKEx 또는 다른 거래소에서 최소 $4 상당의 OXT와 $1 상당의 ETH를 구입하여 계정을 개설할 수 있습니다. 계정이 생성되면 계정 자격 증명이 포함된 QR 코드가 표시됩니다. 사용자는 원하는 만큼 친구, 가족 또는 장치와 이를 공유할 수 있습니다. 누구나 앱에 해당 계정을 복사 또는 스캔하여 1단계만에 설정을 완료할 수 있습니다.
+
+  OKEx에 대한 자세한 정보를 보려면 [이곳](http://www.okex.com)을 방문하세요. [이곳](https://www.orchid.com/download)에서 Orchid 앱을 다운로드하여 새로운 방식으로 프라이버시를 통제하세요.
+
+  Orchid 정보
+
+  Orchid는 최초의 피어 투 피어, 인센티브 기반 프라이버시 네트워크를 통해 디지털 프라이버시에 대한 새로운 접근 방식을 제시합니다. 네트워크 상에서 누구나 Orchid의 디지털 통화(OXT)를 사용해 대역폭을 사고 팔 수 있습니다. 사용자는 프라이버시를 유지하며 검색하고, 지역에 따른 제한을 받지 않고 콘텐츠에 액세스할 수 있습니다. 분산형 설계, 멀티 홉 아키텍처 및 오픈 소스 정신을 갖춘 Orchid는 신뢰하기 힘든 환경에서도 사용자에게 전례 없는 디지털 프라이버시를 제공합니다
+
+  Orchid.com에서 자세한 내용을 확인하고 Twitter(@OrchidProtocol), Medium 및 Telegram에서 이 프로젝트를 팔로우하세요.
 body_zh: |-
   [OKEx](https://www.okex.com/) 是全球最大的数字资产交易所之一，其数百万客户遍布全球，现已可使用 Orchid 的数字货币 OXT 进行交易。 OKEx 上市后，OXT 币如今可为全球一百多个国家提供安全的上网和通信服务。 Orchid 最新版本的应用新增了对中文、韩语、日语、印尼语和俄语用户的支持。
 
