@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: orchid-now-available-for-macos-command-line
 title: "Orchid Now Available for MacOS Command Line"
-date: 2020-3-31T16:46:36.651Z
+date: 1585673196651
 description: "As many people around the world adjust to working remotely, Internet privacy tools can be crucial for workers in sensitive industries and/or geographies. As a result of these macro changes, we have made a decision to prioritize Orchid's desktop clients."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_CommandLine.png

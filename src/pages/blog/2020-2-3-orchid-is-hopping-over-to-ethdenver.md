@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: orchid-is-hopping-over-to-ethdenver
 title: 'Orchid Is Hopping Over to ETHDenver'
-date: 2020-2-3T16:47:36.651Z
+date: 1580748456651
 description: 'The Orchid team is excited to announce we will be returning to ETHDenver this February!'
 featuredpost: false
 featuredimage: /img/uploads/ETHDenver_Bunnicorn.png

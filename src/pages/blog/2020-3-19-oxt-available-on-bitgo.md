@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: oxt-available-on-bitgo
 title: 'Peace of Mind for Institutional Supporters: OXT Available on BitGo'
-date: 2020-3-19T16:47:37.651Z
+date: 1584636457651
 description: "We’re thrilled to announce that Orchid is partnering with BitGo, a leading digital asset financial services platform."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_BitGo.jpg

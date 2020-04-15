@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: ledger-adds-oxt
 title: 'Ledger Adds Orchid’s Digital Currency (OXT)'
-date: 2020-3-18T16:47:36.651Z
+date: 1584550056651
 description: "Today, Orchid announces its new integration with Ledger, the creators of the world’s most popular hardware wallet, the Ledger Nano S."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_Ledger.jpg

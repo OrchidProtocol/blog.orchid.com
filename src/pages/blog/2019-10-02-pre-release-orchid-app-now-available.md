@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: pre-release-orchid-app-now-available
 title: Pre-release Orchid App now available
-date: 2019-10-2T16:47:36.651Z
+date: 1570034856651
 description: 'Our initial feature is a local VPN traffic analyzer. The complete VPN service is coming soon.'
 featuredpost: false
 featuredimage: /img/orchid-pre-release-app.jpeg

@@ -8,7 +8,7 @@ title_id: "OXT kini terdaftar di OKEx, Orchid VPN hadir dalam bahasa Mandarin, R
 title_ko: "OXT, 현재 OKEx에 등록됨. 중국어, 러시아어 등으로 Orchid VPN 이용 가능"
 title_zh: "OXT 币已在 OKEx 上市，Orchid VPN 现可支持中文、俄语以及更多语言"
 title_ru: "OXT теперь на бирже OKEx, VPN от Orchid доступен на русском и китайском, а также другие новости"
-date: 2020-4-1T16:46:36.651Z
+date: 1585759596651
 description: "OKEx, one of the world's largest digital asset exchanges, will now allow its millions of customers around the world trade and transact in Orchid's digital currency, OXT."
 description_ja: "世界最大のデジタル資産取引所の 1 つである OKEx は、世界中の何百万もの顧客が Orchid のデジタル通貨である OXT で売買と取引を行うことを許可しました。"
 description_id: "OKEx, salah satu bursa aset digital terbesar di dunia, kini mengizinkan jutaan pelanggannya di seluruh dunia berdagang dan bertransaksi dalam mata uang digital Orchid, OXT."

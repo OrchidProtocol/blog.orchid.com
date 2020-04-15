@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: orchid-partners-with-vpnsecure
 title: 'Orchid Partners with VPNSecure'
-date: 2020-2-12T16:47:36.651Z
+date: 1581526056651
 description: 'As Orchid continues to build tools for a private and fair internet, we’ll be collaborating with other leaders in electronic privacy. Today, we’re proud to announce Orchid’s integration with VPNSecure, a premiere digital security firm.'
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_VPNSec.jpg

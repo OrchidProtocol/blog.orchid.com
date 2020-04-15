@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: get-hopping-faster-making-privacy-easier-with-qr-codes
 title: 'Get hopping faster: Making privacy easier with QR codes'
-date: 2020-1-21T16:47:36.651Z
+date: 1579625256651
 description: 'At Orchid, we’re committed to growing the privacy network so anyone, anywhere can access the Orchid VPN. That’s why we’re excited to announce an improvement to our user interface that simplifies our users’ first steps to get Orchid up and running.'
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_QR.jpg

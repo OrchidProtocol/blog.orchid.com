@@ -3,7 +3,7 @@ templateKey: blog-post
 public: false
 url: how-orchid-improves-privacy-using-a-public-blockchain
 title: 'How Orchid improves privacy using a public blockchain'
-date: 2020-3-5T16:47:36.651Z
+date: 1583426856651
 description: 'Orchid is an incentivized privacy network, Open Source project, and consumer VPN service aimed to deliver new levels of privacy. But what does privacy mean? How private is Orchid, which relies on pseudo-anonymous payments on Ethereum? In this post, we explore the concept of “privacy” and how Orchid leverages multiple innovations to deliver on its goals.'
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogPost_Privacy.png

@@ -6,7 +6,7 @@ title: 'Orchid’s Network: Random Selection + Stake Weighting'
 title_ja: 'オーキッドのネットワーク: ランダム選 択 + ステーク加重'
 title_ko: 'Orchid 네트워크: 무작위 선택 + 지분 가중 방식'
 title_zh: 'Orchid 网络：随机选择 + 权益加权'
-date: 2019-10-9T18:47:36.651Z
+date: 1570646856651
 description: 'When you wake up in the morning and flick on a light switch, do you pause to think about how many tiny fractions of a penny that electricity costs? Or do you just flick on the light so you don’t bump your head?'
 description_ja: 'ビットコイン、イーサリアム、および他のほとんどの分散型システムと 同様に、オーキッドはオープンソース ソフトウェアから構築されたオー プン ネットワークとして設計されています。'
 description_ko: 'Orchid 네트워크는 Orchid 서버 소프트웨어를 실행하는 제공자들로 구성됩니다. Orchid 는 사용자 소프트웨어가 대역폭 제공자를 선택하는 방식을 결정하는 핵심 규칙 세트로 무작위 선정 및 지분 가중을 활용하는 알고리즘을 채택했습니다. Orchid 의 디자인은 작업 증명에서 발전했으며 공격 모델과 사용자 경험을 모두 고려합니다.'

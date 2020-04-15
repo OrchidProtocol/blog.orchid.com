@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: oxt-now-live-on-bittrex-global
 title: "OXT Now Live on Bittrex Global"
-date: 2020-4-9T16:47:36.651Z
+date: 1586450856651
 description: "Bittrex Global, the international digital asset trading platform based in Liechtenstein, will now allow its users to access Orchid's digital currency, OXT."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_BittrexGlobal.jpg

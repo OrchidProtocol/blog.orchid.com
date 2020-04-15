@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: orchid-joins-the-blockchain-association
 title: 'Orchid Joins Leading Industry Group the Blockchain Association'
-date: 2020-3-19T16:47:36.651Z
+date: 1584636456651
 description: "Today, we’re proud to announce that we’ve joined the Blockchain Association, the blockchain industry’s leading institutional alliance."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_BlockchainAssociation.jpg

@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: staking-oxt-on-the-orchid-network
 title: 'Staking OXT on the Orchid network'
-date: 2020-3-17T16:47:36.651Z
+date: 1584463656651
 description: "Orchid takes a unique approach to rewarding OXT stakers"
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_Staking.jpg

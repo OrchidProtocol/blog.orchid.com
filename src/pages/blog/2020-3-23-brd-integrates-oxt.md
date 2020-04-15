@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: brd-integrates-oxt
 title: 'Power in Numbers: BRD Integrates Orchid’s Digital Currency (OXT)'
-date: 2020-3-23T16:46:36.651Z
+date: 1584981996651
 description: "When it comes to privacy, Orchid believes in “power in numbers.” That’s why we’re proud to share that BRD Wallet has integrated OXT, Orchid’s digital currency, for its 3 million users in 171 countries."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_BRD.jpg

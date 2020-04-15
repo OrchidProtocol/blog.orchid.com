@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: pia-bringing-trusted-private-bandwidth-to-orchid-users
 title: 'PIA: Bringing Trusted Private Bandwidth to Orchid Users'
-date: 2020-1-20T16:47:36.651Z
+date: 1579538856651
 description: 'In order to build a strong and secure privacy network, it’s important to start with a foundation of high-quality bandwidth providers. That’s why we’re thrilled to welcome Private Internet Access (PIA) as one of our key partners to protect online privacy and freedom on the Internet.'
 featuredpost: false
 featuredimage: /img/uploads/pia-bringing-trusted-private-bandwidth-to-orchid-users.jpg
