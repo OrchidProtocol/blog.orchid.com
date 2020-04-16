@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: recap-of-recent-events
 title: 'Orchid: Recap of Recent Events'
-date: 2019-11-14T12:47:36.651Z
+date: 1573735656651
 description: 'From the Bay Area to Columbus, Ohio, the team at Orchid has enjoyed a whirlwind of events these past few weeks. Here’s a recap of what we’ve been up to.'
 featuredpost: false
 featuredimage: /img/2019-recap.jpg

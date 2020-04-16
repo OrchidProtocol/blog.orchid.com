@@ -8,7 +8,7 @@ title_ko: 'OXT로 Orchid 사용을 시작하는 방법'
 title_ja: 'OXT を利用して Orchid の使用を開始するには'
 title_ru: 'Как начать использовать Orchid с помощью OXT'
 title_id: 'Cara mulai menggunakan Orchid dengan OXT'
-date: 2020-2-20T16:47:36.651Z
+date: 1582217256651
 description: 'Orchid is a privacy network that offers the functionality of a VPN, and more. It provides access to a network of VPN providers that you can switch between, allows you to pay only for the bandwidth you use, and lets you share your account with an unlimited number of people and devices.'
 description_zh: "Orchid是一种去中心化的匿名通信和虚拟专用网络市场，功能类似VPN。作为我们的用户，您可以使用分布式系统在多个不同的 VPN 提供商之间分配信任，从而分散信息流，不会让任何实体看到全局。"
 description_ko: "Orchid는 VPN 기능 등을 제공하는 사설 네트워크입니다. 이 서비스는 사용자가 전환할 수 있는 다양한 VPN 제공업체에 대한 액세스를 제공합니다."

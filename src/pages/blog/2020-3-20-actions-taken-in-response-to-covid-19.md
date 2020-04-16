@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: actions-taken-in-response-to-covid-19
 title: 'Orchid update: actions taken in response to COVID-19'
-date: 2020-3-20T16:46:36.651Z
+date: 1584722796651
 description: "Orchid is now available for free to all journalists, so they can further free speech and the flow of information no matter where they are."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_Covid.jpg

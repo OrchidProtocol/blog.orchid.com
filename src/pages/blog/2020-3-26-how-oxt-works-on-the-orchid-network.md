@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: how-oxt-works-on-the-orchid-network
 title: 'How OXT works on the Orchid network'
-date: 2020-3-26T16:46:36.651Z
+date: 1585241196651
 description: "Orchid lets users explore the Internet freely. Key to its design is OXT."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_HowOXT.png

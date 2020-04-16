@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: ethereal-orchid-joint-announcement
 title: 'It’s #DataPrivacyDay. Ethereal and Orchid are committed to realizing its promise.'
-date: 2020-1-28T16:47:36.651Z
+date: 1580230056651
 description: 'As we recognize Data Privacy Day this year, we’re excited to announce that we’ve joined forces with Ethereal as their official privacy partner.'
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_Ethereal.jpg

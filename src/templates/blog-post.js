@@ -8,7 +8,7 @@ import url from 'url'
 
 import ArticleMeta from '../components/common/meta/ArticleMeta';
 
-import getCustomFormatedDate from '../utils/date';
+import { getCustomFormatedDate } from '../utils/date';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin, faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
@@ -189,9 +189,7 @@ const BlogPost = (props) => {
 				ftImage = post.frontmatter[`featuredimage_${process.env.GATSBY_TARGET_LANG}`];
 			}
 		}
-		post.frontmatter.featuredimage = (ftImage.childImageSharp && ftImage.childImageSharp.fixed) ?
-			ftImage.childImageSharp.fixed.src :
-			ftImage.publicURL;
+		post.frontmatter.featuredimage = ftImage.publicURL;
 	}
 
 
@@ -242,7 +240,7 @@ BlogPost.propTypes = {
 
 export default BlogPost
 
-export const pageQuery = graphql`
+export const staticQuery = graphql`
 	query BlogPostByID($id: String!) {
 		markdownRemark(id: { eq: $id }) {
 			id
@@ -250,51 +248,21 @@ export const pageQuery = graphql`
 			frontmatter {
 				date
 				featuredimage {
-					childImageSharp {
-						fixed(width: 720, quality: 100) {
-							...GatsbyImageSharpFixed
-						}
-					}
 					publicURL
 				}
 				featuredimage_ja {
-					childImageSharp {
-						fixed(width: 720, quality: 100) {
-							...GatsbyImageSharpFixed
-						}
-					}
 					publicURL
 				}
 				featuredimage_ko {
-					childImageSharp {
-						fixed(width: 720, quality: 100) {
-							...GatsbyImageSharpFixed
-						}
-					}
 					publicURL
 				}
 				featuredimage_zh {
-					childImageSharp {
-						fixed(width: 720, quality: 100) {
-							...GatsbyImageSharpFixed
-						}
-					}
 					publicURL
 				}
 				featuredimage_id {
-					childImageSharp {
-						fixed(width: 720, quality: 100) {
-							...GatsbyImageSharpFixed
-						}
-					}
 					publicURL
 				}
 				featuredimage_ru {
-					childImageSharp {
-						fixed(width: 720, quality: 100) {
-							...GatsbyImageSharpFixed
-						}
-					}
 					publicURL
 				}
 				title

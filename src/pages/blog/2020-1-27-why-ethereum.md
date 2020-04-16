@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: why-ethereum
 title: '4 Factors We Considered Before Choosing Ethereum'
-date: 2020-1-27T16:47:36.651Z
+date: 1580143656651
 description: 'When we started out designing the Orchid privacy network, we faced the fundamental decision of which blockchain Layer 1 platform to build on.'
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_WhyETH.jpg

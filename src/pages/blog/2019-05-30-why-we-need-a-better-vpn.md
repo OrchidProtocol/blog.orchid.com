@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: why-we-need-a-better-vpn
 title: Why We Need a Better VPN
-date: 2019-5-30T16:47:36.651Z
+date: 1559234856651
 description: 'As dueling interests move to control the future of the internet, users around the globe are increasingly turning to VPNs.'
 featuredpost: false
 featuredimage: /img/green-security-camera.jpg

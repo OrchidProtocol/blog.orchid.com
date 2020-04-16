@@ -3,6 +3,8 @@ require("dotenv").config({
   path: `.env.production`,
 })
 
+const { currentTimestampPacificTime } = require('./src/utils/currentTimestamp');
+
 module.exports = {
   siteMetadata: {
     title: 'Blog - Orchid',
@@ -50,27 +52,10 @@ module.exports = {
       },
     },
     `gatsby-plugin-emotion`,
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          {
-            resolve: 'gatsby-remark-relative-images',
-            options: {
-              name: 'uploads',
-            },
-          },
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 2048,
-            },
-          },
           {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
@@ -144,7 +129,13 @@ module.exports = {
               {
                 allMarkdownRemark(
                   sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: { frontmatter: {templateKey: { eq: "blog-post" }, public: { eq: true }} }
+                  filter: { 
+                    frontmatter: {
+                      templateKey: { eq: "blog-post" }, 
+                      public: { eq: true }, 
+                      date: { lt: ${currentTimestampPacificTime} } 
+                    } 
+                  }
                 ) {
                   edges {
                     node {

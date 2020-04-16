@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: supporting-a-decentralized-uncensored-internet-for-every-person-on-the-planet
 title: Supporting a decentralized, uncensored Internet for every person on the planet
-date: 2017-11-1T16:47:36.651Z
+date: 1509554856651
 description: 'What makes a better Internet possible? At Orchid Labs, our goal is to ensure that every person on Earth can have access to an open, decentralized, and uncensored Internet.'
 featuredpost: false
 featuredimage: /img/orchid-text.png

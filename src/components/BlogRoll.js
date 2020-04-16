@@ -5,7 +5,7 @@ import { Link, graphql, StaticQuery } from 'gatsby'
 
 import _ from 'lodash';
 import { Layout, PostCard } from './common';
-import getCustomFormatedDate from '../utils/date';
+import { getCustomFormatedDate, currentTimestampPacificTime} from '../utils/date';
 
 const Sidebar = styled.div`
 `;
@@ -37,6 +37,19 @@ const SidebarCardSeperator = styled.div`
 const BlogRoll = ({ data }) => {
     const posts = data.allPosts.edges
     const featured = data.featuredPosts.edges
+
+    for (let index = posts.length-1; index >= 0; index--) {
+        const element = posts[index];
+        if (element.node.frontmatter.date > currentTimestampPacificTime) {
+            posts.splice(index, 1)
+        }
+    }
+    for (let index = featured.length-1; index >= 0; index--) {
+        const element = featured[index];
+        if (element.node.frontmatter.date > currentTimestampPacificTime) {
+            featured.splice(index, 1)
+        }
+    }
 
     // Tag pages:
     let tags = []
@@ -74,9 +87,7 @@ const BlogRoll = ({ data }) => {
                     ftImage = featured[index].node.frontmatter[`featuredimage_${process.env.GATSBY_TARGET_LANG}`];
                 }
             }
-            featuredimage = (ftImage.childImageSharp && ftImage.childImageSharp.fixed) ?
-                ftImage.childImageSharp.fixed.src :
-                ftImage.publicURL;
+            featuredimage = ftImage.publicURL;
         }
 
         featuredElements.push(<Link css={css`
@@ -237,10 +248,20 @@ const BlogRoll = ({ data }) => {
 export default () => (
     <StaticQuery
         query={graphql`
-		query BlogRollQuery {
+		query BlogRollQuery($currentTimestampPacificTime: Float) {
 			allPosts: allMarkdownRemark(
 				sort: { order: DESC, fields: [frontmatter___date] }
-					filter: { frontmatter: { templateKey: { eq: "blog-post" }, public: { eq: true } } }
+                filter: { 
+                    frontmatter: { 
+                        templateKey: {
+                            eq: "blog-post"
+                        },
+                        date: { lt: $currentTimestampPacificTime },
+                        public: {
+                            eq: true
+                        }
+                    }
+                }
 				) {
 				edges {
 					node {
@@ -268,51 +289,21 @@ export default () => (
 							date
 							featuredpost
 							featuredimage {
-								childImageSharp {
-									fluid(maxWidth: 645, quality: 95) {
-									...GatsbyImageSharpFluid
-                                    }
-								}
                                 publicURL
 							}
 							featuredimage_ja {
-								childImageSharp {
-									fluid(maxWidth: 645, quality: 95) {
-									...GatsbyImageSharpFluid
-                                    }
-								}
                                 publicURL
 							}
 							featuredimage_ko {
-								childImageSharp {
-									fluid(maxWidth: 645, quality: 95) {
-									...GatsbyImageSharpFluid
-                                    }
-								}
                                 publicURL
 							}
 							featuredimage_zh {
-								childImageSharp {
-									fluid(maxWidth: 645, quality: 95) {
-									...GatsbyImageSharpFluid
-                                    }
-								}
                                 publicURL
 							}
 							featuredimage_id {
-								childImageSharp {
-									fluid(maxWidth: 645, quality: 95) {
-									...GatsbyImageSharpFluid
-                                    }
-								}
                                 publicURL
 							}
 							featuredimage_ru {
-								childImageSharp {
-									fluid(maxWidth: 645, quality: 95) {
-									...GatsbyImageSharpFluid
-                                    }
-								}
                                 publicURL
 							}
 						}
@@ -321,8 +312,15 @@ export default () => (
 			}
 
 			featuredPosts: allMarkdownRemark(
-				sort: { order: DESC, fields: [frontmatter___date] }
-					filter: { frontmatter: { featuredpost: { eq: true }, templateKey: { eq: "blog-post" }, public: { eq: true } } }
+                    sort: { order: DESC, fields: [frontmatter___date] }
+                    filter: { 
+                        frontmatter: { 
+                            featuredpost: { eq: true },
+                            templateKey: { eq: "blog-post" },
+                            date: { lt: $currentTimestampPacificTime },
+                            public: { eq: true } 
+                        }
+                    }
 				) {
 				edges {
 					node {
@@ -343,11 +341,6 @@ export default () => (
 							date
 							featuredpost
 							featuredimage {
-								childImageSharp {
-									fluid(maxWidth: 215, quality: 95) {
-									...GatsbyImageSharpFluid
-									}
-                                }
                                 publicURL
 							}
 						}

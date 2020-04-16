@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: why-ordinary-people-are-turning-to-vpns
 title: 'Why Ordinary People Are Turning to VPNs'
-date: 2019-11-10T12:47:36.651Z
+date: 1573390056651
 description: 'As governments and corporations around the world move to control our online experiences, VPN usage worldwide is growing at an astronomical pace. But along with this growth, misconceptions about what type of—and why—people are using the technology still abound.'
 featuredpost: false
 featuredimage: /img/ordinary-people-using-vpns.jpeg

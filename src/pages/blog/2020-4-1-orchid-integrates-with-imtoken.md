@@ -4,7 +4,7 @@ public: true
 url: orchid-integrates-with-imtoken
 title: "Orchid Integrates with imToken"
 title_zh: "Orchid正式进驻imToken"
-date: 2020-4-1T16:45:36.651Z
+date: 1585759536651
 description: "Today, Orchid announces its new integration with imToken, one of most popular crypto wallet providers in the world."
 description_zh: "近日，Orchid（兰花协议）宣布，公司已与全球最受欢迎的加密钱包提供商之一imToken完成技术整合，其平台现已正式支持兰花协议代币OXT。"
 featuredpost: false
