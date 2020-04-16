@@ -73,11 +73,7 @@ query TagPage($tag: String) {
 					date
 					featuredpost
 					featuredimage {
-						childImageSharp {
-							fluid(maxWidth: 720, quality: 90) {
-							...GatsbyImageSharpFluid
-							}
-						}
+						publicURL
 					}
 				}
 			}

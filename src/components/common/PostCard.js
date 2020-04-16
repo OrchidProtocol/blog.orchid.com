@@ -71,7 +71,7 @@ const PostCard = ({ post, number }) => {
                         background: var(--color-secondary) no-repeat center center;
                         box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
                         border-radius: 20px;
-                        background-image: url(${featuredimage.childImageSharp ? featuredimage.childImageSharp.fluid.src : featuredimage.publicURL});
+                        background-image: url(${featuredimage.publicURL});
                         background-size: cover;
                     `}></div></Link>}
             </header>

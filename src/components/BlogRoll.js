@@ -74,9 +74,7 @@ const BlogRoll = ({ data }) => {
                     ftImage = featured[index].node.frontmatter[`featuredimage_${process.env.GATSBY_TARGET_LANG}`];
                 }
             }
-            featuredimage = (ftImage.childImageSharp && ftImage.childImageSharp.fixed) ?
-                ftImage.childImageSharp.fixed.src :
-                ftImage.publicURL;
+            featuredimage = ftImage.publicURL;
         }
 
         featuredElements.push(<Link css={css`
