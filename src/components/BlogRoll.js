@@ -5,9 +5,7 @@ import { Link, graphql, StaticQuery } from 'gatsby'
 
 import _ from 'lodash';
 import { Layout, PostCard } from './common';
-import getCustomFormatedDate from '../utils/date';
-
-const { currentTimestampPacificTime } = require('../utils/date');
+import { getCustomFormatedDate, currentTimestampPacificTime} from '../utils/date';
 
 const Sidebar = styled.div`
 `;

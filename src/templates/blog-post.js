@@ -8,7 +8,7 @@ import url from 'url'
 
 import ArticleMeta from '../components/common/meta/ArticleMeta';
 
-import getCustomFormatedDate from '../utils/date';
+import { getCustomFormatedDate } from '../utils/date';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin, faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
@@ -240,7 +240,7 @@ BlogPost.propTypes = {
 
 export default BlogPost
 
-export const pageQuery = graphql`
+export const staticQuery = graphql`
 	query BlogPostByID($id: String!) {
 		markdownRemark(id: { eq: $id }) {
 			id

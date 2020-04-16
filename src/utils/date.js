@@ -1,16 +1,14 @@
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 
-const tempDate = new Date();
-const pacificTimeOffset = (tempDate.getTimezoneOffset() - 420)*60*1000; //Pacific time offest
-export const currentTimestampPacificTime = Date.now() + pacificTimeOffset;
+const { currentTimestampPacificTime, pacificTimeOffset } = require('./currentTimestamp');
 
-export function currentYear () {
+function currentYear () {
     const date = new Date();
     return date.getFullYear();
 }
 
-export function getCustomFormatedDateEN (timestamp) {
+function getCustomFormatedDateEN (timestamp) {
     const date = new Date(timestamp + pacificTimeOffset);
     const month = months[date.getMonth()],
         day = date.getDate(),
@@ -18,7 +16,7 @@ export function getCustomFormatedDateEN (timestamp) {
 
     return `${month} ${day}, ${year}`;
 }
-export function getCustomFormatedDateKO (timestamp) {
+function getCustomFormatedDateKO (timestamp) {
     const date = new Date(timestamp + pacificTimeOffset);
     const month = date.getMonth()+1,
         day = date.getDate(),
@@ -26,7 +24,7 @@ export function getCustomFormatedDateKO (timestamp) {
 
     return `${year}년 ${month}월 ${day}일`;
 }
-export function getCustomFormatedDateJA (timestamp) {
+function getCustomFormatedDateJA (timestamp) {
     const date = new Date(timestamp + pacificTimeOffset);
     const month = date.getMonth()+1,
         day = date.getDate(),
@@ -34,7 +32,7 @@ export function getCustomFormatedDateJA (timestamp) {
 
     return `${year}年 ${month}月 ${day}日`;
 }
-export function getCustomFormatedDateZH (timestamp) {
+function getCustomFormatedDateZH (timestamp) {
     const date = new Date(timestamp + pacificTimeOffset);
     const month = date.getMonth()+1,
         day = date.getDate(),
@@ -59,4 +57,13 @@ switch (process.env.GATSBY_TARGET_LANG) {
     break;
 }
 
-export default getCustomFormatedDate;
+
+export { 
+    currentTimestampPacificTime,
+    currentYear,
+    getCustomFormatedDate,
+    getCustomFormatedDateEN,
+    getCustomFormatedDateKO,
+    getCustomFormatedDateJA,
+    getCustomFormatedDateZH
+};

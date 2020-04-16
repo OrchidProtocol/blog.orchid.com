@@ -3,7 +3,7 @@ import { css } from '@emotion/core'
 import { Link } from 'gatsby'
 import Tags from './Tags'
 
-import getCustomFormatedDate from '../../utils/date';
+import { getCustomFormatedDate } from '../../utils/date';
 
 const FeaturedIndicator = <div css={css`
     background: var(--color-primary);
