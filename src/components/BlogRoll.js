@@ -7,7 +7,7 @@ import _ from 'lodash';
 import { Layout, PostCard } from './common';
 import getCustomFormatedDate from '../utils/date';
 
-const CurrentDate = Date.now();
+const { currentTimestampPacificTime } = require('../utils/date');
 
 const Sidebar = styled.div`
 `;
@@ -42,13 +42,13 @@ const BlogRoll = ({ data }) => {
 
     for (let index = posts.length-1; index >= 0; index--) {
         const element = posts[index];
-        if (element.node.frontmatter.date > CurrentDate) {
+        if (element.node.frontmatter.date > currentTimestampPacificTime) {
             posts.splice(index, 1)
         }
     }
     for (let index = featured.length-1; index >= 0; index--) {
         const element = featured[index];
-        if (element.node.frontmatter.date > CurrentDate) {
+        if (element.node.frontmatter.date > currentTimestampPacificTime) {
             featured.splice(index, 1)
         }
     }
@@ -250,7 +250,7 @@ const BlogRoll = ({ data }) => {
 export default () => (
     <StaticQuery
         query={graphql`
-		query BlogRollQuery($CurrentDate: Float) {
+		query BlogRollQuery($currentTimestampPacificTime: Float) {
 			allPosts: allMarkdownRemark(
 				sort: { order: DESC, fields: [frontmatter___date] }
                 filter: { 
@@ -258,7 +258,7 @@ export default () => (
                         templateKey: {
                             eq: "blog-post"
                         },
-                        date: { lt: $CurrentDate },
+                        date: { lt: $currentTimestampPacificTime },
                         public: {
                             eq: true
                         }
@@ -319,7 +319,7 @@ export default () => (
                         frontmatter: { 
                             featuredpost: { eq: true },
                             templateKey: { eq: "blog-post" },
-                            date: { lt: $CurrentDate },
+                            date: { lt: $currentTimestampPacificTime },
                             public: { eq: true } 
                         }
                     }
