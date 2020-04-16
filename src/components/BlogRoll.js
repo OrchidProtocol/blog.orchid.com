@@ -7,6 +7,8 @@ import _ from 'lodash';
 import { Layout, PostCard } from './common';
 import getCustomFormatedDate from '../utils/date';
 
+const CurrentDate = Date.now();
+
 const Sidebar = styled.div`
 `;
 
@@ -37,6 +39,19 @@ const SidebarCardSeperator = styled.div`
 const BlogRoll = ({ data }) => {
     const posts = data.allPosts.edges
     const featured = data.featuredPosts.edges
+
+    for (let index = posts.length-1; index >= 0; index--) {
+        const element = posts[index];
+        if (element.node.frontmatter.date > CurrentDate) {
+            posts.splice(index, 1)
+        }
+    }
+    for (let index = featured.length-1; index >= 0; index--) {
+        const element = featured[index];
+        if (element.node.frontmatter.date > CurrentDate) {
+            featured.splice(index, 1)
+        }
+    }
 
     // Tag pages:
     let tags = []
@@ -243,9 +258,9 @@ export default () => (
                         templateKey: {
                             eq: "blog-post"
                         },
-                        date: { eq: $CurrentDate },
+                        date: { lt: $CurrentDate },
                         public: {
-                            eq: false
+                            eq: true
                         }
                     }
                 }
@@ -276,51 +291,21 @@ export default () => (
 							date
 							featuredpost
 							featuredimage {
-								childImageSharp {
-									fluid(maxWidth: 645, quality: 95) {
-									...GatsbyImageSharpFluid
-                                    }
-								}
                                 publicURL
 							}
 							featuredimage_ja {
-								childImageSharp {
-									fluid(maxWidth: 645, quality: 95) {
-									...GatsbyImageSharpFluid
-                                    }
-								}
                                 publicURL
 							}
 							featuredimage_ko {
-								childImageSharp {
-									fluid(maxWidth: 645, quality: 95) {
-									...GatsbyImageSharpFluid
-                                    }
-								}
                                 publicURL
 							}
 							featuredimage_zh {
-								childImageSharp {
-									fluid(maxWidth: 645, quality: 95) {
-									...GatsbyImageSharpFluid
-                                    }
-								}
                                 publicURL
 							}
 							featuredimage_id {
-								childImageSharp {
-									fluid(maxWidth: 645, quality: 95) {
-									...GatsbyImageSharpFluid
-                                    }
-								}
                                 publicURL
 							}
 							featuredimage_ru {
-								childImageSharp {
-									fluid(maxWidth: 645, quality: 95) {
-									...GatsbyImageSharpFluid
-                                    }
-								}
                                 publicURL
 							}
 						}
@@ -329,12 +314,14 @@ export default () => (
 			}
 
 			featuredPosts: allMarkdownRemark(
-				sort: { order: DESC, fields: [frontmatter___date] }
-					filter: { 
-                        frontmatter: { featuredpost: { eq: true },
-                        templateKey: { eq: "blog-post" },
-                        date: { gt: $CurrentDate },
-                        public: { eq: true } }
+                    sort: { order: DESC, fields: [frontmatter___date] }
+                    filter: { 
+                        frontmatter: { 
+                            featuredpost: { eq: true },
+                            templateKey: { eq: "blog-post" },
+                            date: { lt: $CurrentDate },
+                            public: { eq: true } 
+                        }
                     }
 				) {
 				edges {
@@ -356,11 +343,6 @@ export default () => (
 							date
 							featuredpost
 							featuredimage {
-								childImageSharp {
-									fluid(maxWidth: 215, quality: 95) {
-									...GatsbyImageSharpFluid
-									}
-                                }
                                 publicURL
 							}
 						}

@@ -21,6 +21,7 @@ exports.createPages = ({ actions, graphql }) => {
               url
               tags
               templateKey
+              date
               public
             }
           }
@@ -36,7 +37,8 @@ exports.createPages = ({ actions, graphql }) => {
     const posts = result.data.allMarkdownRemark.edges
 
     posts.forEach(edge => {
-      if (edge.node.frontmatter.public === true) {
+      console.log(edge.node.frontmatter.date, CurrentDate, edge.node.frontmatter.date < CurrentDate);
+      if (edge.node.frontmatter.public === true && edge.node.frontmatter.date < CurrentDate) {
         const id = edge.node.id
         createPage({
           path: edge.node.frontmatter.url,
