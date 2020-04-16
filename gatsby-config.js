@@ -3,6 +3,8 @@ require("dotenv").config({
   path: `.env.production`,
 })
 
+const { currentTimestampPacificTime } = require('./src/utils/currentTimestamp');
+
 module.exports = {
   siteMetadata: {
     title: 'Blog - Orchid',
@@ -127,7 +129,13 @@ module.exports = {
               {
                 allMarkdownRemark(
                   sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: { frontmatter: {templateKey: { eq: "blog-post" }, public: { eq: true }} }
+                  filter: { 
+                    frontmatter: {
+                      templateKey: { eq: "blog-post" }, 
+                      public: { eq: true }, 
+                      date: { lt: ${currentTimestampPacificTime} } 
+                    } 
+                  }
                 ) {
                   edges {
                     node {

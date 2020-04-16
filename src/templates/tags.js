@@ -47,7 +47,7 @@ class TagRoute extends React.Component {
 export default TagRoute
 
 export const tagPageQuery = graphql`
-query TagPage($tag: String) {
+query TagPage($tag: String, $currentTimestampPacificTime: Float) {
 	site {
 		siteMetadata {
 			title
@@ -56,7 +56,13 @@ query TagPage($tag: String) {
 	allMarkdownRemark(
 		limit: 1000
 		sort: { fields: [frontmatter___date], order: DESC }
-		filter: { frontmatter: { tags: { in: [$tag] }, public: { eq: true } } }
+		filter: { 
+			frontmatter: { 
+				tags: { in: [$tag] }, 
+				public: { eq: true },
+				date: { lt: $currentTimestampPacificTime }
+			} 
+		}
 	) {
 		totalCount
 		edges {
