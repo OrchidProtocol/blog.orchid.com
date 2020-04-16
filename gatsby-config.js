@@ -23,6 +23,7 @@ module.exports = {
         icon: `static/img/favicon.png`,
       },
     },
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-catch-links`,
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-force-trailing-slashes`,
