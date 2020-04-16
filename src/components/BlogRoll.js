@@ -237,10 +237,20 @@ const BlogRoll = ({ data }) => {
 export default () => (
     <StaticQuery
         query={graphql`
-		query BlogRollQuery {
+		query BlogRollQuery($CurrentDate: Float) {
 			allPosts: allMarkdownRemark(
 				sort: { order: DESC, fields: [frontmatter___date] }
-					filter: { frontmatter: { templateKey: { eq: "blog-post" }, public: { eq: true } } }
+                filter: { 
+                    frontmatter: { 
+                        templateKey: {
+                            eq: "blog-post"
+                        },
+                        date: { eq: $CurrentDate },
+                        public: {
+                            eq: false
+                        }
+                    }
+                }
 				) {
 				edges {
 					node {
@@ -322,7 +332,12 @@ export default () => (
 
 			featuredPosts: allMarkdownRemark(
 				sort: { order: DESC, fields: [frontmatter___date] }
-					filter: { frontmatter: { featuredpost: { eq: true }, templateKey: { eq: "blog-post" }, public: { eq: true } } }
+					filter: { 
+                        frontmatter: { featuredpost: { eq: true },
+                        templateKey: { eq: "blog-post" },
+                        date: { gt: $CurrentDate },
+                        public: { eq: true } }
+                    }
 				) {
 				edges {
 					node {

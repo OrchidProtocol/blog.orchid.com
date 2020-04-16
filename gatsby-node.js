@@ -3,6 +3,8 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
+const CurrentDate = Date.now();
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
@@ -45,6 +47,7 @@ exports.createPages = ({ actions, graphql }) => {
           // additional data can be passed via context
           context: {
             id,
+            CurrentDate,
           },
         })
       }
@@ -70,6 +73,7 @@ exports.createPages = ({ actions, graphql }) => {
         component: path.resolve(`src/templates/tags.js`),
         context: {
           tag,
+          CurrentDate,
         },
       })
     })
