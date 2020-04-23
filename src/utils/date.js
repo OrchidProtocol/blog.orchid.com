@@ -1,7 +1,7 @@
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 
-const { currentTimestampPacificTime, pacificTimeOffset } = require('./currentTimestamp');
+const { currentTimestampUTC, timeOffset } = require('./currentTimestamp');
 
 function currentYear () {
     const date = new Date();
@@ -9,7 +9,7 @@ function currentYear () {
 }
 
 function getCustomFormatedDateEN (timestamp) {
-    const date = new Date(timestamp + pacificTimeOffset);
+    const date = new Date(timestamp + timeOffset);
     const month = months[date.getMonth()],
         day = date.getDate(),
         year = date.getFullYear();
@@ -17,7 +17,7 @@ function getCustomFormatedDateEN (timestamp) {
     return `${month} ${day}, ${year}`;
 }
 function getCustomFormatedDateKO (timestamp) {
-    const date = new Date(timestamp + pacificTimeOffset);
+    const date = new Date(timestamp + timeOffset);
     const month = date.getMonth()+1,
         day = date.getDate(),
         year = date.getFullYear();
@@ -25,7 +25,7 @@ function getCustomFormatedDateKO (timestamp) {
     return `${year}년 ${month}월 ${day}일`;
 }
 function getCustomFormatedDateJA (timestamp) {
-    const date = new Date(timestamp + pacificTimeOffset);
+    const date = new Date(timestamp + timeOffset);
     const month = date.getMonth()+1,
         day = date.getDate(),
         year = date.getFullYear();
@@ -33,7 +33,7 @@ function getCustomFormatedDateJA (timestamp) {
     return `${year}年 ${month}月 ${day}日`;
 }
 function getCustomFormatedDateZH (timestamp) {
-    const date = new Date(timestamp + pacificTimeOffset);
+    const date = new Date(timestamp + timeOffset);
     const month = date.getMonth()+1,
         day = date.getDate(),
         year = date.getFullYear();
@@ -59,7 +59,7 @@ switch (process.env.GATSBY_TARGET_LANG) {
 
 
 export { 
-    currentTimestampPacificTime,
+    currentTimestampUTC,
     currentYear,
     getCustomFormatedDate,
     getCustomFormatedDateEN,
