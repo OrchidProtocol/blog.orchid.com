@@ -22,22 +22,22 @@ const TemplateWrapper = ({ children, bodyClass, customText }) => {
             </Helmet>
 
             <Location>
-            {({ location }) => {
-                return <Helmet>
-                    <link rel="alternate" href={`https://blog.ko.orchid.com${location.pathname}`} hreflang="ko" />
-                    <link rel="alternate" href={`https://blog.orchid.com${location.pathname}`} hreflang="x-default" />
-                    <link rel="alternate" href={`https://blog.ja.orchid.com${location.pathname}`} hreflang="ja" />
-                    <link rel="alternate" href={`https://blog.zh.orchid.com${location.pathname}`} hreflang="zh" />
-                    <link rel="alternate" href={`https://blog.id.orchid.com${location.pathname}`} hreflang="id" />
-                    <link rel="alternate" href={`https://blog.ru.orchid.com${location.pathname}`} hreflang="ru" />
+                {({ location }) => {
+                    return <Helmet>
+                        <link rel="alternate" href={`https://blog.ko.orchid.com${location.pathname}`} hreflang="ko" />
+                        <link rel="alternate" href={`https://blog.orchid.com${location.pathname}`} hreflang="x-default" />
+                        <link rel="alternate" href={`https://blog.ja.orchid.com${location.pathname}`} hreflang="ja" />
+                        <link rel="alternate" href={`https://blog.zh.orchid.com${location.pathname}`} hreflang="zh" />
+                        <link rel="alternate" href={`https://blog.id.orchid.com${location.pathname}`} hreflang="id" />
+                        <link rel="alternate" href={`https://blog.ru.orchid.com${location.pathname}`} hreflang="ru" />
 
-                    {
-                        process.env.GATSBY_TARGET_LANG === "en" ?
-                            <meta rel="canonical" href={`https://blog.orchid.com${location.pathname}`} /> :
-                            <meta rel="canonical" href={`https://blog.${process.env.GATSBY_TARGET_LANG.toLowerCase()}.orchid.com${location.pathname}`} />
-                    }
-                </Helmet>
-            }}
+                        {
+                            process.env.GATSBY_TARGET_LANG === "en" ?
+                                <meta rel="canonical" href={`https://blog.orchid.com${location.pathname}`} /> :
+                                <meta rel="canonical" href={`https://blog.${process.env.GATSBY_TARGET_LANG.toLowerCase()}.orchid.com${location.pathname}`} />
+                        }
+                    </Helmet>
+                }}
             </Location>
 
             <div className="viewport">
