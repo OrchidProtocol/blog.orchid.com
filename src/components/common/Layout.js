@@ -17,6 +17,8 @@ const TemplateWrapper = ({ children, bodyClass, customText }) => {
                 <body css={bodyClass} />
                 <link rel="icon" type="image/ico" href="/img/favicon.ico" />
                 <link rel="icon" type="image/png" href="/img/favicon.png" />
+                <link rel="manifest" href="/manifest.webmanifest" />
+                <meta name="theme-color" content="#5f45ba" />
             </Helmet>
 
             <Location>
