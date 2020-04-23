@@ -3,7 +3,7 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
-const { currentTimestampPacificTime } = require('./src/utils/currentTimestamp');
+const { currentTimestampUTC } = require('./src/utils/currentTimestamp');
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -37,7 +37,7 @@ exports.createPages = ({ actions, graphql }) => {
     const posts = result.data.allMarkdownRemark.edges
 
     posts.forEach(edge => {
-      if (edge.node.frontmatter.public === true && edge.node.frontmatter.date < currentTimestampPacificTime) {
+      if (edge.node.frontmatter.public === true && edge.node.frontmatter.date < currentTimestampUTC) {
         const id = edge.node.id
         createPage({
           path: edge.node.frontmatter.url,
@@ -48,7 +48,7 @@ exports.createPages = ({ actions, graphql }) => {
           // additional data can be passed via context
           context: {
             id,
-            currentTimestampPacificTime,
+            currentTimestampUTC,
           },
         })
       }
@@ -74,7 +74,7 @@ exports.createPages = ({ actions, graphql }) => {
         component: path.resolve(`src/templates/tags.js`),
         context: {
           tag,
-          currentTimestampPacificTime,
+          currentTimestampUTC,
         },
       })
     })

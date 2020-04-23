@@ -3,7 +3,7 @@ require("dotenv").config({
   path: `.env.production`,
 })
 
-const { currentTimestampPacificTime } = require('./src/utils/currentTimestamp');
+const { currentTimestampUTC } = require('./src/utils/currentTimestamp');
 
 module.exports = {
   siteMetadata: {
@@ -13,18 +13,6 @@ module.exports = {
     siteUrl: (process.env.TARGET_LANG === "en" || !process.env.TARGET_LANG) ? 'https://blog.orchid.com/' : `https://blog.${process.env.TARGET_LANG}.orchid.com/`,
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Blog - Orchid`,
-        short_name: `Orchid`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#5f45ba`,
-        display: `standalone`,
-        icon: `static/img/favicon.png`,
-      },
-    },
     `gatsby-plugin-catch-links`,
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-force-trailing-slashes`,
@@ -133,7 +121,7 @@ module.exports = {
                     frontmatter: {
                       templateKey: { eq: "blog-post" }, 
                       public: { eq: true }, 
-                      date: { lt: ${currentTimestampPacificTime} } 
+                      date: { lt: ${currentTimestampUTC} } 
                     } 
                   }
                 ) {

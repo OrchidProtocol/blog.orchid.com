@@ -5,7 +5,7 @@ import { Link, graphql, StaticQuery } from 'gatsby'
 
 import _ from 'lodash';
 import { Layout, PostCard } from './common';
-import { getCustomFormatedDate, currentTimestampPacificTime} from '../utils/date';
+import { getCustomFormatedDate, currentTimestampUTC} from '../utils/date';
 
 const Sidebar = styled.div`
 `;
@@ -40,13 +40,13 @@ const BlogRoll = ({ data }) => {
 
     for (let index = posts.length-1; index >= 0; index--) {
         const element = posts[index];
-        if (element.node.frontmatter.date > currentTimestampPacificTime) {
+        if (element.node.frontmatter.date > currentTimestampUTC) {
             posts.splice(index, 1)
         }
     }
     for (let index = featured.length-1; index >= 0; index--) {
         const element = featured[index];
-        if (element.node.frontmatter.date > currentTimestampPacificTime) {
+        if (element.node.frontmatter.date > currentTimestampUTC) {
             featured.splice(index, 1)
         }
     }
@@ -248,7 +248,7 @@ const BlogRoll = ({ data }) => {
 export default () => (
     <StaticQuery
         query={graphql`
-		query BlogRollQuery($currentTimestampPacificTime: Float) {
+		query BlogRollQuery($currentTimestampUTC: Float) {
 			allPosts: allMarkdownRemark(
 				sort: { order: DESC, fields: [frontmatter___date] }
                 filter: { 
@@ -256,7 +256,7 @@ export default () => (
                         templateKey: {
                             eq: "blog-post"
                         },
-                        date: { lt: $currentTimestampPacificTime },
+                        date: { lt: $currentTimestampUTC },
                         public: {
                             eq: true
                         }
@@ -317,7 +317,7 @@ export default () => (
                         frontmatter: { 
                             featuredpost: { eq: true },
                             templateKey: { eq: "blog-post" },
-                            date: { lt: $currentTimestampPacificTime },
+                            date: { lt: $currentTimestampUTC },
                             public: { eq: true } 
                         }
                     }

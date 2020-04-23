@@ -47,7 +47,7 @@ class TagRoute extends React.Component {
 export default TagRoute
 
 export const tagPageQuery = graphql`
-query TagPage($tag: String, $currentTimestampPacificTime: Float) {
+query TagPage($tag: String, $currentTimestampUTC: Float) {
 	site {
 		siteMetadata {
 			title
@@ -60,7 +60,7 @@ query TagPage($tag: String, $currentTimestampPacificTime: Float) {
 			frontmatter: { 
 				tags: { in: [$tag] }, 
 				public: { eq: true },
-				date: { lt: $currentTimestampPacificTime }
+				date: { lt: $currentTimestampUTC }
 			} 
 		}
 	) {
