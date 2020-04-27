@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - staging
+  schedule:
+    cron: '*/30 * * * *'
 
 jobs:
   deploy:
@@ -12,6 +14,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        ref: staging
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
