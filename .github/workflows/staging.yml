@@ -22,7 +22,7 @@ jobs:
         aws-region: us-west-2
     - name: Deploy to blog.orchid.dev
       run: |
-        ./version.sh
         git fetch --prune --unshallow
+        ./version.sh
         git checkout staging
         ./deploy.sh -s staging
