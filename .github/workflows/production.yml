@@ -21,4 +21,6 @@ jobs:
     - name: Deploy to blog.orchid.com
       run: |
         git fetch --prune --unshallow
+        ./version.sh
+        git checkout master
         ./deploy.sh -s production

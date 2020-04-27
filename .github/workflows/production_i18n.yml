@@ -24,4 +24,6 @@ jobs:
     - name: Deploy to blog.${{ matrix.language }}.orchid.com
       run: |
         git fetch --prune --unshallow
+        ./version.sh
+        git checkout master
         ./deploy.sh -s production -l ${{ matrix.language }}
