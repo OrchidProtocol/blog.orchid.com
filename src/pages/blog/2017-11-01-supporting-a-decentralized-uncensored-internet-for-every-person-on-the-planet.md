@@ -6,7 +6,7 @@ title: Supporting a decentralized, uncensored Internet for every person on the p
 date: 1509554856651
 description: 'What makes a better Internet possible? At Orchid Labs, our goal is to ensure that every person on Earth can have access to an open, decentralized, and uncensored Internet.'
 featuredpost: false
-featuredimage: /img/orchid-text.png
+featuredimage: /img/uploads/orchid-logo-text.jpg
 tags:
   - Blockchain
   - Company Updates
@@ -19,8 +19,6 @@ Currently, Internet access for the majority of the people on Earth is censored a
 That’s why we’ve launched the Orchid Protocol, an open-source overlay network that uses excess bandwidth on top of the existing Internet to ensure that people — no matter where they live on our planet — can have unrestricted access to information and collaboration. Orchid’s protocol combines surplus bandwidth, state-of-the-art encryption, and a decentralized infrastructure enabling any Internet user to participate and exchange bandwidth for payment in peer-to-peer transactions using Orchid tokens on the Ethereum blockchain.
 
 Our team consists of engineers, cryptocurrency experts, technologists, and partners dedicated to creating an Internet free of surveillance and censorship. This idea isn’t new; there are people across the globe dedicated to this cause. We believe the Orchid Protocol will help the world finally create this reality.
-
-While I’ve been interested in the idea of Internet freedom for some time, the origins of Orchid stem from conversations with Steve Bell, an entrepreneur with more than a decade of experience backing Chinese seed stage startups. We had both personally experienced and witnessed the consequences of surveillance and censorship in our work across the world. My concern was one of surveillance, while Steve’s was one of censorship or access. My perspective was, “how do communicate or access information in a potentially totalitarian state in a private fashion”. I had also experience security issues first hand, both during the [Bitstamp hack of 2015](https://techcrunch.com/2015/01/05/bitstamp-bitcoin-exchange-hack/) and in having my own phone [ported](https://medium.com/@stevewaterhouse/notes-on-recovering-from-a-hack-3cd438e10fe0).
 
 We started discussing ways to create an internet free of surveillance and censorship that everyone in the world could access. With a passion for where we wanted to go and a firm idea of how to get there, we knew we needed the technological expertise and funding to make this happen.
 
