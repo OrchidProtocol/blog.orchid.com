@@ -5,8 +5,6 @@ const currentTimestampUTC = tempDate.getTime() + timeOffset;
 const pacificTimeOffset = (tempDate.getTimezoneOffset() - 420)*60*1000;
 const currentTimestampPacificTime = tempDate.getTime() + pacificTimeOffset;
 
-console.log(timeOffset, currentTimestampUTC)
-
 module.exports = {
 	currentTimestampUTC,
 	timeOffset,
