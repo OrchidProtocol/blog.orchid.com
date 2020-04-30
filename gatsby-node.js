@@ -10,7 +10,15 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(limit: 1000) {
+      allMarkdownRemark(
+        limit: 1000,
+        filter: {
+          frontmatter: {
+            public: { eq: true }, 
+            date: { lt: ${currentTimestampUTC} } 
+          }
+        }
+        ) {
         edges {
           node {
             id
@@ -37,21 +45,19 @@ exports.createPages = ({ actions, graphql }) => {
     const posts = result.data.allMarkdownRemark.edges
 
     posts.forEach(edge => {
-      if (edge.node.frontmatter.public === true && edge.node.frontmatter.date < currentTimestampUTC) {
-        const id = edge.node.id
-        createPage({
-          path: edge.node.frontmatter.url,
-          tags: edge.node.frontmatter.tags,
-          component: path.resolve(
-            `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
-          ),
-          // additional data can be passed via context
-          context: {
-            id,
-            currentTimestampUTC,
-          },
-        })
-      }
+      const id = edge.node.id
+      createPage({
+        path: edge.node.frontmatter.url,
+        tags: edge.node.frontmatter.tags,
+        component: path.resolve(
+          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+        ),
+        // additional data can be passed via context
+        context: {
+          id,
+          currentTimestampUTC,
+        },
+      })
     })
 
     // Tag pages:
@@ -100,7 +106,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const locales = ['zh', 'ja', 'ko', 'ru', 'id'];
 
   if (node && node.frontmatter) {
-    
+
 
     for (let index = 0; index < locales.length; index++) {
       const locale = locales[index];
