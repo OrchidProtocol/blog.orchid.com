@@ -7,7 +7,6 @@ import _ from 'lodash';
 import { Layout, PostCard } from './common';
 import { getCustomFormatedDate, currentTimestampUTC } from '../utils/date';
 const { buildTimestampUTC } = require('../utils/currentTimestamp');
-console.log(buildTimestampUTC);
 
 const Sidebar = styled.div`
 `;
