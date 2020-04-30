@@ -3,7 +3,7 @@ require("dotenv").config({
   path: `.env.production`,
 })
 
-const { currentTimestampUTC } = require('./src/utils/currentTimestamp');
+const { buildTimestampUTC } = require('./src/utils/currentTimestamp');
 
 module.exports = {
   siteMetadata: {
@@ -121,7 +121,7 @@ module.exports = {
                     frontmatter: {
                       templateKey: { eq: "blog-post" }, 
                       public: { eq: true }, 
-                      date: { lt: ${currentTimestampUTC} } 
+                      date: { lt: ${buildTimestampUTC} } 
                     } 
                   }
                 ) {

@@ -6,5 +6,9 @@
 
 const fs = require('fs')
 
-fs.writeFileSync('./.env.development', `GATSBY_TARGET_LANG=${process.env.TARGET_LANG}`);
-fs.writeFileSync('./.env.production', `GATSBY_TARGET_LANG=${process.env.TARGET_LANG}`);
+const { currentTimestampUTC } = require('./src/utils/currentTimestamp');
+
+fs.writeFileSync('./.env.development', `GATSBY_TARGET_LANG=${process.env.TARGET_LANG}
+BUILD_TIMESTAMP=${currentTimestampUTC}`);
+fs.writeFileSync('./.env.production', `GATSBY_TARGET_LANG=${process.env.TARGET_LANG}
+BUILD_TIMESTAMP=${currentTimestampUTC}`);

@@ -3,7 +3,7 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
-const { currentTimestampUTC } = require('./src/utils/currentTimestamp');
+const { buildTimestampUTC } = require('./src/utils/currentTimestamp');
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -15,7 +15,7 @@ exports.createPages = ({ actions, graphql }) => {
         filter: {
           frontmatter: {
             public: { eq: true }, 
-            date: { lt: ${currentTimestampUTC} } 
+            date: { lt: ${buildTimestampUTC} } 
           }
         }
         ) {
@@ -55,7 +55,7 @@ exports.createPages = ({ actions, graphql }) => {
         // additional data can be passed via context
         context: {
           id,
-          currentTimestampUTC,
+          buildTimestampUTC,
         },
       })
     })
@@ -80,7 +80,7 @@ exports.createPages = ({ actions, graphql }) => {
         component: path.resolve(`src/templates/tags.js`),
         context: {
           tag,
-          currentTimestampUTC,
+          buildTimestampUTC,
         },
       })
     })
