@@ -5,7 +5,8 @@ import { Link, graphql, StaticQuery } from 'gatsby'
 
 import _ from 'lodash';
 import { Layout, PostCard } from './common';
-import { getCustomFormatedDate, currentTimestampUTC} from '../utils/date';
+import { getCustomFormatedDate, currentTimestampUTC } from '../utils/date';
+const { buildTimestampUTC } = require('../utils/currentTimestamp');
 
 const Sidebar = styled.div`
 `;
@@ -38,15 +39,15 @@ const BlogRoll = ({ data }) => {
     const posts = data.allPosts.edges
     const featured = data.featuredPosts.edges
 
-    for (let index = posts.length-1; index >= 0; index--) {
+    for (let index = posts.length - 1; index >= 0; index--) {
         const element = posts[index];
-        if (element.node.frontmatter.date > currentTimestampUTC) {
+        if (element.node.frontmatter.date > buildTimestampUTC) {
             posts.splice(index, 1)
         }
     }
-    for (let index = featured.length-1; index >= 0; index--) {
+    for (let index = featured.length - 1; index >= 0; index--) {
         const element = featured[index];
-        if (element.node.frontmatter.date > currentTimestampUTC) {
+        if (element.node.frontmatter.date > buildTimestampUTC) {
             featured.splice(index, 1)
         }
     }
@@ -248,7 +249,7 @@ const BlogRoll = ({ data }) => {
 export default () => (
     <StaticQuery
         query={graphql`
-		query BlogRollQuery($currentTimestampUTC: Float) {
+		query BlogRollQuery($buildTimestampUTC: Float) {
 			allPosts: allMarkdownRemark(
 				sort: { order: DESC, fields: [frontmatter___date] }
                 filter: { 
@@ -256,7 +257,7 @@ export default () => (
                         templateKey: {
                             eq: "blog-post"
                         },
-                        date: { lt: $currentTimestampUTC },
+                        date: { lt: $buildTimestampUTC },
                         public: {
                             eq: true
                         }
@@ -317,7 +318,7 @@ export default () => (
                         frontmatter: { 
                             featuredpost: { eq: true },
                             templateKey: { eq: "blog-post" },
-                            date: { lt: $currentTimestampUTC },
+                            date: { lt: $buildTimestampUTC },
                             public: { eq: true } 
                         }
                     }
