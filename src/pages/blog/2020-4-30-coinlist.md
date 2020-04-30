@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: orchid-continues-to-build-momentum-with-listing-on-coinlist
 title: Orchid Continues to Build Momentum With Listing on CoinList
-date: 1588275850650
+date: 1588253750650
 description: "CoinList Markets, a San Francisco-based digital asset platform, will now allow its users to access Orchid’s digital currency, OXT."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_CoinList.jpg
