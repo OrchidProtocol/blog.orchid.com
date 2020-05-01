@@ -9,6 +9,7 @@ featuredpost: false
 featuredimage: /img/uploads/Orchid_Defending_Freedom_Liberty.jpg
 tags:
   - Privacy
+  - Censorship
 ---
 
 The world is in the grip of a pandemic. Leaders everywhere are racing to gain clarity and develop solutions. Governments are reacting in different ways, but a common thread that's emerging is a trend toward greater surveillance and restrictions on movement.
