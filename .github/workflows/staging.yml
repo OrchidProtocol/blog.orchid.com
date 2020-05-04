@@ -1,11 +1,11 @@
 name: DeployStaging
 
 on:
-  push:
-    branches:
-      - staging
+  # push:
+  #   branches:
+  #     - staging
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/15 * * * *'
 
 jobs:
   deploy:
