@@ -97,7 +97,7 @@ export const BlogPostTemplate = ({
 					className="content-body load-external-scripts"
 					dangerouslySetInnerHTML={{ __html: content }}
 				></section>
-				{/*process.env.GATSBY_TARGET_LANG === 'en' ? <section css={css`
+				{process.env.GATSBY_TARGET_LANG === 'en' ? <section css={css`
 						a {
 							text-decoration: underline !important;
 						}
@@ -106,7 +106,7 @@ export const BlogPostTemplate = ({
 					<i>
 						If you enjoyed this blog, <a href="https://www.orchid.com/newsletter-signup">subscribe here</a> for privacy news, commentary, and product updates from Orchid.
 					</i>
-				</section> : ''*/}
+				</section> : ''}
 
 
 				<div css={css`
