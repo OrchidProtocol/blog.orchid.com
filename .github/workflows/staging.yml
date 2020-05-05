@@ -1,9 +1,6 @@
 name: DeployStaging
 
 on:
-  # push:
-  #   branches:
-  #     - staging
   schedule:
     - cron: '*/15 * * * *'
 
