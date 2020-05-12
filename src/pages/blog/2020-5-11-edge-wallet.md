@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: orchid-integrates-with-edge-wallet
 title: 'Orchid Integrates with Edge Wallet'
-date: 1589228070757
+date: 1589295063096
 description: "Today, Orchid announces OXT integration with Edge, a leading non-custodial wallet platform with nearly one million users worldwide."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_EdgeWallet.jpg
