@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: dns-over-https-is-long-overdue
 title: 'DNS-over-https is long overdue -- but people still need Internet privacy tools'
-date: 1590070347209
+date: 1590512400000
 description: "News that Chrome and Firefox will adopt default encryption of DNS requests is a step forward for privacy -- but not a panacea"
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_DoH.jpg
