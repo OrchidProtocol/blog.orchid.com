@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: tracking-pixels-explained
 title: "Tracking pixels, building blocks of Internet surveillance, explained"
-date: 1591734301662
+date: 1591814108234
 description: "The Internet has changed life in ways so profound that it's easy to lose sight of their full extent."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_PixelData.png
