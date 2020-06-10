@@ -96,12 +96,6 @@ It's possible to disable or limit pixel tracking in a web browser's settings, th
 
 For additional tools, tips, and best practices for minimizing the risk of tracking pixels, [Tom's Guide](https://forums.tomsguide.com/faq/secure-your-browser-and-stop-facebook-tracking.191976/) can be a valuable resource.
 
-**Other technology tools can further strengthen online privacy**
-
-[VPNs](https://nordvpn.com/blog/how-to-block-email-tracking/) and other privacy tools like [Tor](https://www.torproject.org/) can help even further reduce the risk of being tracked across the Internet. When you use a VPN, your traffic is encrypted and routed through a different server, obscuring your IP address from the destination site. So while the pixels are still active, they can't tie Internet behavior to a real-world individual. In a sense, a VPN is Internet teflon: the surveillance simply bounces off. (See our full post on privacy best practices [here](https://blog.orchid.com/tips-for-protecting-your-privacy-while-working-from-home/).)
-
-Which is not to say that VPNs are a perfect solution. There is a weak link in the chain: the VPNs themselves, who can see the entirety of a user's web activity. This is where a multi-hop, [multi-provider market like Orchid](https://www.orchid.com/assets/whitepaper/whitepaper.pdf) comes in. By stringing together multiple "[hops](https://blog.orchid.com/what-is-a-hop/)" across different VPN services, the "story" of a user's web activity can be shredded into enough pieces to make it very difficult for anyone to put it back together.
-
 **Knowledge is power**
 
 For now, at least, tracking pixels are part of the fabric of the Internet. Whether you view them as helpful business tools or frightening components of a dystopian world, understanding how they work can help everyone make informed decisions when going online. For those who are dedicated to privacy and transparency, Orchid, the decentralized VPN marketplace, [is available for download](https://www.orchid.com/download/) today.
