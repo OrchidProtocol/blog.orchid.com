@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-public: true
+public: false
 url: orchid-signs-on-to-world-economic-forums-presidio-principles-for-blockchain
 title: "Orchid signs on to World Economic Forum’s Presidio Principles for blockchain"
 date: 1591990135160
