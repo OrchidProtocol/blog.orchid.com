@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: orchid-collaborates-with-chainlink
 title: "Orchid collaborates with Chainlink to build USD bandwidth-pricing oracles"
-date: 1592308800000
+date: 1592312400000
 description: "Orchid’s two new Chainlink-powered oracles will make it easier for people to understand the approximate U.S. dollar cost of VPN bandwidth"
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_Chainlink.png
