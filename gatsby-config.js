@@ -105,10 +105,10 @@ module.exports = {
                     "content:encoded": `
                     <img style="width:100%; height: auto" src="${site.siteMetadata.siteUrl + edge.node.frontmatter.featuredimage.publicURL}" />
                     ${edge.node.html
-                      .replace(/(href="\/)/i, 'href="https://blog.orchid.com/')
-                      .replace(/(src="\/)/i, 'src="https://blog.orchid.com/')
-                      .replace(/(href='\/)/i, 'href=\'https://blog.orchid.com/')
-                      .replace(/(src='\/)/i, 'src=\'https://blog.orchid.com/')}`
+                        .replace(/(href="\/)/i, 'href="https://blog.orchid.com/')
+                        .replace(/(src="\/)/i, 'src="https://blog.orchid.com/')
+                        .replace(/(href='\/)/i, 'href=\'https://blog.orchid.com/')
+                        .replace(/(src='\/)/i, 'src=\'https://blog.orchid.com/')}`
                   }] : [],
                 })
               })
@@ -161,5 +161,53 @@ module.exports = {
       },
     },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
+    {
+      resolve: `gatsby-plugin-json-output`,
+      options: {
+        siteUrl: `https://blog.orchid.com`,
+        graphQLQuery: `
+          {
+            allMarkdownRemark(
+              sort: { order: DESC, fields: [frontmatter___date] },
+              filter: { 
+                frontmatter: {
+                  templateKey: { eq: "blog-post" }, 
+                  public: { eq: true }, 
+                  date: { lt: ${buildTimestampUTC} } 
+                } 
+              }
+            ) {
+              edges {
+                node {
+                  id
+                  html
+                  fields {
+                    slug
+                  }
+                  frontmatter {
+                    title
+                    url
+                    templateKey
+                    date
+                    tags
+                    featuredimage {
+                      publicURL
+                    }
+                  }
+                }
+              }
+            }
+          }
+        `,
+        serializeFeed: results => results.data.allMarkdownRemark.edges.map(({ node }) => ({
+          url: node.frontmatter.url,
+          title: node.frontmatter.title,
+          featuredimage: node.frontmatter.featuredimage.publicURL,
+          date: new Date(node.frontmatter.date).toISOString(),
+          tags: node.frontmatter.tags,
+        })),
+        nodesPerFeedFile: 25,
+      }
+    }
   ],
 }
