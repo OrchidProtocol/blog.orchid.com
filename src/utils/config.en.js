@@ -3,8 +3,8 @@ module.exports = {
     siteUrl: 'https://blog.orchid.com/',
     main_site: 'https://www.orchid.com/',
 
-    description: 'Your VPN should be secure, which is why Orchid is building with open source tools for custom VPN configurations and privacy services.',
-    title: 'Orchid',
+    description: 'Stay up to date with Orchid, VPN, and online privacy issues.',
+    title: 'Privacy & VPN Blog - Orchid',
     twitter: '@OrchidProtocol',
     feature_image: 'img/social.png',
     feature_image_width: 1688,
