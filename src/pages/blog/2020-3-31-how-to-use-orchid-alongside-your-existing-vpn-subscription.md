@@ -5,7 +5,7 @@ url: how-to-use-orchid-alongside-your-existing-vpn-subscription
 title: "How to use Orchid alongside your existing VPN subscription"
 date: 1585673196651
 description: "Do you have a preferred VPN service? Now you can use Orchid alongside that existing VPN subscription as you create hops between nodes to better control your privacy online."
-featuredpost: false
+featuredpost: true
 featuredimage: /img/uploads/Orchid_BlogImage_OvpnSetup.png
 tags:
   - VPN

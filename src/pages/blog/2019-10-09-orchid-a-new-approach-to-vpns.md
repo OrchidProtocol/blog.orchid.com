@@ -11,7 +11,7 @@ description: 'We’re building a next-gen VPN market powered by probabilistic na
 description_ja: '私たちは確率的なナノペイメントを備えた次世代の VPN 市場を構築し、次の中核となる原則を重視した設計を行っています。すなわち、スケーラビリティ、分散化、使いやすさ、シンプルさ、拡張性です。'
 description_ko: 'Orchid 는 확장성, 분산성, 사용성, 단순성 및 범위성이라는핵심 원칙을 강조하는 디자인을 통해 확률적 나노 지불을기반으로 하는 차세대 VPN 시장을 구축하고 있습니다.'
 description_zh: '我们正在建立一个由概率极微支付支持的新一代 VPN 市场，它的设计强调以下核心原则：可伸缩性、去中心化、可用性、简单性和可扩展性。'
-featuredpost: true
+featuredpost: false
 featuredimage: /img/new-approach.jpg
 tags:
   - VPN

@@ -11,7 +11,7 @@ description: 'When you wake up in the morning and flick on a light switch, do yo
 description_ja: '朝起きて電灯のスイッチを入れるとき、その電気代が 1 ペニーの何分 の 1 くらいか考えることがありますか?それとも、頭をぶつけないように 電灯をつけるだけですか？'
 description_ko: '아침에 일어나서 전등 스위치를 켤 때 잠시 멈추고 전기 요금이 얼마나 나올지 생각하십니까? 아니면 어딘가 부딪치지 않도록 바로 스위치를 켜십니까?'
 description_zh: '当您早上醒来按下电灯开关时，您是会停下来用一丁点时间来思考要花多少电费， 还是直接按开灯，以免撞到头？'
-featuredpost: true
+featuredpost: false
 featuredimage: /img/nanopayments.jpg
 tags:
   - VPN
