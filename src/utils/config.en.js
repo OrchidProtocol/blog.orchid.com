@@ -20,7 +20,7 @@ module.exports = {
         },
         {
             url: 'https://www.orchid.com/join',
-            label: 'Join Now'
+            label: 'Create Account'
         },
         {
             url: 'https://www.orchid.com/how-it-works',
