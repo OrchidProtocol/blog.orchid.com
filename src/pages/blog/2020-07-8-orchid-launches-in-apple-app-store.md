@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: orchid-launches-in-apple-app-store
 title: "Orchid launches in Apple App Store, with new in-app purchases that make setup easy"
-date: 1594216800000 
+date: 1594206000000 
 description: "In-app purchases let people use Orchid without the need to acquire, transfer, or deposit cryptocurrency."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_iOSUpdate.png
