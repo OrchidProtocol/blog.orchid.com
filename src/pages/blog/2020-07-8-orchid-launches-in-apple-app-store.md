@@ -159,7 +159,7 @@ body_ru: |-
 body_ko: |-
   Orchid는 Apple App Store에 특별한 기능이 포함된 앱 내 구입 상품을 출시하였습니다. 이로써 iOS 사용자는 앱 안에서 바로 Orchid 계정을 구입할 수 있게 되었습니다. 이 신규 기능을 통해 미국 달러(USD) 등의 명목화폐만 있어도 암호화폐 기반 VPN을 쉽게 사용할 수 있습니다. 암호화폐를 취득하거나 이체할 필요가 전혀 없습니다. 사용자들은 이제 다른 앱들과 똑같이 편리하게 Orchid의 피어 투 피어 대역폭 마켓플레이스가 제공하는 모든 혜택을 누릴 수 있습니다. 
 
-  앱 내 구입 상품이 출시되기 전에 사용자들은 암호화폐를 사용하여 Orchid 계정을 설정하고 자금을 이체하는 다소 복잡한 과정을 거쳐야만 했습니다. OXT 및 ETH 취득, web3 브라우저 설치, 스마트 컨트랙트 실행, 키 전송 등의 [필수 단계](https://blog.orchid.com/how-to-start-using-orchid-with-oxt/)는 암호화폐 세계에서 시간을 보낸 사람들이라면 누구에게나 친숙할 것입니다.
+  앱 내 구입 상품이 출시되기 전에 사용자들은 암호화폐를 사용하여 Orchid 계정을 설정하고 자금을 이체하는 다소 복잡한 과정을 거쳐야만 했습니다. OXT 및 ETH 취득, web3 브라우저 설치, 스마트 컨트랙트 실행, 키 전송 등의 [필수 단계](/how-to-start-using-orchid-with-oxt/)는 암호화폐 세계에서 시간을 보낸 사람들이라면 누구에게나 친숙할 것입니다.
 
   이제, 더 쉽게 시작하는 방법이 있습니다. 앱 내 구입 기능이 추가됨으로써 완벽히 작동하고, 공유 가능한 암호화폐 기반 Orchid 계정을 다른 iOS 앱처럼 빠르고 간소한 등록 과정을 거쳐 이용할 수 있게 되었습니다. 그리고, 모든 사용자는 Orchid가 항상 제공하는 것과 동일한 수준의 개인 정보 보호 혜택을 누릴 수 있습니다. 
 
@@ -193,7 +193,7 @@ body_ko: |-
 ---
 We are excited to announce that Orchid is now [in the Apple App store](https://apps.apple.com/us/app/id1474884867), and includes a special feature: iOS users can buy an Orchid account right in the app. This new feature makes it easy to use the crypto powered VPN with only fiat currency such as U.S. Dollars (USD) -- there's no need to acquire or transfer cryptocurrency at all. People can now enjoy all the benefits of Orchid's peer-to-peer bandwidth market with the same level of convenience as any other app.
 
-Before in-app purchases, users had to go through the somewhat complex process of setting up and funding an Orchid account with crypto to get started. The [steps required](https://blog.orchid.com/how-to-start-using-orchid-with-oxt/) -- including acquiring OXT (the Orchid DApp coin) and ETH, installing a web3 browser, running smart contracts, and transferring a key -- will be familiar to anyone who has spent time in the crypto space.
+Before in-app purchases, users had to go through the somewhat complex process of setting up and funding an Orchid account with crypto to get started. The [steps required](/how-to-start-using-orchid-with-oxt/) -- including acquiring OXT (the Orchid DApp coin) and ETH, installing a web3 browser, running smart contracts, and transferring a key -- will be familiar to anyone who has spent time in the crypto space.
 
 Now there's an easier way to get started. In-app purchases give people fully functional, shareable Orchid accounts powered by crypto, but with a simplified onboarding process that's as quick as any other iOS app. And all users enjoy the same level of privacy Orchid has always provided.
 
