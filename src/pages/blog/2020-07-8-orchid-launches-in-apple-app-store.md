@@ -193,7 +193,7 @@ body_ko: |-
 ---
 We are excited to announce that Orchid is now in the Apple App store, and includes a special feature: iOS users can buy an Orchid account right in the app. This new feature makes it easy to use the crypto powered VPN with only fiat currency such as U.S. Dollars (USD) -- there's no need to acquire or transfer cryptocurrency at all. People can now enjoy all the benefits of Orchid's peer-to-peer bandwidth market with the same level of convenience as any other app.
 
-Before in-app purchases, users had to go through the somewhat complex process of setting up and funding an Orchid account with crypto to get started. The [steps required](https://blog.orchid.com/how-to-start-using-orchid-with-oxt/) -- including acquiring OXT and ETH, installing a web3 browser, running smart contracts, and transferring a key -- will be familiar to anyone who has spent time in the crypto space.
+Before in-app purchases, users had to go through the somewhat complex process of setting up and funding an Orchid account with crypto to get started. The [steps required](https://blog.orchid.com/how-to-start-using-orchid-with-oxt/) -- including acquiring OXT (the Orchid DApp coin) and ETH, installing a web3 browser, running smart contracts, and transferring a key -- will be familiar to anyone who has spent time in the crypto space.
 
 Now there's an easier way to get started. In-app purchases give people fully functional, shareable Orchid accounts powered by crypto, but with a simplified onboarding process that's as quick as any other iOS app. And all users enjoy the same level of privacy Orchid has always provided.
 
