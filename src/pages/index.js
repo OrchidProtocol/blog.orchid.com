@@ -9,7 +9,7 @@ class Index extends React.Component {
 	render () {
 		return <>
 			<Helmet>
-				<title>Blog - {config.title}</title>
+				<title>{config.title}</title>
 				<meta name="description" content="Your VPN should be secure, which is why Orchid is building with open source tools for custom VPN configurations and privacy services." />
 
 				<meta property="og:image" content={config.feature_image} />

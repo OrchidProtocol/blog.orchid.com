@@ -5,7 +5,7 @@ url: how-much-does-bandwidth-cost-on-orchid
 title: "How much does bandwidth cost on Orchid?"
 date: 1585845996651
 description: "As a dynamic marketplace, Orchid offers flexibility for users and bandwidth providers while incentivizing providers to price their services competitively"
-featuredpost: false
+featuredpost: true
 featuredimage: /img/uploads/Orchid_BlogImage_BWCost.jpg
 tags:
   - VPN
