@@ -38,11 +38,18 @@ const SidebarCardSeperator = styled.div`
     width: 100%;
 `;
 
+const SidebarTagLi = styled.li`
+    list-style: none;
+    margin: 3px 0;
+`;
+const SidebarTagUl = styled.li`
+    list-style: none;
+`;
 const BlogRoll = ({ data, pageContext }) => {
     const posts = data.allPosts.edges
     const featured = data.featuredPosts.edges
 
-    const { currentPage, numPages } = pageContext
+    const { currentPage, numPages, tags } = pageContext
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
     const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString()
@@ -61,22 +68,13 @@ const BlogRoll = ({ data, pageContext }) => {
         }
     }
 
-    // Tag pages:
-    let tags = []
-    // Iterate through each post, putting all found tags into `tags`
-    posts.forEach(edge => {
-        if (_.get(edge, `node.frontmatter.tags`)) {
-            tags = tags.concat(edge.node.frontmatter.tags)
-        }
-    })
-    // Eliminate duplicate tags
-    tags = _.uniq(tags)
-
     const tagElements = [];
     tags.forEach(tag => {
-        tagElements.push(<Link key={_.kebabCase(tag)} to={`/tag/${_.kebabCase(tag)}/`}>
+        tagElements.push(<SidebarTagLi>
+            <Link key={_.kebabCase(tag)} to={`/tag/${_.kebabCase(tag)}/`}>
             {tag}
-        </Link>);
+            </Link>
+        </SidebarTagLi>);
     })
 
     const featuredElements = [];
@@ -301,6 +299,13 @@ const BlogRoll = ({ data, pageContext }) => {
                                 </SidebarCardHeader>
                                 <SidebarCardSeperator />
                                 {featuredElements}
+                            </SidebarCard>
+                            <SidebarCard>
+                                <SidebarCardHeader>
+                                    Topics
+                                </SidebarCardHeader>
+                                <SidebarCardSeperator />
+                                <SidebarTagUl>{tagElements}</SidebarTagUl>
                             </SidebarCard>
                         </Sidebar>
 

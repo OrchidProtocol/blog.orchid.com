@@ -130,6 +130,7 @@ exports.createPages = ({ actions, graphql }) => {
         component: path.resolve('./src/templates/BlogRollPaginated.js'),
         context: {
           buildTimestampUTC,
+          tags: tags,
           limit: postsPerPage,
           skip: i * postsPerPage,
           numPages,
