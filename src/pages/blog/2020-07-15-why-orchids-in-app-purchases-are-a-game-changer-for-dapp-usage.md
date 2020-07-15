@@ -1,9 +1,9 @@
 ---
 templateKey: blog-post
-public: true
+public: false
 url: why-orchids-in-app-purchases-are-a-game-changer-for-dapp-usage
 title: "Why Orchid’s in-app purchases are a game-changer for dapp usage"
-date: 1594825200000 
+date: 1594918800000 
 description: "The new feature lets anyone set up an Orchid account without wallets or exchanges"
 featuredpost: false
 featuredimage: /img/uploads/orchid-logo-text.jpg
