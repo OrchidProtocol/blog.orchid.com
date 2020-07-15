@@ -45,6 +45,15 @@ const SidebarTagLi = styled.li`
 const SidebarTagUl = styled.li`
     list-style: none;
 `;
+const PaginationLinkStyling = `
+    display: block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    vertical-align: middle;
+`;
+
 const BlogRoll = ({ data, pageContext }) => {
     const posts = data.allPosts.edges
     const featured = data.featuredPosts.edges
@@ -54,6 +63,16 @@ const BlogRoll = ({ data, pageContext }) => {
     const isLast = currentPage === numPages
     const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString()
     const nextPage = (currentPage + 1).toString()
+
+    const paginationElements = [];
+    for (let page = 1; page < Math.min(numPages + 1, 7); page++) {
+        paginationElements.push(<Link css={css`
+            ${ page === currentPage ? `font-weight: bolder; text-decoration: underline;` : ``}
+            ${PaginationLinkStyling}
+        `} to={`/${page}/`}>
+            {page}
+        </Link>)
+    }
 
     for (let index = posts.length - 1; index >= 0; index--) {
         const element = posts[index];
@@ -72,7 +91,7 @@ const BlogRoll = ({ data, pageContext }) => {
     tags.forEach(tag => {
         tagElements.push(<SidebarTagLi>
             <Link key={_.kebabCase(tag)} to={`/tag/${_.kebabCase(tag)}/`}>
-            {tag}
+                {tag}
             </Link>
         </SidebarTagLi>);
     })
@@ -207,6 +226,29 @@ const BlogRoll = ({ data, pageContext }) => {
                                 // The tag below includes the markup for each post - components/common/PostCard.js
                                 <PostCard number={currentPost++} key={node.id} post={node} />
                             ))}
+                            <div css={css`
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin: 0 auto var(--margin) auto;
+                                max-width: 400px;
+                            `}>
+                                <Link css={css`
+                                    ${isFirst ? `pointer-events: none; opacity: 0.5;` : ``}
+                                    ${PaginationLinkStyling}
+                                `} to={`/${currentPage - 1}/`}>
+                                    &laquo;
+                                </Link>
+
+                                {paginationElements}
+
+                                <Link css={css`
+                                    ${isLast ? `pointer-events: none; opacity: 0.5;` : ``}
+                                    ${PaginationLinkStyling}
+                                `} to={`/${currentPage + 1}/`}>
+                                    &raquo;
+                                </Link>
+                            </div>
                         </section>
                         <Sidebar>
                             <SidebarCard>
