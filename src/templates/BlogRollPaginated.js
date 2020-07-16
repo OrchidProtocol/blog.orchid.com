@@ -1,10 +1,13 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
+import config from '../utils/config';
+
 import { css } from '@emotion/core'
 import styled from '@emotion/styled'
 import { Link, graphql, StaticQuery } from 'gatsby'
 
 import _ from 'lodash';
-import { Layout, PostCard } from './common';
+import { Layout, PostCard } from '../components/common';
 import { getCustomFormatedDate, currentTimestampUTC } from '../utils/date';
 const { buildTimestampUTC } = require('../utils/currentTimestamp');
 
@@ -35,9 +38,41 @@ const SidebarCardSeperator = styled.div`
     width: 100%;
 `;
 
-const BlogRoll = ({ data }) => {
+const SidebarTagLi = styled.li`
+    list-style: none;
+    margin: 3px 0;
+`;
+const SidebarTagUl = styled.li`
+    list-style: none;
+`;
+const PaginationLinkStyling = `
+    display: block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    vertical-align: middle;
+`;
+
+const BlogRoll = ({ data, pageContext }) => {
     const posts = data.allPosts.edges
     const featured = data.featuredPosts.edges
+
+    const { currentPage, numPages, tags } = pageContext
+    const isFirst = currentPage === 1
+    const isLast = currentPage === numPages
+    const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString()
+    const nextPage = (currentPage + 1).toString()
+
+    const paginationElements = [];
+    for (let page = 1; page < Math.min(numPages + 1, 7); page++) {
+        paginationElements.push(<Link css={css`
+            ${ page === currentPage ? `font-weight: bolder; text-decoration: underline;` : ``}
+            ${PaginationLinkStyling}
+        `} to={`/${page}/`}>
+            {page}
+        </Link>)
+    }
 
     for (let index = posts.length - 1; index >= 0; index--) {
         const element = posts[index];
@@ -52,22 +87,13 @@ const BlogRoll = ({ data }) => {
         }
     }
 
-    // Tag pages:
-    let tags = []
-    // Iterate through each post, putting all found tags into `tags`
-    posts.forEach(edge => {
-        if (_.get(edge, `node.frontmatter.tags`)) {
-            tags = tags.concat(edge.node.frontmatter.tags)
-        }
-    })
-    // Eliminate duplicate tags
-    tags = _.uniq(tags)
-
     const tagElements = [];
     tags.forEach(tag => {
-        tagElements.push(<Link key={_.kebabCase(tag)} to={`/tag/${_.kebabCase(tag)}/`}>
-            {tag}
-        </Link>);
+        tagElements.push(<SidebarTagLi>
+            <Link key={_.kebabCase(tag)} to={`/tag/${_.kebabCase(tag)}/`}>
+                {tag}
+            </Link>
+        </SidebarTagLi>);
     })
 
     const featuredElements = [];
@@ -124,6 +150,62 @@ const BlogRoll = ({ data }) => {
 
     return (
         <>
+            <Helmet>
+                <title>{config.title}</title>
+                <meta name="description" content="Your VPN should be secure, which is why Orchid is building with open source tools for custom VPN configurations and privacy services." />
+
+                <meta property="og:image" content={config.feature_image} />
+                <meta property="og:image:width" content="1688" />
+                <meta property="og:image:height" content="950" />
+                <meta name="twitter:image" content={config.feature_image} />
+                <meta name="twitter:card" content="summary_large_image" />
+
+
+                <script type="application/ld+json">{`
+					{
+						"@context": "https://schema.org/",
+						"@type": "Blog",
+						"name": "${config.title}",
+						"url": "${config.siteUrl}",
+						"image": {
+								"@type": "ImageObject",
+								"url": "${config.siteUrl}${config.feature_image}",
+								"width": "${config.feature_image_width}",
+								"height": "${config.feature_image_height}"
+							},
+						"publisher": {
+							"@type": "Organization",
+							"name": "${config.title}",
+							"logo": {
+								"@type": "ImageObject",
+								"url": "${config.siteUrl}${config.logo}",
+								"width": ${config.logoWidth},
+								"height": ${config.logoHeight}
+							}
+						},
+						"mainEntityOfPage": {
+							"@type": "WebPage",
+							"@id": "${config.siteUrl}"
+						},
+						"description": "${config.description}"
+					}
+				`}</script>
+
+                <script>
+                    {`
+						if ('serviceWorker' in window.navigator) {
+							window.navigator.serviceWorker.getRegistrations().then((registrations) => {
+								for(let registration of registrations) {
+									registration.unregister();
+								}
+							}).catch((err) => {
+								console.log('Service Worker registration failed: ', err);
+							});
+						}
+					`}
+                </script>
+
+            </Helmet>
             <Layout isHome={true}>
                 <div className="container" css={css`
                     position: relative;
@@ -144,6 +226,29 @@ const BlogRoll = ({ data }) => {
                                 // The tag below includes the markup for each post - components/common/PostCard.js
                                 <PostCard number={currentPost++} key={node.id} post={node} />
                             ))}
+                            <div css={css`
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin: 0 auto var(--margin) auto;
+                                max-width: 400px;
+                            `}>
+                                <Link css={css`
+                                    ${isFirst ? `pointer-events: none; opacity: 0.5;` : ``}
+                                    ${PaginationLinkStyling}
+                                `} to={`/${currentPage - 1}/`}>
+                                    &laquo;
+                                </Link>
+
+                                {paginationElements}
+
+                                <Link css={css`
+                                    ${isLast ? `pointer-events: none; opacity: 0.5;` : ``}
+                                    ${PaginationLinkStyling}
+                                `} to={`/${currentPage + 1}/`}>
+                                    &raquo;
+                                </Link>
+                            </div>
                         </section>
                         <Sidebar>
                             <SidebarCard>
@@ -237,6 +342,13 @@ const BlogRoll = ({ data }) => {
                                 <SidebarCardSeperator />
                                 {featuredElements}
                             </SidebarCard>
+                            <SidebarCard>
+                                <SidebarCardHeader>
+                                    Topics
+                                </SidebarCardHeader>
+                                <SidebarCardSeperator />
+                                <SidebarTagUl>{tagElements}</SidebarTagUl>
+                            </SidebarCard>
                         </Sidebar>
 
                     </div>
@@ -246,110 +358,110 @@ const BlogRoll = ({ data }) => {
     )
 }
 
-export default () => (
-    <StaticQuery
-        query={graphql`
-		query BlogRollQuery($buildTimestampUTC: Float) {
-			allPosts: allMarkdownRemark(
-				sort: { order: DESC, fields: [frontmatter___date] }
-                filter: { 
-                    frontmatter: { 
-                        templateKey: {
-                            eq: "blog-post"
-                        },
-                        date: { lt: $buildTimestampUTC },
-                        public: {
-                            eq: true
+export default BlogRoll
+
+export const BlogRollQuery = graphql`
+    query BlogRollPaginatedQuery($buildTimestampUTC: Float, $skip: Int!, $limit: Int!) {
+        allPosts: allMarkdownRemark(
+            sort: { order: DESC, fields: [frontmatter___date] }
+            filter: { 
+                frontmatter: { 
+                    templateKey: {
+                        eq: "blog-post"
+                    },
+                    date: { lt: $buildTimestampUTC },
+                    public: {
+                        eq: true
+                    }
+                }
+            }
+            skip: $skip
+            limit: $limit
+            ) {
+            edges {
+                node {
+                    excerpt(pruneLength: 400)
+                    id
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        url
+                        title
+                        title_ja
+                        title_ko
+                        title_zh
+                        title_id
+                        title_ru
+                        description
+                        description_ja
+                        description_ko
+                        description_zh
+                        description_id
+                        description_ru
+                        tags
+                        templateKey
+                        date
+                        featuredpost
+                        featuredimage {
+                            publicURL
+                        }
+                        featuredimage_ja {
+                            publicURL
+                        }
+                        featuredimage_ko {
+                            publicURL
+                        }
+                        featuredimage_zh {
+                            publicURL
+                        }
+                        featuredimage_id {
+                            publicURL
+                        }
+                        featuredimage_ru {
+                            publicURL
                         }
                     }
                 }
-				) {
-				edges {
-					node {
-						excerpt(pruneLength: 400)
-						id
-						fields {
-							slug
-						}
-						frontmatter {
-                            url
-                            title
-                            title_ja
-                            title_ko
-                            title_zh
-                            title_id
-                            title_ru
-                            description
-                            description_ja
-                            description_ko
-                            description_zh
-                            description_id
-                            description_ru
-                            tags
-							templateKey
-							date
-							featuredpost
-							featuredimage {
-                                publicURL
-							}
-							featuredimage_ja {
-                                publicURL
-							}
-							featuredimage_ko {
-                                publicURL
-							}
-							featuredimage_zh {
-                                publicURL
-							}
-							featuredimage_id {
-                                publicURL
-							}
-							featuredimage_ru {
-                                publicURL
-							}
-						}
-					}
-				}
-			}
+            }
+        }
+        
 
-			featuredPosts: allMarkdownRemark(
-                    sort: { order: DESC, fields: [frontmatter___date] }
-                    filter: { 
-                        frontmatter: { 
-                            featuredpost: { eq: true },
-                            templateKey: { eq: "blog-post" },
-                            date: { lt: $buildTimestampUTC },
-                            public: { eq: true } 
+        featuredPosts: allMarkdownRemark(
+                sort: { order: DESC, fields: [frontmatter___date] }
+                filter: { 
+                    frontmatter: { 
+                        featuredpost: { eq: true },
+                        templateKey: { eq: "blog-post" },
+                        date: { lt: $buildTimestampUTC },
+                        public: { eq: true } 
+                    }
+                }
+            ) {
+            edges {
+                node {
+                    excerpt(pruneLength: 400)
+                    id
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        url
+                        title
+                        title_ja
+                        title_ko
+                        title_zh
+                        title_id
+                        title_ru
+                        templateKey
+                        date
+                        featuredpost
+                        featuredimage {
+                            publicURL
                         }
                     }
-				) {
-				edges {
-					node {
-						excerpt(pruneLength: 400)
-						id
-						fields {
-							slug
-						}
-						frontmatter {
-							url
-                            title
-                            title_ja
-                            title_ko
-                            title_zh
-                            title_id
-                            title_ru
-							templateKey
-							date
-							featuredpost
-							featuredimage {
-                                publicURL
-							}
-						}
-					}
-				}
-			}
-		}
-    `}
-        render={(data, count) => <BlogRoll data={data} count={count} />}
-    />
-)
+                }
+            }
+        }
+    }
+`

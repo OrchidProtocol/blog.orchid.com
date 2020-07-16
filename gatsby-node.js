@@ -14,6 +14,9 @@ exports.createPages = ({ actions, graphql }) => {
         limit: 1000,
         filter: {
           frontmatter: {
+            templateKey: {
+                eq: "blog-post"
+            },
             public: { eq: true }, 
             date: { lt: ${buildTimestampUTC} } 
           }
@@ -27,10 +30,40 @@ exports.createPages = ({ actions, graphql }) => {
             }
             frontmatter {
               url
+              title
+              title_ja
+              title_ko
+              title_zh
+              title_id
+              title_ru
+              description
+              description_ja
+              description_ko
+              description_zh
+              description_id
+              description_ru
               tags
               templateKey
               date
-              public
+              featuredpost
+							featuredimage {
+                publicURL
+							}
+							featuredimage_ja {
+                publicURL
+							}
+							featuredimage_ko {
+                publicURL
+							}
+							featuredimage_zh {
+                publicURL
+							}
+							featuredimage_id {
+                publicURL
+							}
+							featuredimage_ru {
+                publicURL
+							}
             }
           }
         }
@@ -68,6 +101,7 @@ exports.createPages = ({ actions, graphql }) => {
         tags = tags.concat(edge.node.frontmatter.tags)
       }
     })
+
     // Eliminate duplicate tags
     tags = _.uniq(tags)
 
@@ -84,6 +118,28 @@ exports.createPages = ({ actions, graphql }) => {
         },
       })
     })
+
+
+    // Create blog post list pages
+    const postsPerPage = 10;
+    const numPages = Math.ceil(posts.length / postsPerPage);
+
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/` : `/${i + 1}`,
+        component: path.resolve('./src/templates/BlogRollPaginated.js'),
+        context: {
+          buildTimestampUTC,
+          tags: tags,
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1
+        },
+      });
+    });
+
+
   })
 }
 

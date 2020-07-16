@@ -32,7 +32,7 @@ const TemplateWrapper = ({ children, bodyClass, customText }) => {
                         <link rel="alternate" href={`https://blog.ru.orchid.com${location.pathname}`} hreflang="ru" />
 
                         {
-                            process.env.GATSBY_TARGET_LANG === "en" ?
+                            process.env.GATSBY_TARGET_LANG === "en" || !process.env.GATSBY_TARGET_LANG ?
                                 <meta rel="canonical" href={`https://blog.orchid.com${location.pathname}`} /> :
                                 <meta rel="canonical" href={`https://blog.${process.env.GATSBY_TARGET_LANG.toLowerCase()}.orchid.com${location.pathname}`} />
                         }
