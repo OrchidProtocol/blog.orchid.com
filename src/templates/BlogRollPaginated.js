@@ -69,7 +69,7 @@ const BlogRoll = ({ data, pageContext }) => {
         paginationElements.push(<Link css={css`
             ${ page === currentPage ? `font-weight: bolder; text-decoration: underline;` : ``}
             ${PaginationLinkStyling}
-        `} to={`/${page}/`}>
+        `} to={page === 1 ? `/` : `/${page}/`}>
             {page}
         </Link>)
     }
@@ -236,7 +236,7 @@ const BlogRoll = ({ data, pageContext }) => {
                                 <Link css={css`
                                     ${isFirst ? `pointer-events: none; opacity: 0.5;` : ``}
                                     ${PaginationLinkStyling}
-                                `} to={`/${currentPage - 1}/`}>
+                                `} to={currentPage - 1 === 1 ? `/` : `/${currentPage - 1}/`}>
                                     &laquo;
                                 </Link>
 
