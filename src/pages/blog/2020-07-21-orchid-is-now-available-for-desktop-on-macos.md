@@ -6,7 +6,7 @@ title: "Orchid is now available for desktop on MacOS"
 date: 1594908000000 
 description: "The Orchid app is now available for desktop on MacOS. This release will allow the operating system’s 100 million users to browse the Internet in privacy using Orchid’s unique, decentralized VPN marketplace."
 featuredpost: false
-featuredimage: /img/uploads/orchid-logo-text.jpg
+featuredimage: /img/uploads/Orchid_BlogImage_macOS2.png
 tags:
   - Company Updates
   - VPN
