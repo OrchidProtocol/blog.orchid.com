@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: orchid-is-now-available-for-desktop-on-macos
 title: "Orchid is now available for desktop on MacOS"
-date: 1595340000000
+date: 1595426400000
 description: "The Orchid app is now available for desktop on MacOS. This release will allow the operating system’s 100 million users to browse the Internet in privacy using Orchid’s unique, decentralized VPN marketplace."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_macOS3.png
