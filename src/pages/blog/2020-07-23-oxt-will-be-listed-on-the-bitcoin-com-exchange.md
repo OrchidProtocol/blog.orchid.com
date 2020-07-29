@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-public: true
+public: false
 url: oxt-will-be-listed-on-the-bitcoin-com-exchange
 title: "OXT will be listed on the Bitcoin.com Exchange"
 date: 1595426400001
