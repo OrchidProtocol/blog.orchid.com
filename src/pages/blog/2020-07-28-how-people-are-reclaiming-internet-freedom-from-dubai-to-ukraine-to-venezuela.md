@@ -47,4 +47,4 @@ We are grateful to our users for sharing their stories, and humbled by the ways 
 Internet as a place where people can stay curious and explore freely.
 
 [Download Orchid for iOS and Android today.](https://www.orchid.com/download)
-<style>.content-body > p > img {width: 100%; max-width: 270px; margin: auto;}</style>
+<style>.content-body > p > img {width: 100%; max-width: 270px; margin: auto; display:block;}</style>
