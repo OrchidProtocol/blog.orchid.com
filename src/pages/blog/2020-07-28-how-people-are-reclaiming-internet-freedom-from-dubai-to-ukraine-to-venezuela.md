@@ -9,7 +9,7 @@ featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_Accounts.png
 tags:
   - Company Updates
-  - Partnerships
+  - Privacy
 ---
 Orchid's mission is to help restore privacy to the Internet so people can explore freely. Because we respect our users' privacy, we don't collect any data on them -- we don't even know how many there are out there. But since we launched late last year, we have been inspired by the stories that Orchid users across the globe have chosen to share with us. 
 
