@@ -39,6 +39,16 @@ const FooterSocialIcons = (props) => {
                 <img width="30" height="30" src='/img/icons/social-facebook.svg' alt='Facebook' />
             </a>
         </SocialIcon>
+        <SocialIcon>
+            <a rel="noopener noreferrer" href="https://www.youtube.com/channel/UCIH_BKBlNemsCzDhPYZBlHw" target="_blank">
+                <img width="30" height="30" src='/img/icons/social-youtube.svg' alt='YouTube' />
+            </a>
+        </SocialIcon>
+        <SocialIcon>
+            <a rel="noopener noreferrer" href="https://www.linkedin.com/company/orchidprotocol" target="_blank">
+                <img width="30" height="30" src='/img/icons/social-linkedin.svg' alt='LinkedIn' />
+            </a>
+        </SocialIcon>
     </ul>)
 }
 
