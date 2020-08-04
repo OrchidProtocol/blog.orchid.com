@@ -46,10 +46,6 @@ module.exports = {
 
     footer_navigation: [
         {
-            url: "https://www.orchid.com",
-            label: "Orchid",
-        },
-        {
             url: "https://www.orchid.com/how-it-works",
             label: "How it Works",
         },
@@ -58,24 +54,32 @@ module.exports = {
             label: "About Us",
         },
         {
+            url: "https://www.orchid.com/contact",
+            label: "Contact",
+        },
+        {
             url: "https://www.orchid.com/download",
             label: "Download",
         },
         {
-            url: "https://www.orchid.com/events",
-            label: "Events",
+            url: "https://www.orchid.com/podcast",
+            label: "Podcast",
         },
         {
             url: "/",
             label: 'Blog'
         },
         {
-            url: "https://www.orchid.com/faq",
-            label: "FAQ",
+            url: "https://www.orchid.com/assets/whitepaper/whitepaper.pdf",
+            label: "Whitepaper",
         },
         {
-            url: "https://www.orchid.com/contact",
-            label: "Contact",
+            url: "https://www.orchid.com/partners",
+            label: "Partners",
+        },
+        {
+            url: "https://www.orchid.com/faq",
+            label: "FAQ",
         },
     ],
     

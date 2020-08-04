@@ -30,15 +30,15 @@ const style = css`
 `;
 
 
-const items = [];
-const items2 = [];
+let items = [];
+const lists = [];
 
 for (let i = 0; i < config.footer_navigation.length; i++) {
     const navItem = config.footer_navigation[i];
 
     const internalLink = navItem.url.match(/^\s?http(s?)/gi) === null;
 
-    const output = <li key={i}>
+    const output = <li key={items.length}>
         {!internalLink ? (
             <a css={css`display:block;`} href={navItem.url} rel="noopener noreferrer">
                 {navItem.label}
@@ -47,22 +47,21 @@ for (let i = 0; i < config.footer_navigation.length; i++) {
                 <Link css={css`display:block;`} to={navItem.url}>{navItem.label}</Link>
             )}
     </li>
+    console.log(navItem.label)
 
-    if (i < 4) {
-        items.push(output);
-    } else {
-        items2.push(output);
+    items.push(output);
+    if (items.length >= 3) {
+        const arr = [...items]
+        lists.push(<ul key={lists.length} css={style}>
+            {arr}
+        </ul>)
+        items = [];
     }
 }
 
 const FooterNavigation = () => (
     <>
-        <ul css={style}>
-            {items}
-        </ul>
-        <ul css={style}>
-            {items2}
-        </ul>
+        {lists}
     </>
 );
 
