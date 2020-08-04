@@ -11,7 +11,7 @@ tags:
   - Company Updates
   - Partnerships
 ---
-OXT, the Orchid token, will be listed this Thursday, June 4 on the [Bitcoin.com](https://exchange.bitcoin.com/) Exchange, a trading platform that supports leading digital assets. On the exchange traders can securely buy, sell, and invest in cryptocurrencies.
+OXT, the Orchid token, will be listed this Wednesday, August 5th at 10:00 AM UTC on the [Bitcoin.com](https://exchange.bitcoin.com/) Exchange, a trading platform that supports leading digital assets. On the exchange traders can securely buy, sell, and invest in cryptocurrencies.
 
 New Orchid users can open an account by purchasing at least $4 in OXT and $1 of ETH on the Bitcoin.com Exchange. Once the account is created, a shareable QR code will appear that contains account credentials. Anyone can copy or scan that account into the app for a simple, one-step setup.
 
