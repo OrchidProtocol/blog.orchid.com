@@ -4,7 +4,7 @@ public: true
 url: oxt-will-be-listed-on-the-bitcoin-com-exchange
 title: "OXT will be listed on the Bitcoin.com Exchange"
 date: 1596549600000
-description: "OXT, the Orchid token, will be listed this Thursday, June 4 on the Bitcoin.com Exchange, a trading platform that supports leading digital assets."
+description: "OXT, the Orchid token, will be listed Wednesday, August 5th on the Bitcoin.com Exchange, a trading platform that supports leading digital assets."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_BitcoinDotCom.png
 tags:
