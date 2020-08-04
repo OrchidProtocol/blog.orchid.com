@@ -193,7 +193,7 @@ const BlogPost = (props) => {
 	post.frontmatter.title = title;
 	post.frontmatter.description = description;
 
-	if (post.frontmatter.featuredimage) {
+	if (post.frontmatter.featuredimage && typeof post.frontmatter.featuredimage !== 'string') {
 		let ftImage = post.frontmatter.featuredimage;
 		if (process.env.GATSBY_TARGET_LANG) {
 			if (post.frontmatter[`featuredimage_${process.env.GATSBY_TARGET_LANG}`]) {
