@@ -42,8 +42,10 @@ const SidebarTagLi = styled.li`
     list-style: none;
     margin: 3px 0;
 `;
-const SidebarTagUl = styled.li`
+const SidebarTagUl = styled.ul`
     list-style: none;
+    padding: 0;
+    margin: 0;
 `;
 const PaginationLinkStyling = `
     display: block;
@@ -89,7 +91,7 @@ const BlogRoll = ({ data, pageContext }) => {
 
     const tagElements = [];
     tags.forEach(tag => {
-        tagElements.push(<SidebarTagLi>
+        tagElements.push(<SidebarTagLi key={_.kebabCase(tag)}>
             <Link key={_.kebabCase(tag)} to={`/tag/${_.kebabCase(tag)}/`}>
                 {tag}
             </Link>
