@@ -121,6 +121,7 @@ module.exports = {
                     frontmatter: {
                       templateKey: { eq: "blog-post" }, 
                       public: { eq: true }, 
+                      quite: { ne: true },
                       date: { lt: ${buildTimestampUTC} } 
                     } 
                   }
@@ -173,6 +174,7 @@ module.exports = {
                 frontmatter: {
                   templateKey: { eq: "blog-post" }, 
                   public: { eq: true }, 
+                  quite: { ne: true },
                   date: { lt: ${buildTimestampUTC} } 
                 } 
               }
