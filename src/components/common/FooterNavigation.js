@@ -47,7 +47,6 @@ for (let i = 0; i < config.footer_navigation.length; i++) {
                 <Link css={css`display:block;`} to={navItem.url}>{navItem.label}</Link>
             )}
     </li>
-    console.log(navItem.label)
 
     items.push(output);
     if (items.length >= 3) {
