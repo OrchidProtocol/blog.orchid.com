@@ -6,7 +6,7 @@ title: "Orchid adds WireGuard®️ support across iOS, macOS and Android"
 date: 1597327200000
 description: "People can now connect to WireGuard servers to configure hops in the Orchid app."
 featuredpost: false
-featuredimage: /img/uploads/Orchid_BlogImage_Wireguard.jpg
+featuredimage: /img/uploads/Orchid_BlogImage_Wireguardv2.jpg
 tags:
   - Company Updates
   - Partnerships
