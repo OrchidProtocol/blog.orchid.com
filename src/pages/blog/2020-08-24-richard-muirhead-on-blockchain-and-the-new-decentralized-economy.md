@@ -13,6 +13,8 @@ tags:
 ---
 <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/15666761/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/050700/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
+&nbsp;
+
 Richard Muirhead has been a Bitcoin believer since as early as 2013. That has provided the partner of Fabric Ventures with a valuable perspective on blockchain and digital assets. An early supporter of Orchid, Richard joins for [this week's episode of Follow the White Rabbit](https://www.orchid.com/podcast/episode-11-richard-muirhead) to share his ideas about decentralization, the token economy, and how to build the best companies of the future.
 
 Richard has previously backed Bitrise, Citymapper, Tray.io, Transferwise, and Bitstamp and, at Fabric, he looks after Polkadot, Ocean Protocol, Blockstack, Messari, as well as Orchid.
