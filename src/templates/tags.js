@@ -2,9 +2,9 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/common/Layout'
 import PostCard from '../components/common/PostCard'
+import { Helmet } from 'react-helmet'
 import { css } from '@emotion/core'
-
-//import config from '../utils/config'
+import config from '../utils/config';
 
 class TagRoute extends React.Component {
 	render() {
@@ -22,6 +22,17 @@ class TagRoute extends React.Component {
 
 		return (
 			<Layout customText={tag}>
+
+				<Helmet>
+					<title>{tag} - Orchid Blog</title>
+					<meta name="description" content={config.description} />
+					
+					<meta property="og:image" content={config.feature_image} />
+					<meta property="og:image:width" content="1688" />
+					<meta property="og:image:height" content="950" />
+					<meta name="twitter:image" content={config.feature_image} />
+					<meta name="twitter:card" content="summary_large_image" />
+				</Helmet>
 				<div className="container" css={css`
 					position: relative;
 					z-index: 1;
