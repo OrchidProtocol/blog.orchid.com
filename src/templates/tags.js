@@ -24,7 +24,7 @@ class TagRoute extends React.Component {
 			<Layout customText={tag}>
 
 				<Helmet>
-					<title>{tag} - Orchid Blog</title>
+					<title>{tag} - Orchid</title>
 					<meta name="description" content={config.description} />
 					
 					<meta property="og:image" content={config.feature_image} />
