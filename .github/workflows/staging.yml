@@ -1,8 +1,9 @@
 name: DeployStaging
 
 on:
-  schedule:
-    - cron: '*/15 * * * *'
+  push:
+    branches:
+      - staging
 
 jobs:
   deploy:
