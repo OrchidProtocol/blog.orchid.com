@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: what-the-global-vpn-markets-explosive-growth-means-for-orchid
 title: "What the global VPN market’s explosive growth means for Orchid"
-date: 1598886000000
+date: 1598882400000
 description: 'Orchid’s decentralized marketplace is positioned to meet surging demand for online privacy.'
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_VPNGrowth.jpg
