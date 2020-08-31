@@ -70,10 +70,10 @@ const Splash = (props) => {
                 padding-bottom: 0rem;
                 
                 @media (min-width: 871px) {
-                    padding-top: 1.5rem;
+                    padding-top: 5rem;
                     padding-bottom: 1.5rem;
                     width: 60%;
-                    max-width: 600px;
+                    max-width: 700px;
                 }
             `}>
                 <h1 css={css`
