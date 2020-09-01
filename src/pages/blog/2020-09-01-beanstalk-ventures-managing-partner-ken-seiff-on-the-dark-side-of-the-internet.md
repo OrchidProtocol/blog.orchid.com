@@ -6,7 +6,7 @@ title: "Beanstalk Ventures Managing Partner Ken Seiff on the dark side of the In
 date: 1598968800000
 description: "With a special guest appearance by Orchid CEO Dr. Steven Waterhouse on this week's episode of Follow the White Rabbit"
 featuredpost: false
-featuredimage: /img/uploads/Orchid_BlogImage_BFox.jpg
+featuredimage: /img/uploads/Orchid_BlogImage_KSeiff.jpg
 tags:
   - Decentralization
   - Privacy
