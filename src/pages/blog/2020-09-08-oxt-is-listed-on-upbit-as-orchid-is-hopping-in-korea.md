@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-public: true
+public: false
 url: oxt-is-listed-on-upbit-as-orchid-is-hopping-in-korea
 title: "OXT is listed on Upbit as Orchid is hopping in Korea"
 date: 1599573600001
