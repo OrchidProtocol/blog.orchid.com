@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: how-to-protect-students-privacy-online-from-vr-to-vpns
 title: "How to protect students’ privacy online, from VR to VPNs"
-date: 1599746400000
+date: 1599832800000
 description: "Widespread remote learning has introduced new opportunities as well as new dangers"
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_BTSchool.png
