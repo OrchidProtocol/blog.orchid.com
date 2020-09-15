@@ -51,8 +51,8 @@ As the network grows we anticipate more providers coming online and staking more
 **pixeltot** came back with another great question later, asking "Can you give us 1 more example of a possible use case for OXT, other than providing a marketplace for bandwidth? (which I feel is groundbreaking btw)"
 
 > Dr. Waterhouse replied, "We'd love to explore different use cases with the community. A general framework for decentralized services would be an exciting one to see Orchid as part of. Some of the ideas that come to mind are things like paying for content instead of using paywalls, streaming services and possibly interesting new network routing architectures. As always I believe that the new successful ideas that emerge from a new technology are the ones that enable people to do something they previously couldn't do and take advantage of the new capabilities of the technology in unique ways."
-> 
-> If you want to read the full Reddit AMA, you can find the [thread here](https://www.reddit.com/r/orchid/comments/ifrrzc/reddit_ama_with_orchid_ceo_steven_waterhouse_aug/). 
+
+If you want to read the full Reddit AMA, you can find the [thread here](https://www.reddit.com/r/orchid/comments/ifrrzc/reddit_ama_with_orchid_ceo_steven_waterhouse_aug/). 
 
 ### Telegram Q&A
 
