@@ -33,7 +33,7 @@ As the network grows we anticipate more providers coming online and staking more
 
 **pixeltot** had a question about non-USA providers and nodes, asking "Have you guys partnered with any VPN's that are not in the US, or thinking about partnering with VPN's outside of the country? I think people want the option to choose their location, as this is a common feature of VPN's"
 
-> To which Dr. Waterhouse answered, "Good question. We have already partnered with non US VPNs such as Boleh and Liquid. Full list of VPN partners here: https://www.orchid.com/partners. Most of the partners have server presence globally.
+> To which Dr. Waterhouse answered, "Good question. We have already partnered with non US VPNs such as Boleh and Liquid. [Full list of VPN partners here](https://www.orchid.com/partners). Most of the partners have server presence globally.
 > 
 > Currently the app does not enable geolocation switching."
 
