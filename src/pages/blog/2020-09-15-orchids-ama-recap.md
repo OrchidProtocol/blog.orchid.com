@@ -64,7 +64,7 @@ A week later during the Telegram AMA, we had several great questions and discuss
  
 **J** wanted some more info about the smart contract, stating "i am unable to understand the how the contract works, will be great if i get some docs that explains the contract methods"
 
-> Dr. Waterhouse pointed out that, "We have diligence done here: <https://diligence.consensys.net/audits/2019/11/orchid-network-protocol/>"
+> Dr. Waterhouse pointed out that, "We have diligence [done here](https://diligence.consensys.net/audits/2019/11/orchid-network-protocol/)"
 
 The audit is not a short read, but it's a good one for anyone out there looking for more technical analysis and documentation on Orchid's protocol and the results of Consensys' due diligence.
 
