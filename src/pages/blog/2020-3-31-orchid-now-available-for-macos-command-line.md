@@ -61,4 +61,4 @@ curl ipecho.net/plain ; echo
 
 This will give you your new public IP address.
 
-Orchid is also available for Linux, or for Android in the  [Play Store](https://play.google.com/store/apps/details?id=net.orchid.Orchid&hl=en_US)  or for iOS on  [Testflight](https://testflight.apple.com/join/BlkfHkHY). Download the Orchid app to control your privacy in a new way today.
+Orchid is also available for Linux, or for Android in the [Play Store](https://play.google.com/store/apps/details?id=net.orchid.Orchid&hl=en_US) or for iOS on the [App Store](https://apps.apple.com/us/app/id1474884867). Download the Orchid app to control your privacy in a new way today.
