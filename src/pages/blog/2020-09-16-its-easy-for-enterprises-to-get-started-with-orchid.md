@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-public: true
+public: false
 url: its-easy-for-enterprises-to-get-started-with-orchid
 title: "It’s easy for enterprises to get started with Orchid"
 date: 1600264800000
