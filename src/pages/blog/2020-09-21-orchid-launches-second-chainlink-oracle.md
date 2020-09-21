@@ -23,9 +23,9 @@ Combined, the two oracles serve a joint function of letting people estimate the 
 
 Chainlink oracle networks are powered by an aggregation of numerous independent, Sybil resistant node operators that source data from multiple independent, high quality data sources. This decentralized framework provides highly available, accurate, and manipulation-resistant data with strong market coverage across all relevant sources.
 
-"Our ongoing collaboration has led to the development and launch of a second tool for Orchid users that leverages Chainlink oracles to obtain a more refined estimate on the current OXT cost of VPN bandwidth.," said Orchid Co-Founder and CEO Dr. Steven Waterhouse. "We're excited to continue working with Chainlink as we constantly strive to improve the experience for Orchid users and help bring Internet privacy to more people."
+> "Our ongoing collaboration has led to the development and launch of a second tool for Orchid users that leverages Chainlink oracles to obtain a more refined estimate on the current OXT cost of VPN bandwidth.," said Orchid Co-Founder and CEO Dr. Steven Waterhouse. "We're excited to continue working with Chainlink as we constantly strive to improve the experience for Orchid users and help bring Internet privacy to more people."
 
-"We're excited to extend our collaboration with Orchid by helping them launch another Chainlink-powered decentralized oracle, one which empowers users with key off-chain data to enhance their user experience on the Orchid Network," states Daniel Kochis, Head of Chainlink Business Development. "Chainlink's decentralized architecture delivers highly accurate and manipulation resistant price data for pricing bandwidth, allowing users to trust that they are receiving the fair market price for bandwidth."
+> "We're excited to extend our collaboration with Orchid by helping them launch another Chainlink-powered decentralized oracle, one which empowers users with key off-chain data to enhance their user experience on the Orchid Network," states Daniel Kochis, Head of Chainlink Business Development. "Chainlink's decentralized architecture delivers highly accurate and manipulation resistant price data for pricing bandwidth, allowing users to trust that they are receiving the fair market price for bandwidth."
 
 **About Orchid**
 
