@@ -67,5 +67,6 @@ We think of our phones as providing us with information -- and it's absolutely t
 
 But it's imperative that we understand that our phones also collect reams of information on us as we use them -- and they take without asking. All of the searching, chatting, sharing, moving, and talking that we do is gathered, saved, and shared. Our data acts as the fuel of the digital economy.
 
-Fortunately, with awareness, and the right tools, people can go a long way toward staying safe on their mobile devices. While there is no single way for us to achieve perfect privacy, if we take the right steps to protect ourselves when we use our mobile devices, it is possible to move confidently through our mobile-first digital world. By combining the best solutions and being aware of what the various services we use are doing behind the scenes, we can start to reclaim the mobile Internet as a place to explore freely.\
+Fortunately, with awareness, and the right tools, people can go a long way toward staying safe on their mobile devices. While there is no single way for us to achieve perfect privacy, if we take the right steps to protect ourselves when we use our mobile devices, it is possible to move confidently through our mobile-first digital world. By combining the best solutions and being aware of what the various services we use are doing behind the scenes, we can start to reclaim the mobile Internet as a place to explore freely.
+
 [Download the Orchid app](https://www.orchid.com/download) today.
