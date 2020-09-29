@@ -6,7 +6,7 @@ title: "Ex-FDIC Regulator On Trust And the Battle of the Social Media Videos"
 date: 1601388000000
 description: "When Jason Brett first arrived at the FDIC, he was greeted with the joke that he should have brought a pillow to work at the sleepy agency. Little did he know that, within a week in that summer of 2008, he would have a front-row seat to what was the largest bank collapse in U.S. history."
 featuredpost: false
-featuredimage: /img/uploads/Orchid_BlogImage_DSong.jpg
+featuredimage: /img/uploads/Orchid_BlogImage_JBrett.jpg
 tags:
   - Privacy
   - Decentralization
