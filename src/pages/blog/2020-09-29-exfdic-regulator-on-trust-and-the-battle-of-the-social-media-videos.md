@@ -33,4 +33,4 @@ Cryptocurrency has forced people around the globe to consider the concepts of mo
 
 "We owe it to ourselves as a community to do something like this or I think the government will make us do something like this five or ten years down the road," he warned.
 
-To hear more, follow us down the rabbit hole:[ listen to the conversation](https://www.orchid.com/podcast) here or on your favorite streaming service.
+To hear more, follow us down the rabbit hole: [listen to the conversation](https://www.orchid.com/podcast) here or on your favorite streaming service.
