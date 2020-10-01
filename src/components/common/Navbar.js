@@ -25,10 +25,26 @@ const Header = styled.header`
     }
 `;
 
-function Navbar({customText}) {
+const InfoBar = styled.a`
+    background: var(--color-primary);
+    color: #FFFFFF !important;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 0.3rem;
+    font-size: 0.75rem;
+    &:hover {
+        text-decoration: none;
+    }
+`;
+
+function Navbar({ customText }) {
     const [active, setActive] = useState(false);
 
     return <Container data-active={active}>
+        <InfoBar href="/orchid-just-got-faster/">
+            Orchid just got faster. Read More &raquo;
+        </InfoBar>
         {/* The main header section on top of the screen */}
         <Header customText={customText}>
             <a href="https://www.orchid.com/" css={css`
@@ -222,7 +238,7 @@ function Navbar({customText}) {
                                 `} width="20" height="20" src="/img/globe.svg" />
                                 <span>
                                     {
-                                        (()=>{
+                                        (() => {
                                             switch (process.env.GATSBY_TARGET_LANG) {
                                                 case "ko":
                                                     return "한국어";
@@ -266,18 +282,18 @@ function Navbar({customText}) {
                                     }
                                 }
                             `}>
-                                
+
                                 <Location>
-                                {({ location }) => {
-                                    return <>
-                                        <li id="navbar-language-selector-list-item-first"><a className="phantom-a" href={`//blog.ko.orchid.com${location.pathname}`}>한국어</a></li>
-                                        <li><a className="phantom-a" href={`//blog.orchid.com${location.pathname}`}>English</a></li>
-                                        <li><a className="phantom-a" href={`//blog.ja.orchid.com${location.pathname}`}>日本</a></li>
-                                        <li><a className="phantom-a" href={`//blog.zh.orchid.com${location.pathname}`}>中文</a></li>
-                                        <li><a className="phantom-a" href={`//blog.id.orchid.com${location.pathname}`}>Indonesian</a></li>
-                                        <li><a className="phantom-a" href={`//blog.ru.orchid.com${location.pathname}`}>русский</a></li>
-                                    </>
-                                }}
+                                    {({ location }) => {
+                                        return <>
+                                            <li id="navbar-language-selector-list-item-first"><a className="phantom-a" href={`//blog.ko.orchid.com${location.pathname}`}>한국어</a></li>
+                                            <li><a className="phantom-a" href={`//blog.orchid.com${location.pathname}`}>English</a></li>
+                                            <li><a className="phantom-a" href={`//blog.ja.orchid.com${location.pathname}`}>日本</a></li>
+                                            <li><a className="phantom-a" href={`//blog.zh.orchid.com${location.pathname}`}>中文</a></li>
+                                            <li><a className="phantom-a" href={`//blog.id.orchid.com${location.pathname}`}>Indonesian</a></li>
+                                            <li><a className="phantom-a" href={`//blog.ru.orchid.com${location.pathname}`}>русский</a></li>
+                                        </>
+                                    }}
                                 </Location>
                             </ul>
                         </li>
