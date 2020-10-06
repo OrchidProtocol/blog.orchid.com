@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: can-you-protect-your-privacy-by-using-a-vpn-to-access-tiktok-or-wechat
 title: "Can you protect your privacy by using a VPN to access TikTok or WeChat?"
-date: 1601906400000
+date: 1601992800000
 description: "VPNs can allow people to access banned apps -- but they won’t protect you from those apps’ mass data collection"
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_TikTokWeChat.jpg
