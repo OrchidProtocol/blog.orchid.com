@@ -8,7 +8,7 @@ description: "The past few months have seen major disruption in nearly every sec
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_Q32020.png
 tags:
-  - VPN
+  - Company Updates
   - Privacy
 ---
 The past few months have seen major disruption in nearly every sector of the global economy -- and privacy has been particularly prominent. At times it can seem like every policy and business question, from contact tracing to TikTok, touches on privacy. VPNs have come to prominence as people, many working from home for the first time, have sought better security when using the Internet. Orchid is no exception to this trend: during the third quarter, we saw continued growth both in terms of new features and an expanding global presence.
