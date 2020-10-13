@@ -24,6 +24,23 @@ export const BlogPostTemplate = ({
 	slug,
 	featuredimage,
 }) => {
+
+	content = content.replace(/\[interstitial\]/ig, `<div class="interstitial__container">
+		<div class="interstitial__image">
+			<img src="/img/WhisperBunny.png" width="800" height="954" />
+		</div>
+		<div class="interstitial__content">
+			<b>Pssst! You can get privacy news delivered to your inbox.</b>
+			<div class="interstitial__form">
+				<input type="email" placeholder="Email address" />
+				<button>Subscribe</button>
+			</div>
+			<small class="interstitial__disclaimer">
+				🔒 Your privacy is important to us. We will never share your information.
+			</small>
+		</div>
+	</div>`)
+
 	return (<div className="container" css={css`
 		position: relative;
 		z-index: 1;

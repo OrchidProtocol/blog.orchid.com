@@ -21,6 +21,8 @@ Freedom and privacy are common rationales for this end-run around government int
 
 Each individual Internet user can make their own decision about these questions. But it's important to understand exactly what you're doing when you access TikTok or WeChat through a VPN. [Government surveillance is certainly real](https://en.wikipedia.org/wiki/List_of_government_mass_surveillance_projects), and great power rivalry has a long history of ensnaring people's ordinary, day-to-day activities. But the apps in question -- like so many digital behemoths around the world -- imperil privacy themselves through their data collection practices. And simply using a VPN won't keep you safe.
 
+[interstitial]
+
 **What TikTok and WeChat know about you**
 
 TikTok collects an enormous amount of information about its users, beyond that required to operate the service. It automatically logs your location, your IP address, and the type of device used to access the app, as well as browsing and search history and the content of messages exchanged on the platform. In addition, the app asks users for "opt-in" permission to collect additional information. This additional tracking includes your age, phone number, contacts, and payment information. Finally, TikTok uses powerful algorithms -- so powerful they have [been the subject of tense international negotiations](https://www.wsj.com/articles/tiktok-deal-talks-are-snarled-over-fate-of-apps-algorithms-11598995674) -- to tailor content and search results based on its users' habits and histories. The app uses the vast amounts of data it collects to curate the feeds it generates.
