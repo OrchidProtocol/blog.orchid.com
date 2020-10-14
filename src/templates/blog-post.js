@@ -24,7 +24,6 @@ export const BlogPostTemplate = ({
 	slug,
 	featuredimage,
 }) => {
-
 	content = content.replace(/\[interstitial\]/ig, `<div class="interstitial__container">
 		<div class="interstitial__image">
 			<img src="/img/WhisperBunny.png" width="800" height="954" />
@@ -35,12 +34,68 @@ export const BlogPostTemplate = ({
 				<input type="email" placeholder="Email address" />
 				<button>Subscribe</button>
 			</div>
+			<div class="interstitial__response"></div>
 			<small class="interstitial__disclaimer">
 				🔒 Your privacy is important to us. We will never share your information.
 			</small>
 		</div>
 	</div>`)
 
+
+
+	if (content.match(/interstitial__container/)) {
+		content += `<script type="text/javascript">
+		(() => {
+			const container = document.body.querySelector('.interstitial__container');
+			const input = container.querySelector('input');
+			const button = container.querySelector('button');
+			const response = container.querySelector('.interstitial__response');
+		
+			const validate = (value) => {
+				return /^[a-zA-Z0-9.!#$%&'*+/=?^_\`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(value)
+			}
+			const reset = () => {
+				input.disabled = false;
+				container.classList.remove('error');
+				container.classList.remove('success');
+				container.classList.remove('pending');
+				input.innerHTML = '&nbsp;';
+			}
+		
+			button.addEventListener('click', () => {
+				if (input.disabled) return;
+		
+				console.log(input.value, validate(input.value));
+				if (validate(input.value)) {
+					reset();
+					container.classList.add('pending');
+					input.disabled = true;
+		
+					const mailchimp_add = "https://ik396c7x0k.execute-api.us-west-2.amazonaws.com/default/mailchimp?email=";
+					const mailchimp_url = mailchimp_add + encodeURIComponent(input.value);
+					fetch(mailchimp_url)
+						.then(response => response.json())
+						.then((data) => {
+							reset();
+							console.log(data);
+							container.classList.add('success');
+							response.textContent = "Great! Now please check your email and confirm.";
+						})
+						.catch((error) => {
+							reset();
+							console.error(error);
+							container.classList.add('error');
+							response.textContent = "There was an error signing you up, please try again later.";
+						})
+				} else {
+					reset();
+					container.classList.add('error');
+					response.textContent = "Invalid email";
+				}
+			})
+		})()
+		</script>`;
+	}
 	return (<div className="container" css={css`
 		position: relative;
 		z-index: 1;
