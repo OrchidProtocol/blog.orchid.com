@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { css } from '@emotion/core'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
@@ -43,17 +43,23 @@ export const BlogPostTemplate = ({
 	</div>`)
 
 
+	// Similar to componentDidMount and componentDidUpdate:
+	useEffect(() => {
+		// Update the document title using the browser API
 
-	if (content.match(/interstitial__container/)) {
-		content += `<script type="text/javascript">
-		(() => {
+		if (content.match(/interstitial__container/)) {
 			const container = document.body.querySelector('.interstitial__container');
+			if (container.dataset.hasListener) {
+				return;
+			} else {
+				container.dataset.hasListener = true;
+			}
 			const input = container.querySelector('input');
 			const button = container.querySelector('button');
 			const response = container.querySelector('.interstitial__response');
-		
+
 			const validate = (value) => {
-				return /^[a-zA-Z0-9.!#$%&'*+/=?^_\`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(value)
+				return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(value)
 			}
 			const reset = () => {
 				input.disabled = false;
@@ -62,16 +68,16 @@ export const BlogPostTemplate = ({
 				container.classList.remove('pending');
 				input.innerHTML = '&nbsp;';
 			}
-		
+
 			button.addEventListener('click', () => {
 				if (input.disabled) return;
-		
+
 				console.log(input.value, validate(input.value));
 				if (validate(input.value)) {
 					reset();
 					container.classList.add('pending');
 					input.disabled = true;
-		
+
 					const mailchimp_add = "https://ik396c7x0k.execute-api.us-west-2.amazonaws.com/default/mailchimp?email=";
 					const mailchimp_url = mailchimp_add + encodeURIComponent(input.value);
 					fetch(mailchimp_url)
@@ -93,10 +99,10 @@ export const BlogPostTemplate = ({
 					container.classList.add('error');
 					response.textContent = "Invalid email";
 				}
-			})
-		})()
-		</script>`;
-	}
+			});
+		}
+	});
+
 	return (<div className="container" css={css`
 		position: relative;
 		z-index: 1;
