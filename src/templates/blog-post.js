@@ -36,7 +36,8 @@ export const BlogPostTemplate = ({
 			</div>
 			<div class="interstitial__response"></div>
 			<small class="interstitial__disclaimer">
-				🔒 Your privacy is important to us. We will never share your information.
+			<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#53696a;}</style></defs><g id="Layer_3" data-name="Layer 3"><path class="cls-1" d="M68,34.75h0V17.49c0-5-5.65-10.16-18-10.16S32.53,12.45,32.53,17.57V34.74A13.31,13.31,0,0,0,19.22,48.05V79.36A13.31,13.31,0,0,0,32.53,92.67H67.47A13.31,13.31,0,0,0,80.78,79.36V48.05A13,13,0,0,0,68,34.75ZM38.21,20.4c0-4.27,3.51-8.54,11.87-8.54s12.2,4.33,12.2,8.48v14.4H38.21ZM50,71.89a8.14,8.14,0,1,1,8.14-8.14A8.13,8.13,0,0,1,50,71.89Z"/></g></svg>
+				Your privacy is important to us. We will never share your information.
 			</small>
 		</div>
 	</div>`)

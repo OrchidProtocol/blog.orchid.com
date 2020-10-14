@@ -1466,6 +1466,11 @@ iframe {
 .interstitial__content small {
     font-size: 70%;
 }
+.interstitial__content svg {
+    display: inline;
+    width: 1rem;
+    height: auto;
+}
 .interstitial__image {
     width: 30%;
 }
