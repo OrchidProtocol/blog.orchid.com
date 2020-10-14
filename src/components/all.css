@@ -1453,6 +1453,7 @@ iframe {
 .interstitial__container {
     background: #F5F6F1;
     padding: 1rem;
+    margin-bottom: 1rem;
     display: flex;
 }
 
