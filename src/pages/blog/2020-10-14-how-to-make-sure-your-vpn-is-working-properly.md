@@ -21,7 +21,7 @@ But how can we be sure a VPN is actually protecting our data? Like any service, 
 
 There are a number of reasons why a VPN might leak. In general, higher quality, more reputable VPNs are less likely to experience this problem, but there is no true way to know without running a test. If you find a leak, immediate steps must be taken to rectify the problem. Below are some key facts about VPN leaks, how to test for them, and how to rectify them and ensure they don't happen in the future.
 
-How VPNs work, and why they leak
+**How VPNs work, and why they leak**
 
 VPNs route traffic through a separate, encrypted server, so web activity appears to travel to and from a different IP address than that of the user. From the point of view of an Internet Service Provider (ISP), identifiable traffic is initiated but appears to travel only to the VPN server. On the other end of the journey, the destination website sees visiting traffic as originating from the same encrypted server, rather than the user's actual IP address.
 
@@ -33,7 +33,7 @@ VPNs can leak in several different ways. These different types of leaks have dif
 
 People interested in minimizing the risk of VPN leaks of all sorts, and of maintaining the strongest privacy online, should read our guides to [staying private while working remotely](/tips-for-protecting-your-privacy-while-working-from-home/) and [maintaining privacy on a mobile device](/how-to-protect-your-privacy-on-a-mobile-phone/).
 
-IP leaks
+**IP leaks**
 
 An IP leak occurs when a VPN accidentally shares  a user's real IP address. Should such a leak occur, it poses a major problem to the user, since an IP address can be used to determine the real-world identity of anyone using the Internet. An IP leak means, fundamentally, you are no longer private: the websites you visit and services you use -- and the third parties with whom they share metadata -- can see who you are and where you're accessing the Internet from. This type of leak completely undermines online privacy.
 
@@ -47,7 +47,7 @@ There are also a number of sites that provide free IP leak tests. [Tenta](https:
 
 To minimize the risk of IP leaks, it's a good idea to use a VPN that offers a "kill switch" option. The term refers to a piece of code that monitors your IP address and, if it detects a change in activity, will automatically stop all Internet connectivity until the VPN is reactivated or you reset the network adapter. And of course, configuring multiple hops with Orchid further mitigates the risk of an IP leak, since traffic is routed through multiple VPN providers. Even if one leaks, the others can still protect your identity.
 
-DNS leaks
+**DNS leaks**
 
 The term DNS refers to the Domain Name Systems that regulate web traffic. Whereas IP leaks relate to vulnerabilities at the origin of web traffic, DNS leaks concern its destination. DNS servers convert web domains into numeric values that are used as IP addresses (e.g., 111.222.333.444). Almost all ISPs assign a DNS server to their users to identify and log the web domains their customers are accessing. When you use a VPN, the privacy solution routes your traffic through a different DNS server, making it harder for the ISP to log you or for destination websites to see who or where you are.
 
@@ -55,11 +55,11 @@ In effect, a DNS leak is when DNS requests -- which occur every time you access 
 
 As with IP leaks, DNS leaks usually are not the fault of the VPN itself. They can occur if an operating system, for instance, continues to access the default DNS server rather than the one assigned by the VPN. Unlike in the case of IP leaks, however, DNS leaks may not come with warning signs. Many services provide free DNS leak tests -- though it should be noted that in many of these cases, the test is offered by the same VPN that is being tested. For those who prefer to make the determination themselves, LiquidVPN, one of Orchid's bandwidth providers, also offers [a detailed guide](https://www.liquidvpn.com/ip-dns-browser-leak-test/) for identifying DNS leaks.
 
-WebRTC leaks
+**WebRTC leaks**
 
 Web Real-Time Communication, or WebRTC, is an open-source protocol that lets browsers establish real-time peer-to-peer connections with the websites you access. The protocol facilitates a great deal of web functionality; for example, it allows different users of a website to share a live audio/video feed without the need to download special software.
 
-However, WebRTC contains a vulnerability through which browsers can inadvertently leak their users' true IP addresses, even when using a VPN. The reason for this is that the special communications channels the browser establishes with the website may share information, including your IP address, outside the normal routes -- potentially bypassing the VPN's encrypted tunnel.
+However, WebRTC contains a vulnerability through which browsers can inadvertently leak their users' true IP addresses, even when using a VPN. The reason for this is that the special communications channels the browser establishes with the website may share information, **including your IP address**, outside the normal routes -- potentially bypassing the VPN's encrypted tunnel.
 
 Since a WebRTC leak is a form of IP leak, you can follow the steps outlined in that section to see if you have a problem. Use Google to find your true IP address with the VPN switched off, then try the query again with the VPN activated. If you see a different IP address the second time, you do not have a leak; if it's the same, you do.
 
@@ -67,7 +67,7 @@ The most straightforward way to stop WebRTC leaks is to disable WebRTC altogethe
 
 Fortunately for those who prefer to stay as protected as possible while still enjoying the benefits of the Internet, many of the leading VPN providers have developed fixes that mitigate the risk of a WebRTC leak. And while none of these is totally foolproof, by configuring multiple hops on Orchid, people can greatly reduce their risk of having their data leaked and explore the Internet freely and confidently.
 
-As always, knowledge and good habits are key
+**As always, knowledge and good habits are key**
 
 There is no perfect solution for online privacy, and there is no perfect protection against VPN leaks. But by arming ourselves with knowledge, and following the best privacy practices, we can go a long way toward mitigating some of the greatest risks to digital security. This is as true for VPN leaks as for any other aspect of privacy.
 
