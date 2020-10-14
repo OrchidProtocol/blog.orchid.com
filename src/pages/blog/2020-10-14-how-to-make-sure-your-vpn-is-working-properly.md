@@ -13,7 +13,7 @@ tags:
   - Decentralization
 ---
 
-Orchid is a decentralized VPN market designed to offer people the strongest digital privacy available. To do this, the platform brings together the services of the leading VPN providers and allows people to configure multiple "[hops](/what-is-a-hop/)" between them. This ensures that not even the individual providers have the full picture of users' web activity. Underlying this is a system of economic incentives, including [nanopayments](/introducing-nanopayments/), that ensures there is ample bandwidth on the network while making it difficult to trace users' financial information.
+Orchid is a decentralized VPN market designed to offer people the strongest digital privacy available. To do this, the platform brings together the services of the leading VPN providers and allows people to configure multiple "[hops](/what-is-a-hop/)" between them. This ensures that not even the individual providers have the full picture of users' web activity. Underlying this is a system of economic incentives, including [nanopayments](/introducing-nanopayments/).
 
 Orchid believes in the power of VPNs to help people maintain privacy online. We've written before on how best to maintain online privacy and how important the right tools and habits are to staying safe on today's Internet. VPNs are a key component of these strategies; they obfuscate web traffic so that it cannot be monitored by websites, Internet service providers, or hackers lurking on an unsecured network. When used in combination, VPNs become even more powerful, since the "puzzle" of a user's web traffic is divided into even more pieces.
 
@@ -45,7 +45,7 @@ If you're not sure, there is a quick way to see if your IP address is being leak
 
 There are also a number of sites that provide free IP leak tests. [Tenta](https://tenta.com/), one of Orchid's VPN partners, has [one of the best](https://tenta.com/test/).
 
-To minimize the risk of IP leaks, it's a good idea to use a VPN that offers a "kill switch" option. The term refers to a piece of code that monitors your IP address and, if it detects a change in activity, will automatically stop all Internet connectivity until the VPN is reactivated or you reset the network adapter. And of course, configuring multiple hops with Orchid further mitigates the risk of an IP leak, since traffic is routed through multiple VPN providers. Even if one leaks, the others can still protect your identity.
+To minimize the risk of IP leaks, it's a good idea to use a VPN that offers a "kill switch" option. The term refers to a piece of code that monitors your IP address and, if it detects a change in activity, will automatically stop all Internet connectivity until the VPN is reactivated or you reset the network adapter. Orchid has a kill switch built-in and always enabled. And of course, configuring multiple hops with Orchid further mitigates the risk of an IP leak, since traffic is routed through multiple VPN providers. Even if one leaks, the others can still protect your identity.
 
 **DNS leaks**
 
