@@ -85,6 +85,7 @@ export const BlogPostTemplate = ({
 						.then((data) => {
 							reset();
 							console.log(data);
+							input.value = "";
 							container.classList.add('success');
 							response.textContent = "Great! Now please check your email and confirm.";
 						})
