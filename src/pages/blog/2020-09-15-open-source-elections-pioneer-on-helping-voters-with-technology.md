@@ -19,6 +19,8 @@ Dr. Juan E. Gilbert, a professor at the University of Florida, can recall the di
 
 Motivated to fix such a kind of mess, Juan dismissed widespread skepticism about technology and set out to bring open source solutions to bear on election voting systems. Juan is the Andrew Banks Family Preeminence Endowed Professor and Chair of Computer & Information Science & Engineering Department, who leads the Human-Centered Research Lab. On the latest episode of [Follow the White Rabbit](https://www.orchid.com/podcast), he said he built, along with his students, "the only open-source election technology to be used in state, local and federal elections in the United States." That means citizens in the likes of New Hampshire and Ohio have been able to exercise their right to vote using technology that "gives security, accessibility, usability and benefits of cost," he added.
 
+[interstitial]
+
 > We have experiences of building technology that interfaces with people, so we understand the technology, we understand the culture and the policy around things and that's what helped us build the technology," Juan said.   
 
 The issue of voting systems is once again timely less than two months before Election Night 2020 determines if President Donald Trump will remain in the White House or be replaced by his Democrat rival Joe Biden. The specter of another disputed election and drawn-out decision process has emerged during the campaign, especially as Trump has questioned the reliability of mailed ballots compared with casting a vote in person at a polling booth. With Covid 19 still prevalent, more people are expected to avoid the voting centers than in previous elections.

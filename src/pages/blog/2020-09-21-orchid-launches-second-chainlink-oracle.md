@@ -27,6 +27,8 @@ Chainlink oracle networks are powered by an aggregation of numerous independent,
 
 > "We're excited to extend our collaboration with Orchid by helping them launch another Chainlink-powered decentralized oracle, one which empowers users with key off-chain data to enhance their user experience on the Orchid Network," states Daniel Kochis, Head of Chainlink Business Development. "Chainlink's decentralized architecture delivers highly accurate and manipulation resistant price data for pricing bandwidth, allowing users to trust that they are receiving the fair market price for bandwidth."
 
+[interstitial]
+
 **About Orchid**
 
 [Orchid](http://orchid.com) takes a new approach to digital privacy with the first peer-to-peer, incentivized privacy network. On the network, anyone can buy and sell bandwidth using the Orchid digital currency (OXT). Users can browse privately and access content without being limited by their geography. With its decentralized design, multi-hop architecture, and Open Source ethos, Orchid offers users unprecedented digital privacy in a trustless context.

@@ -49,6 +49,8 @@ Some basic steps can be taken in the settings of our phones themselves. The firs
 
 If apps must be installed, it's important to limit the things we give them access to: contacts or location, for example. Think about what the service really needs to perform its function; does a music streaming platform really need access to your contacts? Most services don't need to know a person's location even when not using the app, or to turn on voice commands. Only grant mobile app permissions if it's essential to the functionality of the app.
 
+[interstitial]
+
 **People can have stronger privacy without giving up mobile functionality**
 
 Beyond the privacy settings on our smartphones, there are tools people can use to strengthen and protect their privacy when they browse the Internet. Key among these privacy tools are VPNs, which route traffic through an encrypted, third-party server, obfuscating its path and making it much more difficult for third parties to identify the nature of web traffic or the identity of the user.

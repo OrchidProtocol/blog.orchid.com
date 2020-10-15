@@ -33,6 +33,8 @@ VPNs can leak in several different ways. These different types of leaks have dif
 
 People interested in minimizing the risk of VPN leaks of all sorts, and of maintaining the strongest privacy online, should read our guides to [staying private while working remotely](/tips-for-protecting-your-privacy-while-working-from-home/) and [maintaining privacy on a mobile device](/how-to-protect-your-privacy-on-a-mobile-phone/).
 
+[interstitial]
+
 **IP leaks**
 
 An IP leak occurs when a VPN accidentally shares  a user's real IP address. Should such a leak occur, it poses a major problem to the user, since an IP address can be used to determine the real-world identity of anyone using the Internet. An IP leak means, fundamentally, you are no longer private: the websites you visit and services you use -- and the third parties with whom they share metadata -- can see who you are and where you're accessing the Internet from. This type of leak completely undermines online privacy.

@@ -15,6 +15,8 @@ OXT, the Orchid digital asset, is now available on [Binance](https://www.binance
 
 Dr. Steven Waterhouse, Orchid's Co-Founder and CEO said: "Binance's decision to add OXT demonstrates the importance of online privacy for the millions of people who use the exchange. The listing is further proof of the strength of Orchid's decentralized VPN marketplace and its benefits for people using the Internet around the world."
 
+[interstitial]
+
 Orchid's unique VPN marketplace uses a robust system of incentives to match supply with demand and ensure ample bandwidth is available. Accounts are funded with OXT, which is then used to purchase VPN service on a pay-as-you-go basis. But while Orchid's digital currency is key to the functioning of the marketplace, individual users can [start using Orchid in seconds](/how-to-start-using-orchids-crypto-vpn-in-seconds/) using nothing more than an ordinary credit card. This innovation effectively masks the blockchain, giving users the benefits of decentralization while providing a seamless user experience.
 
 Binance has demonstrated [record-breaking growth and momentum](https://coinpedia.org/news/binance-fastest-profitable-unicorn/#:~:text=Binance%20is%20fastest%20profitable%20startup%20to%20achieve%20unicorn%20status%20in%20history,-By%20David%20Follow&text=Binance%20is%20now%20probably%20the,valuation%20of%20over%20%241%20billion.) since its founding in 2017. Its listing of OXT further expands Orchid's growing global presence.
