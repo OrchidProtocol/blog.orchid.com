@@ -1465,11 +1465,14 @@ iframe {
 }
 .interstitial__content small {
     font-size: 70%;
+    line-height: 1.4;
+    display: flex;
 }
 .interstitial__content svg {
     display: inline;
     width: 1rem;
     height: auto;
+    margin-top: -0.4rem;
 }
 .interstitial__image {
     width: 30%;
@@ -1541,6 +1544,7 @@ iframe {
         width: 40%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 0.5rem;
     }
 
     .interstitial__form {
