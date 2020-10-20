@@ -25,6 +25,8 @@ That's why it's crucial that parents make sure students always practice good pri
 
 You can read Orchid's full guide on maintaining privacy remotely to pick up more tips [here](/tips-for-protecting-your-privacy-while-working-from-home/).
 
+[interstitial]
+
 **Peripheral devices introduce new possibilities, and new dangers**
 
 But it's not just video conferencing and messaging that raise challenges for privacy in the context of remote learning. Increasingly, educators are making use not just of laptops but of many so-called peripheral devices -- tablets, smartphones, VR headsets. These tools open up possibilities for learning that did not exist just a few years ago. Students can now go on [virtual reality field trips](https://www.weareteachers.com/best-virtual-field-trips/) using VR headsets -- allowing them to canoe the Amazon, see famous works of art, or visit foreign countries all without leaving home.

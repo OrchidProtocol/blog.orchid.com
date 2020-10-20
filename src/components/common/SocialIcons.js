@@ -17,8 +17,8 @@ const SocialIcon = styled.li`
 const SocialIcons = (props) => {
     return (<>
         <SocialIcon className="social-button first">
-            <a rel="noopener noreferrer" href="https://medium.com/orchid-labs" target="_blank">
-                <img width="30" height="30" src='/img/icons/social-medium.svg' alt='Medium' />
+            <a rel="noopener noreferrer" href="https://www.reddit.com/r/orchid/" target="_blank">
+                <img width="30" height="30" src='/img/icons/reddit.svg' alt='Reddit' />
             </a>
         </SocialIcon>
         <SocialIcon className="social-button">

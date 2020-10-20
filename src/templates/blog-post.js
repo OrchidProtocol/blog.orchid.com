@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { css } from '@emotion/core'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
@@ -24,6 +24,90 @@ export const BlogPostTemplate = ({
 	slug,
 	featuredimage,
 }) => {
+	content = content.replace(/\[interstitial\]/ig, `<div class="interstitial__container">
+		<div class="interstitial__image">
+			<img src="/img/WhisperBunny.png" width="800" height="954" />
+		</div>
+		<div class="interstitial__content">
+			<b>Pssst! You can get privacy news delivered to your inbox.</b>
+			<div class="interstitial__form">
+				<input type="email" placeholder="Email address" />
+				<button>Subscribe</button>
+			</div>
+			<div class="interstitial__response"></div>
+			<small class="interstitial__disclaimer">
+				<div>
+					<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#53696a;}</style></defs><g id="Layer_3" data-name="Layer 3"><path class="cls-1" d="M68,34.75h0V17.49c0-5-5.65-10.16-18-10.16S32.53,12.45,32.53,17.57V34.74A13.31,13.31,0,0,0,19.22,48.05V79.36A13.31,13.31,0,0,0,32.53,92.67H67.47A13.31,13.31,0,0,0,80.78,79.36V48.05A13,13,0,0,0,68,34.75ZM38.21,20.4c0-4.27,3.51-8.54,11.87-8.54s12.2,4.33,12.2,8.48v14.4H38.21ZM50,71.89a8.14,8.14,0,1,1,8.14-8.14A8.13,8.13,0,0,1,50,71.89Z"/></g></svg>
+				</div>
+				<div>
+					Your privacy is important to us. We will never share your information.
+				</div>
+			</small>
+		</div>
+	</div>`)
+
+
+	// Similar to componentDidMount and componentDidUpdate:
+	useEffect(() => {
+		// Update the document title using the browser API
+
+		if (content.match(/interstitial__container/)) {
+			const container = document.body.querySelector('.interstitial__container');
+			if (container.dataset.hasListener) {
+				return;
+			} else {
+				container.dataset.hasListener = true;
+			}
+			const input = container.querySelector('input');
+			const button = container.querySelector('button');
+			const response = container.querySelector('.interstitial__response');
+
+			const validate = (value) => {
+				return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(value)
+			}
+			const reset = () => {
+				input.disabled = false;
+				container.classList.remove('error');
+				container.classList.remove('success');
+				container.classList.remove('pending');
+				input.innerHTML = '&nbsp;';
+			}
+
+			button.addEventListener('click', () => {
+				if (input.disabled) return;
+
+				console.log(input.value, validate(input.value));
+				if (validate(input.value)) {
+					reset();
+					container.classList.add('pending');
+					input.disabled = true;
+
+					const mailchimp_add = "https://ik396c7x0k.execute-api.us-west-2.amazonaws.com/default/mailchimp?email=";
+					const mailchimp_url = mailchimp_add + encodeURIComponent(input.value);
+					fetch(mailchimp_url)
+						.then(response => response.json())
+						.then((data) => {
+							reset();
+							console.log(data);
+							input.value = "";
+							container.classList.add('success');
+							response.textContent = "Great! Now please check your email and confirm.";
+						})
+						.catch((error) => {
+							reset();
+							console.error(error);
+							container.classList.add('error');
+							response.textContent = "There was an error signing you up, please try again later.";
+						})
+				} else {
+					reset();
+					container.classList.add('error');
+					response.textContent = "Invalid email";
+				}
+			});
+		}
+	});
+
 	return (<div className="container" css={css`
 		position: relative;
 		z-index: 1;

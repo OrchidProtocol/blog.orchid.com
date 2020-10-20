@@ -54,6 +54,8 @@ As the network grows we anticipate more providers coming online and staking more
 
 If you want to read the full Reddit AMA, you can find the [thread here](https://www.reddit.com/r/orchid/comments/ifrrzc/reddit_ama_with_orchid_ceo_steven_waterhouse_aug/). 
 
+[interstitial]
+
 ### Telegram Q&A
 
 A week later during the Telegram AMA, we had several great questions and discussions come up including the ones below.
