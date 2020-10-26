@@ -17,6 +17,8 @@ The United States is the birthplace of the Internet and [maintains tremendous le
 
 Here we take a detailed look at the various privacy laws and regulations in effect or under consideration across the United States.
 
+[interstitial]
+
 **The California Consumer Privacy Act (CCPA)**
 
 In the absence of any purpose-made privacy law at the federal level, guidance and clarity around the subject falls to the states, which have begun to spell out legal protections for people's online privacy. The first and most noteworthy of these is the [California Consumer Privacy Act](https://oag.ca.gov/privacy/ccpa) -- more commonly known as CCPA. The law -- which passed in 2018 and took effect at the start of 2020 -- is the first of its kind in the United States and, alongside the E.U.'s GDPR, one of the first globally. The rules, parameters, and concepts it lays out have, in addition to offering new data privacy protections for those in California and beyond, set out a framework for similar legislation in other parts of the country and the world.
