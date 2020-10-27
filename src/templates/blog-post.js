@@ -6,6 +6,7 @@ import Layout from '../components/common/Layout'
 import Tags from '../components/common/Tags'
 import url from 'url'
 
+import StickySidebar from '../components/common/Sticky';
 import ArticleMeta from '../components/common/meta/ArticleMeta';
 
 import { getCustomFormatedDate } from '../utils/date';
@@ -243,6 +244,7 @@ export const BlogPostTemplate = ({
 				</div>
 			</section>
 		</article>
+		<StickySidebar />
 	</div>
 	)
 }
