@@ -135,6 +135,11 @@ export const BlogPostTemplate = ({
 							margin-bottom: 1rem;
 							display: block;
 
+							@media (min-width: 1200px) {
+								@media (max-width: 1500px) {
+									margin-left: 0;
+								}
+							}
 							box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
 							border-radius: 20px;
 						`} src={featuredimage} alt={title} />
