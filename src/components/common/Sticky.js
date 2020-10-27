@@ -10,18 +10,27 @@ class StickySidebar extends React.Component {
 		this.myRef = React.createRef();
 
 		this.boundListener = this.scrollListener.bind(this);
+		this.boundResizeListener = this.resizeListener.bind(this);
 	}
 
 
 	componentDidMount() {
 		this.boundListener();
 		window.addEventListener('scroll', this.boundListener);
+		window.addEventListener('resize', this.boundResizeListener);
 	}
 	componentWillUnmount() {
 		window.removeEventListener('scroll', this.boundListener);
+		window.removeEventListener('resize', this.boundResizeListener);
 	}
 
-	scrollListener(e) {
+	resizeListener() {
+		this.myRef.current.style.left = "";
+		this.myRef.current.style.marginLeft = "";
+		this.myRef.current.classList.remove('fixed');
+	}
+
+	scrollListener() {
 		const rect = this.myRef.current.parentElement.getBoundingClientRect();
 
 		if (rect.top > 50) {
