@@ -46,6 +46,7 @@ class StickySidebar extends React.Component {
 				position: absolute;
 				top: 0;
 				left: 40%;
+				left: calc(20rem + 1%);
 				margin: 0 0 0 20rem;
 				width: 290px;
 
