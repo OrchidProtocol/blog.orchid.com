@@ -144,6 +144,12 @@ export const BlogPostTemplate = ({
 
 			<section css={css`
 				margin-top: 0;
+
+				@media (min-width: 1200px) {
+					@media (max-width: 1500px) {
+						margin-left: 0;
+					}
+				}
 			`} className="post-full-content">
 				<h1 css={css`
 					font-size: 1.75rem;

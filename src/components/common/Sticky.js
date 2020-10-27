@@ -21,7 +21,7 @@ class StickySidebar extends React.Component {
 		window.removeEventListener('scroll', this.boundListener);
 	}
 
-	scrollListener (e) {
+	scrollListener(e) {
 		const rect = this.myRef.current.parentElement.getBoundingClientRect();
 
 		if (rect.top > 50) {
@@ -41,15 +41,21 @@ class StickySidebar extends React.Component {
 			position: relative;
 			width: 320px;
 			max-width: 100%;
-			@media (min-width: 1500px) {
+
+			@media (min-width: 1200px) {
 				position: absolute;
 				top: 0;
-				left: 50%;
+				left: 40%;
 				margin: 0 0 0 20rem;
+				width: 290px;
+
 				&.fixed {
 					position: fixed;
 					top: 50px;
 				}
+			}
+			@media (min-width: 1500px) {
+				left: 50%;
 			}
 		`}>
 			<svg css={css`
