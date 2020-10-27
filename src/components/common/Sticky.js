@@ -25,9 +25,18 @@ class StickySidebar extends React.Component {
 		const rect = this.myRef.current.parentElement.getBoundingClientRect();
 
 		if (rect.top > 50) {
+			if (this.myRef.current.classList.contains('fixed')) {
+				this.myRef.current.style.left = "";
+				this.myRef.current.style.marginLeft = "";
+			}
 			this.myRef.current.classList.remove('fixed');
 		} else {
-			this.myRef.current.classList.add('fixed');
+			if (!this.myRef.current.classList.contains('fixed')) {
+				const rect2 = this.myRef.current.getBoundingClientRect();
+				this.myRef.current.style.marginLeft = "0px";
+				this.myRef.current.style.left = rect2.left + "px";
+				this.myRef.current.classList.add('fixed');
+			}
 		}
 	}
 
@@ -45,8 +54,7 @@ class StickySidebar extends React.Component {
 			@media (min-width: 1200px) {
 				position: absolute;
 				top: 0;
-				left: 40%;
-				left: calc(20rem + 1%);
+				left: 20rem;
 				margin: 0 0 0 20rem;
 				width: 290px;
 
