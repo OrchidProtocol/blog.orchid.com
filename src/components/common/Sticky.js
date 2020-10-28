@@ -3,9 +3,15 @@ import { Link } from 'gatsby'
 
 import { css } from '@emotion/core'
 
+const noJSLocation = 'no-js-blog';
+
 class StickySidebar extends React.Component {
 	constructor(props) {
 		super(props);
+
+		this.state = {
+			location: noJSLocation
+		};
 
 		this.myRef = React.createRef();
 
@@ -15,6 +21,9 @@ class StickySidebar extends React.Component {
 
 
 	componentDidMount() {
+		this.setState({
+			location: location.pathname.replace(/\//g, '')
+		})
 		this.boundListener();
 		window.addEventListener('scroll', this.boundListener);
 		window.addEventListener('resize', this.boundResizeListener);
@@ -133,7 +142,7 @@ class StickySidebar extends React.Component {
 			font-size: 99%;
 		`}>Download the app and join Orchid’s privacy network today!</span>
 
-			<a href="https://www.orchid.com/join">
+			<a href={`https://www.orchid.com/join?utm_medium=website&utm_source=web&utm_campaign=blog-post-sticky&utm_content=${encodeURIComponent(this.state.location)}`}>
 				<button css={css`
 				background-color: var(--color-primary);
 				color: white;
