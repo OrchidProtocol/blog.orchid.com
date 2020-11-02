@@ -6,6 +6,7 @@ import Layout from '../components/common/Layout'
 import Tags from '../components/common/Tags'
 import url from 'url'
 
+import StickySidebar from '../components/common/Sticky';
 import ArticleMeta from '../components/common/meta/ArticleMeta';
 
 import { getCustomFormatedDate } from '../utils/date';
@@ -134,6 +135,11 @@ export const BlogPostTemplate = ({
 							margin-bottom: 1rem;
 							display: block;
 
+							@media (min-width: 1200px) {
+								@media (max-width: 1500px) {
+									margin-left: 0;
+								}
+							}
 							box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
 							border-radius: 20px;
 						`} src={featuredimage} alt={title} />
@@ -143,6 +149,12 @@ export const BlogPostTemplate = ({
 
 			<section css={css`
 				margin-top: 0;
+
+				@media (min-width: 1200px) {
+					@media (max-width: 1500px) {
+						margin-left: 0;
+					}
+				}
 			`} className="post-full-content">
 				<h1 css={css`
 					font-size: 1.75rem;
@@ -243,6 +255,7 @@ export const BlogPostTemplate = ({
 				</div>
 			</section>
 		</article>
+		<StickySidebar />
 	</div>
 	)
 }
