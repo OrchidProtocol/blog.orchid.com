@@ -55,7 +55,7 @@ As mentioned already, it's important for crypto users to do their own due dilige
 
 Be very wary of VPNs that market themselves as "free." While it may seem tempting to go with a service that claims not to charge its users, remember that all businesses need to make money one way or another. If a VPN isn't charging its users directly, there's a good chance it's getting paid by third parties -- which raises concerns about logging. When it comes to privacy, you usually get what you pay for.
 
-It should be noted that [Tor](https://www.torproject.org/), which does not charge, is open about the fact that all bandwidth is donated. Tor's privacy is top-notch, but because of its lack of economic incentives, as already noted, it often suffers from slow speeds.
+*It should be noted that [Tor](https://www.torproject.org/), which does not charge, is open about the fact that all bandwidth is donated. Tor's privacy is top-notch, but because of its lack of economic incentives, as already noted, it often suffers from slow speeds.*
 
 Another non-negotiable element for a VPN is AES-256 "military grade" encryption. This level of encryption is now standard on most browsers, so any VPN that lacks it should not be trusted. Finally, always ensure that any VPN you choose has been independently audited by a third party, and has published the results.
 
