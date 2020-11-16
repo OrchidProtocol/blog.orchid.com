@@ -300,6 +300,58 @@ function Navbar({ customText }) {
                     </NavbarNavigation>
                 </div>
             </div>
+
+            <a href={
+                '//www.' + (() => {
+                    switch (process.env.GATSBY_TARGET_LANG) {
+                        default:
+                            return "";
+                        case "ko":
+                            return "ko.";
+                        case "ru":
+                            return "ru.";
+                        case "ja":
+                            return "ja.";
+                        case "zh":
+                            return "zh.";
+                        case "id":
+                            return "id.";
+                    }
+                })() + "orchid.com"
+            } css={css`
+                display: none;
+
+                @media screen and (min-width: 1201px) {
+                    display: block;
+
+                    &>button {
+                        font-size: 14px;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                    }
+                }
+            `}>
+                <button css={css`
+                    font-size: 14px;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    background: #5f45ba;
+                    color: #f4f6f1;
+                    transition-property: background,color,border,box-shadow;
+                    transition-duration: .2s;
+                    transition-timing-function: ease-out;
+                    padding: .35em 1em;
+                    box-sizing: border-box;
+                    border-radius: 100vmax;
+                    box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 0 3px rgba(0,0,0,.1);
+                    border: 0;
+                    cursor: pointer;
+                    font: inherit;
+                    line-height: inherit;
+                `}>
+                    Download
+                </button>
+            </a>
         </Header>
     </Container>
 }
