@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: data-creep
 title: '"Data Creep" and the ever-expanding universe of targeted ads'
-date: 1605711600000
+date: 1605715200000
 description: "You’re not imagining it. Advertisers can now show us what we want before we know we want it."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_DataCreep.jpg
