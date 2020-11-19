@@ -8,6 +8,7 @@ import url from 'url'
 
 import StickySidebar from '../components/common/Sticky';
 import ArticleMeta from '../components/common/meta/ArticleMeta';
+import TinyPostCard from '../components/common/TinyPostCard';
 
 import { getCustomFormatedDate } from '../utils/date';
 
@@ -20,6 +21,7 @@ export const BlogPostTemplate = ({
 	content,
 	tags,
 	title,
+	relatedPosts,
 	helmet,
 	date,
 	slug,
@@ -253,6 +255,26 @@ export const BlogPostTemplate = ({
 						</a>
 					</div>
 				</div>
+
+				<div css={css`
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					margin: var(--margin) 0;
+				`}>
+					<div css={css`
+						width: 100%;
+						color: var(--color-primary);
+						@media (max-width: 960px) {
+							text-align: center;
+						}
+					`}>
+						<h2 css={css`color: var(--color-primary);`}>
+							Keep Reading
+						</h2>
+					</div>
+					{relatedPosts}
+				</div>
 			</section>
 		</article>
 		<StickySidebar />
@@ -269,7 +291,70 @@ BlogPostTemplate.propTypes = {
 }
 
 const BlogPost = (props) => {
-	const { markdownRemark: post } = props.data
+	const { markdownRemark: post, allMarkdownRemark: otherPosts } = props.data;
+
+	const relatedPosts = [];
+	const somewhatRelatedPosts = [];
+	const unrelatedPosts = [];
+	try {
+		for (let index = otherPosts.edges.length - 1; index >= 0; index--) {
+			const posty = otherPosts.edges[index].node;
+
+			if (posty.frontmatter.url === post.frontmatter.url) {
+				otherPosts.edges.splice(index, 1);
+			} else {
+				let relatedness = 0;
+				for (let o = 0; o < post.frontmatter.tags.length; o++) {
+					const tag = post.frontmatter.tags[o];
+					if (posty.frontmatter.tags.indexOf(tag) >= 0) {
+						relatedness++;
+					}
+				}
+
+				switch (relatedness) {
+					case 1:
+						somewhatRelatedPosts.push(posty);
+						break;
+					case 0:
+						unrelatedPosts.push(posty);
+						break;
+					default:
+						relatedPosts.push(posty);
+						break;
+				}
+			}
+		}
+
+		console.log('This post: ', post.frontmatter.tags);
+		console.log('related posts: ');
+		for (let index = 0; index < relatedPosts.length; index++) {
+			const element = relatedPosts[index];
+			console.log(element.frontmatter.tags, element.frontmatter.url);
+		}
+
+	} catch (e) {
+		console.error(e)
+	}
+
+	if (somewhatRelatedPosts.length < 3) {
+		for (let index = 0; index < Math.min(3, unrelatedPosts.length); index++) {
+			const element = unrelatedPosts[index];
+			somewhatRelatedPosts.push(element);
+		}
+	}
+	if (relatedPosts.length < 3) {
+		for (let index = 0; index < Math.min(3, somewhatRelatedPosts.length); index++) {
+			const element = somewhatRelatedPosts[index];
+			relatedPosts.push(element);
+		}
+	}
+
+	const relatedPostsElements = [];
+	for (let index = 0; index < Math.min(3, relatedPosts.length); index++) {
+		const post = relatedPosts[index];
+		relatedPostsElements.push(<TinyPostCard post={post} />)
+	}
+
 
 	let content = post.html,
 		title = post.frontmatter.title,
@@ -309,6 +394,7 @@ const BlogPost = (props) => {
 				slug={post.frontmatter.url}
 				featuredimage={post.frontmatter.featuredimage}
 				description={description}
+				relatedPosts={relatedPostsElements}
 				helmet={
 					<ArticleMeta
 						data={post.frontmatter}
@@ -349,7 +435,7 @@ BlogPost.propTypes = {
 export default BlogPost
 
 export const staticQuery = graphql`
-	query BlogPostByID($id: String!) {
+	query BlogPostByID($id: String!, $buildTimestampUTC: Float) {
 		markdownRemark(id: { eq: $id }) {
 			id
 			html
@@ -394,6 +480,64 @@ export const staticQuery = graphql`
 				body_zh_html
 				body_id_html
 				body_ru_html
+			}
+		}
+		
+		allMarkdownRemark(
+			limit: 150
+			sort: { fields: [frontmatter___date], order: DESC }
+			filter: { 
+				frontmatter: { 
+					public: { eq: true },
+					date: { lt: $buildTimestampUTC }
+				} 
+			}
+		) {
+			edges {
+				node {
+					frontmatter {
+						date
+						featuredimage {
+							publicURL
+						}
+						featuredimage_ja {
+							publicURL
+						}
+						featuredimage_ko {
+							publicURL
+						}
+						featuredimage_zh {
+							publicURL
+						}
+						featuredimage_id {
+							publicURL
+						}
+						featuredimage_ru {
+							publicURL
+						}
+						title
+						title_ja
+						title_ko
+						title_zh
+						title_id
+						title_ru
+						description
+						description_ja
+						description_ko
+						description_zh
+						description_id
+						description_ru
+						url
+						tags
+					}
+					fields {
+						body_ja_html
+						body_ko_html
+						body_zh_html
+						body_id_html
+						body_ru_html
+					}
+				}
 			}
 		}
 	}

@@ -34,7 +34,7 @@ const FeaturedIndicator = <div css={css`
 
 //<Link to={url}>
 
-const PostCard = ({ post }) => {
+const TonyPostCard = ({ post }) => {
     const url = `/${post.frontmatter.url}/`
     
 	let title = post.frontmatter.title,
@@ -58,9 +58,10 @@ const PostCard = ({ post }) => {
 
     return (
         <div to={url} css={css`
-            padding-bottom: var(--margin);
-            margin-bottom: var(--margin);
+            padding: var(--margin-quarter);
+            margin-bottom: var(--margin-quarter);
             display: block;
+            max-width: 12rem;
         `}>
             <header css={css`
                 display: block;
@@ -78,32 +79,33 @@ const PostCard = ({ post }) => {
             <div className="everything-but-image">
                 <div css={css`
                     font-weight: var(--font-bold);
-                    margin: var(--margin-half) 0;
+                    margin-top: var(--margin-quarter);
+                    font-size: 0.6rem;
                 `}>
                     {getCustomFormatedDate(post.frontmatter.date)}
                 </div>
 
-                <Tags tags={post.frontmatter.tags} linkTags={true} />
+                <div css={css`font-size: 0.6rem;`}>
+                    <Tags tags={post.frontmatter.tags} linkTags={true} />
+                </div>
 
                 <div css={css`
-                        margin: var(--margin-half) 0;
                         display: flex;
                         align-items: center;
                     `}>
                     <Link to={url}>
                         {post.frontmatter.featuredpost && FeaturedIndicator}
-                        <h2 css={css`
+                        <h4 css={css`
                                 display: inline;
                                 vertical-align: middle;
-                            `}>{title}</h2>
+                                font-size: 16px;
+                            `}>{title}</h4>
                     </Link>
                 </div>
-
-                <section className="post-card-excerpt"><Link to={url} css={css`&:hover{text-decoration:none;}`}>{description}</Link></section>
             </div>
         </div>
     )
 }
 
 
-export default PostCard
+export default TonyPostCard
