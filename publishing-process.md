@@ -14,7 +14,7 @@ templateKey: blog-post
 public: true
 url: the-post-slug-goes-here
 title: "The post title goes here."
-date: 2020-4-8T16:46:36.651Z
+date: 1509554856651
 description: "The post description goes here."
 featuredpost: false
 featuredimage: /img/uploads/orchid-logo-text.jpg
@@ -27,16 +27,29 @@ tags:
 This the post content.
 ```
 
-This template will create a post at `https://blog.orchid.com/the-post-slug-goes-here/`, with a published date of `April 4th, 2020`. Make sure you update the `date` field to the desired publishing date.
+This template will create a post at `https://blog.orchid.com/the-post-slug-goes-here/`. Make sure you update the `date` field to the desired publishing date.
 
-If the `public` field is set to `false`, the post will not be rendered out.
+If the `public` field is set to `false`, the post will not be rendered.
+
+Helper script for generating the post slug: 
+```js
+'Earn Orchid’s OXT on CoinMarketCap'.toLowerCase().replace(/[^a-zA-Z\d\s:]/g,'').replace(/ /ig, '-')
+```
+
+Helper script for generating the post date: 
+```js
+new Date('Nov 24 2020 8:00:00 GMT-0600 (Central Standard Time)').getTime();
+```
+
+Generate markdown from google doc text: [Paste To Markdown](https://euangoddard.github.io/clipboard2markdown/)
+
 
 &nbsp;
 
 ### Featured images
 To add a new featured image to use in a post, copy the image file into `/static/img/uploads`. If your file was named `/static/img/uploads/orchid-logo-text.jpg`, then the value you put in the `featuredimage` field should be `/img/uploads/orchid-logo-text.jpg`.
 
-Make sure that the resulting image is under 500KB, I usually aim for 256KB or lower, with a resolution of roughly 1920x1080. Please note that certain types of illustrations can be compressed enough as PNG files without having to convert them to JPG files.
+Make sure that the resulting image is under 500KB, I usually aim for 150KB or lower, with a resolution of about 1200x720. Please note that certain types of illustrations can be compressed enough as PNG files without having to convert them to JPG files.
 
 If you don't have access to a featured image for the blog post yet, `/img/uploads/orchid-logo-text.jpg` is a good placeholder.
 
@@ -62,5 +75,3 @@ To add an image to your post, just place the compressed image file inside of the
 
 ## Verifying before pushing 
 In order to test that your post has been correctly formatted, make sure to run `npm run build` followed by `npm run serve` and visit `localhost:8000` to make sure everything looks correct.
-
-`npm run build:light` will be much faster after the site has been built once, but you might run into build errors relating to the gatsby/sharp dependency not preparing images correctly in certain circumstances.
