@@ -20,6 +20,8 @@ According to CoinMarketCap, the idea behind the campaign is to incentivize peopl
 
 Orchid's unique VPN marketplace uses a robust system of incentives to match supply with demand and ensure ample bandwidth is available. Accounts are funded with OXT, which is then used to purchase VPN service on a pay-as-you-go basis. But while Orchid's digital currency is key to the functioning of the marketplace, individual users can start using Orchid in seconds using nothing more than an ordinary credit card. This innovation effectively masks the blockchain, giving users the benefits of decentralization while providing a seamless user experience.
 
+> "We are excited to be partnering with Orchid to bring this groundbreaking crypto-powered VPN to more people," said Batuhan Dasgin, Head of Business Development at CoinMarketCap. "Through this Earn Campaign we can educate users on the importance of practicing good online privacy and on the ways Orchid, powered by OXT, helps make the Internet safer."
+
 CoinMarketCap is the world's most-referenced price-tracking website for cryptoassets with a mission to empower retail users with unbiased, high quality and accurate information for drawing their own informed conclusions.
 
 [Download the Orchid app](https://www.orchid.com/download)  to start exploring the Internet.
