@@ -12,7 +12,7 @@ tags:
   - Company Updates
   - Decentralization
 ---
-We are thrilled to announce that the community will soon be able to earn the Orchid digital asset, OXT, through CoinMarketCap's [Earn Campaign](https://coinmarketcap.com/earn/). Orchid has partnered with CoinMarketCap -- the leading provider of real-time market data on digital assets -- as part of its "Learn Crypto, Earn Crypto" program. 
+We are thrilled to announce that the community can now earn the Orchid digital asset, OXT, through CoinMarketCap's [Earn Campaign](https://coinmarketcap.com/earn/). Orchid has partnered with CoinMarketCap -- the leading provider of real-time market data on digital assets -- as part of its "Learn Crypto, Earn Crypto" program. 
 
 According to CoinMarketCap, the idea behind the campaign is to incentivize people to educate themselves about certain crypto assets and decentralized applications. The program follows an earlier OXT campaign on Coinbase. Customers on the largest U.S. exchange earned OXT simply by learning about the token and taking a few quizzes.
 
