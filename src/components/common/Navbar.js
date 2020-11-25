@@ -317,7 +317,7 @@ function Navbar({ customText }) {
                         case "id":
                             return "id.";
                     }
-                })() + "orchid.com"
+                })() + "orchid.com/download"
             } css={css`
                 display: none;
 
