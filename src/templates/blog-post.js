@@ -267,7 +267,7 @@ export const BlogPostTemplate = ({
 							text-align: center;
 						}
 					`}>
-						<h2 css={css`color: var(--color-primary);`}>
+						<h2 css={css`color: var(--color-primary); margin-bottom: var(--margin-half);`}>
 							Keep Reading
 						</h2>
 					</div>
