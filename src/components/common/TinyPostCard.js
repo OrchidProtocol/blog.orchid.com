@@ -17,7 +17,7 @@ const FeaturedIndicator = <div css={css`
     font-size: 75%;
 `}>
     {
-        (()=>{
+        (() => {
             switch (process.env.GATSBY_TARGET_LANG) {
                 default:
                     return "Featured";
@@ -36,8 +36,8 @@ const FeaturedIndicator = <div css={css`
 
 const TonyPostCard = ({ post }) => {
     const url = `/${post.frontmatter.url}/`
-    
-	let title = post.frontmatter.title,
+
+    let title = post.frontmatter.title,
         description = post.frontmatter.description;
 
     if (process.env.GATSBY_TARGET_LANG) {
@@ -78,20 +78,9 @@ const TonyPostCard = ({ post }) => {
             </header>
             <div className="everything-but-image">
                 <div css={css`
-                    font-weight: var(--font-bold);
-                    margin-top: var(--margin-quarter);
-                    font-size: 0.6rem;
-                `}>
-                    {getCustomFormatedDate(post.frontmatter.date)}
-                </div>
-
-                <div css={css`font-size: 0.6rem;`}>
-                    <Tags tags={post.frontmatter.tags} linkTags={true} />
-                </div>
-
-                <div css={css`
                         display: flex;
                         align-items: center;
+                        margin-top: var(--margin-quarter);
                     `}>
                     <Link to={url}>
                         {post.frontmatter.featuredpost && FeaturedIndicator}
@@ -101,6 +90,13 @@ const TonyPostCard = ({ post }) => {
                                 font-size: 16px;
                             `}>{title}</h4>
                     </Link>
+                </div>
+
+                <div css={css`
+                    font-weight: var(--font-bold);
+                    font-size: 0.6rem;
+                `}>
+                    {getCustomFormatedDate(post.frontmatter.date)}
                 </div>
             </div>
         </div>
