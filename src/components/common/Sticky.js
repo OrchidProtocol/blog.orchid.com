@@ -22,7 +22,7 @@ class StickySidebar extends React.Component {
 
 	componentDidMount() {
 		this.setState({
-			location: location.pathname.replace(/\//g, '')
+			location: window.location.pathname.replace(/\//g, '')
 		})
 		this.boundListener();
 		window.addEventListener('scroll', this.boundListener);
