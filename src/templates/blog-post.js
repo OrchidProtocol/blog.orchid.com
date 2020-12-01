@@ -79,7 +79,6 @@ export const BlogPostTemplate = ({
 			button.addEventListener('click', () => {
 				if (input.disabled) return;
 
-				console.log(input.value, validate(input.value));
 				if (validate(input.value)) {
 					reset();
 					container.classList.add('pending');
@@ -91,7 +90,6 @@ export const BlogPostTemplate = ({
 						.then(response => response.json())
 						.then((data) => {
 							reset();
-							console.log(data);
 							input.value = "";
 							container.classList.add('success');
 							response.textContent = "Great! Now please check your email and confirm.";
@@ -324,14 +322,6 @@ const BlogPost = (props) => {
 				}
 			}
 		}
-
-		console.log('This post: ', post.frontmatter.tags);
-		console.log('related posts: ');
-		for (let index = 0; index < relatedPosts.length; index++) {
-			const element = relatedPosts[index];
-			console.log(element.frontmatter.tags, element.frontmatter.url);
-		}
-
 	} catch (e) {
 		console.error(e)
 	}
@@ -352,7 +342,7 @@ const BlogPost = (props) => {
 	const relatedPostsElements = [];
 	for (let index = 0; index < Math.min(3, relatedPosts.length); index++) {
 		const post = relatedPosts[index];
-		relatedPostsElements.push(<TinyPostCard post={post} />)
+		relatedPostsElements.push(<TinyPostCard key={index} post={post} />)
 	}
 
 
