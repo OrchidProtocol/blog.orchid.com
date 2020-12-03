@@ -60,7 +60,7 @@ const TinyPostCard = ({ post }) => {
         <div to={url} css={css`
             padding: var(--margin-quarter);
             margin: var(--margin-quarter);
-            max-width: 12rem;
+            max-width: 14rem;
             background: #ffffff;
             box-shadow: 0 0 var(--margin-quarter) rgba(0,0,0,.1);
             display: flex;
@@ -93,7 +93,7 @@ const TinyPostCard = ({ post }) => {
                         {post.frontmatter.featuredpost && FeaturedIndicator}
                         <h4 css={css`
                             font-size: 16px;
-                            margin-bottom: var(--margin-half);
+                            margin-bottom: var(--margin-quarter);
                         `}>{title}</h4>
                     </Link>
                 </div>

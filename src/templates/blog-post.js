@@ -110,15 +110,15 @@ export const BlogPostTemplate = ({
 	});
 
 	return (
-	<>
-		<div className="container" css={css`
+		<>
+			<div className="container" css={css`
 			position: relative;
 			z-index: 1;
 		`}>
-			<article className="content">
-				{helmet || ' '}
+				<article className="content">
+					{helmet || ' '}
 
-				<figure css={css`
+					<figure css={css`
 						margin: 0;
 						width: 100%;
 						height: auto;
@@ -127,8 +127,8 @@ export const BlogPostTemplate = ({
 						-o-object-position: center;
 						object-position: center;
 					`}>
-					{featuredimage ?
-						<img css={css`
+						{featuredimage ?
+							<img css={css`
 								max-width: 720px;
 								width: 100%;
 								height: auto;
@@ -145,11 +145,11 @@ export const BlogPostTemplate = ({
 								box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
 								border-radius: 20px;
 							`} src={featuredimage} alt={title} />
-						: <></>}
+							: <></>}
 
-				</figure>
+					</figure>
 
-				<section css={css`
+					<section css={css`
 					margin-top: 0;
 					padding: 1rem;
 					box-sizing: content-box;
@@ -160,14 +160,14 @@ export const BlogPostTemplate = ({
 						}
 					}
 				`} className="post-full-content">
-					<h1 css={css`
+						<h1 css={css`
 						font-size: 1.75rem;
 						@media (min-width: var(--mobile-breakpoint)) {
 							font-size: 52px;
 						}
 						margin-bottom: 0;
 					`}>{title}</h1>
-					<span css={css`
+						<span css={css`
 						display: inline-block;
 						background-color: var(--color-primary);
 						border-radius: 2px;
@@ -176,12 +176,12 @@ export const BlogPostTemplate = ({
 						color: white;
 					`}>{getCustomFormatedDate(date)}</span>
 
-					<br />
-					<br />
+						<br />
+						<br />
 
-					{/* The main post content */}
-					<section
-						css={css`
+						{/* The main post content */}
+						<section
+							css={css`
 									a {
 										text-decoration: underline !important;
 									}
@@ -194,31 +194,31 @@ export const BlogPostTemplate = ({
 										margin-right: auto;
 									}
 								`}
-						className="content-body load-external-scripts"
-						dangerouslySetInnerHTML={{ __html: content }}
-					></section>
-					{process.env.GATSBY_TARGET_LANG === 'en' ? <section css={css`
+							className="content-body load-external-scripts"
+							dangerouslySetInnerHTML={{ __html: content }}
+						></section>
+						{process.env.GATSBY_TARGET_LANG === 'en' ? <section css={css`
 							a {
 								text-decoration: underline !important;
 							}
 						`}>
-						<hr />
-						<i>
-							If you enjoyed this blog, <a href="https://www.orchid.com/newsletter-signup">subscribe here</a> for privacy news, commentary, and product updates from Orchid.
+							<hr />
+							<i>
+								If you enjoyed this blog, <a href="https://www.orchid.com/newsletter-signup">subscribe here</a> for privacy news, commentary, and product updates from Orchid.
 						</i>
-					</section> : ''}
+						</section> : ''}
 
 
-					<div css={css`
+						<div css={css`
 							margin-top: var(--margin);
 							@media (min-width: 719px) {
 								display: flex;
 								justify-content: space-between;
 							}
 						`}>
-						<Tags tags={tags} linkTags={true} />
+							<Tags tags={tags} linkTags={true} />
 
-						<div css={css`
+							<div css={css`
 								margin-top: var(--margin-quarter);
 								@media (min-width: 719px) {
 									margin-top: 0;
@@ -229,44 +229,41 @@ export const BlogPostTemplate = ({
 									margin-left: var(--margin-half);
 								}
 							`}>
-							<a target="_blank" rel="noopener noreferrer"
-								href={`https://twitter.com/intent/tweet?text=${encodeURIComponent("\"" + title + "\" by @OrchidProtocol https://blog.orchid.com/" + slug + "/")} `}>
-								<FontAwesomeIcon css={css`
+								<a target="_blank" rel="noopener noreferrer"
+									href={`https://twitter.com/intent/tweet?text=${encodeURIComponent("\"" + title + "\" by @OrchidProtocol https://blog.orchid.com/" + slug + "/")} `}>
+									<FontAwesomeIcon css={css`
 										width: var(--social-icon-size) !important;
 										height: auto;
 										color: var(--color-link);
 									`} icon={faTwitter} />
-							</a>
+								</a>
 
-							<a target="_blank" rel="noopener noreferrer"
-								href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent("https://blog.orchid.com/" + slug + "/")} `}>
-								<FontAwesomeIcon css={css`
+								<a target="_blank" rel="noopener noreferrer"
+									href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent("https://blog.orchid.com/" + slug + "/")} `}>
+									<FontAwesomeIcon css={css`
 										width: var(--social-icon-size) !important;
 										height: auto;
 										color: var(--color-link);
 									`} icon={faFacebookSquare} />
-							</a>
+								</a>
 
-							<a target="_blank" rel="noopener noreferrer"
-								href={`https://www.linkedin.com/shareArticle?url=${encodeURIComponent("https://blog.orchid.com/" + slug + "/")}`}>
-								<FontAwesomeIcon css={css`
+								<a target="_blank" rel="noopener noreferrer"
+									href={`https://www.linkedin.com/shareArticle?url=${encodeURIComponent("https://blog.orchid.com/" + slug + "/")}`}>
+									<FontAwesomeIcon css={css`
 										width: var(--social-icon-size) !important;
 										height: auto;
 										color: var(--color-link);
 									`} icon={faLinkedin} />
-							</a>
+								</a>
+							</div>
 						</div>
-					</div>
-				</section>
-			</article>
+					</section>
+				</article>
 
-			<StickySidebar />
-		</div>
-		
-		<div css={css`
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
+				<StickySidebar />
+			</div>
+
+			<div css={css`
 				margin: var(--margin) 0 0 0;
 				padding: var(--margin) 0;
 				background-color: var(--color-lavender);
@@ -294,7 +291,8 @@ export const BlogPostTemplate = ({
 					top: 100%;
 				}
 				`}>
-			<h2 css={css`
+
+				<h2 css={css`
 				width: 100%;
 				display: block;
 				text-align: center;
@@ -304,11 +302,17 @@ export const BlogPostTemplate = ({
 				@media (min-width: 870px) {
 					font-size: 40px;
 				}`}>
-				Keep Reading
-			</h2>
-			{relatedPosts}
-		</div>
-	</>
+					Keep Reading
+				</h2>
+				<div css={css`
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;`}>
+						
+					{relatedPosts}
+				</div>
+			</div>
+		</>
 	)
 }
 
