@@ -34,7 +34,7 @@ const FeaturedIndicator = <div css={css`
 
 //<Link to={url}>
 
-const TonyPostCard = ({ post }) => {
+const TinyPostCard = ({ post }) => {
     const url = `/${post.frontmatter.url}/`
 
     let title = post.frontmatter.title,
@@ -59,9 +59,12 @@ const TonyPostCard = ({ post }) => {
     return (
         <div to={url} css={css`
             padding: var(--margin-quarter);
-            margin-bottom: var(--margin-quarter);
-            display: block;
+            margin: var(--margin-quarter);
             max-width: 12rem;
+            background: #ffffff;
+            box-shadow: 0 0 var(--margin-quarter) rgba(0,0,0,.1);
+            display: flex;
+            flex-direction: column;
         `}>
             <header css={css`
                 display: block;
@@ -70,13 +73,17 @@ const TonyPostCard = ({ post }) => {
                     <Link to={url}><div css={css`
                         padding: 30% 50%;
                         background: var(--color-secondary) no-repeat center center;
-                        box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
                         border-radius: 20px;
                         background-image: url(${featuredimage.publicURL});
                         background-size: cover;
                     `}></div></Link>}
             </header>
-            <div className="everything-but-image">
+            <div className="everything-but-image" css={css`
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            `}>
                 <div css={css`
                         display: flex;
                         align-items: center;
@@ -85,16 +92,14 @@ const TonyPostCard = ({ post }) => {
                     <Link to={url}>
                         {post.frontmatter.featuredpost && FeaturedIndicator}
                         <h4 css={css`
-                                display: inline;
-                                vertical-align: middle;
-                                font-size: 16px;
-                            `}>{title}</h4>
+                            font-size: 16px;
+                            margin-bottom: var(--margin-half);
+                        `}>{title}</h4>
                     </Link>
                 </div>
 
                 <div css={css`
-                    font-weight: var(--font-bold);
-                    font-size: 0.6rem;
+                    font-size: 0.65rem;
                 `}>
                     {getCustomFormatedDate(post.frontmatter.date)}
                 </div>
@@ -104,4 +109,4 @@ const TonyPostCard = ({ post }) => {
 }
 
 
-export default TonyPostCard
+export default TinyPostCard
