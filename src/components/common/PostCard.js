@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import Tags from './Tags'
 
 import { getCustomFormatedDate } from '../../utils/date';
+import { generateDescription } from '../../utils/generateDescription';
 
 const FeaturedIndicator = <div css={css`
     background: var(--color-primary);
@@ -37,6 +38,8 @@ const FeaturedIndicator = <div css={css`
 const PostCard = ({ post, number }) => {
     const url = `/${post.frontmatter.url}/`
     
+    generateDescription(post);
+
 	let title = post.frontmatter.title,
         description = post.frontmatter.description;
 

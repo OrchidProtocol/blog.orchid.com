@@ -10,6 +10,7 @@ import StickySidebar from '../components/common/Sticky';
 import ArticleMeta from '../components/common/meta/ArticleMeta';
 
 import { getCustomFormatedDate } from '../utils/date';
+import { generateDescription } from '../utils/generateDescription';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin, faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
@@ -270,6 +271,8 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = (props) => {
 	const { markdownRemark: post } = props.data
+
+	generateDescription(post);
 
 	let content = post.html,
 		title = post.frontmatter.title,

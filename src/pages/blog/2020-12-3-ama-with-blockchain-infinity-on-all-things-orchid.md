@@ -4,7 +4,7 @@ public: true
 url: ama-with-blockchain-infinity-on-all-things-orchid
 title: "AMA with Blockchain Infinity on All Things Orchid"
 date: 1607004000000
-description: ""
+description: "Orchid recently joined the Blockchain Infinity group for an Ask-Me-Anything session to satisfy the curiosity from its more than 10,000 member community for information about the first incentivized, peer-to-peer privacy network."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_AMArecapBI.jpg
 tags:

@@ -382,7 +382,8 @@ export const BlogRollQuery = graphql`
             ) {
             edges {
                 node {
-                    excerpt(pruneLength: 400)
+                    excerpt(pruneLength: 300)
+                    html
                     id
                     fields {
                         slug
@@ -442,7 +443,7 @@ export const BlogRollQuery = graphql`
             ) {
             edges {
                 node {
-                    excerpt(pruneLength: 400)
+                    excerpt(pruneLength: 300)
                     id
                     fields {
                         slug
