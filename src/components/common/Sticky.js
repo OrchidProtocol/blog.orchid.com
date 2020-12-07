@@ -22,7 +22,7 @@ class StickySidebar extends React.Component {
 
 	componentDidMount() {
 		this.setState({
-			location: location.pathname.replace(/\//g, '')
+			location: window.location.pathname.replace(/\//g, '')
 		})
 		this.boundListener();
 		window.addEventListener('scroll', this.boundListener);
@@ -42,16 +42,30 @@ class StickySidebar extends React.Component {
 	scrollListener() {
 		if (window.innerWidth < 1200) return;
 		const rect = this.myRef.current.parentElement.getBoundingClientRect();
+		const myRect = this.myRef.current.getBoundingClientRect();
+		console.log(rect.bottom, myRect.bottom);
 
 		if (rect.top > 50) {
 			if (this.myRef.current.classList.contains('fixed')) {
 				this.myRef.current.style.left = "";
+				this.myRef.current.style.top = "";
+				this.myRef.current.style.bottom = "";
 				this.myRef.current.style.marginLeft = "";
 			}
 			this.myRef.current.classList.remove('fixed');
+		} else if (rect.bottom <= myRect.bottom && myRect.top <= 50) {
+			if (this.myRef.current.classList.contains('fixed')) {
+				this.myRef.current.style.left = "";
+				this.myRef.current.style.marginLeft = "";
+				this.myRef.current.style.top = "unset";
+				this.myRef.current.style.bottom = "0";
+				this.myRef.current.classList.remove('fixed');
+			}
 		} else {
 			if (!this.myRef.current.classList.contains('fixed')) {
 				const rect2 = this.myRef.current.getBoundingClientRect();
+				this.myRef.current.style.top = "";
+				this.myRef.current.style.bottom = "";
 				this.myRef.current.style.marginLeft = "0px";
 				this.myRef.current.style.left = rect2.left + "px";
 				this.myRef.current.classList.add('fixed');

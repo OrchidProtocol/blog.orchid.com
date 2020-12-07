@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 import Tags from './Tags'
 
 import { getCustomFormatedDate } from '../../utils/date';
-import { generateDescription } from '../../utils/generateDescription';
 
 const FeaturedIndicator = <div css={css`
     background: var(--color-primary);
@@ -18,7 +17,7 @@ const FeaturedIndicator = <div css={css`
     font-size: 75%;
 `}>
     {
-        (()=>{
+        (() => {
             switch (process.env.GATSBY_TARGET_LANG) {
                 default:
                     return "Featured";
@@ -35,12 +34,10 @@ const FeaturedIndicator = <div css={css`
 
 //<Link to={url}>
 
-const PostCard = ({ post }) => {
+const TinyPostCard = ({ post }) => {
     const url = `/${post.frontmatter.url}/`
-    
-    generateDescription(post);
 
-	let title = post.frontmatter.title,
+    let title = post.frontmatter.title,
         description = post.frontmatter.description;
 
     if (process.env.GATSBY_TARGET_LANG) {
@@ -61,9 +58,13 @@ const PostCard = ({ post }) => {
 
     return (
         <div to={url} css={css`
-            padding-bottom: var(--margin);
-            margin-bottom: var(--margin);
-            display: block;
+            padding: var(--margin-quarter);
+            margin: var(--margin-quarter);
+            max-width: 14rem;
+            background: #ffffff;
+            box-shadow: 0 0 var(--margin-quarter) rgba(0,0,0,.1);
+            display: flex;
+            flex-direction: column;
         `}>
             <header css={css`
                 display: block;
@@ -72,41 +73,40 @@ const PostCard = ({ post }) => {
                     <Link to={url}><div css={css`
                         padding: 30% 50%;
                         background: var(--color-secondary) no-repeat center center;
-                        box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
                         border-radius: 20px;
                         background-image: url(${featuredimage.publicURL});
                         background-size: cover;
                     `}></div></Link>}
             </header>
-            <div className="everything-but-image">
+            <div className="everything-but-image" css={css`
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            `}>
                 <div css={css`
-                    font-weight: var(--font-bold);
-                    margin: var(--margin-half) 0;
-                `}>
-                    {getCustomFormatedDate(post.frontmatter.date)}
-                </div>
-
-                <Tags tags={post.frontmatter.tags} linkTags={true} />
-
-                <div css={css`
-                        margin: var(--margin-half) 0;
                         display: flex;
                         align-items: center;
+                        margin-top: var(--margin-quarter);
                     `}>
                     <Link to={url}>
                         {post.frontmatter.featuredpost && FeaturedIndicator}
-                        <h2 css={css`
-                                display: inline;
-                                vertical-align: middle;
-                            `}>{title}</h2>
+                        <h4 css={css`
+                            font-size: 16px;
+                            margin-bottom: var(--margin-quarter);
+                        `}>{title}</h4>
                     </Link>
                 </div>
 
-                <section className="post-card-excerpt"><Link to={url} css={css`&:hover{text-decoration:none;}`}>{description}</Link></section>
+                <div css={css`
+                    font-size: 0.65rem;
+                `}>
+                    {getCustomFormatedDate(post.frontmatter.date)}
+                </div>
             </div>
         </div>
     )
 }
 
 
-export default PostCard
+export default TinyPostCard
