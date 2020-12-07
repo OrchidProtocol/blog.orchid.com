@@ -43,7 +43,6 @@ class StickySidebar extends React.Component {
 		if (window.innerWidth < 1200) return;
 		const rect = this.myRef.current.parentElement.getBoundingClientRect();
 		const myRect = this.myRef.current.getBoundingClientRect();
-		console.log(rect.bottom, myRect.bottom);
 
 		if (rect.top > 50) {
 			if (this.myRef.current.classList.contains('fixed')) {
