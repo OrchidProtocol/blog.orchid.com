@@ -183,6 +183,7 @@ export const BlogPostTemplate = ({
 						{/* The main post content */}
 						<section
 							css={css`
+									word-break: break-word;
 									a {
 										text-decoration: underline !important;
 									}
