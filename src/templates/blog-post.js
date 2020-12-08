@@ -266,7 +266,11 @@ export const BlogPostTemplate = ({
 
 			<div css={css`
 				margin: var(--margin) 0 0 0;
-				padding: var(--margin) 0;
+				padding: 5rem 0;
+				@media screen and (max-width: 870px) {
+					padding-top: 4rem;
+					padding-bottom: 4rem;
+				}
 				background-color: var(--color-lavender);
 				
 				position:relative;

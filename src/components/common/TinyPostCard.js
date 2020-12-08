@@ -59,8 +59,9 @@ const TinyPostCard = ({ post }) => {
     return (
         <div to={url} css={css`
             padding: var(--margin-quarter);
-            margin: var(--margin-quarter);
-            max-width: 14rem;
+            margin: var(--margin-half);
+            max-width: 17.5rem;
+            width: 100%;
             background: #ffffff;
             box-shadow: 0 0 var(--margin-quarter) rgba(0,0,0,.1);
             display: flex;
