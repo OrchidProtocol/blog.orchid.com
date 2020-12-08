@@ -74,7 +74,7 @@ We're excited to announce that Orchid's command line client is now available for
     - Type CMD
     - Right click the CMD icon and select `"run as administrator"`
 - At the CMD prompt, navigate to the folder where you downloaded the .exe and saved the .cfg file
-    - An easy way to do this is to copy the file path from the File Explorer top bar and then typing the command `"dir \<pasted in filepath\>"`
+    - An easy way to do this is to copy the file path from the File Explorer top bar and then typing the command `"dir <pasted in filepath>"`
 
 - To run orchid, type `'orchidcd-win.exe --config orchid.cfg'`
 - To stop, terminate the program using CTRL+C
