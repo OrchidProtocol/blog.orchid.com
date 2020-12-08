@@ -35,6 +35,7 @@ We're excited to announce that Orchid's command line client is now available for
     ![Copy from the App](/img/uploads/windows-cli-1.png)
     - Alternatively, to copy from the DApp (note you will need a created account in the DApp that is funded with OXT in order for this to work. You will need to follow the directions and use ETH to submit the two transactions to create the account)\
     ![Copy from the DApp](/img/uploads/windows-cli-2.png)
+<style>img[alt="Copy from the App"] {max-width: 300px}</style>
 
 - Paste into Notepad (or your text editor of choice). It should look like this but with your own funder address and signer secret key:
     ```js
