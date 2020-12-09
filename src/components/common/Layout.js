@@ -58,10 +58,6 @@ const TemplateWrapper = ({ children, bodyClass, customText }) => {
 
                 <main css={css`
                 font-size: 16px;
-                padding: 0 4rem 4rem 4rem;
-                @media (max-width: 870px) {
-                    padding: 1rem;
-                }
             `}>
                     {/* All the main content gets inserted here, index.js, post.js */}
                     {children}

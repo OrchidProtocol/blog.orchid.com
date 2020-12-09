@@ -31,6 +31,7 @@ body {
     --color-secondary: #5B7A81;
     --color-border: #c7d5d8;
     --color-bg: #f4f6f1;
+    --color-lavender: #f3f4f9;
 
     --orc-purple: #5f45ba;
     --orc-purple-active: #856ed2;
@@ -520,7 +521,7 @@ h6 {
 
 .content {
     margin: 0 auto;
-    line-height: 1.7em;
+    line-height: 1.7;
 }
 
 .content-body {
