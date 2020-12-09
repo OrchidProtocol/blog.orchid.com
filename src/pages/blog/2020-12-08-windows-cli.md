@@ -13,9 +13,9 @@ tags:
 ---
 We're excited to announce that Orchid's command line client is now available for Windows. This beta release represents further momentum toward a full desktop client with a complete GUI and interface for Windows.
 
-**Instructions:**
+##Instructions:
 
-*Note: this is an early beta release that requires some effort on the command line. Our full fledged Windows client with a normal GUI will have an installer to automate many steps.*
+*Note: this is an early beta release that requires some effort on the command line in addition to manually editing files and installing a driver. Thank you for trying out our beta! Our product team would love to hear your feedback or help needed on our [Telegram channel.](https://www.t.me/OrchidOfficial)*
 
 ### Download the orchidcd-win.exe artifact from Github
 
