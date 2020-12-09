@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-public: true
+public: false
 url: orchid-is-now-available-in-beta-for-windows-command-line
 title: "Orchid is now available in beta for Windows command line"
 date: 1607436000001
