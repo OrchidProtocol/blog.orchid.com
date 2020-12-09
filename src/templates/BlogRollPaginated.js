@@ -7,7 +7,7 @@ import styled from '@emotion/styled'
 import { Link, graphql, StaticQuery } from 'gatsby'
 
 import _ from 'lodash';
-import { Layout, PostCard } from '../components/common';
+import { Layout, PostCard, Pagination } from '../components/common';
 import { getCustomFormatedDate, currentTimestampUTC } from '../utils/date';
 const { buildTimestampUTC } = require('../utils/currentTimestamp');
 
@@ -47,34 +47,13 @@ const SidebarTagUl = styled.ul`
     padding: 0;
     margin: 0;
 `;
-const PaginationLinkStyling = `
-    display: block;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    line-height: 35px;
-    vertical-align: middle;
-`;
 
 const BlogRoll = ({ data, pageContext }) => {
     const posts = data.allPosts.edges
     const featured = data.featuredPosts.edges
 
-    const { currentPage, numPages, tags } = pageContext
-    const isFirst = currentPage === 1
-    const isLast = currentPage === numPages
-    const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString()
-    const nextPage = (currentPage + 1).toString()
+    const { tags } = pageContext
 
-    const paginationElements = [];
-    for (let page = 1; page < Math.min(numPages + 1, 7); page++) {
-        paginationElements.push(<Link css={css`
-            ${ page === currentPage ? `font-weight: bolder; text-decoration: underline;` : ``}
-            ${PaginationLinkStyling}
-        `} to={page === 1 ? `/` : `/${page}/`}>
-            {page}
-        </Link>)
-    }
 
     for (let index = posts.length - 1; index >= 0; index--) {
         const element = posts[index];
@@ -228,29 +207,9 @@ const BlogRoll = ({ data, pageContext }) => {
                                 // The tag below includes the markup for each post - components/common/PostCard.js
                                 <PostCard number={currentPost++} key={node.id} post={node} />
                             ))}
-                            <div css={css`
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                margin: 0 auto var(--margin) auto;
-                                max-width: 400px;
-                            `}>
-                                <Link css={css`
-                                    ${isFirst ? `pointer-events: none; opacity: 0.5;` : ``}
-                                    ${PaginationLinkStyling}
-                                `} to={currentPage - 1 === 1 ? `/` : `/${currentPage - 1}/`}>
-                                    &laquo;
-                                </Link>
 
-                                {paginationElements}
+                            <Pagination pageContext={pageContext} />
 
-                                <Link css={css`
-                                    ${isLast ? `pointer-events: none; opacity: 0.5;` : ``}
-                                    ${PaginationLinkStyling}
-                                `} to={`/${currentPage + 1}/`}>
-                                    &raquo;
-                                </Link>
-                            </div>
                         </section>
                         <Sidebar>
                             <SidebarCard>
