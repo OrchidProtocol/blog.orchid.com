@@ -35,3 +35,6 @@ But what about the VPNs that provide bandwidth on Orchid? Here too we take a uni
 As long as logging is legal, people are likely to do it -- the incentives to collect users' data are too strong. So Orchid takes its different approach to the problem. Multiple hops and nanopayments make it possible, for the first time, to configure a privacy solution in such a way that it doesn't matter if a user is being logged, because the data can be effectively obfuscated. This is one of the ways Orchid is helping restore the Internet as a place where people can stay curious and explore freely.
 
 Orchid is available for download [here](https://www.orchid.com/download).
+
+![QR Code](/img/uploads/qr_code-can-you-still-be-tracked.png)
+<style>img[src="/img/uploads/qr_code-can-you-still-be-tracked.png"]{margin-left: auto;margin-right:auto;}</style>
