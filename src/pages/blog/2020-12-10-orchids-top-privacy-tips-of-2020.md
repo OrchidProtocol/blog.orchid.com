@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: orchids-top-privacy-tips-of-2020
 title: "Orchid’s top privacy tips of 2020"
-date: 1607522400002
+date: 1607608800000
 description: "Since Orchid launched in December 2019, concerns about privacy have come to the fore. A global pandemic has upended the way people around the world live, work, learn, and more. In this unprecedented year, the surge in remote work and schooling have heightened awareness of online privacy risks and driven more people than ever to seek out solutions such as VPNs."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_2020Privacy.jpg
