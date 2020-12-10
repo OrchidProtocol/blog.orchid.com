@@ -37,4 +37,4 @@ As long as logging is legal, people are likely to do it -- the incentives to col
 Orchid is available for download [here](https://www.orchid.com/download).
 
 ![QR Code](/img/uploads/qr_code-can-you-still-be-tracked.png)
-<style>img[src="/img/uploads/qr_code-can-you-still-be-tracked.png"]{margin-left: auto;margin-right:auto;}</style>
+<style>img[src="/img/uploads/qr_code-can-you-still-be-tracked.png"]{display:block;margin-left:auto;margin-right:auto;}</style>
