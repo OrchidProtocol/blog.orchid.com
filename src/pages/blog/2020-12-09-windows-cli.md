@@ -28,7 +28,7 @@ In addition to Windows, Orchid is available for [iOS and MacOS in the App Store]
 - Go to the [Orchid releases page](https://github.com/OrchidTechnologies/orchid/releases)
 - Download the most recent `orchidcd-win_.0.x.x.exe` file
 
-    **orchidcd**-win_.0.x.x.exe is the client, the other **orchidd**-win_.0.x.x.exe executable is the server
+    **orchidcd**-win\_.0.x.x.exe is the client, the other **orchidd**-win\_.0.x.x.exe executable is the server
 
 ### Install the OpenVPN Tap driver
 
