@@ -23,11 +23,12 @@ In addition to Windows, Orchid is available for [iOS and MacOS in the App Store]
 
 *Note: this is an early beta release that requires some effort on the command line in addition to manually editing files and installing a driver. Thank you for trying out our beta! Our product team would love to hear your feedback or help needed on our [Telegram channel.](https://www.t.me/OrchidOfficial)*
 
-### Download the orchidcd-win.exe artifact from Github
+### Download the Orchid client for Windows on Github
 
-- Log into your GitHub account
-- <https://github.com/OrchidTechnologies/orchid/actions/runs/409526726>
-- Click on [orchidcd-win](https://github.com/OrchidTechnologies/orchid/suites/1632488354/artifacts/30146062) to download the Orchid Windows client EXE file. Note: you could get a 404 if you are not logged into Github
+- Go to the [Orchid releases page](https://github.com/OrchidTechnologies/orchid/releases)
+- Download the most recent `orchidcd-win_.0.x.x.exe` file
+
+    **orchidcd**-win\_.0.x.x.exe is the client, the other **orchidd**-win\_.0.x.x.exe executable is the server
 
 ### Install the OpenVPN Tap driver
 
