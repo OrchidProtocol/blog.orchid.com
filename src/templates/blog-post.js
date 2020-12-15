@@ -26,11 +26,14 @@ export const BlogPostTemplate = ({
 	helmet,
 	date,
 	slug,
+	no_interstitial,
 	featuredimage,
 }) => {
 
+	console.log(no_interstitial)
+
 	// If the post does not contain an interstitial, attempt to insert one in a safe location
-	if (content.match(/\[interstitial\]/) === null) {
+	if (!no_interstitial && content.match(/\[interstitial\]/) === null) {
 		content = content.split(/\n/g);
 
 		if (content.length > 8) {
@@ -474,6 +477,7 @@ const BlogPost = (props) => {
 				content={content}
 				date={post.frontmatter.date}
 				slug={post.frontmatter.url}
+				no_interstitial={post.frontmatter.no_interstitial}
 				featuredimage={post.frontmatter.featuredimage}
 				description={description}
 				relatedPosts={relatedPostsElements}
@@ -555,6 +559,7 @@ export const staticQuery = graphql`
 				description_ru
 				url
 				tags
+				no_interstitial
 			}
 			fields {
 				body_ja_html
