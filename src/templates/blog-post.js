@@ -28,6 +28,42 @@ export const BlogPostTemplate = ({
 	slug,
 	featuredimage,
 }) => {
+	if (content.match(/\[interstitial\]/) === null) {
+		content = content.split(/\n/g);
+
+		if (content.length > 8) {
+
+			const unsafeArray = new Array(content.length);
+			let unsafe = false;
+			for (let index = 0; index < content.length; index++) {
+				const line = content[index];
+				if (line === "<blockquote>") {
+					unsafe = true;
+				}
+				if (unsafe) {
+					unsafeArray[index] = true;
+				}
+				if (line === "</blockquote>") {
+					unsafe = false;
+				}
+			}
+			const start = Math.round(content.length / 2 - 1);
+			for (let index = start; index < start + 3; index++) {
+				if (
+					content[index].match(/^<p>/) &&
+					!content[index].match(/^<p><strong>/) &&
+					content[index + 1].match(/^<p>/) &&
+					!unsafeArray[index]
+				) {
+					content.splice(index + 1, 0, "<p>[interstitial]</p>");
+					break;
+				}
+			}
+		}
+
+		content = content.join('\n');
+	}
+
 	content = content.replace(/\[interstitial\]/ig, `<div class="interstitial__container">
 		<div class="interstitial__image">
 			<img src="/img/WhisperBunny.png" width="800" height="954" />
@@ -167,6 +203,9 @@ export const BlogPostTemplate = ({
 							font-size: 52px;
 						}
 						margin-bottom: 0;
+						blockquote > .interstitial__container {
+							display: none;
+						}
 					`}>{title}</h1>
 						<span css={css`
 						display: inline-block;
@@ -314,7 +353,7 @@ export const BlogPostTemplate = ({
 					display: flex;
 					flex-wrap: wrap;
 					justify-content: center;`}>
-						
+
 					{relatedPosts}
 				</div>
 			</div>
