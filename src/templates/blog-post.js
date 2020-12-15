@@ -30,8 +30,6 @@ export const BlogPostTemplate = ({
 	featuredimage,
 }) => {
 
-	console.log(no_interstitial)
-
 	// If the post does not contain an interstitial, attempt to insert one in a safe location
 	if (!no_interstitial && content.match(/\[interstitial\]/) === null) {
 		content = content.split(/\n/g);
