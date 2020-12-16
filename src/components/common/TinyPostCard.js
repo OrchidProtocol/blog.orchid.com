@@ -73,7 +73,7 @@ const TinyPostCard = ({ post }) => {
                 {featuredimage &&
                     <Link to={url}><div css={css`
                         padding: 30% 50%;
-                        background: var(--color-secondary) no-repeat center center;
+                        background: var(--color-primary) no-repeat center center;
                         border-radius: 20px;
                         background-image: url(${featuredimage.publicURL});
                         background-size: cover;
