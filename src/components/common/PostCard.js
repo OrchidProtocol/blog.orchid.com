@@ -71,7 +71,7 @@ const PostCard = ({ post }) => {
                 {featuredimage &&
                     <Link to={url}><div css={css`
                         padding: 30% 50%;
-                        background: var(--color-secondary) no-repeat center center;
+                        background: var(--color-primary) no-repeat center center;
                         box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
                         border-radius: 20px;
                         background-image: url(${featuredimage.publicURL});
