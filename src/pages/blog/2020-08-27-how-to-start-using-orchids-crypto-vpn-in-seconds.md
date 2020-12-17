@@ -7,6 +7,7 @@ date: 1598536800000
 description: 'Orchid’s unique VPN marketplace lets people reclaim the Internet as a place of freedom and curiosity with the highest level of online privacy. And now it’s easier than ever to get started with Orchid using in-app purchases.'
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_InSeconds.jpg
+no_interstitial: true
 tags:
   - VPN
   - Privacy
@@ -26,3 +27,6 @@ Once you've got the app open, select "Buy Orchid Credits" from the menu at the b
 That's it! You're now ready to start exploring the Internet freely with Orchid. You'll gradually draw down the money in your account, and when funds run low, you'll receive a prompt to purchase additional credits.
 
 [Download the Orchid app](https://www.orchid.com/download) today.
+
+![QR Code](/img/uploads/how-to-start-using-orchids-crypto-vpn-in-seconds.jpg)
+<style>img[src="/img/uploads/how-to-start-using-orchids-crypto-vpn-in-seconds.jpg"]{display:block;margin-left:auto;margin-right:auto;}</style>
