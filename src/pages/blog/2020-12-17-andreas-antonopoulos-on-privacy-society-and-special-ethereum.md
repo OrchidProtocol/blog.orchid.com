@@ -11,6 +11,8 @@ tags:
   - Privacy
   - Decentralization
 ---
+<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/17214869/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/030400/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
 [Andreas Antonopoulos](https://twitter.com/aantonop) has one word of advice for anyone working in blockchain -- privacy.
 
 "If you're working on an open blockchain project, the first and biggest question you should be asking is: is there something we can do to improve privacy? If so, how robust can we make it?" Andreas, one of the best-known blockchain advocates, said on the latest episode of the [Follow the White Rabbit podcast](https://www.orchid.com/podcast/).
