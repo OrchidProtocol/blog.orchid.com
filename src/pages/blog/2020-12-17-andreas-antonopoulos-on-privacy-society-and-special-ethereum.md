@@ -7,11 +7,14 @@ date: 1608213600000
 description: "Andreas Antonopoulos has one word of advice for anyone working in blockchain -- privacy."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_AAntonopoulos.jpg
+no_interstitial: true
 tags:
   - Privacy
   - Decentralization
 ---
 <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/17214869/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/030400/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+&nbsp;
 
 [Andreas Antonopoulos](https://twitter.com/aantonop) has one word of advice for anyone working in blockchain -- privacy.
 
