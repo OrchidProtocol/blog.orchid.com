@@ -42,8 +42,8 @@ function Navbar({ customText }) {
     const [active, setActive] = useState(false);
 
     return <Container data-active={active}>
-        <InfoBar href="/orchid-just-got-faster/">
-            Orchid just got faster. Read More &raquo;
+        <InfoBar href={`${config.main_site}newsletter-signup`}>
+            Get privacy news delivered to your inbox &raquo;
         </InfoBar>
         {/* The main header section on top of the screen */}
         <Header customText={customText}>
