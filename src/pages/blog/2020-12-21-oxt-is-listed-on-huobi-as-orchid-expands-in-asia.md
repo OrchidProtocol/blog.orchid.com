@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: oxt-is-listed-on-huobi-as-orchid-expands-in-asia
 title: "OXT is listed on Huobi as Orchid expands in Asia"
-date: 1608213600000
+date: 1608560404958
 description: "OXT, the Orchid token, is now listed on Huobi, a global digital asset exchange with prominence in Asia, as Orchid expands deeper into the continent and around the world."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_Huobi.jpg
