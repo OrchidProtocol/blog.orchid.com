@@ -7,7 +7,8 @@ import ImageMeta from './ImageMeta'
 import config from '../../../utils/config'
 
 const sanitize = (text) => {
-    return String(text).replace(/"/g, "\\\"");
+    let output = JSON.stringify(text);
+    return output.substr(1).substr(0, output.length - 2);
 }
 
 const ArticleMetaGhost = ({ data, canonical }) => {
