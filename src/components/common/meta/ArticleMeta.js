@@ -6,6 +6,11 @@ import url from 'url'
 import ImageMeta from './ImageMeta'
 import config from '../../../utils/config'
 
+const sanitize = (text) => {
+    let output = JSON.stringify(text);
+    return output.substr(1).substr(0, output.length - 2);
+}
+
 const ArticleMetaGhost = ({ data, canonical }) => {
     if (canonical.substr(canonical.length-1, 1) !== '/') {
         canonical = canonical+'/';
@@ -63,11 +68,11 @@ const ArticleMetaGhost = ({ data, canonical }) => {
                         "@type": "Article",
                         "author": {
                             "@type": "Organization",
-                            "name": "${config.title}",
+                            "name": "${sanitize(config.title)}",
                             "image": "${publisherLogo}"
                         },
-                        ${ghostPost.tags.length ? `"keywords": "${_.join(ghostPost.tags, `, `)}",` : ``}
-                        "headline": "${ghostPost.title}",
+                        ${ghostPost.tags.length ? `"keywords": "${sanitize(_.join(ghostPost.tags, `, `))}",` : ``}
+                        "headline": "${sanitize(ghostPost.title)}",
                         "url": "${canonical}",
                         "datePublished": "${ghostPost.date}",
                         "dateModified": "${ghostPost.date}",
@@ -77,7 +82,7 @@ const ArticleMetaGhost = ({ data, canonical }) => {
                         },` : ``}
                         "publisher": {
                             "@type": "Organization",
-                            "name": "${config.title}",
+                            "name": "${sanitize(config.title)}",
                             "logo": {
                                 "@type": "ImageObject",
                                 "url": "${publisherLogo}",
@@ -85,7 +90,7 @@ const ArticleMetaGhost = ({ data, canonical }) => {
                                 "height": 60
                             }
                         },
-                        "description": "${ghostPost.description}",
+                        "description": "${sanitize(ghostPost.description)}",
                         "mainEntityOfPage": {
                             "@type": "WebPage",
                             "@id": "${config.siteUrl}"
