@@ -5,7 +5,7 @@ url: defending-freedom-in-the-time-of-coronavirus
 title: Defending freedom in the time of coronavirus
 date: 1588350183108
 description: "The world is in the grip of a pandemic. Governments are reacting in different ways, but a common thread that’s emerging is a trend toward greater surveillance and restrictions on movement."
-featuredpost: true
+featuredpost: false
 no_interstitial: true
 featuredimage: /img/uploads/Orchid_Defending_Freedom_Liberty.jpg
 tags:
