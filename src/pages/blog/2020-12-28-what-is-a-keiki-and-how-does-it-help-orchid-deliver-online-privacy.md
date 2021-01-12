@@ -5,7 +5,7 @@ url: what-is-a-keiki
 title: "What is a Keiki, and what role does it play in the Orchid network?"
 date: 1610463600000
 description: "Since Orchid launched just over a year ago, the network has made enormous strides. It has gotten faster, easier to use, and has added numerous partners and collaborations. Amidst all this progress, it’s worth revisiting some of the basic aspects of Orchid’s design. One of these is the keiki, the smallest unit into which Orchid’s digital asset, OXT, is divisible."
-featuredpost: false
+featuredpost: true
 featuredimage: /img/uploads/Orchid_BlogImage_Keiki.jpg
 tags:
   - Decentralization
