@@ -421,52 +421,50 @@ An Orchid account consists of OXT that has been moved into the Orchid nanopaymen
 
 Setting up the account requires enough ETH to pay for 'gas', so creating an Orchid account requires both OXT and ETH digital currencies.
 
-**Step One: Get OXT and ETH**
+**Step One: Load the Orchid Account DApp:**
 
-You need the OXT digital currency to pay providers for bandwidth. While you could start for as little as 5 OXT, we recommend setting up an account with 50 OXT -- enough to last for a sufficient period of time that you won’t have to go back into the account and add funds too regularly. Each OXT provides approximately 10 GBs of service. With 50 OXT, we estimate you would get approximately 480 GBs of service, which could last an entire year.
+Your gateway to funding Orchid is [account.orchid.com](https://account.orchid.com/). The webpage is a web3-enabled front end that interfaces with the Orchid nanopayment contract. Account.orchid.com must be loaded with the Metamask plugin enabled or from your wallet's DApp browser.
 
-You will also need approximately .005 ETH to pay for the two Ethereum transactions required to set up the Orchid account. [Coinbase](https://www.coinbase.com/price/orchid) lists both OXT and ETH, and free OXT is available through Coinbase's Earn campaign. OXT is also available at Uniswap and other Ethereum exchanges.
+You need the OXT digital currency to fund an Orchid account and pay providers for bandwidth. You will also need a small amount of ETH to pay for the two Ethereum transactions required to set up your Orchid account. Since the value of both of these amounts relies heavily on market conditions, the OXT and ETH needed will vary. To determine the amounts you will need in order to successfully fund your account, the Orchid DApp provides a base recommendation of values for a 50% efficient account. Efficiency is a metric that denotes how much of the funds spent from your wallet are going to pay for service vs paying for transaction costs by setting the size and number of your lottery contract tickets. The dapp provides real-time recommendations using current market dynamics for the amount of currency required. In the DApp interface, you may adjust the efficiency slider as well your deposit/balance totals until you have an account composed to your liking.
 
-Remember: You only pay for the service you use, so turning Orchid off turns off the tap of OXT being spent from your Orchid account.
+*Remember: You only pay for the service you use, so turning Orchid off turns off the tap of OXT being spent from your Orchid account.*
 
-**Step Two: Add your OXT and ETH to a web3-enabled Ethereum wallet**
+**Step Two: Add OXT & ETH to a web-3 Ethereum wallet:**
 
+Using the recommendations given by the Orchid Account DApp, you will now need to acquire the OXT and ETH to fund your account. [Coinbase](https://www.coinbase.com/price/orchid), Binance, Gemini and many other digital currency exchanges list both OXT and ETH. OXT is also available via Uniswap.
 
 Every Orchid account requires an Ethereum wallet from which the account is funded. We recommend setting up a new Ethereum wallet for Orchid that is not associated with other Ethereum services you may use. We support a number of wallets, but some may work better than others depending on your setup. We recommend using the Metamask browser plugin to set up your Orchid account on a laptop or desktop.
 
-Our full list of suggested wallets:
+Our full list of tested wallets:
 1. [Metamask](https://metamask.io/): Our recommendation is to use the Metamask Chrome plug-in from a laptop or desktop.
 2. [Trust Wallet](https://trustwallet.com/): Works on Android and iOS. No desktop client.
 3. [Coinbase Wallet](https://wallet.coinbase.com/): Works on Android and iOS. Might lose dapp/web3 functions soon on iOS.
-4. [BRD Wallet](https://brd.com/): Works on Android and iOS
 
 We recommend setting up a new wallet for use with Orchid for privacy. [Learn more.](https://www.orchid.com/faq#orchid-app--why-new-wallet)
 
 Move your OXT and ETH to the new wallet you have set up. If you used Coinbase to earn or purchase your OXT and ETH, go into Coinbase and do a "send" to the Ethereum wallet's address. Moving both the OXT and ETH will cost a tiny amount of ETH in gas. You will need both in your wallet to create an Orchid account.
 
-**Step Three: Create and fund an Orchid account**
+**Step Three: Fund your Orchid account**
 
-Your gateway to funding Orchid is [account.orchid.com](https://account.orchid.com/). The webpage is a web3-enabled front end that interfaces with the Orchid nanopayment contract. Account.orchid.com must be loaded with the Metamask plugin enabled or from your wallet's DApp browser. Once the page is loaded correctly, you can transfer funds between your wallet and Orchid. This is also where you can top-up your account balance or withdraw your funds after you have created an account and linked it to the app.
+Returning to the Orchid Account DApp ([account.orchid.com](https://account.orchid.com/)), you can transfer funds between your wallet and Orchid. This is also where you can top-up your account balance or withdraw your funds after you have created an account and linked it to the app.
 
 *Note: the Orchid account interface is the only way to add or remove funds from your Orchid account. Never send funds directly into the contract from your wallet -- they will be lost.*
 
 Read the text on the account.orchid.com page. The page is responsive and will tell you if you need to add more OXT or ETH to your wallet for account creation. Once ready, you can click or tap on the purple "Transfer Available OXT:" button. This will initiate 2 transactions, which you will need to approve.
 
-Note: we recommend editing the transaction fee and paying extra ETH for "fast" so that the Orchid account is created within 30-60 seconds. Paying for slow may cause the transactions to hang.
-
-Once your account is created, a QR code will appear on the page. If you don't see the QR code on the “Overview” page, you can find it by clicking on the “More” link in the upper right of the page and selecting “Info.” From there you can see your account balance as well as your QR code.
+*Note: we recommend editing the transaction fee and paying extra ETH for "fast" so that the Orchid account is created within 30-60 seconds. Paying for slow may cause the transactions to hang. Once your account is created, a QR code will appear on the page. If you don't see the QR code on the "Overview" page, you can find it by clicking on the "More" link in the upper right of the page and selecting "Info." From there you can see your account balance as well as your QR code.*
 
 **Step Four: Add your Orchid account to the app**
 
-To add your newly created Orchid account, simply open the app and press the QR code icon when you see a text bubble pop up. If the bubble doesn’t appear, select "New Hop" on the home screen and then "I have a QR code" from the “Add Hop” screen.
+To add your newly created Orchid account, simply open the app and press the QR code icon when you see a text bubble pop up. If the bubble doesn't appear, select "New Hop" on the home screen and then "I have a QR code" from the "Add Hop" screen.
 
-Once you scan the QR code, the app will create a hop using the associated Orchid account and your default curator settings. You will be taken to a “hop information” screen showing your saved information. Using the "Share Orchid Account" button, you can pop a QR code and share the Orchid account you just imported with other people or devices. Press the back arrow to get back to the main screen.
+Once you scan the QR code, the app will create a hop using the associated Orchid account and your default curator settings. You will be taken to a "hop information" screen showing your saved information. Using the "Share Orchid Account" button, you can pop a QR code and share the Orchid account you just imported with other people or devices. Press the back arrow to get back to the main screen.
 
 From the main screen, tap the toggle in the upper right to turn Orchid on.
 
 **Step Five: Use Orchid to explore the Internet**
 
-Now, on the app’s Status tab, just hit the big “on” button, and that’s it. You’re ready to start exploring freely. Your account is funded with the OXT you sent to it. When you turn the VPN service on, the app will issue tickets that are backed by this digital currency. Bandwidth providers can prove that these tickets are valid and offer their service to you. Orchid’s system of probabilistic nanopayments means that your balance will decline at a probabilistic rate. You can top up your account with additional OXT as needed. 
+Now, on the app's Status tab, just hit the big "on" button, and that's it. You're ready to start exploring freely. Your account is funded with the OXT you sent to it. When you turn the VPN service on, the app will issue tickets that are backed by this digital currency. Bandwidth providers can prove that these tickets are valid and offer their service to you. Orchid's system of probabilistic nanopayments means that your balance will decline at a probabilistic rate. You can top up your account with additional OXT as needed.
 
 Stay curious out there!
 
