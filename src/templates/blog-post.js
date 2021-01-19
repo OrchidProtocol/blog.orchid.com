@@ -27,6 +27,7 @@ export const BlogPostTemplate = ({
 	date,
 	slug,
 	no_interstitial,
+	podcast_url,
 	featuredimage,
 }) => {
 
@@ -228,6 +229,61 @@ export const BlogPostTemplate = ({
 
 						<br />
 						<br />
+
+						{podcast_url ? <div css={css`
+							display: flex;
+							align-items: center;
+							background-color: #f5f6f1;
+							padding: 1rem;
+							margin: 1rem auto 2rem;
+							border-radius: 1rem;
+							width: 100%;
+							max-width: 29rem;
+							box-sizing: border-box;
+							@media (max-width: 690px) {
+								flex-direction: column;
+								max-width: 16rem;
+							}
+						`}>
+							<img css={css`
+								width: 40%;
+								margin: -7% 0;
+								@media (max-width: 690px) {
+									width: 100%;
+									margin: 0 0 1rem;
+									max-width: 5.5rem;
+								}
+							`} src="/img/podcast-bunny.svg" />
+							<div css={css`
+								padding-left: 1rem;
+								width: 100%;
+								height: 100%;
+								text-align: center;
+								@media (max-width: 690px) {
+									padding-left: 0rem;
+								}
+							`}>
+								<b css={css`
+									line-height: 1.1;
+									margin-bottom: 1rem;
+									display: block;
+								`}>Follow the White Rabbit podcast</b>
+								<a href={podcast_url} css={css`
+									background-color: var(--color-primary);
+									color: white;
+									padding: .35rem 2rem;
+									@media (max-width: 690px) {
+										padding: 0.25rem 1rem;
+									}
+									display: inline-block;
+									border-radius: 100vmax;
+									color: white !important;
+									underline: none !important;
+								`}>
+									Start Listening
+								</a>
+							</div>
+						</div> : <></>}
 
 						{/* The main post content */}
 						<section
@@ -476,6 +532,7 @@ const BlogPost = (props) => {
 				date={post.frontmatter.date}
 				slug={post.frontmatter.url}
 				no_interstitial={post.frontmatter.no_interstitial}
+				podcast_url={post.frontmatter.podcast_url}
 				featuredimage={post.frontmatter.featuredimage}
 				description={description}
 				relatedPosts={relatedPostsElements}
@@ -558,6 +615,7 @@ export const staticQuery = graphql`
 				url
 				tags
 				no_interstitial
+				podcast_url
 			}
 			fields {
 				body_ja_html

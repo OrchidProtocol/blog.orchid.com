@@ -12,10 +12,6 @@ tags:
   - Decentralization
   - Privacy
 ---
-<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/17407007/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/030400/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-&nbsp;
-
 [Franck Nouyrigat](https://www.linkedin.com/in/francknouyrigat/) literally used to spend his weekends helping startups launch. The non-profit he helped found more than a decade ago -- Startup Weekend -- eventually established a presence in more countries than Starbucks and helped build startup communities over weekend-long events.
 
 Now Franck has bottled up that entrepreneurial spirit and know-how to focus on arguably the bigger project of designing the future of democracy with his [Electis](https://www.electis.io/) platform for experimenting with election formats.
