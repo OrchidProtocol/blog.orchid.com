@@ -7,14 +7,11 @@ date: 1599573600000
 description: "When Brian J. Fox, Co-founder of Orchid and the original author of the GNU Bash shell, started out as a pioneer programmer, it was the free exchange of creative ideas that drove advances in computer science."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_BFox.jpg
+podcast_url: https://www.orchid.com/podcast/episode-13-brian-j-fox
 tags:
   - Decentralization
   - Privacy
 ---
-<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/15824711/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/040600/" height="90" width="100%" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-&nbsp;
-
 When Brian J. Fox, Co-founder of Orchid and the original author of the GNU Bash shell, started out as a pioneer programmer, it was the free exchange of creative ideas that drove advances in computer science. So it ran completely counter Brian's open source philosophy when corporations such as Microsoft wanted to encase software in intellectual property rights in order to charge license fees.
 
 Brian landed a position as the first employee of the Free Software Foundation and has been advocating ever since for open source, including in his current role as founder of Orchid to help build a surveillance-free Internet.

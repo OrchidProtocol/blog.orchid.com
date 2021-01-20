@@ -7,14 +7,11 @@ date: 1600783200000
 description: "Val Mack, a Software Architect at Quant Five, and founder of Festival Labs, believes cryptography and blockchain have the power to do social good by protecting privacy and allowing autonomy in what she calls “compassionate technology.”"
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_VMack.jpg
+podcast_url: https://www.orchid.com/podcast/episode-15-val-mack
 tags:
   - Privacy
   - Decentralization
 ---
-<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/16025171/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/040600/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-&nbsp;
-
 Val Mack, a Software Architect at Quant Five, and founder of Festival Labs, believes cryptography and blockchain have the power to do social good by protecting privacy and allowing autonomy in what she calls "compassionate technology."
 
 "That term that I am using is very ambiguous -- intentionally so -- because it's a kind of umbrella term for working for social good, autonomy, anything that is seeking to put more compassion in the world," Val said on the latest episode of the [Follow the White Rabbit](https://www.orchid.com/podcast) podcast.

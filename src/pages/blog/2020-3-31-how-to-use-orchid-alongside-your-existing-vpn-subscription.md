@@ -27,10 +27,6 @@ Follow the demo as Alex shows the easy process 
 
 Check out the [video](https://youtu.be/KpEtlUQV1vw)!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KpEtlUQV1vw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-&nbsp;
-
 > *Introduction*
 > 
 > *Alex Kehaya, Business Development at Orchid*

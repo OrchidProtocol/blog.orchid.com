@@ -7,14 +7,11 @@ date: 1609858800000
 description: "Yaniv Tal first understood how decentralization could help solve the world's economic problems, especially resource allocation, during the 2008-2009 financial crisis when many of his talented graduate peers felt like giving up on even searching for a job and being forced to let their potential go to waste."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_YTal.jpg
+podcast_url: https://www.orchid.com/podcast/episode-29-yaniv-tal
 tags:
   - Decentralization
   - Privacy
 ---
-<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/17305649/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/060900/" height="90" width="100%" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-&nbsp;
-
 Yaniv Tal first understood how decentralization could help solve the world's economic problems, especially resource allocation, during the 2008-2009 financial crisis when many of his talented graduate peers felt like giving up on even searching for a job and being forced to let their potential go to waste.
 
 "The Internet changed everything but society is still oriented around these industrial-age institutions and clearly at some point that this is going to have to change and there are better Internet-native ways for people to cooperate and for resources to get allocated" Yaniv, Project Lead at Graph Protocol, said on the [latest FTWR episode](https://www.orchid.com/podcast).

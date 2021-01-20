@@ -7,14 +7,11 @@ date: 1598968800000
 description: "With a special guest appearance by Orchid CEO Dr. Steven Waterhouse on this week's episode of Follow the White Rabbit"
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_KSeiff.jpg
+podcast_url: https://www.orchid.com/podcast/episode-12-ken-seiff
 tags:
   - Decentralization
   - Privacy
 ---
-<iframe _ngcontent-orchid-www-c2="" allowfullscreen="" height="90" mozallowfullscreen="" msallowfullscreen="" oallowfullscreen="" scrolling="no" src="//html5-player.libsyn.com/embed/episode/id/15748982/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/030400/" style="border: none" webkitallowfullscreen="" width="100%"></iframe>
-
-&nbsp;
-
 On this week's episode of Follow the White Rabbit, we speak with serial entrepreneur and venture capitalist Ken Seiff -- joined by our own CEO Dr. Steven Waterhouse, aka Seven. Ken and Seven have been friends and collaborators for several years and both share a firm belief in the importance of privacy and a commitment to strengthening this human right.
 
 When he invested in Bitcoin in 2011, and then Ethereum in 2014 -- in both cases stepping beyond his main retail investment focus --  Ken had already exited two companies, [Bluefly](https://www.bluefly.com/) and [Poppin](https://www.poppin.com/), as a founder and raised multiple successful venture funds. When the time came to raise his third fund, he made the decision to focus on early-stage blockchain companies, protocols, and applications that are "making a dent in the universe." The result of this decision was Beanstalk Ventures, which invests in some of the most exciting projects in the crypto space.

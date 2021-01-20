@@ -7,14 +7,11 @@ date: 1603720800000
 description: "Neeraj Khandelwal co-founded CoinDCX, India's largest cryptocurrency exchange, in response to his own liquidity-starved trading challenges."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_NKhandelwal.jpg
+podcast_url: https://www.orchid.com/podcast/episode-20-neeraj-khandelwal
 tags:
   - Decentralization
   - Privacy
 ---
-<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/16482224/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/060800/" height="90" width="100%" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-&nbsp;
-
 Neeraj Khandelwal co-founded CoinDCX, India's largest cryptocurrency exchange, in response to his own liquidity-starved trading challenges. Now, by combining liquidity from international venues and making that available in India, is solving more than his own trading pain points. Neeraj is playing his part in the larger battle to face down financial censorship.
 
 > "Blockchain technology gives you freedom. It brings trust between the transactions, between any kind of data-saving. Blockchain technology gives you freedom, which is the first principle of human rights -- and that is why its adoption has been very rapid," Neeraj said on the latest episode of the [Follow the White Rabbit](https://www.orchid.com/podcast) podcast.

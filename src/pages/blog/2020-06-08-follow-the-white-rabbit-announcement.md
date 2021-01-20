@@ -23,15 +23,6 @@ In our premiere episode, we go down the rabbit hole with Rich Staropoli, whose c
 
 He discusses what it was like to protect President George W. Bush on September 11th, his thoughts on the current state of technology at DHS, what cybersecurity risks our country faces, and the future of our election systems.
 
-&nbsp;
-
-<iframe style="border: none"
-  src="//html5-player.libsyn.com/embed/episode/id/14651969/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/070a00/"
-  height="90" width="100%" scrolling="no" allowfullscreen webkitallowfullscreen
-  mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-&nbsp;
-
 Coming up, we look forward to being joined by VInny Lingham, who will share thoughts on He discusses his thoughts on data privacy, why we need decentralized systems to protect our identity, whether crypto can displace the dollar, and what lies ahead for entrepreneurs in the new normal. Other future guests include: Jyri Engestrom, Roger Ver, Jehan Chu, Richard Muirhead, and many more.
 
 Follow the White Rabbit podcasts are available on the Orchid blog and other social channels. You can subscribe to Follow the White Rabbit through [Apple](https://podcasts.apple.com/us/podcast/follow-the-white-rabbit/id1516705670), [Spotify](https://open.spotify.com/show/4QxpmHume4QaIWV5i893d4?si=Hw6yyqbJQV6GmTvOBSJryg), [Castbox](https://castbox.fm/ch/2954358) and [your other favorite podcast platforms](https://www.orchid.com/podcast#subscribe). New episodes are available every Wednesday.

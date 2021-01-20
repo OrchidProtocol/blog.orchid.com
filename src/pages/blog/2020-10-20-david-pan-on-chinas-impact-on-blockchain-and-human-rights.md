@@ -7,14 +7,11 @@ date: 1603202400000
 description: "David Pan is originally from China and moved to the United States three years ago for a masters degree in business journalism. That propelled him to becoming an international business reporter at the largest blockchain and cryptocurrency media publication, Coindesk."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_DPan.jpg
+podcast_url: https://www.orchid.com/podcast/episode-19-david-pan
 tags:
   - Privacy
   - Decentralization
 ---
-<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/16360880/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/030500/" height="90" width="100%" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-&nbsp;
-
 David Pan is originally from China and moved to the United States three years ago for a masters degree in business journalism. That propelled him to becoming an international business reporter at the largest blockchain and cryptocurrency media publication, Coindesk. David's background affords him a particular perspective on the news events around the industry from China -- one of the biggest influences on blockchain and cryptocurrency.
 
 When it comes to business, cryptocurrency and China, David has discovered that politics is also rarely far away. He revealed on the latest episode of [Follow the White Rabbit](https://www.orchid.com/podcast) podcast how his [reporting](https://www.coindesk.com/hong-kong-citizens-turn-to-stablecoins-to-resist-national-security-law) unearthed a clear link between the proposal and implementation of a new national security law in Hong Kong and spikes in transactions of "stablecoins," or digital tokens pegged to a fiat currency and independent of the banking system.

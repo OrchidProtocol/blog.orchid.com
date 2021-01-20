@@ -7,14 +7,11 @@ date: 1604325600000
 description: "Felipe Erazo is an investigative journalist who researched the disappearance of 65,000 people during decades of civil war in his home country of Colombia."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_FErazo.jpg
+podcast_url: https://www.orchid.com/podcast/episode-21-felipe-erazo
 tags:
   - Decentralization
   - Privacy
 ---
-<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/16583225/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/060900/" height="90" width="100%" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-&nbsp;
-
 Felipe Erazo is an investigative journalist who researched the disappearance of 65,000 people during decades of civil war in his home country of Colombia. Now he specializes in reporting on blockchain and cryptocurrencies for [Cointelegraph](https://cointelegraph.com/authors/felipe-erazo) and believes these technological innovations hold the key to improving human rights across Latin America.
 
 Felipe felt the brunt of Colombia's war himself when a guerrilla group sought to recruit his elder brother, who was only 10 at the time, into their army in a remote southern area of the country. His mother resisted and faced two attempted assaults against her before she took the decision to flee the region. 

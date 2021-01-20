@@ -7,14 +7,11 @@ date: 1601906400000
 description: "Dawn Song is ranked as the most cited scholar on computer security. So when the UC Berkeley Professor of Computer Science and CEO of Oasis Labs says she is helping to build a new data privacy paradigm, people pay attention."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_DSong.jpg
+podcast_url: https://www.orchid.com/podcast/episode-17-dawn-song
 tags:
   - Privacy
   - Decentralization
 ---
-<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/16191410/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/030400/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-&nbsp;
-
 > "There is a real need in the real world. We are at an inflection point. The Internet has changed everybody's life -- for the most part for the better -- but we face many challenges, particularly around the question of who has control of data and how data should be utilised," Dawn said on the latest episode of [Follow the White Rabbit](https://www.orchid.com/podcast) podcast.
 
 A serial entrepreneur who develops research in her lab before deploying the tools and solutions to benefit users and companies alike, Dawn says Oasis Labs has a mission to build a "responsible data economy."
