@@ -7,14 +7,11 @@ date: 1602597600000
 description: "Alex Gluchowski grew up in Ukraine where he suffered first hand the blight of hyperinflation as a whole population lost its savings and families were left scrambling to put food on the table. That experience inspired Alex to search for alternatives to the traditional financial system and led him decades later to found Matter Labs, a research and development company pioneering blockchain scalability and privacy solutions."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_AGluchowski.jpg
+podcast_url: https://www.orchid.com/podcast/episode-18-alex-gluchowski
 tags:
   - VPN
   - Privacy
 ---
-<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/16303931/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/010100/" height="90" width="100%" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-&nbsp;
-
 Alex Gluchowski grew up in Ukraine where he suffered first hand the blight of hyperinflation as a whole population lost its savings and families were left scrambling to put food on the table. That experience inspired Alex to search for alternatives to the traditional financial system and led him decades later to found Matter Labs, a research and development company pioneering blockchain scalability and privacy solutions.
 
 "Losing life savings is like losing years of life," Alex said on the latest episode of [Follow the White Rabbit](https://www.orchid.com/podcast) podcast. "You lose all that you expected, all that you worked hard for -- for yourself, for your kids. It was an enormous loss. For many people it was an existential crisis."

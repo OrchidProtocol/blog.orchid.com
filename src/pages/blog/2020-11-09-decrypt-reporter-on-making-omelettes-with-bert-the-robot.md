@@ -7,14 +7,11 @@ date: 1604934000000
 description: "Bert was talkative and expressive but he failed his audition to win a job helping to make omelettes. He dropped eggs all over the kitchen floor. Bert was actually one of three robots seeking employment as part of an experiment conducted by Adriana Hamacher during her Master in Science studies into machine-human interactions."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_AHamacher.jpg
+podcast_url: https://www.orchid.com/podcast/episode-22-adriana-hamacher
 tags:
   - Blockchain
   - Decentralization
 ---
-<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/16678088/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/040600/" height="90" width="100%" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-&nbsp;
-
 Bert was talkative and expressive but he failed his audition to win a job helping to make omelettes. He dropped eggs all over the kitchen floor. Bert was actually one of three robots seeking employment as part of an experiment conducted by [Adriana Hamacher](https://twitter.com/adrianahamacher?lang=en) during her Master in Science studies into machine-human interactions.
 
 What grabbed Adriana's attention was how Bert's potential employer lied about not giving him the job while choosing a less chatty but better performing robot. The employers started to respond to Bert as if he had human qualities and apparently didn't want to hurt Bert's "feelings." When Bert made one of his many mistakes, he would raise a forlorn eyebrow, look mortified and somehow this machine managed to elicit sympathy from his human co-workers, Adriana said. Still, people didn't want to employ Bert. It may have been great technology that produced a conversational robot capable of mimicking emotions. But that technology did not get the job done. People wanted their eggs in the pan, not on the floor. As users, their experience with Bert was less than optimal.

@@ -7,14 +7,11 @@ date: 1607954400000
 description: "Kurt Rohloff was at engineering grad school during the 9/11 attacks on New York and Washington in 2001 and quickly decided he wanted to play his “small part” in helping national security. It was not long before Kurt was working on projects to support the mission of DARPA, (the Defense Advanced Research Projects Agency) and leading teams in the first implementation of a new concept in encryption."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_KRohloff.jpg
+podcast_url: https://www.orchid.com/podcast/episode-27-kurt-rohloff
 tags:
   - Privacy
   - Decentralization
 ---
-<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/17128733/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/040600/" height="90" width="100%" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-&nbsp;
-
 [Kurt Rohloff](https://www.linkedin.com/in/kurt-rohloff/) was at engineering grad school during the 9/11 attacks on New York and Washington in 2001 and quickly decided he wanted to play his "small part" in helping national security. It was not long before Kurt was working on projects to support the mission of [DARPA](https://www.darpa.mil/), (the Defense Advanced Research Projects Agency) and leading teams in the first implementation of a new concept in encryption.
 
 In 2009, Kurt was around during the discovery of the theoretical concept of "[homomorphic encryption](https://en.wikipedia.org/wiki/Homomorphic_encryption#:~:text=Homomorphic%20encryption%20is%20a%20form,performed%20on%20the%20unencrypted%20data)." This type of encryption allows calculations to be performed on encrypted data without decrypting it, all the while producing results as if the work had been done on unencrypted data. This way of sharing sensitive information while protecting privacy has real world use cases ranging from banks collaborating on money-laundering investigations to militaries sharing intelligence when they operate as allies in a war theater, Kurt said on the [latest episode](https://www.orchid.com/podcast/episode-27-kurt-rohloff) of the Follow the White Rabbit podcast.

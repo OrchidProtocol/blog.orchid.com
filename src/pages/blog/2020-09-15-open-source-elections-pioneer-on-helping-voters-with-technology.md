@@ -7,14 +7,11 @@ date: 1600178400000
 description: "Dr. Juan E. Gilbert, a professor at the University of Florida, can recall the disputed U.S. presidential election 20 years ago when fiascos over counting ballots in the Sunshine State left the country in limbo."
 featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_JGilbert.jpg
+podcast_url: https://www.orchid.com/podcast/episode-14-juan-gilbert
 tags:
   - Decentralization
   - Privacy
 ---
-<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/15931502/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/030500/" height="90" width="100%" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-&nbsp;
-
 Dr. Juan E. Gilbert, a professor at the University of Florida, can recall the disputed U.S. presidential election 20 years ago when fiascos over counting ballots in the Sunshine State left the country in limbo. For weeks after Election Night, counting officials were shown on live television peering at hanging chads on ballot papers, straining to discern whether a vote had been cast for Republican George W. Bush or Democrat Al Gore. Eventually, the Supreme Court decided the result putting Bush in the White House -- with many votes left untallied.
 
 Motivated to fix such a kind of mess, Juan dismissed widespread skepticism about technology and set out to bring open source solutions to bear on election voting systems. Juan is the Andrew Banks Family Preeminence Endowed Professor and Chair of Computer & Information Science & Engineering Department, who leads the Human-Centered Research Lab. On the latest episode of [Follow the White Rabbit](https://www.orchid.com/podcast), he said he built, along with his students, "the only open-source election technology to be used in state, local and federal elections in the United States." That means citizens in the likes of New Hampshire and Ohio have been able to exercise their right to vote using technology that "gives security, accessibility, usability and benefits of cost," he added.
