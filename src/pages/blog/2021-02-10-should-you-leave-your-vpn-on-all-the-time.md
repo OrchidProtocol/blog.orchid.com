@@ -37,7 +37,7 @@ A common challenge for VPN users is travel. People often access the web from a s
 
 In fact, connection speed, even when a user is not traveling, is one of the most common obstacles for VPN users. There are numerous reasons someone might experience latency with a VPN. The most likely is simply that bandwidth is strained as large numbers of people simultaneously access content online -- particularly amid an ongoing pandemic that has more people than ever [working](/tips-for-protecting-your-privacy-while-working-from-home/), [attending school](/how-to-protect-students-privacy-online-from-vr-to-vpns/), and entertaining themselves at home.
 
-It isn't your imagination: average internet speeds globally have slowed as traffic has [soared](https://www.nytimes.com/2020/03/26/business/coronavirus-internet-traffic-speed.html)during the pandemic. In particular, services that require a lot of bandwidth, such as video calls for work or movies and video games on the weekends, are the most likely to experience delays.
+It isn't your imagination: average internet speeds globally have slowed as traffic has [soared](https://www.nytimes.com/2020/03/26/business/coronavirus-internet-traffic-speed.html) during the pandemic. In particular, services that require a lot of bandwidth, such as video calls for work or movies and video games on the weekends, are the most likely to experience delays.
 
 Of course, "fast" and "slow" are relative terms. Depending on your needs and what you're used to, it mostly comes down to what your specific digital priorities are. Those looking to download movies and video games will require more bandwidth than those who simply want to read the newspaper.
 
