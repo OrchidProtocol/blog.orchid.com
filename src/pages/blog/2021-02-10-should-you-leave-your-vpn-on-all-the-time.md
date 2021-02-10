@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-public: false
+public: true
 url: should-you-leave-your-vpn-on-all-the-time
 title: "Should you leave your VPN on all the time?"
 date: 1612969200000
