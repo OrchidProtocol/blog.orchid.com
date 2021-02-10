@@ -73,5 +73,13 @@ To add an image to your post, just place the compressed image file inside of the
 
 &nbsp;
 
+### Post Interstitial
+
+The newsletter interstitial will be inserted automatically by default, but if needed you can manually insert it by adding `[interstitial]` to an empty line.
+
+If you wish to disable the interstitial for a single post, you can add `no_interstitial: true` to the post header.
+
+&nbsp;
+
 ## Verifying before pushing 
 In order to test that your post has been correctly formatted, make sure to run `npm run build` followed by `npm run serve` and visit `localhost:8000` to make sure everything looks correct.
