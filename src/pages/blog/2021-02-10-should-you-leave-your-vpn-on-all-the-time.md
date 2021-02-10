@@ -6,7 +6,7 @@ title: "Should you leave your VPN on all the time?"
 date: 1612969200000
 description: "Using the Internet is never completely without risk, but some functions are more sensitive than others"
 featuredpost: false
-featuredimage: /img/uploads/
+featuredimage: /img/uploads/OrchidBlog_VPNAlwaysOn.jpg
 tags:
   - Privacy
   - Decentralization
