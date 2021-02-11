@@ -10,6 +10,7 @@ featuredimage: /img/uploads/OrchidBlog_ETHDenver2021.jpg
 tags:
   - Privacy
   - Decentralization
+  - Events
 ---
 ETHDenver, the perennial gathering of Ethereum developers and supporters, returns this week -- and Orchid will be a featured contributor. This year's edition of ETHDenver has been reimagined as a virtual gathering for Ethereum developers, entrepreneurs, and enthusiasts. But regardless of format, the event, which runs from February 4-12, boasts a [slate of speakers](https://www.ethdenver.com/schedule) that's as impressive as ever.
 
