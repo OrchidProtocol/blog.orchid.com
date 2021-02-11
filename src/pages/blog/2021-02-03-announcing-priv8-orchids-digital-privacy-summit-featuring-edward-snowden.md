@@ -12,6 +12,7 @@ featuredimage: /img/uploads/OrchidBlog_Priv8.jpg
 tags:
   - Company Updates
   - Privacy
+  - Events
 body_ja: |-
   内部告発者であり、サイバーセキュリティの専門家であるエドワード・スノーデンが、 Orchidが初めて開催するバーチャルサミット「Priv8」のスピーカーとして登場することを発表します。Priv8は、オンライン・プライバシーの未来をテーマにしたユニークなデジタル・イベントで、3月23日から25日まで開催されます。[こちらから](https://www.ja.orchid.com/priv8)どなたでも無料でご登録いただけます。
 
