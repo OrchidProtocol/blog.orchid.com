@@ -25,6 +25,11 @@ const FooterSocialIcons = (props) => {
             </a>
         </SocialIcon>
         <SocialIcon>
+            <a rel="noopener noreferrer" href="https://discord.gg/GDbxmjxX9F" target="_blank">
+                <img width="30" height="30" src='/img/icons/social-discord.svg' alt='Discord' />
+            </a>
+        </SocialIcon>
+        <SocialIcon>
             <a rel="noopener noreferrer" href="https://www.t.me/OrchidOfficial" target="_blank">
                 <img width="30" height="30" src='/img/icons/social-telegram.svg' alt='Telegram' />
             </a>
