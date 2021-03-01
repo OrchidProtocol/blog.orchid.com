@@ -5,6 +5,7 @@ url: david-henkelwallace-on-open-source-and-human-motivation
 title: "David Henkel-Wallace on Open Source and Human Motivation"
 date: 1614610800000
 description: "David “Gumby” Henkel-Wallace recalls how on multiple occasions he was called an idiot to his face because of his pioneering work on open-source only to be given a purchase order by the same people."
+podcast_url: https://www.orchid.com/podcast/episode-37-david-henklel-wallace
 featuredpost: false
 featuredimage: /img/uploads/DavidHenkelWallace_Blog.jpg
 tags:
