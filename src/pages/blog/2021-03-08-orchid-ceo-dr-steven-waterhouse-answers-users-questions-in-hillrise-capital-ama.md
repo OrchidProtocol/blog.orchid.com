@@ -8,16 +8,8 @@ description: 'Last month Orchid’s co-founder and CEO Dr. Steven Waterhouse (Se
 featuredpost: false
 featuredimage: /img/uploads/OrchidBlog_AMAHillrise.jpg
 tags:
-  - Blockchain
-  - Censorship
-  - Company Updates
-  - Decentralization
-  - Ethereum
   - Events
-  - Network Analysis
-  - Partnerships
   - Privacy
-  - VPN
 ---
 Last month Orchid's co-founder and CEO Dr. Steven Waterhouse (Seven) answered questions in a Telegram AMA with Hillrise Capital. For those who were unable to join, here are some key takeaways and highlights from the event.
 
