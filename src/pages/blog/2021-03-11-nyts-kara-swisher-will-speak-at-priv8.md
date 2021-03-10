@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: nyts-kara-swisher-will-speak-at-priv8
 title: NYT’s Kara Swisher will speak at Priv8
-date: 1615478400000
+date: 1615474800000
 description: 'We are thrilled to announce that Kara Swisher of The New York Times will speak at Orchid’s Priv8 Virtual Privacy Summit.'
 featuredpost: false
 featuredimage: /img/uploads/OrchidBlog_P8KaraSwisher.jpg
