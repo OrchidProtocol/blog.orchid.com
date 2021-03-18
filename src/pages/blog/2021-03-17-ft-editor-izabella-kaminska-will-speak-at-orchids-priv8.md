@@ -11,11 +11,11 @@ tags:
   - Events
   - Privacy
 ---
-Only 5 more days until Priv8! The event will take place over three days, from March 23-25. [Register to attend](https://www.orchid.com/priv8), free of charge.
+Only 5 more days until Priv8! The event will take place over three days, from **March 23-25**. [Register to attend](https://www.orchid.com/priv8), free of charge.
 
-We are thrilled to announce two new speakers. Izabella Kaminska, editor of the Financial Times's Alphaville blog, will speak at Orchid's [Priv8 Virtual Privacy Summit](https://www.orchid.com/priv8/). Priv8, a first-of-its-kind event focused on digital privacy, is a venue for experts to share their experiences, predictions, hopes, and advice with like-minded people around the world.
+We are thrilled to announce a new speaker. **Izabella Kaminska**, editor of the Financial Times's Alphaville blog, will speak at Orchid's [Priv8 Virtual Privacy Summit](https://www.orchid.com/priv8/). Priv8, a first-of-its-kind event focused on digital privacy, is a venue for experts to share their experiences, predictions, hopes, and advice with like-minded people around the world.
 
-Izabella joins a growing slate of distinguished speakers, including whistleblower and cybersecurity expert Edward Snowden,  Electronic Frontier Foundation Executive Director Cindy Cohn, Digital Minister of Taiwan Audrey Tang, and Executive and Director at the Linux Foundation Brian Behlendorf.
+Izabella joins a growing slate of distinguished speakers, including whistleblower and cybersecurity expert **Edward Snowden**,  Electronic Frontier Foundation Executive Director **Cindy Cohn**, Digital Minister of Taiwan **Audrey Tang**, and Executive and Director at the Linux Foundation **Brian Behlendorf**.
 
 Izabella's work at Alphaville covers markets and finance with an increasing focus on digital assets and crypto investing. At Priv8, she will take part in a discussion entitled "After Cash: Keeping Secrets in Permissionless Finance."
 
