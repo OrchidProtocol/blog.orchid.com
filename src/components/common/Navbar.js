@@ -42,9 +42,9 @@ function Navbar({ customText }) {
     const [active, setActive] = useState(false);
 
     return <Container data-active={active}>
-        <InfoBar href={`${config.main_site}newsletter-signup`}>
+        {/*<InfoBar href={`${config.main_site}newsletter-signup`}>
             Get privacy news delivered to your inbox &raquo;
-        </InfoBar>
+        </InfoBar>*/}
         {/* The main header section on top of the screen */}
         <Header customText={customText}>
             <a href="https://www.orchid.com/" css={css`
