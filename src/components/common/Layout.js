@@ -72,6 +72,7 @@ const TemplateWrapper = ({ children, bodyClass, customText }) => {
                     align-items: center;
                     @media (max-width: 1200px) {
                         flex-direction: column;
+                        text-align: center;
                     }
                 `}>
                     <a css={css`
@@ -120,7 +121,8 @@ const TemplateWrapper = ({ children, bodyClass, customText }) => {
                             margin-bottom: 1rem;
                             color: white;
                             @media (max-width: 1200px) {
-                                display: none;
+                                font-size: 18px;
+                                margin-bottom: 0.5rem;
                             }
                         `}>A VIRTUAL SUMMIT ON DIGITAL PRIVACY</h2>
                         <p css={css`
