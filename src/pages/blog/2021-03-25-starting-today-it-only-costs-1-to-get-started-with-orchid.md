@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: starting-today-it-only-costs-1-to-get-started-with-orchid
 title: 'Starting today, it only costs $1 to get started with Orchid'
-date: 1616594400000
+date: 1616673600000
 description: 'It is now even easier to use Orchid’s distributed VPN service.'
 featuredpost: false
 featuredimage: /img/upload/OrchidBlog_xDAI_1.jpg
