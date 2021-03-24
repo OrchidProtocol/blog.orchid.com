@@ -12,7 +12,7 @@ tags:
   - Ethereum
   - Company Updates
 ---
-People can now [get started using Orchid **on iOS/MacOS**](https://apps.apple.com/app/apple-store/id1474884867) for as little as $1. The platform now runs on less costly blockchains to reduce gas fees. As a result, users can fund an Orchid account backed with XDAI using a simple in-app purchase, and use that account for pay-as-you-go distributed VPN service.
+People can now [get started using Orchid **on iOS/MacOS**](https://apps.apple.com/app/apple-store/id1474884867) *(Android support coming soon)* for as little as $1. The platform now runs on less costly blockchains to reduce gas fees. As a result, users can fund an Orchid account backed with XDAI using a simple in-app purchase, and use that account for pay-as-you-go distributed VPN service.
 
 With Orchid's iOS and macOS app, users simply buy VPN credits for $1, $5 or $20, which is then turned into a XDAI-backed account. Once the user's VPN is active, users are only charged for the bandwidth run through the VPN, with no recurring monthly or annual subscription fee, in stark contrast to other VPN offerings. The current market rate for Orchid service is only $0.06 per GB. Orchid built an innovative payments system called [probabilistic nanopayments](/introducing-nanopayments/) that allow for tiny amounts of money -- thousandths of a penny in crypto  -- to be sent between parties. This capability makes it possible for users to pay based on usage alone -- a feature unique among VPN services, which fixes a pain point for a major group of users where an all you can eat subscription model doesn't make sense.
 
