@@ -7,7 +7,7 @@ title_ja: "エドワード・スノーデンを迎えたOrchidのデジタル・
 date: 1612364400000
 description: "The famed whistleblower will be joined by global privacy advocates, government leaders, academics and technologists"
 description_ja: "著名な内部告発者が世界的なプライバシー擁護者、政府の指導者、学者、技術者らと共に参加"
-featuredpost: true
+featuredpost: false
 featuredimage: /img/uploads/OrchidBlog_Priv8.jpg
 tags:
   - Company Updates
