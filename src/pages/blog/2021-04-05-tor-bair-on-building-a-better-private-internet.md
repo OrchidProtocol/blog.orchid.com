@@ -6,7 +6,7 @@ title: 'Tor Bair on Building a Better, Private Internet'
 date: 1617631200000
 description: 'Tor Bair is on a mission to make privacy an essential part of the Internet by promoting decentralized technologies that focus on keeping information private.'
 featuredpost: false
-featuredimage: /img/orchid-text.png
+featuredimage: /img/uploads/TorBair_Blog.jpg
 tags:
   - Decentralization
   - Privacy
