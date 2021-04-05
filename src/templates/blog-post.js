@@ -31,6 +31,8 @@ export const BlogPostTemplate = ({
 	featuredimage,
 }) => {
 
+	content = content.replace(/href="https:\/\/blog(.|.zh.|.ja.|.ko.|.id.|.ru.)orchid.com\//g, 'href="/');
+
 	// If the post does not contain an interstitial, attempt to insert one in a safe location
 	if (!no_interstitial && content.match(/\[interstitial\]/) === null) {
 		content = content.split(/\n/g);
