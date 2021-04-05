@@ -7,6 +7,7 @@ date: 1617631200000
 description: 'Tor Bair is on a mission to make privacy an essential part of the Internet by promoting decentralized technologies that focus on keeping information private.'
 featuredpost: false
 featuredimage: /img/uploads/TorBair_Blog.jpg
+podcast_url: https://www.orchid.com/podcast/episode-42-tor-bair/
 tags:
   - Decentralization
   - Privacy
