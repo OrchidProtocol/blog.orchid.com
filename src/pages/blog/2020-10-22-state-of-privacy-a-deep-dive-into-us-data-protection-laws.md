@@ -6,7 +6,7 @@ title: "State of privacy: a deep dive into U.S. data protection laws"
 date: 1603375200000
 description: "While the U.S. as a whole lacks a unifying set of rules around online privacy, states and localities have begun to enact numerous, varied approaches with the potential for wildly differing outcomes."
 featuredpost: false
-featuredimage: /img/uploads/Orchid_BlogImage_StatebyState.jpg
+featuredimage: /img/uploads/OrchidBlog_StatePrivacy2021.jpg
 tags:
   - Privacy
   - VPN
