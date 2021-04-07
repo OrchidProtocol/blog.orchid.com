@@ -11,7 +11,8 @@ tags:
   - Privacy
   - VPN
 ---
-*Updated April 7th, 2021*
+*Originally published on October 22nd 2020.*
+*Updated on April 7th, 2021*
 
 Around the world, from living rooms to boardrooms to legislatures, [data privacy is a salient and growing concern](/what-the-global-vpn-markets-explosive-growth-means-for-orchid/). As more and more aspects of life have shifted online in recent years, people and governments have begun to recognize that our digital actions leave behind footprints. Corporations have long made use of this data [to target ads and refine newsfeeds](/tracking-pixels-explained/). There is growing recognition -- now [accelerated by the covid-19 pandemic](https://www.weforum.org/agenda/2020/07/why-covid-19-contact-tracing-must-be-efficient-effective-and-responsible/) -- of the risk we face if we do not establish proper safeguards around data privacy. The widespread nature of data collection, and the perceived risk of having so much information about the daily activities of anyone who uses the Internet, has led lawmakers to begin to intervene.
 
