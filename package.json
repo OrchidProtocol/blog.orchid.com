@@ -51,6 +51,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
+    "build:common": "gatsby clean && gatsby build",
     "clean": "rm .env.production && rm .env.development && gatsby clean",
     "start": "TARGET_LANG=en node init-env.js && npm run develop",
     "build": "npm run build:static:en",
