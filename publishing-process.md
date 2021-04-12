@@ -2,6 +2,8 @@
 
 Blog posts are stored in the `src/pages/blog` directory as Markdown (`.md`) files.
 
+A [simple HTML file](blog-utility.html) that generates most of the required markdown has been added to the repository.
+
 &nbsp;
 
 To create a new post, simply drop the template below into a new markdown file in the directory.
