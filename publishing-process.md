@@ -2,6 +2,8 @@
 
 Blog posts are stored in the `src/pages/blog` directory as Markdown (`.md`) files.
 
+A [utility](https://orchid-blog-md.netlify.app/) that generates most of the required markdown has been created. [Repo link.](https://github.com/CircleClick/orchid-blog-md)
+
 &nbsp;
 
 To create a new post, simply drop the template below into a new markdown file in the directory.
