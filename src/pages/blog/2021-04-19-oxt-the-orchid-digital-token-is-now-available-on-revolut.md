@@ -7,9 +7,10 @@ date: 1618808400000
 description: OXT, the Orchid digital token, is available to buy, sell, and trade on Revolut, bringing the promise of online privacy to more people than ever before.
 featuredpost: false
 featuredimage: /img/uploads/OrchidBlog_Revolut.jpg
-tags: Blockchain
-  Ethereum
-  Partnerships
+tags:
+  - Blockchain
+  - Ethereum
+  - Partnerships
 ---
 
 OXT, the Orchid digital token, is available to buy, sell, and trade on [Revolut](https://www.revolut.com/en-US/), bringing the promise of online privacy to more people than ever before.
