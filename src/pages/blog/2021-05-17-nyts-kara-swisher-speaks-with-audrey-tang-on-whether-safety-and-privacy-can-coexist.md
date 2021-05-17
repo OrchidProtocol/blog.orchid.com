@@ -6,7 +6,7 @@ title: NYT’s Kara Swisher speaks with Audrey Tang on whether safety and privac
 date: 1621252800000
 description: Kara Swisher has been described as Silicon Valley's "most powerful tech journalist.” Her opinion pieces appear regularly in The New York Times, and she is the host and co-host, respectively, of podcasts Sway and Pivot.
 featuredpost: false
-featuredimage: /img/uploads/P8PEpisode_DraganaKaurin.jpg
+featuredimage: /img/uploads/P8PEpisode_KaraSwisher.jpg
 podcast_url: https://www.orchid.com/podcast/episode-47-kara-swisher
 tags:
   - Privacy
