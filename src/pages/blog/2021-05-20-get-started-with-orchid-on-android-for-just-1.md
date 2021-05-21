@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: get-started-with-orchid-on-android-for-just-1
 title: Get started with Orchid on Android for just $1
-date: 1621512000000
+date: 1621859400000
 description: Android users can now pay for bandwidth on Orchid via in-app purchases, which allow people to buy Orchid accounts filled with XDAI using nothing more than an ordinary credit card.
 featuredpost: false
 featuredimage: /img/upload/OrchidBlog_AndroidIAP.jpg
