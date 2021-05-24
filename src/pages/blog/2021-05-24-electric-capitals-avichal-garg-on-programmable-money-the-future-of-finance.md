@@ -10,6 +10,7 @@ featuredimage: /img/uploads/P8PEpisode_AvichalGarg.jpg
 tags:
   - Decentralization
   - Blockchain
+podcast_url: https://www.orchid.com/podcast/episode-48-avichal-garg/
 ---
 "Over the next 20 to 30 years, [decentralization] will eat up everything that has to do with money and moving value around," said Avichal Garg, managing partner at Electric Capital, a VC firm that focuses on early-stage blockchain, cryptocurrency, and fintech startups. He was speaking to Derek Silva, the host of [Orchid's Priv8 podcast,](https://www.orchid.com/podcast) which focuses on the intersection of Internet privacy, technology, and human rights.
 
