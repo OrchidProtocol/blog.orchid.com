@@ -11,7 +11,7 @@ tags:
   - Blockchain
   - Privacy
 ---
-Much has been made of the likely advent of quantum computing, which promises the ability to perform computations at speeds that are orders of magnitude beyond those of current computers. But what does quantum computing mean for the future of blockchain?
+Much has been made of the likely advent of quantum computing, which promises the ability to perform computations at speeds that are orders of magnitude beyond those of current computers. But what does quantum computing mean for the future of blockchain? Do quantum computers threaten blockchain security?
 
 To answer this question, it's important to first explore the history of quantum computing as a concept -- its origins, its objectives, and the strides it has made in recent years. From this starting point, it is possible to analyze the ways in which the technology stands to impact blockchain projects -- and what that means for the decentralized space generally.
 
@@ -41,7 +41,7 @@ With the launch of Bristlecone, Google claimed that it had achieved "quantum sup
 
 **Meaningful quantum computing may still be five to ten years away**
 
-But while much progress has been made in the world of quantum computing, experts believe that it could be five to ten years before the technology is at a point where it can deliver meaningful value. Still, that day is coming closer and closer. While the quantum computing industry was valued at roughly $507.1 million in 2019, it is [projected to grow to as much as $65 billion by 2030. ](https://www.nasdaq.com/articles/quantum-computing%3A-how-to-invest-in-it-and-which-companies-are-leading-the-way-2020-02-11)
+But while much progress has been made in the world of quantum computing, experts believe that it could be five to ten years before the technology is at a point where it can deliver meaningful value. Still, that day is coming closer and closer. While the quantum computing industry was valued at roughly $507.1 million in 2019, it is [projected to grow to as much as $65 billion by 2030.](https://www.nasdaq.com/articles/quantum-computing%3A-how-to-invest-in-it-and-which-companies-are-leading-the-way-2020-02-11)
 
 **The Quantum Internet and the future of data security**
 
@@ -83,7 +83,7 @@ The rise of quantum computing will mean encrypted messaging applications, VPNs, 
 
 And the reality is that quantum computers and blockchain technology can co-exist, work together, and strengthen one another.
 
-The combination of quantum computing and blockchain technology has come to be known as "**quantum blockchain.**" Like classical blockchains, quantum blockchains are decentralized, encrypted ledgers. However, unlike classical blockchains, these networks would be based on quantum computation, quantum information theory, and quantum mechanics.
+The combination of quantum computing and blockchain technology has come to be known as "**quantum blockchain**". Like classical blockchains, quantum blockchains are decentralized, encrypted ledgers. However, unlike classical blockchains, these networks would be based on quantum computation, quantum information theory, and quantum mechanics.
 
 While no quantum blockchain is yet operational, a number of researchers are exploring the potential of the technology. In 2018, researchers at Victoria University of Wellington, in New Zealand, proposed a quantum blockchain model that would [store blockchain data in a **quantum era**:](https://techcrunch.com/2018/04/24/meet-the-quantum-blockchain-works-like-a-time-machine/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAJuA0e651eEkPUPGV28C1bhRmRAVcO1APw-J36GkARMXOM-WZkgEJJ9iP4FX16VJSZKRGBge7MFSBG7TtjAeORZ0id-QcNWRMsDJJCbPWe62AqvsSPmtO7NiGUAyTmoHcQM7OM-1Kh93SIP9ZooAI3vdMb66EedBhvzReR4aC-X1)  pieces of transaction data would be stored in entangled photons that only exist for a short time. After ceasing to exist, though, the photons would still be readable--encased forever in a sort of "read only" mode, impossible to alter.
 
@@ -91,7 +91,7 @@ While no quantum blockchain is yet operational, a number of researchers are expl
 
 In theory, this technology could be used to create an immensely secure blockchain.
 
-In 2019, an independent team of researchers also proposed the creation of  a new type of cryptocurrency [dubbed the "quantum coin,"](https://www.researchgate.net/publication/346542419_A_novel_quantum_blockchain_scheme_base_on_quantum_entanglement_and_DPoS) arguing that quantum blockchains could produce more secure and efficient transactional models. The researchers proposed the combination of quantum entanglement and Distributed Proof-of-Stake (DPoS) to create a new kind of consensus mechanism that would be faster and more efficient than pre-quantum blockchain consensus algorithms.
+In 2019, an independent team of researchers also proposed the creation of a new type of cryptocurrency [dubbed the "quantum coin,"](https://www.researchgate.net/publication/346542419_A_novel_quantum_blockchain_scheme_base_on_quantum_entanglement_and_DPoS) arguing that quantum blockchains could produce more secure and efficient transactional models. The researchers proposed the combination of quantum entanglement and Distributed Proof-of-Stake (DPoS) to create a new kind of consensus mechanism that would be faster and more efficient than pre-quantum blockchain consensus algorithms.
 
 But while quantum technological developments are happening faster than ever, it will still be years before quantum computers are a reality. In the meantime, cryptocurrency users and developers can take the necessary steps to quantum-proof the blockchain networks that they rely on. And when quantum supremacy arrives, the blockchain projects should be prepared to innovate and thrive.
 
