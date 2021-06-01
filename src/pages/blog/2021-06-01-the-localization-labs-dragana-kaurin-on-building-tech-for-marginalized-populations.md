@@ -8,6 +8,9 @@ description: "\"To be able to meet people's needs, you need to ask the question:
 featuredpost: false
 featuredimage: /img/uploads/P8PEpisode_DraganaKaurin.jpg
 tags:
+  - Blockchain
+  - Privacy
+podcast_url: https://www.orchid.com/podcast/episode-49-dragana-kaurin
 ---
 "To be able to meet people's needs, you need to ask the question: 'what do you need?'" said Dragana Kaurin, human rights researcher and founder of The Localization Lab. She was speaking to Derek Silva, the host of Orchid's Priv8 podcast.
 
