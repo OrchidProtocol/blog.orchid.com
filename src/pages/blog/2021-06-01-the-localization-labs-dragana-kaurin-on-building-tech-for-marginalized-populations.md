@@ -2,9 +2,9 @@
 templateKey: blog-post
 public: true
 url: the-localization-labs-dragana-kaurin-on-building-tech-for-marginalized-populations
-title: The Localization Lab’s Dragana Kaurin on Building Tech for Marginalized Populations
+title: The Localization Lab's Dragana Kaurin on Building Tech for Marginalized Populations
 date: 1622548800000
-description: "To be able to meet people's needs, you need to ask the question: 'what do you need?'" said Dragana Kaurin, human rights researcher and founder of The Localization Lab. She was speaking to Derek Silva, the host of Orchid's Priv8 podcast.
+description: "\"To be able to meet people's needs, you need to ask the question: \'what do you need?\'\" said Dragana Kaurin, human rights researcher and founder of The Localization Lab. She was speaking to Derek Silva, the host of Orchid's Priv8 podcast."
 featuredpost: false
 featuredimage: /img/uploads/P8PEpisode_DraganaKaurin.jpg
 tags:
