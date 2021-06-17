@@ -24,10 +24,10 @@ const ImageMeta = ({ image }) => {
             <meta name="twitter:image" content={completeImageUrl} />
             <meta property="og:image" content={completeImageUrl} />
             {
-                (image === config.featureimage) ? <>
+                (image === config.featureimage) && <>
                     <meta property="og:image:width" content={config.shareImageWidth} />
                     <meta property="og:image:height" content={config.shareImageHeight} />
-                </> : <></>
+                </>
             }
             
         </Helmet >
