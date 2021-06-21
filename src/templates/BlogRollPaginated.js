@@ -116,7 +116,7 @@ const BlogRoll = ({ data, pageContext }) => {
                     background-image: url(${featuredimage});
                     background-size: cover;
                     background-position: center;
-                    padding: 26.5% 50%;
+                    padding: 26.2916% 50%;
                 `}></div> : <></>}
             <h3 css={css`
                 ${process.env.GATSBY_TARGET_LANG !== 'en' ? `

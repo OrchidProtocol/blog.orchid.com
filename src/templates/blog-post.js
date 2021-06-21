@@ -168,36 +168,45 @@ export const BlogPostTemplate = ({
 				<article className="content">
 					{helmet || ' '}
 
-					<figure css={css`
-						margin: 0;
+					<div css={css`
 						width: 100%;
-						height: auto;
-						-o-object-fit: contain;
-						object-fit: contain;
-						-o-object-position: center;
-						object-position: center;
+						max-width: 720px;
+						margin: auto;
+						@media (min-width: 1200px) {
+							@media (max-width: 1500px) {
+								margin: 0;
+							}
+						}
 					`}>
-						{featuredimage ?
+						{featuredimage ? <figure css={css`
+							margin: 0;
+							height: auto;
+							width: 100%;
+							max-width: 720px;
+							padding: 26.2916% 50%;
+							position: relative;
+							box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
+							border-radius: 20px;
+							margin-bottom: 1rem;
+							margin-left: auto;
+							margin-right: auto;
+							overflow: hidden;
+						`}>
 							<img css={css`
-								max-width: 720px;
-								width: 100%;
-								height: auto;
-								margin-left: auto;
-								margin-right: auto;
-								margin-bottom: 1rem;
-								display: block;
-
-								@media (min-width: 1200px) {
-									@media (max-width: 1500px) {
-										margin-left: 0;
-									}
-								}
-								box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
-								border-radius: 20px;
-							`} src={featuredimage} alt={title} />
-							: <></>}
-
-					</figure>
+									position: absolute;
+									top: 0;
+									left: 0;
+									width: 100%;
+									height: 100%;
+									-o-object-fit: contain;
+									object-fit: contain;
+									-o-object-position: center;
+									object-position: center;
+								`}
+								src={featuredimage}
+								alt={title} />
+						</figure> : <></>}
+					</div>
 
 					<section css={css`
 					margin-top: 0;
@@ -314,7 +323,7 @@ export const BlogPostTemplate = ({
 							<hr />
 							<i>
 								If you enjoyed this blog, <a href="https://www.orchid.com/newsletter-signup">subscribe here</a> for privacy news, commentary, and product updates from Orchid.
-						</i>
+							</i>
 						</section> : ''}
 
 
