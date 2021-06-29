@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 public: true
-url: what-does-ethereum-20-mean-for-orchid
+url: what-does-ethereum-2-point-0-mean-for-orchid
 title: What Does Ethereum 2.0 Mean for Orchid?
 date: 1624968000001
 description: One of the biggest stories of 2020 in the blockchain space was the much-anticipated launch of Ethereum 2.0.
