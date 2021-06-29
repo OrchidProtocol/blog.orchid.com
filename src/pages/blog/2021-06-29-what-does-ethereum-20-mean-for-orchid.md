@@ -55,7 +55,7 @@ At present, the Ethereum network is capable of processing some [10-15 transactio
 
 The Ethereum developer community has designed a solution to address both high transaction costs and slow transaction speeds on the Ethereum network at once. This solution is called **sharding**.
 
-Sharding is a proposed method, essentially, of splitting Ethereum's infrastructure into smaller pieces. Theoretically, this should [decrease the load on each individual node](https://ethereum.org/en/eth2/shard-chains/), thereby allowing for a larger transaction throughput. While it's difficult to determine exactly how much the upgrade to Eth2.0 will cut transaction fees, it's estimated that Eth2.0 will be capable of running more than 100,000 transactions per second.
+[Sharding](https://ethereum.org/en/eth2/shard-chains/) is a proposed method, essentially, of splitting Ethereum's infrastructure into smaller pieces. Theoretically, this should decrease the load on each individual node, thereby allowing for a larger transaction throughput. While it's difficult to determine exactly how much the upgrade to Eth2.0 will cut transaction fees, it's estimated that Eth2.0 will be capable of running more than 100,000 transactions per second.
 
 Currently, Orchid's nanopayment system can support several million users sending probabilistic transactions in OXT each second -- a tremendous capacity to provide digital privacy solutions around the world. However, the sharding infrastructure outlined in the plan for Eth2.0 has the potential to be truly transformative, allowing Orchid to handle billions of OXT transactions per second.
 
