@@ -10,6 +10,8 @@ featuredimage: /img/uploads/Orchid_BlogImage_Staking.jpg
 tags:
   - Company Updates
 ---
+*This article has been updated, and was originally published on Tuesday, March 17th 2020.*
+
 The staking of OXT is an important component of Orchid's design. Staking is a process whereby an asset is deposited and locked into an illiquid contract or mechanism in exchange for revenue or rewards.  On Orchid, providers stake OXT tokens in an Ethereum smart contract (the directory) to advertise their services to clients. Orchid users, known as Clients, select new nodes at random in proportion to their relative OXT deposit size; the probability of picking a particular provider is equal to their fraction of the total stake. Anyone can stake OXT on nodes using the smart contract.
 
 Users need an Orchid account that holds funds to pay for VPN service. The Orchid nanopayment system is chain-agnostic; Orchid accounts can use OXT on Ethereum, or be homed on other Ethereum Virtual Machine (EVM)-compatible chains [such as xDAI](/starting-today-it-only-costs-1-to-get-started-with-orchid/). However, while providers can receive payments from any EVM-compatible chain, staking must always be done with OXT on Ethereum.
