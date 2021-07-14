@@ -198,8 +198,8 @@ export const BlogPostTemplate = ({
 									left: 0;
 									width: 100%;
 									height: 100%;
-									-o-object-fit: contain;
-									object-fit: contain;
+									-o-object-fit: cover;
+									object-fit: cover;
 									-o-object-position: center;
 									object-position: center;
 								`}
