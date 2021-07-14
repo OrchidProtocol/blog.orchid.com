@@ -12,7 +12,7 @@ tags:
   - Privacy
 ---
 *Originally published on Nov 10th 2019.*
-*Updated on July 14th, 2021*
+*Updated on July 14th, 2021.*
 
 In 1996, a Microsoft software engineer named Gurdeep Singh-Pall developed a peer-to-peer tunneling protocol (PPTP), which is widely considered the basis of what we now call virtual private networks (VPNs).
 
