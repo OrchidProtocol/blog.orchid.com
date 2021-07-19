@@ -30,4 +30,4 @@ Derek asked Michael how free and open Internet access helps individuals and busi
 
 > Of course, "some disinformation is also spread easily online. But the antidote to that disinformation is also more widely available when [people have] open Internet access."
 
-[Check out](https://www.orchid.com/podcast/episode-56-michael-caster/) Derek's entire conversation with Michael, and don't forget to subscribe to Priv8 Podcast on your favorite streaming service.
+*[Check out](https://www.orchid.com/podcast/episode-56-michael-caster/) Derek's entire conversation with Michael, and don't forget to subscribe to Priv8 Podcast on your favorite streaming service.*
