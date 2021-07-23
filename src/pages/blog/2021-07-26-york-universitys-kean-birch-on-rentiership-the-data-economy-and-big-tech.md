@@ -7,6 +7,7 @@ date: 1627304400000
 description: “Assets are increasingly central to contemporary capitalism,” said Kean Birch, an expert in technoscience and professor at York University, to Orchid’s Derek Silva on this week’s episode of Priv8. 
 featuredpost: false
 featuredimage: /img/uploads/P8PEpisode_KeanBirch.jpg
+podcast_url: https://www.orchid.com/podcast/episode-57-kean-birch
 tags:
   - Privacy
   - Decentralization
