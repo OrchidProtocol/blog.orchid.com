@@ -17,6 +17,8 @@ body_ja: |-
   2021年7月26日
 
   7月19日、Orchid の共同創業者兼CEOであるスティーブン・ウォーターハウス博士は、イーサリアムの技術とコミュニティに関するヨーロッパ最大の年次カンファレンスであるETHccに登壇した。ウォーターハウス博士のスピーチでは、エンドツーエンドの暗号化と分散化が、オンライン・プライバシーを守り、強化する上で果たす重要な役割について述べた。
+  
+  ![Seven speaking at ETHcc on July 19th, 2021](/img/uploads/orchid-ceo-dr-steven-waterhouse-speaks-at-ethcc-2021-img1.png)
 
   グローバル社会において、暗号化は「金融や通信のプライバシーを守るために必要不可欠なものになっています」とウォーターハウス博士は指摘した。特にエンド・ツー・エンドの暗号化では、送信者と受信者だけが情報を見ることができ、転送中のデータを扱う中央のサーバーには情報が見えない。例えば、WhatsApp、Venmo、Telegram、Apple、Paypalなどのサービスプロバイダーは、それぞれのサービスに何らかの暗号化技術を採用している。
 
@@ -43,10 +45,12 @@ body_ja: |-
   **Orchidは、分散化の構造的な安全性と暗号化の力を組み合わせたもの**
 
   分散化は、プライバシーに関するパーミッションレスシステムの構築にも利用されている。この意味するところは非常に大きい。非中央集権的な方法で情報を保存する場合、その情報をコントロールするのは自分だけであり、確立された当局へのアクセスや許可は必要ない。
+  
+  ![Seven onstage at ETHcc in Paris, July 19th, 2021](/img/uploads/orchid-ceo-dr-steven-waterhouse-speaks-at-ethcc-2021-img2.png)
 
   ウォーターハウス博士は、OrchidのブロックチェーンベースのVPNサービスが、許可のない分散型システムのセキュリティと、プライバシーに対する基本的な権利をどのように組み合わせているかを説明した。Orchidは、世界の主要なVPNプロバイダーのサービスをまとめた分散型のプライバシーマーケットプレイス。その分散型モデルは、分散型ネットワーク上のプロバイダーネットワークにインセンティブを与え、「ユーザーがが誰なのか、（オンライン上で）どこに行くのかを、誰にも知られないようにすることを可能にします。」
 
-  Orchidは、非常にアクセスしやすく、簡単に使えるように作られている。エコシステム全体は、OrchidのEthereumベースのデジタル資産である[OXT](https://www.orchid.com/oxt)によって支えられいて、ユーザーは[通常のクレジットカード](https://blog.orchid.com/how-to-start-using-orchids-crypto-vpn-in-seconds/#:~:text=Once%20you've%20got%20the,That's%20it!)だけで帯域幅を購入することができる。また、このサービスは従量制なので、ユーザーは使用した分の帯域だけが請求される。今なら、[たったの1ドル](https://blog.orchid.com/starting-today-it-only-costs-1-to-get-started-with-orchid/)で始められる。
+  Orchidは、非常にアクセスしやすく、簡単に使えるように作られている。エコシステム全体は、OrchidのEthereumベースのデジタル資産である[OXT](https://www.ja.orchid.com/oxt/)によって支えられいて、ユーザーは[通常のクレジットカード](https://blog.orchid.com/how-to-start-using-orchids-crypto-vpn-in-seconds/#:~:text=Once%20you've%20got%20the,That's%20it!)だけで帯域幅を購入することができる。また、このサービスは従量制なので、ユーザーは使用した分の帯域だけが請求される。今なら、[たったの1ドル](https://blog.orchid.com/starting-today-it-only-costs-1-to-get-started-with-orchid/)で始められる。
 
   「Orchidは、デジタル・プライバシーの問題を、オープンで分散的な方法で解決することに特化しています。プライバシーはOrchidの単なる機能ではありません。Orchidの製品はプライバシーなのです。」
 
