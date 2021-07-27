@@ -14,8 +14,6 @@ tags:
   - Privacy
   - Decentralization
 body_ja: |-
-  2021年7月26日
-
   7月19日、Orchid の共同創業者兼CEOであるスティーブン・ウォーターハウス博士は、イーサリアムの技術とコミュニティに関するヨーロッパ最大の年次カンファレンスであるETHccに登壇した。ウォーターハウス博士のスピーチでは、エンドツーエンドの暗号化と分散化が、オンライン・プライバシーを守り、強化する上で果たす重要な役割について述べた。
   
   ![Seven speaking at ETHcc on July 19th, 2021](/img/uploads/orchid-ceo-dr-steven-waterhouse-speaks-at-ethcc-2021-img1.png)
