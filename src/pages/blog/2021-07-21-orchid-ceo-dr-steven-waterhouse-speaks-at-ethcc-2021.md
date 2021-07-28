@@ -3,14 +3,56 @@ templateKey: blog-post
 public: true
 url: orchid-ceo-dr-steven-waterhouse-speaks-at-ethcc-2021
 title: Orchid CEO Dr. Steven Waterhouse Speaks at ETHcc 2021
+title_ja: OrchidのCEO、スティーブン・ウォーターハウス博士がETHcc 2021で講演
 date: 1626958800000
 description: On July 19th, Orchid co-founder and CEO Dr. Steven Waterhouse (Seven) spoke at ETHcc, Europe’s largest annual conference on Ethereum’s technology and community.
+description_ja: 7月19日、Orchid の共同創業者兼CEOであるスティーブン・ウォーターハウス博士は、イーサリアムの技術とコミュニティに関するヨーロッパ最大の年次カンファレンスであるETHccに登壇した。
 featuredpost: false
 featuredimage: /img/uploads/OrchidBlog_ETHCCRecap.jpg
 tags:
   - Blockchain
   - Privacy
   - Decentralization
+body_ja: |-
+  7月19日、Orchid の共同創業者兼CEOであるスティーブン・ウォーターハウス博士は、イーサリアムの技術とコミュニティに関するヨーロッパ最大の年次カンファレンスであるETHccに登壇した。ウォーターハウス博士のスピーチでは、エンドツーエンドの暗号化と分散化が、オンライン・プライバシーを守り、強化する上で果たす重要な役割について述べた。
+  
+  ![Seven speaking at ETHcc on July 19th, 2021](/img/uploads/orchid-ceo-dr-steven-waterhouse-speaks-at-ethcc-2021-img1.png)
+
+  グローバル社会において、暗号化は「金融や通信のプライバシーを守るために必要不可欠なものになっています」とウォーターハウス博士は指摘した。特にエンド・ツー・エンドの暗号化では、送信者と受信者だけが情報を見ることができ、転送中のデータを扱う中央のサーバーには情報が見えない。例えば、WhatsApp、Venmo、Telegram、Apple、Paypalなどのサービスプロバイダーは、それぞれのサービスに何らかの暗号化技術を採用している。
+
+  暗号化が普及するにつれ、規制当局から注目されるようになった
+
+  **しかし、暗号化が普及するにつれ、世界中の政府が注目するようになった。**
+
+  実際、多くの政府が暗号化、「具体的にはエンドツーエンドの暗号化を弱体化させようとしています」とウォーターハウス博士は説明する。 民主主義国では、公共の安全を名目に、暗号化対策が行われている。「犯罪対策を理由に、当局が情報を解読できるような "バックドア "を企業に提供さています。」
+
+  「このようなバックドアが存在すれば、暗号化は著しく弱体化します。鍵を盗むことができれば誰でも暗号化されたデータへのアクセスが可能になるからです」とウォーターハウス博士は述べている。「もし政府がバックドアを作ったら、政府が安全だということをどうやって確認できるのだろうか？どんな中央集権的な組織でもハッキングされる可能性があります。」
+
+  弱体化した暗号化は、プライバシーの権利に対する本質的な脅威であることが証明されており、すでに悲惨な結果を招いている。憂慮すべき傾向として、一部の政府機関は軍用のスパイウェアを使用してジャーナリスト、弁護士、人権活動家を標的にしている。
+
+  ウォーターハウス博士は、「『すべての人を常時監視すれば、すべての犯罪を永遠に解決できる』という考え方には、深い欠陥があります」と述べた。
+
+  **プライバシーの権利を守る**
+
+  暗号化への脅威が顕著になるにつれ、活動家たちは基本的人権としてのプライバシーを守るための手段を講じてきた。プライバシーの権利において暗号化が重要な役割を果たすことを認識し、真の暗号化を維持するよう政府に働きかけるために組織したグループも存在する。
+
+  エンド・ツー・エンドの暗号化を守るための戦いが技術的にも政治的にも続く中で、ウォーターハウス博士は、他のプライバシー重視の技術が注目を集めるだろうと指摘している。「私たちは、プライバシーという考え方は、未来をどのように構築するかという基本的なことだと考えています。これは、パンデミック後の時代に特に言えることであり、私たちが経験したこの世界的な危機は、将来にわたってプライバシーに影響を与える可能性があります。だからこそ、プライバシーの権利を守ることがかつてないほど重要になっています。」
+
+  ウォーターハウス博士は、「暗号化ほど話題にならないかもしれないが、この取り組みには分散化が大きな役割を果たす」と述べている。"分散化 "とは、許可のない方法で物事を行うことだ。中間管理者やゲートキーパーのいない複数のノードにプロセスを分散させることで、単一障害点（Single Point of Failure）のリスクを排除することができる。この技術は、多くのユースケースに応用されている。最も一般的な分散型システムは、金融取引をサポートするものだ。
+
+  **Orchidは、分散化の構造的な安全性と暗号化の力を組み合わせたもの**
+
+  分散化は、プライバシーに関するパーミッションレスシステムの構築にも利用されている。この意味するところは非常に大きい。非中央集権的な方法で情報を保存する場合、その情報をコントロールするのは自分だけであり、確立された当局へのアクセスや許可は必要ない。
+  
+  ![Seven onstage at ETHcc in Paris, July 19th, 2021](/img/uploads/orchid-ceo-dr-steven-waterhouse-speaks-at-ethcc-2021-img2.png)
+
+  ウォーターハウス博士は、OrchidのブロックチェーンベースのVPNサービスが、許可のない分散型システムのセキュリティと、プライバシーに対する基本的な権利をどのように組み合わせているかを説明した。Orchidは、世界の主要なVPNプロバイダーのサービスをまとめた分散型のプライバシーマーケットプレイス。その分散型モデルは、分散型ネットワーク上のプロバイダーネットワークにインセンティブを与え、「ユーザーがが誰なのか、（オンライン上で）どこに行くのかを、誰にも知られないようにすることを可能にします。」
+
+  Orchidは、非常にアクセスしやすく、簡単に使えるように作られている。エコシステム全体は、OrchidのEthereumベースのデジタル資産である[OXT](https://www.ja.orchid.com/oxt/)によって支えられいて、ユーザーは[通常のクレジットカード](https://blog.orchid.com/how-to-start-using-orchids-crypto-vpn-in-seconds/#:~:text=Once%20you've%20got%20the,That's%20it!)だけで帯域幅を購入することができる。また、このサービスは従量制なので、ユーザーは使用した分の帯域だけが請求される。今なら、[たったの1ドル](https://blog.orchid.com/starting-today-it-only-costs-1-to-get-started-with-orchid/)で始められる。
+
+  「Orchidは、デジタル・プライバシーの問題を、オープンで分散的な方法で解決することに特化しています。プライバシーはOrchidの単なる機能ではありません。Orchidの製品はプライバシーなのです。」
+
+  ETHccでのSevenの講演内容は[こちら](https://youtu.be/GrGfEGMGeqo)。
 ---
 On July 19th, Orchid co-founder and CEO Dr. Steven Waterhouse (Seven) spoke at ETHcc, Europe's largest annual conference on Ethereum's technology and community. Seven's speech focused on the crucial role that end-to-end encryption and decentralization play in defending and strengthening online privacy.
 
