@@ -14,7 +14,7 @@ tags:
 ---
 "I've found that there are many different things that people are talking about when they use the word 'privacy,'" said Jim Harper, a privacy expert and senior fellow at the American Enterprise Institute (AEI), a Washington, D.C.-based think tank that researches government, economics, and social welfare. He was speaking with Orchid's Derek Silva on this week's episode of Priv8.
 
-"The main definition of the word 'privacy' is 'control of information about yourself," Jim continued. "It's the right to decide how you want to portray yourself to different audiences: commercial, social, governmental, or whatever the case may be."
+>"The main definition of the word 'privacy' is 'control of information about yourself," Jim continued. "It's the right to decide how you want to portray yourself to different audiences: commercial, social, governmental, or whatever the case may be."
 
 Jim and Derek discussed how people define privacy in different ways and how these definitions can be used in legislation. "It's important to know [what] values you're talking about, especially if you're going to be regulating to improve privacy," he said. "If you know [what] you're getting at, you'll be able to tell whether you've done a good job or not."
 
