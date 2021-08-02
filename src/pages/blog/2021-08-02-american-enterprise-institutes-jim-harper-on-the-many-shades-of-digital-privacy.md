@@ -6,7 +6,7 @@ title: American Enterprise Institute’s Jim Harper on the many shades of digita
 date: 1627909200000
 description: “I’ve found that there are many different things that people are talking about when they use the word ‘privacy,’” said Jim Harper, a privacy expert and senior fellow at the American Enterprise Institute (AEI).
 featuredpost: false
-featuredimage: /img/uploads/P8PEpisode_JimHarper.png
+featuredimage: /img/uploads/P8PEpisode_JimHarper.jpg
 podcast_url: https://www.orchid.com/podcast/episode-58-jim-harper
 tags:
   - Privacy
