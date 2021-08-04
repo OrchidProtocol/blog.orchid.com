@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: what-do-nfts-mean-for-privacy-
 title: What do NFTs mean for privacy?
-date: 1628341200000
+date: 1628082000000
 description: As blockchain and crypto have continued to gain attention and popularity over the past year, non-fungible tokens, or NFTs, have surged into the spotlight.
 featuredpost: false
 featuredimage: /img/uploads/OrchidBlog_NFTs.jpg
