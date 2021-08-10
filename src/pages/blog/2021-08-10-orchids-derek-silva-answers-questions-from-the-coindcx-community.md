@@ -26,8 +26,6 @@ Importantly, Orchid is "an incentivized network, which helps keep good actors co
 
 Derek touched on the unique benefits the service offers: "[Orchid does not collect] personal information, ... credit card or debit card data, ... [or] in-app analytics." It also gives users "the ability to set up multi-hop circuits to guarantee middle nodes can't see their traffic's source or destination."
 
-"We hope to eventually enable thousands of individuals to sell excess bandwidth, meaning you'll be able to select any number of nodes in any country," Derek added. 
-
 **The Privacy Guardians program**
 
 The conversation then pivoted to focus specifically on Orchid's community.
