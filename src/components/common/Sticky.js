@@ -169,7 +169,7 @@ class StickySidebar extends React.Component {
                         case "id":
                             return "id.";
                     }
-                })()}orchid.com/join?utm_medium=website&utm_source=web&utm_campaign=blog-post-sticky&utm_content=${encodeURIComponent(this.state.location)}`}>
+                })()}orchid.com/get-orchid?utm_medium=website&utm_source=web&utm_campaign=blog-post-sticky&utm_content=${encodeURIComponent(this.state.location)}`}>
 				<button css={css`
 				background-color: var(--color-primary);
 				color: white;
@@ -179,7 +179,7 @@ class StickySidebar extends React.Component {
 				margin-top: 24px;
 				border-radius: 100vmax;
 			`}>
-					Join Now
+					Get Orchid
 			</button>
 			</a>
 		</div>);

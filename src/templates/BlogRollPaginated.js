@@ -269,7 +269,7 @@ const BlogRoll = ({ data, pageContext }) => {
                                     max-width: 89%;
                                     font-size: 99%;
                                 `}>Download the app and join Orchid’s privacy network today!</span>
-                                <a href="https://www.orchid.com/join">
+                                <a href="https://www.orchid.com/get-orchid">
                                     <button css={css`
                                         background-color: var(--color-primary);
                                         color: white;
@@ -279,7 +279,7 @@ const BlogRoll = ({ data, pageContext }) => {
                                         margin-top: 24px;
                                         border-radius: 100vmax;
                                     `}>
-                                        Join Now
+                                        Get Orchid
                                     </button>
                                 </a>
                             </SidebarCard>
