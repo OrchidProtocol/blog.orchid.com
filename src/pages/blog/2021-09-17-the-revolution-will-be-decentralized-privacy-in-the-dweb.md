@@ -2,7 +2,7 @@
 templateKey: blog-post
 public: true
 url: the-revolution-will-be-decentralized-privacy-in-the-dweb
-title: "The Revolution Will Be Decentralized: Privacy in the ‘dWeb’"
+title: "The Revolution will be Decentralized: Privacy in the ‘dWeb’"
 date: 1631880000000
 description: Over the past several years, decentralization has rapidly emerged as a crucial force driving the future of digital technologies. Spurred on by the growth of blockchain applications in finance, gaming, collectibles, and many other sectors, decentralized technology is becoming more central to our economy and to the digital infrastructure that underpins it.
 featuredpost: false
