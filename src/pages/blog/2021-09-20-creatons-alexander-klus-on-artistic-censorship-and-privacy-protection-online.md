@@ -2,7 +2,7 @@
 templateKey: blog-post
 public: true
 url: creatons-alexander-klus-on-artistic-censorship-and-privacy-protection-online
-title: Creaton’s Alexander Klus on artistic censorship and privacy protection online
+title: Creaton’s Alexander Klus on Artistic Censorship and Privacy Protection Online
 date: 1632139200000
 description: Independent creators have struggled to find ways to monetize their work in the age of the Internet. Earlier this year, some artists benefited from the emergence of non-fungible tokens (NFTs) and other decentralized technologies, but challenges inherent in Web 2 design — namely, censorship and lack of privacy — remain widespread.
 featuredpost: false
