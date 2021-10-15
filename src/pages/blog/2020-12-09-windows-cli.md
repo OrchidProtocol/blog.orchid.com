@@ -5,7 +5,7 @@ url: orchid-is-now-available-in-beta-for-windows-command-line
 title: "Orchid is now available in beta for Windows command line"
 date: 1607522400001
 description: "We're excited to announce that Orchid's command line client is now available for Windows. This beta release represents further momentum toward a full desktop client with a complete GUI and interface for Windows."
-featuredpost: true
+featuredpost: false
 featuredimage: /img/uploads/Orchid_BlogImage_WinCLI.png
 tags:
   - Company Updates

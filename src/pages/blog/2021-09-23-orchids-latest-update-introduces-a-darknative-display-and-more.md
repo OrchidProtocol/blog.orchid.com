@@ -5,7 +5,7 @@ url: orchids-latest-update-introduces-a-darknative-display-and-more
 title: Orchid’s Latest Update Introduces a Dark-Native Display and More
 date: 1632398400000
 description: We’re pleased to announce the release of Orchid 0.9.34, that includes updates to make Orchid’s decentralized VPN marketplace even easier to use, more flexible, and more enjoyable for everyone looking for strong privacy when they use the Internet.
-featuredpost: false
+featuredpost: true
 featuredimage: /img/uploads/OrchidBlog_UIupdate.jpg
 tags:
   - Company Updates

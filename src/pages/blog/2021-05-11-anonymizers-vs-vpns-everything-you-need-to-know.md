@@ -5,7 +5,7 @@ url: anonymizers-vs-vpns-everything-you-need-to-know
 title: "Anonymizers vs. VPNs: Everything You Need to Know"
 date: 1620734400000
 description: "In the world of cybersecurity, people have seemingly infinite tools at their disposal – cybersecurity is not a one-size-fits-all endeavor."
-featuredpost: false
+featuredpost: true
 featuredimage: /img/uploads/OrchidBlog_VPNvsANON.jpg
 tags:
   - VPN
