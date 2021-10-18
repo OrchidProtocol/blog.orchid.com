@@ -5,7 +5,7 @@ url: highlights-from-priv8-orchids-virtual-privacy-summit
 title: 'Highlights from Priv8, Orchid’s virtual privacy summit'
 date: 1617199200000
 description: 'Last Thursday marked the final day of the Priv8 Virtual Privacy Summit. The first-of-its-kind event brought together experts, academics, and evangelists from around the world of privacy for an eye-opening week of panels, discussions, and sharing of insights.'
-featuredpost: true
+featuredpost: false
 featuredimage: /img/uploads/OrchidBlog_Priv8Highlights.jpg
 tags:
   - Events
