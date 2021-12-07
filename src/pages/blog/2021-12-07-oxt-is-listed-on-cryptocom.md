@@ -14,7 +14,7 @@ tags:
 ---
 [OXT](https://www.orchid.com/oxt/), Orchid's native digital asset, is now available on Crypto.com, a cryptocurrency exchange that supports trading, investing, staking, wallets, NFTs, and more. Currently, Crypto.com's platform offers more than 150 digital assets to more than ten million users located across the globe. 
 
-OXT plays a key role in Orchid's mission to protect online privacy. OXT drives incentives that help ensure ample bandwidth is always available in Orchid's decentralized VPN marketplace. People can start using Orchid in seconds by [purchasing pre-filled accounts](https://blog.orchid.com/why-orchids-in-app-purchases-are-a-game-changer-for-dapp-usage/) with nothing more than an ordinary credit card—and only pay for the bandwidth they use.
+OXT plays a key role in Orchid's mission to protect online privacy. The digital asset powers and secures a new approach to VPN service as providers compete for user payment flow by staking OXT. People can start using Orchid in seconds by [purchasing pre-filled accounts](https://blog.orchid.com/why-orchids-in-app-purchases-are-a-game-changer-for-dapp-usage/) with nothing more than an ordinary credit card—and only pay for the bandwidth they use.
 
 **Dr. Steven Waterhouse, Orchid's Co-Founder and CEO**, said: "OXT is a key component of Orchid's privacy solution, and the OXT token being listed on Crypto.com furthers Orchid's goal of making online privacy accessible for all."
 
