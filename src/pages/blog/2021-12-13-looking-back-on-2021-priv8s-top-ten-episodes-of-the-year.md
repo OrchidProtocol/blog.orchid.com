@@ -3,10 +3,10 @@ templateKey: blog-post
 public: true
 url: looking-back-on-2021-priv8s-top-ten-episodes-of-the-year
 title: "Looking back on 2021: Priv8’s top ten episodes of the year"
-date: 1639396800000
+date: 1639396800001
 description: 2021 has been an important year for digital privacy. Controversial policy changes, divisive political situations, and technological advances have rung in a new age of challenges and opportunities—and conversations about digital privacy and human rights have never been more crucial.
 featuredpost: false
-featuredimage: /img/uploads/P8PEpisode_PrivacyRoundupDraganaAnne.jpg
+featuredimage: /img/uploads/OrchidBlog_Priv8Top10.jpg
 tags:
   - Privacy
   - Censorship
