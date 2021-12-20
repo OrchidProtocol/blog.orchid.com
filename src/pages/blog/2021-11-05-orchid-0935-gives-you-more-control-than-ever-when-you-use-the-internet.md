@@ -5,7 +5,7 @@ url: orchid-0935-gives-you-more-control-than-ever-when-you-use-the-internet
 title: Orchid 0.9.35 Gives You More Control Than Ever When You Use the Internet
 date: 1636113600000
 description: Orchid version 0.9.35 is now available, giving people even more control over how to explore the Internet in privacy, particularly when it comes to configuring multiple hops.
-featuredpost: false
+featuredpost: true
 featuredimage: /img/uploads/OrchidBlog_MultihopUpdate.jpg
 tags:
   - VPN

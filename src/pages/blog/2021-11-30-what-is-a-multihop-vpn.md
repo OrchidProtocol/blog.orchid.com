@@ -5,7 +5,7 @@ url: what-is-a-multihop-vpn
 title: What is a Multi-Hop VPN?
 date: 1638273600000
 description: In a world of widespread Internet surveillance and non-consensual data collection, maintaining online privacy is more important than ever. Using a multi-hop VPN is one of the easiest and best ways to protect your personal information. These services encrypt data and route it through multiple servers to prevent tracking. In this article, we’ll explore more about what multi-hop VPNs are, why they’re so effective at maintaining privacy online, and how they work.
-featuredpost: false
+featuredpost: true
 featuredimage: /img/uploads/OrchidBlog_MultiHop.jpg
 tags:
   - VPN
