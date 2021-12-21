@@ -5,7 +5,7 @@ url: the-priv8-virtual-privacy-summit-returns-with-featured-speaker-glenn-greenw
 title: The Priv8 Virtual Privacy Summit Returns with Featured Speaker Glenn Greenwald
 date: 1634040000000
 description: We are thrilled to announce that renowned journalist and constitutional lawyer Glenn Greenwald will be the featured speaker at the second installment of Priv8 Online, the premier gathering dedicated to the future of Internet privacy. The event will take place virtually on November 15th, free of charge and open to anyone who wants to attend. 
-featuredpost: true
+featuredpost: false
 featuredimage: /img/uploads/OrchidBlog_Priv8OnlineLaunch.jpg
 tags:
   - Events
