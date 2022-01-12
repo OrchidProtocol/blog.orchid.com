@@ -537,6 +537,15 @@ h6 {
     background: #fff;
 }
 
+.post-full-content table, .post-full-content table th, .post-full-content table td {
+    border: solid 1px black;
+}
+
+.post-full-content table th, .post-full-content table td {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
 .post-feature-image {
     box-shadow: 0px 0px 1px 0px inset rgba(0,0,0,.5);
 }
