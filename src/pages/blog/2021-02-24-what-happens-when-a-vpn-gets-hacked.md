@@ -2,8 +2,8 @@
 templateKey: blog-post
 public: true
 url: what-happens-when-a-vpn-gets-hacked
-title: "What happens when a VPN gets hacked?"
-date: 1614178800001
+title: "What Happens When a VPN Gets Hacked?"
+date: 1642773600000
 description: "VPNs can keep us safe from surveillance and data theft when we use the Internet. But what if the VPN itself is compromised?"
 featuredpost: false
 featuredimage: /img/uploads/OrchidBlog_VPNHacked.jpg
@@ -11,35 +11,49 @@ tags:
   - Privacy
   - VPN
 ---
-A VPN or similar privacy tool is essential for online privacy. VPNs protect their users from Internet surveillance and tracking by re-routing traffic through an encrypted server. This redirection prevents an Internet Service Provider (ISP) from seeing the destination of its users' web traffic, while making it impossible for websites to see where their traffic originates. By interposing itself between the origin ISP server and the destination website, the VPN effectively obscures a person's Internet activity.
+*Published: Feb 24, 2021; Updated: Jan 21, 2021*
 
-Robust, reliable VPN services therefore fulfill an essential need for Internet privacy. But there is still a weak point: the VPN itself. While effective VPNs prevent third parties from collecting meaningful data on our web traffic, the privacy tool itself can see the full picture. VPNs have visibility into the IP address used, websites visited, the length of time a user is connected, and the VPN servers they connect to.
+A VPN or similar privacy tool is essential for online privacy. VPNs protect their users from Internet surveillance and tracking by re-routing traffic through an encrypted server. This redirection prevents an Internet Service Provider (ISP) from seeing the destination of its users' web traffic, while making it much harder for websites to see where their traffic originates. By interposing itself between the origin ISP server and the destination website, the VPN effectively obscures a person's Internet activity.
 
-For these reasons, it's essential to use a VPN that does not log its users' activity, so sensitive information is not intentionally retained or stored. But what if a VPN is hacked? There's a risk that your data will fall into the wrong hands -- but there are steps everyone can take to significantly reduce the risk.
+### Understanding the risks of VPN hacks
 
-To protect yourself, it's important above all to understand the risk of VPN hacks, as well as the steps to take if your VPN is compromised. The strongest protection is to have a "failsafe" that will protect your data even if one or more individual privacy tools fail. Orchid, which brings together the services of leading VPN providers in a unique decentralized marketplace, lets users configure multiple "[hops](/what-is-a-hop/)" between providers. That way, even if a VPN fails or is hacked, user traffic is still routed through one or more additional providers before reaching the destination, maintaining the user's privacy.
+Robust, reliable VPN services, therefore, fulfill an essential need for Internet privacy. But there is still a weak point: the VPN itself. While effective VPNs prevent third parties from collecting meaningful data on our web traffic, the privacy tool itself can see the full picture. VPNs have visibility into the IP address used, websites visited, the length of time a user is connected, and the VPN servers they connect to.
+
+For these reasons, it's essential to use a VPN that does not log its users' activity, so sensitive information is not intentionally retained or stored. Most important web traffic -- such as credit card information, names, and addresses -- is already encrypted. But if a VPN service is hacked or subpoenaed for information, a third party may gain access to it anyway. The same is true for any service people pay for online. But there are steps everyone can take to significantly reduce the risk.
+
+To protect yourself, it's important above all to understand the risk of VPN hacks, as well as the steps to take if your VPN is compromised. The strongest protection is to have a "failsafe" that will protect your data even if one or more individual privacy tools fail.
+
+Orchid's decentralized marketplace allows users to combine the services of leading VPN providers. Orchid users can configure multiple "[hops](https://blog.orchid.com/what-is-a-hop/)" between providers, so that , even if one VPN server fails or is hacked, user traffic is still [routed through one or more additional providers ](https://blog.orchid.com/what-is-a-multihop-vpn/)before reaching its destination, maintaining the user's privacy.
+
+This unique feature allows Orchid to offer users greater security than other services. Most VPNs only offer users the option to integrate hops from their internal networks -- no other service allows for the inclusion of hops from multiple providers. Architecturally, Orchid has taken inspiration from Tor, an anonymizing browser that routes user data through three hops from different service providers before sending it to its final destination.
 
 Here we explore some of the ways VPNs are vulnerable to attack, and steps users can take to keep themselves and their data private.
 
-**How does a VPN get hacked?**
+### How does a VPN get hacked?
 
-VPNs are among the most effective means of maintaining online privacy. By encrypting the data generated by users' web traffic, they make it exponentially harder for bad actors to steal information and put people's privacy at risk. If you've done your research and selected a high-quality VPN provider, the risk of suffering a data breach due to a design flaw is low.
+VPNs are among the most effective means of maintaining online privacy. By encrypting the data generated by users' web traffic, they make it exponentially harder for bad actors to steal information and put people's privacy at risk. However, not all VPNs are created equal. For example, VPNs that claim to be free of charge for users often have some hidden costs: they may track, analyze, and sell your data -- the same data they claim to protect. 
+
+However, if you've done your research and selected a high-quality VPN provider, the risk of suffering a data breach due to a design flaw is low. VPNs use encrypted tunnels to try to ensure Internet traffic stays safely out of sight -- and if you're using a [multi-hop VPN](https://blog.orchid.com/what-is-a-hop/) like Orchid, it's even harder for malicious actors to access your data.
 
 Nevertheless, nothing is indestructible. However well designed and operated, VPNs -- like all digital services -- are still vulnerable to hacking. And while breaking the levels of encryption used by the highest quality providers is extraordinarily difficult, even the most robust VPN provider could be at risk if targeted by someone with sufficient resources and technical expertise.
 
 There are a few primary ways that data can be stolen from a VPN server:
 
-<u>Data leakage</u>
+#### Data Leakage
 
-The most common way for VPN users' data to be compromised is not from an external party hacking the server. In reality, most VPN data breaches are a result of weaknesses in the privacy tools themselves; these flaws can leak data without a hacker needing to do anything at all. Leakage occurs when an error or design flaw causes a VPN to share user information that should be kept private. There are different causes for data leakage, but it's important to know the warning signs, and understand how to address the problem should you encounter it. For a deeper dive into this topic, you can read Orchid's full explanation of the causes, warning signs, and solutions for [data leakage](/how-to-make-sure-your-vpn-is-working-properly/).
+The most common way for VPN users' data to be compromised is not from an external party hacking the server. In reality, most VPN data breaches are a result of weaknesses in the privacy tools themselves; these flaws can leak data without a hacker needing to do anything at all. Leakage occurs when an error or design flaw causes a VPN to share user information that should be kept private. There are different causes for data leakage, but it's important to know the warning signs, and understand how to address the problem should you encounter it. 
 
-<u>Inadequate security</u>
+For example, IP address leakage happens when a VPN accidentally shares a user's real IP address. This can have serious consequences, particularly for people who are in [sensitive political situations](https://blog.orchid.com/looking-back-on-2021-priv8s-top-ten-episodes-of-the-year/). Thankfully, though, IP leaks are fairly easy to spot. If you use a VPN to access a site or service that is normally blocked in your country, and notice that it's still blocked when the VPN is on, you may have an IP leak.
 
-We have [previously detailed](/whats-the-best-vpn-for-crypto-users/) the wide variation that exists between VPN providers in terms of security and best practices. Some "free" VPNs actively log user data and sell it on to third parties in order to make money. While this doesn't qualify as a hack, it still reflects an approach to privacy that doesn't make the security of users' information the top priority. And if one of the entities to which the logged data has been sold is itself hacked, that user information could fall into the wrong hands the same way it would if the VPN itself had been hacked.
+For a deeper dive into this topic, you can read Orchid's full explanation of the causes, warning signs, and solutions for [data leakage](https://blog.orchid.com/how-to-make-sure-your-vpn-is-working-properly/).
+
+#### Inadequate Security
+
+We have [previously detailed](https://blog.orchid.com/whats-the-best-vpn-for-crypto-users/) the wide variation that exists between VPN providers in terms of security and best practices. Some "free" VPNs actively log user data and sell it on to third parties in order to make money. While this doesn't qualify as a hack, it still reflects an approach to privacy that doesn't make the security of users' information the top priority. And if one of the entities to which the logged data has been sold is itself hacked, that user information could fall into the wrong hands the same way it would if the VPN itself had been hacked.
 
 Lax security practices also make for easy hacking targets. The easiest way for bad actors to hack into a VPN is to exploit weaknesses in the service's design. If a provider has a flaw in its encryption, hackers can exploit it to steal information in plain text form without ever needing to obtain the key or break the encryption. And it may come as no surprise that VPNs with loose privacy and data-logging policies are also more likely to suffer from weak security. For this reason alone, it's always a good idea to use a reputable VPN with strong, verifiable encryption practices.
 
-<u>Malicious attack</u>
+#### Malicious Attack
 
 High-quality VPN providers, like those Orchid is partnered with, generally have strong encryption and do not log their users' activities. But even these services can become the targets of malicious attacks. No one -- not even [government intelligence agencies](https://www.nytimes.com/2020/12/14/us/politics/russia-hack-nsa-homeland-security-pentagon.html) -- is completely insulated from the risk of hacking.
 
@@ -47,15 +61,15 @@ Well-encrypted VPNs can be hacked in two ways. The (relatively) easier method is
 
 It's important to keep things in perspective when it comes to VPN hacking. While any online service could become a target of hackers, the level of expertise and money required to carry out the attack increases sharply with the sophistication of the target's encryption.
 
-And the most challenging, expensive, and time-consuming way to hack an encrypted VPN server is to actually "crack the code." While this is theoretically possible -- and there is evidence that it [has been done successfully](https://www.spiegel.de/international/world/nsa-documents-attacks-on-vpn-ssl-tls-ssh-tor-a-1010525.html) by highly sophisticated actors -- it isn't a major threat for most people.
+And the most challenging, expensive, and time-consuming way to hack an encrypted VPN server is to actually "crack the code" -- in other words, to break the encryption. While this is theoretically possible (and there is evidence that it [has been done successfully](https://www.spiegel.de/international/world/nsa-documents-attacks-on-vpn-ssl-tls-ssh-tor-a-1010525.html) by highly sophisticated actors), it isn't a major threat for most people.
 
-The reason is that, at the highest levels of encryption -- including [high-quality VPN providers](/whats-the-best-vpn-for-crypto-users/) -- the cost of a successful hack could run into the millions of dollars or more. Obviously the value of the data being stolen must outweigh the expense of the theft. For this reason, it's highly unlikely that hackers with the know-how to compromise a sophisticated VPN would target most ordinary users -- they simply aren't big enough targets. Such a costly and time consuming effort is only ever likely to be directed at targets of the highest value -- those relating to vast sums of money or to geopolitical competition. The average person's Internet activity is highly unlikely to be a target.
+The reason is that, at the highest levels of encryption -- including [high-quality VPN providers](https://blog.orchid.com/whats-the-best-vpn-for-crypto-users/) -- the cost of a successful hack could run into the millions of dollars or more. Obviously the value of the data being stolen must outweigh the expense of the theft. For this reason, it's highly unlikely that hackers with the know-how to compromise a sophisticated VPN would target most ordinary users -- they simply aren't worthwhile enough targets. Such a costly and time-consuming effort is only ever likely to be directed at targets of the highest value -- those relating to vast sums of money or to geopolitical competition. The average person's Internet activity is highly unlikely to be a target.
 
 By far the most likely cause of a VPN hack, then, is inadequate security on the part of the VPN itself. If the solution has weaknesses that can be exploited by run-of-the-mill bad actors, the user's data is at risk at all times. But by using a strong, reputable VPN provider, we can mitigate much of the danger. While no person, product, or organization is totally immune to hacking, the expertise and expense required to compromise a high-quality VPN mean that hackers are likely to focus their attention only on "high-value" targets.
 
 Still, it's important to understand the potential consequences of a VPN hack, and to take steps to minimize the risk.
 
-**What to do if your VPN is hacked**
+### What happens when your VPN is hacked?
 
 Despite the lower likelihood of a high-quality VPN being hacked, it's important to understand the ramifications of an attack and to know what to do in the event of one.
 
@@ -63,20 +77,28 @@ The most immediate consequence of a VPN hack is to put at risk sensitive informa
 
 In addition to the risk that comes from the hack itself, there is an additional risk to VPN users in certain parts of the world. If a VPN is hacked, the person may be at risk not only through loss of personal data, but from authorities' ability to see that the person has been using a VPN at all. In these places, if a privacy tool is compromised, the user loses not only personal data, but may also face the risk of scrutiny from local authorities.
 
-If a VPN is hacked, its users' data is made just as vulnerable as in the case of a hack that takes place outside of a VPN provider, and all the personal information shared or communicated through the affected VPN server is at risk. As such, it is important to follow the same steps we would if our data were compromised in any other scenario,
+If a VPN is hacked, its users' data is made just as vulnerable as in the case of a hack that takes place outside of a VPN provider, and all the personal information shared or communicated through the affected VPN server is at risk. As such, it is important to follow the same steps we would if our data were compromised in any other scenario. 
 
-First, a victim of a hack should immediately turn off their VPN. It is more dangerous to use a server that is known to be the victim of a hack than no privacy tool at all, since all the data being routed through it is liable to fall into the hackers' possession. Once the immediate threat has passed and the VPN is off, you should select a new provider with strong security and no-logging policies in order to continue using the Internet privately.
+### What to do if your VPN is hacked
 
-Finally, if you find yourself the victim of a VPN hack, it's important to take the same standard precautions you would take in the case of any security breach. Change any sensitive information, such as passwords, that may have been stolen, and cancel and reissue credit cards and debit cards. It's also a good practice to set up a credit freeze in order to prevent criminals from taking out loans in your name.
+1.  If you're the victim of a VPN hack, **immediately turn off your VPN**. It is more dangerous to use a server that is known to be the victim of a hack than no privacy tool at all, since all the data being routed through it is liable to fall into the hackers' possession.
 
-**How to minimize the risk of VPN hacking**
+2.  Once the immediate threat has passed and the VPN is off, you **should select a new provider** with strong security and no-logging policies in order to continue using the Internet privately.
 
-Of course, the best option is to establish best practices to minimize the risk of falling victim to a hack. VPNs are an essential, powerful tool for this. High-quality VPNs keep our data much safer and our activity much more private -- which is why it's a good idea to [use a VPN whenever possible](/should-you-leave-your-vpn-on-all-the-time/). But no solution is indestructible or invulnerable to hacking. In the case of VPNs, the most important thing is to make sure you choose a reputable, high-quality service with a clear no-log policy and robust encryption. Since the vast majority of VPN hacks take advantage of existing weaknesses, using a high-quality solution will greatly minimize the risk. And always follow [basic privacy best practices](/tips-for-protecting-your-privacy-while-working-from-home/) when using the Internet.
+3.  Finally, if you find yourself the victim of a VPN hack, it's important to take the same standard precautions you would take in the case of any security breach. **Change any sensitive information, such as passwords, that may have been stolen, and cancel and reissue credit cards and debit cards**. It's also a good practice to set up a credit freeze in order to prevent criminals from taking out loans in your name.
 
-To further enhance privacy and security, the best solution is to combine multiple VPNs. This way, web traffic is routed from the ISP through one encrypted server, then another, and potentially others, before reaching the destination website. In this scenario, even if one or more VPNs fall victim to an attack, the traffic will still be protected as long as one of the servers is unaffected. By effectively duplicating the protection afforded by a VPN multiple times, it's possible to establish a kind of "failsafe" that will protect your data even if a given privacy tool fails.
+### How to minimize the risk of VPN hacking
 
-Orchid is the first Internet privacy solution that lets users do this, by configuring multiple "[hops](/what-is-a-hop/)" between VPN providers. People on Orchid can combine the services of leading VPNs, selecting them based on speed, availability, price and/or location through a unique, [decentralized marketplace](https://www.orchid.com/how-it-works). With multiple hops, even if any single VPN fails or is hacked, user traffic is still routed through one or more additional providers before reaching the destination, maintaining the user's privacy. In addition, Orchid utilizes an innovative payments structure known as [probabilistic nanopayments](/introducing-nanopayments/), designed to provide flexibility and ensure adequate bandwidth at all times.
+Of course, the best option is to establish best practices to minimize the risk of falling victim to a hack. VPNs are an essential, powerful tool for this. High-quality VPNs keep our data much safer and our activity much more private -- which is why it's a good idea to [use a VPN whenever possible](https://blog.orchid.com/should-you-leave-your-vpn-on-all-the-time/). But no solution is indestructible or invulnerable to hacking. In the case of VPNs, the most important thing is to make sure you choose a reputable, high-quality service with a clear no-log policy and robust encryption. Since the vast majority of VPN hacks take advantage of existing weaknesses, using a high-quality solution will greatly minimize the risk. And always follow [basic privacy best practices](https://blog.orchid.com/tips-for-protecting-your-privacy-while-working-from-home/) when using the Internet.
 
-It's an unfortunate truth that malicious parties are a constant presence on the Internet. Fortunately, with a strong, reputable VPN, it's possible to greatly reduce the chances of falling victim to one. And with Orchid, now it's possible to combine multiple VPN providers and reclaim the Internet as a place of openness and curiosity.
+To further enhance privacy and security, the best solution is to [combine multiple VPNs](https://blog.orchid.com/what-is-a-multihop-vpn/). This way, web traffic is routed from the ISP through one encrypted server, then another, and potentially others, before reaching the destination website. In this scenario, even if one or more VPNs fall victim to an attack, the traffic will still be protected as long as one of the servers is unaffected. By effectively duplicating the protection afforded by a VPN multiple times, it's possible to establish a kind of "failsafe" that will protect your data even if a given privacy tool fails.
+
+Orchid is the first and only Internet privacy solution that lets users configure multiple [hops](https://blog.orchid.com/what-is-a-hop/) between VPN providers. With multiple hops, even if any single VPN fails or is hacked, user traffic is still routed through one or more additional providers before reaching the destination, maintaining the user's privacy.
+
+Orchid users can combine the services of leading VPN providers like [Wireguard and OpenVPN](https://docs.orchid.com/en/v0.9.8/using-orchid/), selecting them based on speed, availability, price and/or location through a unique, [decentralized marketplace](https://www.orchid.com/how-it-works). It's easy for users to create multi-hop VPN routes on their desktop computers and iOS/macOS & Android devices [directly in the Orchid app](https://blog.orchid.com/orchid-0935-gives-you-more-control-than-ever-when-you-use-the-internet/). Simply the app's menu to navigate to the circuit builder interface. Select "add new hop" to connect a new server to your connection. There is no limit to the number of hops that users can incorporate.
+
+We've built Orchid's powerful, flexible VPN service to be as accessible as possible. Orchid utilizes an innovative payments structure known as [probabilistic nanopayments](https://blog.orchid.com/introducing-nanopayments/) to ensure adequate bandwidth at all times. Orchid's system is pay-as-you-go, so users never spend money on bandwidth they don't use. And thanks to Orchid's[ one-tap onboarding process](https://blog.zh.orchid.com/orchid-0935-gives-you-more-control-than-ever-when-you-use-the-internet/), getting started takes an ordinary credit card and just $1.
+
+It's an unfortunate truth that malicious parties are a constant presence on the Internet. Fortunately, with a strong, reputable VPN, it's possible to greatly reduce the chances of falling victim to one. And with Orchid, it's possible to combine multiple VPN providers to reclaim the Internet as a place of self-expression and freedom.
 
 [Download](https://www.orchid.com/download) the Orchid app today to start exploring the Internet freely.
