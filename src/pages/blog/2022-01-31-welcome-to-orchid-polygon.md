@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 public: true
-url: Welcome to Orchid, Polygon frens!
+url: welcome-to-orchid-polygon-friends
 title: Welcome to Orchid, Polygon frens!
 date: 1643733000000
 description: Orchid is now running on Polygon! The OrchidLotteryV1 contract is live and streaming Orchid’s Layer 2 system of probabilistic nanopayments on the Polygon chain.
