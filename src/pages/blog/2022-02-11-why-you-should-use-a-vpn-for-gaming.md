@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: why-you-should-use-a-vpn-for-gaming
 title: Why You Should Use a VPN for Gaming
-date: 1644580800000
+date: 1644933600000
 description: 'While online gaming has been around since the earliest days of the Internet, its popularity has exploded in recent years. It’s a trend that’s expected to continue: data from Fortune Business Insights shows that the global online gaming market is expected to reach a valuation of $545.98 billion by 2028. The massively multiplayer online role-playing games (MMORPGs) market is expected to expand at an annual growth rate of 9.5% from  2020-2025. And on top of that, blockchain-based “GameFi” and play-to-earn (P2E) games are experiencing huge amounts of growth and attention.'
 featuredpost: false
 featuredimage: /img/uploads/OrchidBlog_GamingVPN.jpg
