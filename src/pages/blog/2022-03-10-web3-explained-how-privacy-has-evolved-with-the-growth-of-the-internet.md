@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-public: true
+public: false
 url: web3-explained-how-privacy-has-evolved-with-the-growth-of-the-internet
 title: "Web3 explained: How Privacy has Evolved With the Growth of the Internet"
 date: 1646913600000
