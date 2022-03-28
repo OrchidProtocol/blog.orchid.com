@@ -7,7 +7,7 @@ date: 1647864000000
 description: \“Often, people think about decentralization as a hedge against government control,\” said Orchid CEO Dr. Steven Waterhouse (Seven), speaking at ETHDenver, the largest and longest-running Ethereum community event in the world.
 featuredpost: false
 featuredimage: /img/uploads/P8PEpisode_ETHDenver_7.jpg
-odcast_url: https://www.orchid.com/podcast/episode-87-ETHDenver/
+podcast_url: https://www.orchid.com/podcast/episode-87-ETHDenver/
 tags:
   - Blockchain
   - Ethereum
