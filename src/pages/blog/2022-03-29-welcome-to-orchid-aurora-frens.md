@@ -24,7 +24,7 @@ After connecting a wallet on Aurora, you can specify an Orchid identity to fund.
 
 ### Why Aurora?
 
-Aurora is an Ethereum Virtual Machine created by the team at the NEAR Protocol. The EVM is attractive for Orchid users because the chain currently has [no gas fees](https://doc.aurora.dev/compat/gas) charged for now. So there is no fee when moving funds into or out of Orchid's L2. That makes the chain an interesting option for users who are experimenting with Aurora.
+Aurora is an Ethereum Virtual Machine created by the team at the NEAR Protocol.  The EVM is attractive for Orchid users because the chain currently has [low gas fees](https://doc.aurora.dev/compat/gas). So there is almost no fee when moving funds into or out of Orchid’s L2. That makes the chain an interesting option for users who are experimenting with Aurora.
 
 The NEAR protocol is a proof of stake blockchain that is meant to be developer friendly, fast and scalable. Learn more about NEAR [here](https://near.org/technology/). Ultimately Aurora allows the Orchid nanopayment smart contract to run ontop of NEAR and users funds are held on the NEAR protocol.\
 With greater activity on the Ethereum network, gas fees have risen and will likely continue to rise. Layer 2 scaling technologies—including Orchid's probabilistic nanopayments—have popped up to address this problem; as well as separate chains, some with compatibility with Ethereum dapps.
