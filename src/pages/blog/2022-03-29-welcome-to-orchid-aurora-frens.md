@@ -20,7 +20,7 @@ Unlike most VPNs, Orchid is decentralized—meaning there is no server that stor
 
 We invite all of you to check out how Orchid's L2 nanopayment system works when paying $0.06/GB for VPN service. Start by making an account, funding it with ETH on Aurora, and connecting to Orchid's VPN app.
 
-After connecting a wallet on Aurora, you can specify an Orchid identity to fund. Aurora has no network fees, so moving funds in and out of each account costs effectively nothing. The initial deposit requirement to start using Orchid is also lower on Aurora—currently,  the total suggested balance and deposit is about 0.001 ETH, or $2.58 at the time of writing. Refer to our [chart](https://www.orchid.com/join) to see how the cost of using Orchid on Aurora compares to other blockchains.
+After connecting a wallet on Aurora, you can specify an Orchid identity to fund. Aurora has low network fees, so moving funds in and out of each account costs effectively nothing. The initial deposit requirement to start using Orchid is also lower on Aurora—currently,  the total suggested balance and deposit is about 0.001 ETH, or $2.58 at the time of writing. Refer to our [chart](https://www.orchid.com/join) to see how the cost of using Orchid on Aurora compares to other blockchains.
 
 ### Why Aurora?
 
