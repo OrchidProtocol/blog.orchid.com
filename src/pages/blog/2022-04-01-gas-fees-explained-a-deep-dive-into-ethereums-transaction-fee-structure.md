@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: gas-fees-explained-a-deep-dive-into-ethereums-transaction-fee-structure
 title: "Gas Fees Explained: a Deep Dive into Ethereum’s Transaction Fee Structure"
-date: 1648814400000
+date: 1649174400000
 description: Ethereum gas fees play a key role role in the functioning of the network. But they also pose scalability challenges.
 featuredpost: false
 featuredimage: /img/uploads/OrchidBlog_GasFees.jpg
