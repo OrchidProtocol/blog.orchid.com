@@ -27,8 +27,8 @@ what's here to work the way you'd like it to.
 body {
     /* Colors */
     --color-primary: #5f45ba;
-    --color-base: #53696a;
-    --color-secondary: #5B7A81;
+    --color-base: #504960;
+    --color-secondary: #504960;
     --color-border: #c7d5d8;
     --color-bg: #f4f6f1;
     --color-lavender: #f3f4f9;
@@ -45,7 +45,7 @@ body {
     --orc-beige-light: #f4f6f1;
     --orc-beige: #d5d7e2;
     --orc-gray: #939293;
-    --orc-rock-gray: #53696a;
+    --orc-rock-gray: #504960;
 
     --color-link: var(--color-base);
     --color-link-hover: var(--color-link);
