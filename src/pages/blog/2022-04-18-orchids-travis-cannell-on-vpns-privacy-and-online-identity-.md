@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 public: true
-url: orchids-travis-cannell-on-vpns-privacy-and-online-identity-
+url: orchids-travis-cannell-on-vpns-privacy-and-online-identity
 title: Orchid’s Travis Cannell on VPNs, privacy, and online identity 
 date: 1650283200000
 description: Derek E. Silva joins Travis Cannell, Head of Product & Marketing at Orchid. A great conversation on how Travis first met Co-founder Jay Freeman at the College of Creative Studies in Santa Barbara, why Orchid’s VPN is different from other privacy tools, and his predictions on the future of the Internet.
