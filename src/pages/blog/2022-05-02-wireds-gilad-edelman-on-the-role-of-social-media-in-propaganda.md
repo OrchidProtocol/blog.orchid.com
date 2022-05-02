@@ -14,13 +14,15 @@ tags:
 ---
 "The use of 'true' and 'false' claims in propaganda is pretty complex," said Gilad Edelman, a senior writer for WIRED. He was speaking to Orchid's Derek Silva on [this week's episode](https://www.orchid.com/podcast/episode-93-gilad-edelman/) of the [Priv8 Podcast](https://www.orchid.com/podcast/).
 
-"People who make propaganda can often use something that is technically true -- or true in some limited sense -- to advance an argument that is false, even dangerously so."
+> "People who make propaganda can often use something that is technically true -- or true in some limited sense -- to advance an argument that is false, even dangerously so."
 
 Gilad pointed out that propagandists who manipulate facts can also benefit from ambiguity about what is factual and what is not. "Identifying what's impermissibly false can be really challenging," he said.
 
-"I wrote about this a lot last summer in relation to the pandemic. People could take something that was technically true, present it outside of the right context, and thereby use it to imply something false was true -- for instance, that vaccines are dangerous or don't work, or something like that.
+> "I wrote about this a lot last summer in relation to the pandemic. People could take something that was technically true, present it outside of the right context, and thereby use it to imply something false was true -- for instance, that vaccines are dangerous or don't work, or something like that."
 
-"So the things that propagandists are doing is not necessarily spreading misinformation -- instead, they use true information to mislead."
+[interstitial]
+
+> "So the things that propagandists are doing is not necessarily spreading misinformation -- instead, they use true information to mislead."
 
 This presents a major moral and ethical dilemma for social media platforms. "While misleading people can be just as bad as lying to them, depending on social media platforms to determine which narratives are true or not gives them way too much power. We cannot -- and should not -- expect tech companies to take on that level of policing."
 
