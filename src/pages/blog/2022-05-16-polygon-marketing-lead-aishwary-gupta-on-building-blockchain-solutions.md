@@ -7,6 +7,7 @@ date: 1652702400000
 description: "Last week host Derek E. Silva joined Aishwary Gupta, Marketing and Operations lead at Polygon. We took a deep dive into all things Polygon to discuss the Web3 defi ecosystem, building dApps to scale, and how they are bringing the world to Ethereum."
 featuredpost: false
 featuredimage: /img/uploads/P8PEpisode_AishwaryGupta.png
+socialimage: https://www.orchid.com/img/podcast/P8PEpisode_AishwaryGupta.png
 tags:
   - Blockchain
   - Partnerships
