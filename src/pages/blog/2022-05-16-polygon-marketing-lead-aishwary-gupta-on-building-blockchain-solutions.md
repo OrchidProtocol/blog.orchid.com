@@ -11,7 +11,7 @@ tags:
   - Blockchain
   - Partnerships
 ---
-“Why do we really want blockchain technology to grow? Why is it so important to build with it?” said Aishwary Gupta, Marketing and Operations lead at decentralized Ethereum scaling platform Polygon. He was speaking about building blockchain solutions to replace traditional financial systems with Orchid’s Derek Silva on this week’s episode of the Priv8 Podcast. 
+“Why do we really want blockchain technology to grow? Why is it so important to build with it?” said Aishwary Gupta, Marketing and Operations lead at decentralized Ethereum scaling platform Polygon. He was speaking about building blockchain solutions to replace traditional financial systems with Orchid’s Derek Silva on [this week’s episode](https://www.orchid.com/podcast/episode-95-aishwary-gupta/) of the Priv8 Podcast. 
 
 To answer this question, Aishwary spoke about what’s happening in his home country. “In India, digital payments have already existed on a very large scale for quite some time. And people are well aware of what digital payments are – so when blockchain comes in, we don’t have to educate them in a general sense about how digital payments work.
 
@@ -25,4 +25,4 @@ So why is it important to build blockchain alternatives to the digital payments 
 
 “This kind of fragmentation is one of the biggest issues with India’s digital payments ecosystem. But blockchain could easily solve this.” 
 
-Check out the entire conversation with Aishwary. And don't forget to subscribe to Priv8 on your favorite streaming service.
+[Check out the entire conversation with Aishwary](https://www.orchid.com/podcast/episode-95-aishwary-gupta/). And don't forget to [subscribe to Priv8](https://www.orchid.com/podcast/) on your favorite streaming service.
