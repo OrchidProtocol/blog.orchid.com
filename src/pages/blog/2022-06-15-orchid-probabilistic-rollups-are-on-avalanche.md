@@ -52,7 +52,7 @@ Orchid’s unique system of [probabilistic rollups](https://medium.com/orchid-la
 
 Privacy is Orchid’s mission. Probabilistic nanopayments, along with this integration with Avalanche, are two critical components of Orchid’s goal of making online privacy accessible to people everywhere – restoring the Internet as a place of freedom and exploration in the process.
 
-[Click here](http://orchid.com/join) to download Orchid today. 
+[Click here](http://orchid.com/download) to download Orchid today. 
 
 You can also join the Orchid community on [Twitter](https://twitter.com/OrchidProtocol?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor), [Telegram](https://www.t.me/OrchidOfficial), and [Discord](https://discord.com/invite/GDbxmjxX9F). 
 
