@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: "orchid-probabilistic-rollups-are-on-avalanche"
 title: "Orchid’s Probabilistic Rollups are on Avalanche"
-date: 1655245846000
+date: 1655308800000
 description: "Orchid’s layer 2 is running on Avalanche! Using Orchid’s account manager (dapp), anyone can make an Orchid account with AVAX and pay for VPN service by the byte using Orchid’s layer 2, which harnesses probability to send huge numbers of tiny payments."
 featuredpost: false
 featuredimage: /img/uploads/OrchidBlog_PartnerAvalanche.jpg
