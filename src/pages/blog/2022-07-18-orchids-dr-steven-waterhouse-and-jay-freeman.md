@@ -10,11 +10,9 @@ featuredimage: /img/uploads/JayandSeven_BlogHero.jpg
 socialimage: https://www.orchid.com/img/podcast/JayandSeven_BlogHero.jpg
 
 tags:
-  - Blockchain
-  - Censorship
-  - Privacy
+  - Company Updates
+  - Decentralization
 ---
-
 A lot has changed since Orchid [launched](https://blog.orchid.com/follow-the-white-rabbit-orchids-privacy-podcast/) the [Priv8 Podcast](https://www.orchid.com/podcast/) two years ago. The world is a very different place, particularly in the realm of privacy. 
 
 Over the past 24 months, the global pandemic, the expansion of Big Tech, and [rising geopolitical tensions](https://www.securitymagazine.com/articles/97132-data-privacy-remains-at-the-heart-of-russia-ukraine-conflict) have caused many to seek new ways to strengthen their digital privacy. Throughout it all, Priv8 has provided insight and guidance on navigating the changing reality on the Internet. The show has featured conversations with many of the world’s top privacy, technology, and human rights experts – [Edward Snowden](https://blog.orchid.com/edward-snowden-joins-priv8-to-discuss-causes-and-solutions-for-a-broken-internet/), [Kara Swisher](https://blog.orchid.com/nyts-kara-swisher-speaks-with-audrey-tang-on-whether-safety-and-privacy-can-coexist/), and [Glenn Greenwald](https://blog.orchid.com/highlights-from-priv8-orchids-virtual-privacy-summit-nov/), to name just a few. 
