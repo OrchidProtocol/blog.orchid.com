@@ -3,7 +3,7 @@ templateKey: blog-post
 public: true
 url: "orchids-dr-steven-waterhouse-and-jay-freeman-on-orchids-mission"
 title: "Orchid’s Dr. Steven Waterhouse and Jay Freeman on Orchid's mission and more"
-date: 1655308800000
+date: 1658196354000
 description: "This week, to celebrate the 100th episode, host Derek Silva is interviewing two special guests – Orchid’s CEO Dr. Steven Waterhouse (Seven) and CTO Jay Freeman. Together, Seven and Jay discuss why they started Orchid, crypto’s punk ethos, central bank digital currencies, and more."
 featuredpost: false
 featuredimage: /img/uploads/JayandSeven_BlogHero.jpg
