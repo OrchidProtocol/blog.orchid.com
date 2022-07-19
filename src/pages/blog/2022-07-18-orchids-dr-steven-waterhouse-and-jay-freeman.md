@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 public: true
-url: "orchids-dr-steven-waterhouse-and-jay-freeman-on-internet-privacy-and-more"
+url: "orchids-dr-steven-waterhouse-and-jay-freeman"
 title: "Orchid’s Dr. Steven Waterhouse and Jay Freeman on Internet privacy and more"
 date: 1658178673
 description: "This week, to celebrate the 100th episode, host Derek Silva is interviewing two special guests – Orchid’s CEO Dr. Steven Waterhouse (Seven) and CTO Jay Freeman. Together, Seven and Jay discuss the need for online privacy, crypto’s punk ethos, central bank digital currencies, and more.”
@@ -67,6 +67,6 @@ So has Orchid’s vision shifted since it was first developed five years ago? \
 
 [Check out the entire conversation with Seven and Jay here](https://www.orchid.com/podcast/episode-100-orchid-founders/).  And don't forget to [subscribe to Priv8](https://www.orchid.com/podcast/) on your favorite streaming service.
 
-Thank you for 100 episodes of the Priv8 Podcast. Here’s to 100 more!
+Thank you for 100 episodes of the Priv8 Podcast.
 
 
