@@ -76,11 +76,11 @@ While changing public policy to better protect personal privacy is important, ne
 
 One of the easiest and most effective ways to [protect your online privacy](https://blog.orchid.com/how-to-protect-your-privacy-on-a-mobile-phone/) is to make use of a Virtual Private Network (VPN).
 
-VPNs protect your data on two levels. First, they act as an intermediary step between the device where your Internet traffic originates from and its final destination. This ensures that the site that receives your data cannot determine your IP address, as well as other information, including your location, phone number, or email address. And second, VPNs also encrypt your traffic on its journey across the web, making it so that third-party onlookers cannot spy on your data while it's traveling across the Internet.
+VPNs protect your data on two levels. First, they act as an intermediary step between the device where your Internet traffic originates from and its final destination. This ensures that the website you visit cannot log your IP address. And second, VPNs also encrypt your traffic on its journey across the web, making it so that third-party onlookers such as your ISP or WiFi provider cannot spy on your data.
 
 However, keeping your data as safe as possible means choosing a VPN provider you trust. Many VPN services are offered by centralized companies with opaque operations. Some "free" VPN providers have even been known to spy on and sell user data without consent.
 
-Orchid's decentralized VPN marketplace helps ensure that user data is safe by being as transparent as possible. Orchid's open-source code has been [thoroughly audited](https://consensys.net/diligence/audits/2019/11/orchid-network-protocol/) and is [viewable in its entirety](https://github.com/OrchidTechnologies/orchid) at any time,
+Orchid's decentralized VPN marketplace helps ensure that user data is safe by being as transparent as possible. Orchid's open-source code has been [audited](https://consensys.net/diligence/audits/2019/11/orchid-network-protocol/) and is [viewable in its entirety](https://github.com/OrchidTechnologies/orchid) at any time.
 
 Orchid's mission is to make online privacy as accessible as possible to people everywhere. The service runs on a pay-as-you-go basis -- users will never pay for bandwidth they don't use, and there are no monthly fees or minimums. 
 
