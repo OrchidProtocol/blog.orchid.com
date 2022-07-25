@@ -6,8 +6,8 @@ title: "Consensys Diligence's Goncalo Sa on Blockchain Security and Ethical Hack
 date: 1658775500000
 description: "“Software vulnerabilities exist in the fringe,” said Web3 hacker and Consensys Diligence co-founder Goncalo Sa. He was speaking to Orchid’s Derek Silva on this week’s episode of the Priv8 Podcast about the current state of blockchain security and the critical role that ethical hacking plays in it."
 featuredpost: false
-featuredimage: /img/uploads/GonçaloSá_BlogHero.jpg
-socialimage: https://www.orchid.com/img/podcast/GonçaloSá_BlogHero.jpg
+featuredimage: /img/uploads/GoncaloSa_BlogHero.jpg
+socialimage: https://www.orchid.com/img/podcast/GoncaloSa_BlogHero.jpg
 tags:
   - Security
   - Blockchain
