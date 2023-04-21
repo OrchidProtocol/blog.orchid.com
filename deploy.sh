@@ -17,6 +17,7 @@ function usage () {
 function build-site() {
     local language="$1"
     echo "Building Site..."
+    export NODE_OPTIONS=--openssl-legacy-provider
     yarn
 
     built_files=public
